@@ -2,7 +2,7 @@
 
 Trang web ôn tập miễn phí cho môn **Thực hành Hệ điều hành mạng (NetOS)**, Trường Đại học Công nghệ - ĐHQGHN (UET-VNU), mã môn **INT3301**.
 
-**Trải nghiệm trực tiếp: [https://tung1883.github.io/uet-netos/](https://tung1883.github.io/uet-netos/)** _(cập nhật link thật sau khi deploy)_
+**Trải nghiệm trực tiếp: [https://tung1883.github.io/uet-netos/](https://tung1883.github.io/uet-netos/)**
 
 Dành cho sinh viên đang học hoặc ôn thi giữa kỳ/cuối kỳ môn Thực hành Hệ điều hành mạng, cần luyện trắc nghiệm, ôn lệnh Linux, luyện viết lệnh theo format đề thi thật.
 
