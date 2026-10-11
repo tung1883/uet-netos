@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 3 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Thành phần nào của hệ điều hành Linux chịu trách nhiệm trực tiếp trong việc quản lý tài nguyên phần cứng và cung cấp dịch vụ cho các ứng dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Kernel"
+          },
+          {
+            "id": "B",
+            "content": "Shell"
+          },
+          {
+            "id": "C",
+            "content": "Terminal"
+          },
+          {
+            "id": "D",
+            "content": "Desktop Environment"
+          }
+        ],
+        "explanation": "Theo kiến trúc hệ điều hành Linux, Kernel là nhân lõi thực hiện điều phối CPU, bộ nhớ và các thiết bị ngoại vi cho phần mềm sử dụng. Kết luận Lý giải Kernel"
+      },
+      {
+        "id": "q2",
+        "text": "Trong hệ thống Linux, thư mục nào chứa các tập tin cấu hình quan trọng của toàn bộ hệ thống và các ứng dụng đã cài đặt?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/var"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Dựa trên tiêu chuẩn phân cấp tập tin (FHS), thư mục /etc là nơi lưu trữ các tập tin cấu hình hệ thống dành cho quản trị viên. Kết luận Lý giải /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tập tin hoặc thư mục trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chown"
+          },
+          {
+            "id": "B",
+            "content": "chmod"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Lệnh chmod (change mode) cho phép người dùng thay đổi các quyền đọc, ghi và thực thi cho chủ sở hữu, nhóm và người dùng khác. Kết luận Lý giải chmod"
+      },
+      {
+        "id": "q4",
+        "text": "Khi sử dụng lệnh 'chmod 755 filename', quyền hạn dành cho nhóm (Group) và những người khác (Others) được thiết lập như thế nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chỉ có quyền đọc"
+          },
+          {
+            "id": "B",
+            "content": "Quyền đọc và thực thi"
+          },
+          {
+            "id": "C",
+            "content": "Quyền đọc và ghi"
+          },
+          {
+            "id": "D",
+            "content": "Toàn quyền đọc, ghi, thực thi"
+          }
+        ],
+        "explanation": "Chữ số 5 trong mã octal tương đương với quyền đọc (4) và thực thi (1), được áp dụng cho vị trí thứ hai (Group) và thứ ba (Others). Kết luận Lý giải Quyền đọc và thực thi"
+      },
+      {
+        "id": "q5",
+        "text": "Ký hiệu nào được sử dụng trong dòng lệnh Linux để chuyển kết quả đầu ra của lệnh này thành đầu vào cho lệnh kia?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Dấu ngoặc nhọn { }"
+          },
+          {
+            "id": "B",
+            "content": "Dấu gạch đứng |"
+          },
+          {
+            "id": "C",
+            "content": "Dấu lớn hơn >"
+          },
+          {
+            "id": "D",
+            "content": "Dấu và &"
+          }
+        ],
+        "explanation": "Dấu gạch đứng (pipe) là một cơ chế mạnh mẽ trong Shell cho phép kết nối dòng dữ liệu giữa các tiến trình khác nhau. Kết luận Lý giải Dấu gạch đứng |"
+      },
+      {
+        "id": "q6",
+        "text": "Lệnh nào cho phép người dùng thông thường thực thi một lệnh với đặc quyền của người dùng quản trị (root)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "sudo"
+          },
+          {
+            "id": "B",
+            "content": "runas"
+          },
+          {
+            "id": "C",
+            "content": "admin"
+          },
+          {
+            "id": "D",
+            "content": "su -l"
+          }
+        ],
+        "explanation": "Lệnh sudo (superuser do) được thiết kế để cấp quyền tạm thời cho người dùng thực hiện các tác vụ quản trị hệ thống một cách an toàn. Kết luận Lý giải sudo"
+      },
+      {
+        "id": "q7",
+        "text": "Để liệt kê tất cả các tập tin, bao gồm cả các tập tin ẩn (bắt đầu bằng dấu chấm), bạn sử dụng lệnh ls với tùy chọn nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls -l"
+          },
+          {
+            "id": "B",
+            "content": "ls -a"
+          },
+          {
+            "id": "C",
+            "content": "ls -h"
+          },
+          {
+            "id": "D",
+            "content": "ls -r"
+          }
+        ],
+        "explanation": "Tùy chọn '-a' (all) trong lệnh ls hướng dẫn hệ thống hiển thị mọi mục trong thư mục kể cả các tập tin ẩn. Kết luận Lý giải ls -a"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh nào được sử dụng để tìm kiếm một chuỗi ký tự cụ thể bên trong một hoặc nhiều tập tin văn bản?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find"
+          },
+          {
+            "id": "B",
+            "content": "grep"
+          },
+          {
+            "id": "C",
+            "content": "locate"
+          },
+          {
+            "id": "D",
+            "content": "search"
+          }
+        ],
+        "explanation": "Lệnh grep (Global Regular Expression Print) là công cụ chuyên dụng để lọc và tìm kiếm các dòng chứa mẫu ký tự trong văn bản. Kết luận Lý giải grep"
+      },
+      {
+        "id": "q9",
+        "text": "Trong trình soạn thảo văn bản vi hoặc vim, phím nào được sử dụng để chuyển từ chế độ lệnh (Command mode) sang chế độ chèn (Insert mode)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Phím Esc"
+          },
+          {
+            "id": "B",
+            "content": "Phím i"
+          },
+          {
+            "id": "C",
+            "content": "Phím x"
+          },
+          {
+            "id": "D",
+            "content": "Phím w"
+          }
+        ],
+        "explanation": "Trong trình soạn thảo vim, nhấn phím 'i' sẽ kích hoạt chế độ Insert tại vị trí con trỏ hiện tại để bắt đầu nhập liệu. Kết luận Lý giải Phím i"
+      },
+      {
+        "id": "q10",
+        "text": "Lệnh nào hiển thị thông tin về dung lượng đĩa cứng đã sử dụng và còn trống trên các phân vùng hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du"
+          },
+          {
+            "id": "B",
+            "content": "df"
+          },
+          {
+            "id": "C",
+            "content": "free"
+          },
+          {
+            "id": "D",
+            "content": "top"
+          }
+        ],
+        "explanation": "Lệnh df (disk free) báo cáo tóm tắt về tình trạng sử dụng không gian đĩa trên toàn bộ các hệ thống tập tin đã gắn kết. Kết luận Lý giải df"
+      },
+      {
+        "id": "q11",
+        "text": "Thư mục nhà (home directory) mặc định của người dùng root trong hệ điều hành Linux nằm tại đâu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/home/root"
+          },
+          {
+            "id": "B",
+            "content": "/root"
+          },
+          {
+            "id": "C",
+            "content": "/bin/root"
+          },
+          {
+            "id": "D",
+            "content": "/etc/root"
+          }
+        ],
+        "explanation": "Khác với người dùng thông thường nằm trong /home, người dùng quản trị root có thư mục riêng biệt tại /root để đảm bảo an toàn khi khởi động. Kết luận Lý giải /root"
+      },
+      {
+        "id": "q12",
+        "text": "Để nén và đóng gói nhiều tập tin thành một tập tin duy nhất có đuôi .tar.gz, bạn thường sử dụng tổ hợp lệnh tar với các tham số nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "tar -xvf"
+          },
+          {
+            "id": "B",
+            "content": "tar -czvf"
+          },
+          {
+            "id": "C",
+            "content": "tar -tvf"
+          },
+          {
+            "id": "D",
+            "content": "tar -rvf"
+          }
+        ],
+        "explanation": "Trong lệnh tar, '-c' để tạo mới, '-z' để nén bằng gzip, '-v' để hiển thị quá trình và '-f' để chỉ định tên tập tin. Kết luận Lý giải tar -czvf"
+      },
+      {
+        "id": "q13",
+        "text": "Lệnh nào được sử dụng để xem hướng dẫn sử dụng chi tiết (manual pages) của một lệnh bất kỳ trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "help"
+          },
+          {
+            "id": "B",
+            "content": "man"
+          },
+          {
+            "id": "C",
+            "content": "info"
+          },
+          {
+            "id": "D",
+            "content": "whatis"
+          }
+        ],
+        "explanation": "Lệnh man cung cấp giao diện tra cứu tài liệu hướng dẫn chuẩn cho hầu hết các lệnh và tập tin cấu hình trong hệ thống. Kết luận Lý giải man"
+      },
+      {
+        "id": "q14",
+        "text": "Tín hiệu (Signal) nào được gửi bởi lệnh 'kill -9' để buộc một tiến trình phải dừng lại ngay lập tức mà không thể bỏ qua?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGTERM"
+          },
+          {
+            "id": "B",
+            "content": "SIGKILL"
+          },
+          {
+            "id": "C",
+            "content": "SIGINT"
+          },
+          {
+            "id": "D",
+            "content": "SIGHUP"
+          }
+        ],
+        "explanation": "Số 9 đại diện cho tín hiệu SIGKILL, một lệnh cưỡng bức mức hạt nhân khiến tiến trình kết thúc mà không được dọn dẹp tài nguyên. Kết luận Lý giải SIGKILL"
+      },
+      {
+        "id": "q15",
+        "text": "Trên các hệ điều hành dựa trên Debian hoặc Ubuntu, lệnh nào được sử dụng phổ biến nhất để cài đặt một gói phần mềm mới từ kho lưu trữ trực tuyến?",
+        "options": [
+          {
+            "id": "A",
+            "content": "yum install"
+          },
+          {
+            "id": "B",
+            "content": "apt-get install"
+          },
+          {
+            "id": "C",
+            "content": "rpm -i"
+          },
+          {
+            "id": "D",
+            "content": "dnf install"
+          }
+        ],
+        "explanation": "Công cụ Advanced Package Tool (APT) với lệnh apt-get hoặc apt là trình quản lý gói tiêu chuẩn cho các hệ thống Debian và các bản phân phối dẫn xuất. Kết luận Lý giải apt-get install"
+      },
+      {
+        "id": "q16",
+        "text": "Lệnh nào dùng để tạo một tập tin văn bản rỗng hoặc cập nhật thời gian truy cập của một tập tin đã tồn tại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "new"
+          },
+          {
+            "id": "B",
+            "content": "touch"
+          },
+          {
+            "id": "C",
+            "content": "create"
+          },
+          {
+            "id": "D",
+            "content": "make"
+          }
+        ],
+        "explanation": "Lệnh touch được sử dụng chủ yếu để thay đổi mốc thời gian của tập tin hoặc tạo nhanh một tập tin mới nếu nó chưa tồn tại. Kết luận Lý giải touch"
+      },
+      {
+        "id": "q17",
+        "text": "Để biết đường dẫn tuyệt đối của thư mục làm việc hiện hành, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "dir"
+          },
+          {
+            "id": "B",
+            "content": "pwd"
+          },
+          {
+            "id": "C",
+            "content": "whereami"
+          },
+          {
+            "id": "D",
+            "content": "path"
+          }
+        ],
+        "explanation": "Lệnh pwd (print working directory) trả về đường dẫn đầy đủ từ thư mục gốc đến thư mục mà người dùng đang thao tác. Kết luận Lý giải pwd"
+      },
+      {
+        "id": "q18",
+        "text": "Để ghi thêm kết quả của một lệnh vào cuối một tập tin văn bản mà không xóa đi nội dung cũ, bạn sử dụng toán tử nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": ">>"
+          },
+          {
+            "id": "C",
+            "content": "|"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Trong khi '>' ghi đè nội dung thì toán tử '>>' sẽ thực hiện nối thêm dữ liệu vào cuối tập tin hiện có. Kết luận Lý giải >>"
+      },
+      {
+        "id": "q19",
+        "text": "Lệnh nào được sử dụng để tạo một liên kết mềm (Symbolic Link) giữa hai tập tin hoặc thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "link -s"
+          },
+          {
+            "id": "B",
+            "content": "ln -s"
+          },
+          {
+            "id": "C",
+            "content": "sln"
+          },
+          {
+            "id": "D",
+            "content": "cp -l"
+          }
+        ],
+        "explanation": "Lệnh ln với tùy chọn '-s' tạo ra một lối tắt (symbolic link) trỏ đến một vị trí tập tin hoặc thư mục khác trong hệ thống. Kết luận Lý giải ln -s"
+      },
+      {
+        "id": "q20",
+        "text": "Thư mục nào trong Linux chứa các chương trình thực thi cần thiết để hệ thống có thể khởi động và hoạt động ở chế độ người dùng đơn (Single-user mode)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/usr/bin"
+          },
+          {
+            "id": "B",
+            "content": "/bin"
+          },
+          {
+            "id": "C",
+            "content": "/opt"
+          },
+          {
+            "id": "D",
+            "content": "/home"
+          }
+        ],
+        "explanation": "Thư mục /bin chứa các lệnh nhị phân cơ bản nhất như ls, cp, mv mà mọi người dùng và hệ thống đều cần sử dụng. Kết luận Lý giải /bin"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh nào được sử dụng để xem nội dung của một tập tin văn bản ngay trên màn hình terminal mà không cần mở trình soạn thảo?",
+        "options": [
+          {
+            "id": "A",
+            "content": "view"
+          },
+          {
+            "id": "B",
+            "content": "cat"
+          },
+          {
+            "id": "C",
+            "content": "show"
+          },
+          {
+            "id": "D",
+            "content": "open"
+          }
+        ],
+        "explanation": "Lệnh cat (concatenate) thường được dùng để nối các tập tin hoặc đơn giản là in toàn bộ nội dung tập tin ra thiết bị đầu ra chuẩn. Kết luận Lý giải cat"
+      },
+      {
+        "id": "q22",
+        "text": "Tham số nào đi kèm với lệnh tail giúp theo dõi nội dung của một tập tin log theo thời gian thực khi dữ liệu mới được ghi vào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-n"
+          },
+          {
+            "id": "B",
+            "content": "-f"
+          },
+          {
+            "id": "C",
+            "content": "-r"
+          },
+          {
+            "id": "D",
+            "content": "-s"
+          }
+        ],
+        "explanation": "Tùy chọn '-f' (follow) khiến lệnh tail không kết thúc mà tiếp tục chờ và hiển thị các dòng văn bản mới khi chúng xuất hiện trong tập tin. Kết luận Lý giải -f"
+      },
+      {
+        "id": "q23",
+        "text": "Để đổi tên một tập tin từ 'oldname.txt' thành 'newname.txt', bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rename oldname.txt newname.txt"
+          },
+          {
+            "id": "B",
+            "content": "mv oldname.txt newname.txt"
+          },
+          {
+            "id": "C",
+            "content": "cp oldname.txt newname.txt"
+          },
+          {
+            "id": "D",
+            "content": "name oldname.txt newname.txt"
+          }
+        ],
+        "explanation": "Lệnh mv (move) trong Linux được sử dụng cho cả việc di chuyển tập tin sang thư mục khác và việc đổi tên tập tin. Kết luận Lý giải mv oldname.txt newname.txt"
+      },
+      {
+        "id": "q24",
+        "text": "Lệnh nào sẽ xóa một thư mục và toàn bộ các tập tin, thư mục con bên trong nó mà không yêu cầu xác nhận từ người dùng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rm -d"
+          },
+          {
+            "id": "B",
+            "content": "rm -rf"
+          },
+          {
+            "id": "C",
+            "content": "rmdir"
+          },
+          {
+            "id": "D",
+            "content": "del -a"
+          }
+        ],
+        "explanation": "Sự kết hợp giữa '-r' (đệ quy) và '-f' (cưỡng bức) cho phép xóa sạch cấu trúc thư mục một cách nhanh chóng và nguy hiểm. Kết luận Lý giải rm -rf"
+      },
+      {
+        "id": "q25",
+        "text": "Công cụ nào cung cấp giao diện tương tác theo dõi các tiến trình đang chạy và việc sử dụng tài nguyên hệ thống (CPU, RAM) theo thời gian thực?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -ef"
+          },
+          {
+            "id": "B",
+            "content": "top"
+          },
+          {
+            "id": "C",
+            "content": "free -m"
+          },
+          {
+            "id": "D",
+            "content": "uptime"
+          }
+        ],
+        "explanation": "Lệnh top hiển thị danh sách các tiến trình đang hoạt động và cập nhật liên tục các thông số hiệu năng của hệ thống. Kết luận Lý giải top"
+      }
+    ],
+    "logic_map": {
+      "q1": "A",
+      "q2": "B",
+      "q3": "B",
+      "q4": "B",
+      "q5": "B",
+      "q6": "A",
+      "q7": "B",
+      "q8": "B",
+      "q9": "B",
+      "q10": "B",
+      "q11": "B",
+      "q12": "B",
+      "q13": "B",
+      "q14": "B",
+      "q15": "B",
+      "q16": "B",
+      "q17": "B",
+      "q18": "B",
+      "q19": "B",
+      "q20": "B",
+      "q21": "B",
+      "q22": "B",
+      "q23": "B",
+      "q24": "B",
+      "q25": "B"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 10 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Ai là người đã viết những dòng mã đầu tiên và công bố nhân (kernel) Linux vào năm 1991?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Bill Gates"
+          },
+          {
+            "id": "B",
+            "content": "Steve Jobs"
+          },
+          {
+            "id": "C",
+            "content": "Linus Torvalds"
+          },
+          {
+            "id": "D",
+            "content": "Richard Stallman"
+          }
+        ],
+        "explanation": "Theo lịch sử phát triển của hệ điều hành mã nguồn mở, Linus Torvalds là người sáng tạo ra nhân Linux và duy trì sự phát triển của nó cho đến ngày nay. Kết luận Lý giải: Linus Torvalds"
+      },
+      {
+        "id": "q2",
+        "text": "Thư mục nào trong hệ thống tệp tin Linux chứa các tệp tin cấu hình của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/home"
+          },
+          {
+            "id": "D",
+            "content": "/root"
+          }
+        ],
+        "explanation": "Theo quy chuẩn phân cấp hệ thống tệp tin (FHS), thư mục '/etc' là nơi lưu trữ tất cả các tệp tin cấu hình cụ thể cho máy chủ đó. Kết luận Lý giải: /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Trong hệ thống Linux, người quản trị cao nhất (root) thường có mã định danh người dùng (UID) là bao nhiêu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "1000"
+          },
+          {
+            "id": "B",
+            "content": "1"
+          },
+          {
+            "id": "C",
+            "content": "100"
+          },
+          {
+            "id": "D",
+            "content": "0"
+          }
+        ],
+        "explanation": "Theo quy ước của nhân Linux và các hệ điều hành tương tự Unix, tài khoản siêu người dùng 'root' luôn có mã UID bằng 0. Kết luận Lý giải: 0"
+      },
+      {
+        "id": "q4",
+        "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tệp tin hoặc thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chown"
+          },
+          {
+            "id": "B",
+            "content": "chmod"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Lệnh 'chmod' (change mode) được sử dụng để thay đổi các bit quyền như đọc, ghi và thực thi cho người dùng, nhóm và những người khác. Kết luận Lý giải: chmod"
+      },
+      {
+        "id": "q5",
+        "text": "Ký hiệu nào sau đây được dùng để chuyển hướng kết quả của một lệnh làm đầu vào cho một lệnh khác (piping)?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": "&"
+          },
+          {
+            "id": "C",
+            "content": "|"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Trong môi trường dòng lệnh Linux, ký hiệu đường ống '|' cho phép gửi đầu ra tiêu chuẩn của một tiến trình sang đầu vào tiêu chuẩn của tiến trình khác. Kết luận Lý giải: |"
+      },
+      {
+        "id": "q6",
+        "text": "Lệnh nào dùng để liệt kê tất cả các tệp tin trong thư mục, bao gồm cả các tệp tin ẩn (bắt đầu bằng dấu chấm)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls -l"
+          },
+          {
+            "id": "B",
+            "content": "ls -a"
+          },
+          {
+            "id": "C",
+            "content": "ls -h"
+          },
+          {
+            "id": "D",
+            "content": "ls -d"
+          }
+        ],
+        "explanation": "Tùy chọn '-a' (all) trong lệnh 'ls' cho phép hiển thị mọi mục trong thư mục kể cả những tệp tin bị ẩn bởi dấu chấm ở đầu tên. Kết luận Lý giải: ls -a"
+      },
+      {
+        "id": "q7",
+        "text": "Trong Linux, tiến trình đầu tiên được khởi chạy bởi nhân hệ điều hành và có PID (Process ID) bằng 1 là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "bash"
+          },
+          {
+            "id": "B",
+            "content": "kthreadd"
+          },
+          {
+            "id": "C",
+            "content": "init hoặc systemd"
+          },
+          {
+            "id": "D",
+            "content": "login"
+          }
+        ],
+        "explanation": "Tiến trình 'init' (hoặc 'systemd' trên các bản phân phối hiện đại) là cha của tất cả các tiến trình khác và luôn nhận PID là 1 khi hệ thống khởi động. Kết luận Lý giải: init hoặc systemd"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh nào được sử dụng để kiểm tra dung lượng còn trống trên các phân vùng đĩa cứng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du"
+          },
+          {
+            "id": "B",
+            "content": "free"
+          },
+          {
+            "id": "C",
+            "content": "df"
+          },
+          {
+            "id": "D",
+            "content": "top"
+          }
+        ],
+        "explanation": "Lệnh 'df' (disk free) hiển thị thông tin về dung lượng đã dùng và còn lại của hệ thống tệp tin trên toàn bộ các thiết bị lưu trữ đã gắn kết. Kết luận Lý giải: df"
+      },
+      {
+        "id": "q9",
+        "text": "Để tìm kiếm một chuỗi văn bản cụ thể bên trong một tệp tin, bạn nên sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "locate"
+          },
+          {
+            "id": "B",
+            "content": "grep"
+          },
+          {
+            "id": "C",
+            "content": "find"
+          },
+          {
+            "id": "D",
+            "content": "echo"
+          }
+        ],
+        "explanation": "Công cụ 'grep' là một tiện ích dòng lệnh mạnh mẽ dùng để lọc và tìm kiếm các dòng chứa một mẫu cụ thể trong tệp tin hoặc đầu ra của lệnh. Kết luận Lý giải: grep"
+      },
+      {
+        "id": "q10",
+        "text": "Hệ quản trị gói phần mềm mặc định trên các bản phân phối Linux như Ubuntu và Debian là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "yum"
+          },
+          {
+            "id": "B",
+            "content": "pacman"
+          },
+          {
+            "id": "C",
+            "content": "dnf"
+          },
+          {
+            "id": "D",
+            "content": "apt"
+          }
+        ],
+        "explanation": "Các dòng Linux dựa trên Debian như Ubuntu sử dụng công cụ 'apt' (Advanced Package Tool) để cài đặt, cập nhật và gỡ bỏ các gói phần mềm. Kết luận Lý giải: apt"
+      },
+      {
+        "id": "q11",
+        "text": "Lệnh nào dùng để thay đổi chủ sở hữu (owner) của một tệp tin trong hệ thống Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chown"
+          },
+          {
+            "id": "C",
+            "content": "usermod"
+          },
+          {
+            "id": "D",
+            "content": "passwd"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) được thiết kế đặc biệt để thay đổi quyền sở hữu tệp tin hoặc thư mục cho một người dùng hoặc nhóm người dùng mới. Kết luận Lý giải: chown"
+      },
+      {
+        "id": "q12",
+        "text": "Lệnh 'pwd' trong dòng lệnh Linux có chức năng gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Thay đổi mật khẩu người dùng"
+          },
+          {
+            "id": "B",
+            "content": "Xóa tệp tin hiện tại"
+          },
+          {
+            "id": "C",
+            "content": "Hiển thị đường dẫn đầy đủ của thư mục hiện hành"
+          },
+          {
+            "id": "D",
+            "content": "Tạo một thư mục mới"
+          }
+        ],
+        "explanation": "Lệnh 'pwd' (print working directory) trả về đường dẫn tuyệt đối từ thư mục gốc đến thư mục mà người dùng đang làm việc. Kết luận Lý giải: Hiển thị đường dẫn đầy đủ của thư mục hiện hành"
+      },
+      {
+        "id": "q13",
+        "text": "Để dừng một tiến trình đang chạy ngay lập tức bằng tín hiệu 'SIGKILL', bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "kill -15"
+          },
+          {
+            "id": "B",
+            "content": "kill -1"
+          },
+          {
+            "id": "C",
+            "content": "kill -9"
+          },
+          {
+            "id": "D",
+            "content": "kill -stop"
+          }
+        ],
+        "explanation": "Tín hiệu số 9 (SIGKILL) buộc hạt nhân Linux phải chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó thực hiện các bước dọn dẹp cuối cùng. Kết luận Lý giải: kill -9"
+      },
+      {
+        "id": "q14",
+        "text": "Biến môi trường nào quy định danh sách các thư mục mà hệ vỏ (shell) sẽ tìm kiếm các tệp tin thực thi?",
+        "options": [
+          {
+            "id": "A",
+            "content": "$HOME"
+          },
+          {
+            "id": "B",
+            "content": "$USER"
+          },
+          {
+            "id": "C",
+            "content": "$SHELL"
+          },
+          {
+            "id": "D",
+            "content": "$PATH"
+          }
+        ],
+        "explanation": "Biến '$PATH' chứa một danh sách các đường dẫn ngăn cách bởi dấu hai chấm, nơi hệ thống sẽ tìm lệnh khi bạn nhập vào terminal. Kết luận Lý giải: $PATH"
+      },
+      {
+        "id": "q15",
+        "text": "Hệ vỏ (shell) mặc định phổ biến nhất trên hầu hết các bản phân phối Linux hiện nay là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Csh"
+          },
+          {
+            "id": "B",
+            "content": "Bash"
+          },
+          {
+            "id": "C",
+            "content": "Zsh"
+          },
+          {
+            "id": "D",
+            "content": "Ksh"
+          }
+        ],
+        "explanation": "Bash (Bourne Again SHell) là hệ vỏ tiêu chuẩn và được cài đặt sẵn làm mặc định cho người dùng trên phần lớn các hệ điều hành Linux. Kết luận Lý giải: Bash"
+      },
+      {
+        "id": "q16",
+        "text": "Để lập lịch chạy tự động một tác vụ vào một thời điểm cụ thể định kỳ, bạn sử dụng công cụ nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "systemd-analyze"
+          },
+          {
+            "id": "B",
+            "content": "cron"
+          },
+          {
+            "id": "C",
+            "content": "at"
+          },
+          {
+            "id": "D",
+            "content": "batch"
+          }
+        ],
+        "explanation": "Dịch vụ 'cron' cho phép người dùng cấu hình các tệp tin 'crontab' để tự động thực hiện các câu lệnh hoặc kịch bản theo chu kỳ thời gian định sẵn. Kết luận Lý giải: cron"
+      },
+      {
+        "id": "q17",
+        "text": "Lệnh 'cat' thường được sử dụng phổ biến nhất để làm gì trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Xóa nội dung tệp tin"
+          },
+          {
+            "id": "B",
+            "content": "Sao chép tệp tin sang vị trí khác"
+          },
+          {
+            "id": "C",
+            "content": "Hiển thị nội dung của một hoặc nhiều tệp tin ra màn hình"
+          },
+          {
+            "id": "D",
+            "content": "Nén tệp tin thành định dạng .zip"
+          }
+        ],
+        "explanation": "Lệnh 'cat' (concatenate) dùng để nối các tệp tin và in kết quả ra đầu ra tiêu chuẩn, thường được dùng để xem nhanh nội dung văn bản. Kết luận Lý giải: Hiển thị nội dung của một hoặc nhiều tệp tin ra màn hình"
+      },
+      {
+        "id": "q18",
+        "text": "Lệnh nào được sử dụng để tạo một liên kết mềm (symbolic link) cho một tệp tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "link -s"
+          },
+          {
+            "id": "B",
+            "content": "ln -s"
+          },
+          {
+            "id": "C",
+            "content": "cp -l"
+          },
+          {
+            "id": "D",
+            "content": "mv -s"
+          }
+        ],
+        "explanation": "Lệnh 'ln' với tùy chọn '-s' (symbolic) được sử dụng để tạo một lối tắt trỏ tới đường dẫn của một tệp tin hoặc thư mục khác. Kết luận Lý giải: ln -s"
+      },
+      {
+        "id": "q19",
+        "text": "Phần vùng 'Swap' trong Linux đóng vai trò gì cho hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu trữ các tệp tin tạm thời của người dùng"
+          },
+          {
+            "id": "B",
+            "content": "Làm bộ nhớ đệm cho CPU"
+          },
+          {
+            "id": "C",
+            "content": "Mở rộng bộ nhớ RAM vật lý bằng cách sử dụng không gian đĩa cứng"
+          },
+          {
+            "id": "D",
+            "content": "Lưu trữ mã nguồn của nhân Linux"
+          }
+        ],
+        "explanation": "Không gian 'Swap' được hệ điều hành sử dụng làm bộ nhớ ảo khi bộ nhớ RAM vật lý bị lấp đầy, giúp hệ thống tiếp tục hoạt động mà không bị treo. Kết luận Lý giải: Mở rộng bộ nhớ RAM vật lý bằng cách sử dụng không gian đĩa cứng"
+      },
+      {
+        "id": "q20",
+        "text": "Lệnh nào cung cấp thông tin chi tiết về phiên bản nhân (kernel) và kiến trúc hệ thống đang sử dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "os-release"
+          },
+          {
+            "id": "B",
+            "content": "ver"
+          },
+          {
+            "id": "C",
+            "content": "sysinfo"
+          },
+          {
+            "id": "D",
+            "content": "uname -a"
+          }
+        ],
+        "explanation": "Lệnh 'uname' với tham số '-a' (all) sẽ hiển thị tên nhân, phiên bản, ngày biên dịch và kiến trúc phần cứng của máy tính. Kết luận Lý giải: uname -a"
+      },
+      {
+        "id": "q21",
+        "text": "Trong trình soạn thảo văn bản 'vi' hoặc 'vim', tổ hợp phím nào dùng để thoát mà không lưu các thay đổi?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":wq"
+          },
+          {
+            "id": "B",
+            "content": ":x"
+          },
+          {
+            "id": "C",
+            "content": ":q!"
+          },
+          {
+            "id": "D",
+            "content": ":exit"
+          }
+        ],
+        "explanation": "Lệnh ':q!' trong chế độ dòng lệnh của 'vi' cho phép đóng trình soạn thảo ngay cả khi dữ liệu đã bị sửa đổi mà không ghi lại vào đĩa. Kết luận Lý giải: :q!"
+      },
+      {
+        "id": "q22",
+        "text": "Công cụ dòng lệnh nào cho phép theo dõi các tiến trình đang chạy và tài nguyên hệ thống theo thời gian thực?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -ef"
+          },
+          {
+            "id": "B",
+            "content": "top"
+          },
+          {
+            "id": "C",
+            "content": "lsblk"
+          },
+          {
+            "id": "D",
+            "content": "uptime"
+          }
+        ],
+        "explanation": "Tiện ích 'top' cung cấp một giao diện động hiển thị các tiến trình đang hoạt động, mức sử dụng CPU, RAM và các thông số hệ thống quan trọng khác. Kết luận Lý giải: top"
+      },
+      {
+        "id": "q23",
+        "text": "Mục đích chính của lệnh 'sudo' là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tăng tốc độ xử lý của lệnh"
+          },
+          {
+            "id": "B",
+            "content": "Chạy lệnh với đặc quyền của người dùng root hoặc người dùng khác"
+          },
+          {
+            "id": "C",
+            "content": "Mã hóa tệp tin trước khi thực thi"
+          },
+          {
+            "id": "D",
+            "content": "Chuyển sang giao diện đồ họa"
+          }
+        ],
+        "explanation": "Lệnh 'sudo' (superuser do) cho phép người dùng thông thường thực thi các câu lệnh có đặc quyền quản trị mà không cần đăng nhập trực tiếp vào tài khoản root. Kết luận Lý giải: Chạy lệnh với đặc quyền của người dùng root hoặc người dùng khác"
+      },
+      {
+        "id": "q24",
+        "text": "Giá trị quyền truy cập '755' áp dụng cho một tệp tin tương ứng với các ký hiệu chữ cái nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rwx------"
+          },
+          {
+            "id": "B",
+            "content": "rwxr-xr-x"
+          },
+          {
+            "id": "C",
+            "content": "rw-rw-rw-"
+          },
+          {
+            "id": "D",
+            "content": "rwxrwxrwx"
+          }
+        ],
+        "explanation": "Số 7 tương ứng với 'rwx' (đọc, ghi, thực thi), trong khi số 5 tương ứng với 'r-x' (đọc, thực thi) cho nhóm và người dùng khác. Kết luận Lý giải: rwxr-xr-x"
+      },
+      {
+        "id": "q25",
+        "text": "Thư mục nào được sử dụng để lưu trữ các tệp tin tạm thời và dữ liệu này thường bị xóa khi khởi động lại máy?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/var"
+          },
+          {
+            "id": "B",
+            "content": "/tmp"
+          },
+          {
+            "id": "C",
+            "content": "/mnt"
+          },
+          {
+            "id": "D",
+            "content": "/opt"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn hệ thống, '/tmp' là thư mục dùng chung để các ứng dụng lưu trữ dữ liệu tạm thời trong phiên làm việc hiện tại. Kết luận Lý giải: /tmp"
+      }
+    ],
+    "logic_map": {
+      "q1": "C",
+      "q2": "B",
+      "q3": "D",
+      "q4": "B",
+      "q5": "C",
+      "q6": "B",
+      "q7": "C",
+      "q8": "C",
+      "q9": "B",
+      "q10": "D",
+      "q11": "B",
+      "q12": "C",
+      "q13": "C",
+      "q14": "D",
+      "q15": "B",
+      "q16": "B",
+      "q17": "C",
+      "q18": "B",
+      "q19": "C",
+      "q20": "D",
+      "q21": "C",
+      "q22": "B",
+      "q23": "B",
+      "q24": "B",
+      "q25": "B"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

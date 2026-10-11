@@ -1,0 +1,115 @@
+const WEEKS = require('../weeks');
+module.exports = [
+  {
+    text: 'When running the command ls -li, what does the number in the first column represent?',
+    options: ['The inode number', 'The user ID (UID)', 'The process ID (PID)', 'The file size'],
+    correctIndex: 0,
+    explanation: "ls's -i option shows the file/directory's inode number in the first column.",
+  },
+  {
+    text: 'Which statement about a hard link is correct?',
+    options: ['It only works while the original file still exists', 'It references the same inode as the original file', 'It can point to a different filesystem', 'It always has a different inode than the original file'],
+    correctIndex: 1,
+    explanation: 'A hard link is another name pointing to the same inode as the original file, so it shares the same data and attributes.',
+  },
+  {
+    text: 'In the permission string -rwxr-xr--, what permission does the owning group have?',
+    options: ['Read, write and execute', 'Read and execute', 'Write and execute', 'Read only'],
+    correctIndex: 1,
+    explanation: 'The second part "r-x" corresponds to the owning group: read and execute permission, no write permission.',
+  },
+  {
+    text: 'How does a symbolic link differ from a hard link?',
+    options: [
+      'A symbolic link is a separate file containing a path pointing to the target file, with its own inode',
+      'A symbolic link always shares the same inode as the original file',
+      'A symbolic link can never be deleted',
+      'A symbolic link can only be used for directories',
+    ],
+    correctIndex: 0,
+    explanation: 'A symlink is a special file containing a path, with its own separate inode, and it "breaks" if the target file is deleted or moved.',
+  },
+  {
+    text: 'What happens to a hard link when the original file is deleted?',
+    options: ['The hard link loses its data too', 'The hard link can still access the data normally since it points to the same inode', 'The system immediately reports an error', 'The hard link automatically becomes a symlink'],
+    correctIndex: 1,
+    explanation: "The data is only actually deleted once no hard link points to that inode anymore (the link count reaches 0).",
+  },
+  {
+    text: 'Which permission string does the octal value 750 correspond to when assigned to a file?',
+    options: ['rwxr-x---', 'rwxrwx---', 'rw-r-x---', 'rwxr-xr-x'],
+    correctIndex: 0,
+    explanation: '7=rwx (owner), 5=r-x (group), 0=--- (others) → rwxr-x---.',
+  },
+  {
+    text: 'What does SetUID (SUID) on an executable file do?',
+    options: [
+      'The program runs with the privileges of the user executing it',
+      'The program runs with the privileges of the file\'s owner regardless of who executes it',
+      'It prevents anyone from executing the file',
+      'It automatically compresses the file when it runs',
+    ],
+    correctIndex: 1,
+    explanation: 'SUID makes the program execute with the privileges of the file\'s owner (commonly used to grant temporary privilege, e.g. passwd).',
+  },
+  {
+    text: 'What does the sticky bit on a shared directory do?',
+    options: [
+      'Only the file\'s owner (or root) can delete/rename a file in that directory',
+      'It locks the directory so no more files can be written into it',
+      'It automatically compresses every file in the directory',
+      'It lets everyone delete each other\'s files',
+    ],
+    correctIndex: 0,
+    explanation: 'The sticky bit (e.g. on the /tmp directory) stops users from deleting/renaming each other\'s files even if they have write permission on the directory.',
+  },
+  {
+    text: 'How does the default umask of 022 affect a newly created file?',
+    options: [
+      'The new file\'s default permission of 666 has 022 subtracted, leaving 644',
+      'The new file always gets permission 777',
+      'Umask doesn\'t affect files, only directories',
+      'The new file will have no read permission for anyone',
+    ],
+    correctIndex: 0,
+    explanation: 'Umask subtracts from the default permission (666 for files, 777 for directories): 666 - 022 = 644.',
+  },
+  {
+    text: 'What does the regular expression ^# match in grep?',
+    options: ['Lines ending in #', 'Lines starting with the # character', 'Lines containing # anywhere', 'Lines not containing #'],
+    correctIndex: 1,
+    explanation: 'The ^ symbol in a regex represents the start of the line, so ^# matches lines starting with #.',
+    week: WEEKS.W2_TH2,
+  },
+  {
+    text: 'In redirection, which symbol is used to append output to the end of a file instead of overwriting it?',
+    options: ['>', '>>', '<', '|'],
+    correctIndex: 1,
+    explanation: '>> appends data to the end of a file, keeping the old content; > overwrites the entire file.',
+    week: WEEKS.W2_TH2,
+  },
+  {
+    text: 'What does the symbol 2>&1 mean in the shell?',
+    options: [
+      'Redirect stderr (errors) to the same place as stdout',
+      'Redirect stdout into file log2',
+      'Run the command twice',
+      'Disable all output',
+    ],
+    correctIndex: 0,
+    explanation: '2>&1 merges the standard error stream (file descriptor 2) into the same destination as the standard output stream (file descriptor 1).',
+    week: WEEKS.W2_TH2,
+  },
+  {
+    text: 'What is the pipe (|) used for in the shell?',
+    options: [
+      'Saving output to a file',
+      'Taking the output of the preceding command as input for the next one',
+      'Running two commands independently in parallel',
+      'Comparing two files',
+    ],
+    correctIndex: 1,
+    explanation: 'A pipe feeds the data stream (stdout) of the left-hand command as standard input (stdin) for the right-hand command.',
+    week: WEEKS.W2_TH2,
+  },
+];

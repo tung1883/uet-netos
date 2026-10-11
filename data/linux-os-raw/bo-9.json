@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 9 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong hệ điều hành Linux, thành phần nào chịu trách nhiệm quản lý tài nguyên phần cứng và cung cấp các dịch vụ cơ bản cho các ứng dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Shell"
+          },
+          {
+            "id": "B",
+            "content": "Kernel"
+          },
+          {
+            "id": "C",
+            "content": "Desktop Environment"
+          },
+          {
+            "id": "D",
+            "content": "Package Manager"
+          }
+        ],
+        "explanation": "Theo kiến trúc chuẩn của Linux, Kernel (nhân) là thành phần cốt lõi trung gian điều phối giao tiếp giữa phần cứng và phần mềm ứng dụng. Kết luận Lý giải Kernel"
+      },
+      {
+        "id": "q2",
+        "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tệp tin sao cho chủ sở hữu có toàn quyền, nhóm có quyền đọc và thực thi, và người khác chỉ có quyền đọc?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod 754"
+          },
+          {
+            "id": "B",
+            "content": "chmod 764"
+          },
+          {
+            "id": "C",
+            "content": "chmod 644"
+          },
+          {
+            "id": "D",
+            "content": "chmod 777"
+          }
+        ],
+        "explanation": "Trong hệ thống quyền số, số 7 tương ứng 'rwx' cho chủ sở hữu, số 5 tương ứng 'r-x' cho nhóm và số 4 tương ứng 'r--' cho người khác. Kết luận Lý giải chmod 754"
+      },
+      {
+        "id": "q3",
+        "text": "Để tìm kiếm tất cả các dòng KHÔNG chứa từ khóa 'error' trong một tệp tin nhật ký, bạn nên sử dụng tùy chọn nào với lệnh 'grep'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "grep -i 'error' file.log"
+          },
+          {
+            "id": "B",
+            "content": "grep -v 'error' file.log"
+          },
+          {
+            "id": "C",
+            "content": "grep -l 'error' file.log"
+          },
+          {
+            "id": "D",
+            "content": "grep -n 'error' file.log"
+          }
+        ],
+        "explanation": "Tùy chọn '-v' (invert-match) trong lệnh 'grep' được thiết kế để đảo ngược kết quả tìm kiếm, chỉ hiển thị những dòng không khớp với mẫu. Kết luận Lý giải grep -v 'error' file.log"
+      },
+      {
+        "id": "q4",
+        "text": "Tệp tin nào lưu giữ thông tin mã hóa mật khẩu của người dùng trong các bản phân phối Linux hiện đại để đảm bảo an toàn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/group"
+          },
+          {
+            "id": "C",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "D",
+            "content": "/etc/gshadow"
+          }
+        ],
+        "explanation": "Để bảo mật, Linux lưu mật khẩu đã băm trong tệp '/etc/shadow' với quyền truy cập cực kỳ hạn chế thay vì để trong '/etc/passwd'. Kết luận Lý giải /etc/shadow"
+      },
+      {
+        "id": "q5",
+        "text": "Sự khác biệt chính giữa Symbolic Link (Soft Link) và Hard Link trong Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hard Link có thể trỏ đến thư mục, còn Symbolic Link thì không."
+          },
+          {
+            "id": "B",
+            "content": "Symbolic Link có thể trỏ đến tệp tin trên các phân vùng đĩa khác nhau, còn Hard Link thì không."
+          },
+          {
+            "id": "C",
+            "content": "Khi xóa tệp gốc, Hard Link sẽ bị hỏng và không thể truy cập nội dung."
+          },
+          {
+            "id": "D",
+            "content": "Symbolic Link chia sẻ cùng số Inode với tệp tin gốc."
+          }
+        ],
+        "explanation": "Theo đặc tính hệ thống tệp, Hard Link bị giới hạn trong cùng một phân vùng đĩa do dùng chung Inode, trong khi Symbolic Link là một tệp riêng biệt chứa đường dẫn. Kết luận Lý giải Symbolic Link có thể trỏ đến tệp tin trên các phân vùng đĩa khác nhau, còn Hard Link thì không."
+      },
+      {
+        "id": "q6",
+        "text": "Trong hệ thống sử dụng 'systemd', mục tiêu (target) nào tương đương với 'runlevel 3' (chế độ đa người dùng với giao diện dòng lệnh)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "graphical.target"
+          },
+          {
+            "id": "B",
+            "content": "multi-user.target"
+          },
+          {
+            "id": "C",
+            "content": "rescue.target"
+          },
+          {
+            "id": "D",
+            "content": "reboot.target"
+          }
+        ],
+        "explanation": "Trong cấu trúc của 'systemd', 'multi-user.target' được định nghĩa là trạng thái hệ thống hỗ trợ nhiều người dùng nhưng không khởi động giao diện đồ họa. Kết luận Lý giải multi-user.target"
+      },
+      {
+        "id": "q7",
+        "text": "Lệnh nào được sử dụng để gửi tín hiệu buộc một tiến trình phải dừng ngay lập tức mà không cho phép nó thực hiện các thủ tục dọn dẹp?",
+        "options": [
+          {
+            "id": "A",
+            "content": "kill -15 PID"
+          },
+          {
+            "id": "B",
+            "content": "kill -2 PID"
+          },
+          {
+            "id": "C",
+            "content": "kill -1 PID"
+          },
+          {
+            "id": "D",
+            "content": "kill -9 PID"
+          }
+        ],
+        "explanation": "Tín hiệu SIGKILL (tương ứng số 9) gửi đến tiến trình sẽ buộc Kernel chấm dứt nó ngay lập tức mà không thể bị bỏ qua hoặc chặn lại. Kết luận Lý giải kill -9 PID"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh 'tar' nào sau đây được sử dụng để tạo một tệp nén mới có định dạng '.tar.gz' từ một thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "tar -xvf archive.tar.gz folder/"
+          },
+          {
+            "id": "B",
+            "content": "tar -zcvf archive.tar.gz folder/"
+          },
+          {
+            "id": "C",
+            "content": "tar -jcvf archive.tar.gz folder/"
+          },
+          {
+            "id": "D",
+            "content": "tar -tvf archive.tar.gz"
+          }
+        ],
+        "explanation": "Trong lệnh 'tar', tùy chọn '-c' dùng để tạo mới và '-z' dùng để lọc qua trình nén gzip để tạo định dạng '.gz'. Kết luận Lý giải tar -zcvf archive.tar.gz folder/"
+      },
+      {
+        "id": "q9",
+        "text": "Một tác vụ định kỳ trong 'crontab' có cấu hình '0 2 * * 1 command' sẽ thực hiện vào thời điểm nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Vào lúc 2 giờ sáng mỗi ngày."
+          },
+          {
+            "id": "B",
+            "content": "Vào lúc 2 giờ sáng thứ Hai hàng tuần."
+          },
+          {
+            "id": "C",
+            "content": "Vào lúc 1 giờ sáng ngày 2 hàng tháng."
+          },
+          {
+            "id": "D",
+            "content": "Cứ mỗi 2 tiếng vào ngày đầu tiên của tháng."
+          }
+        ],
+        "explanation": "Theo cú pháp crontab (phút, giờ, ngày, tháng, thứ), giá trị '0 2 * * 1' xác định thời điểm phút 0, giờ 2 và ngày thứ 1 trong tuần (thứ Hai). Kết luận Lý giải Vào lúc 2 giờ sáng thứ Hai hàng tuần."
+      },
+      {
+        "id": "q10",
+        "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa còn trống trên các hệ thống tệp đã được gắn (mounted) dưới dạng dễ đọc cho con người (GB, MB)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du -sh"
+          },
+          {
+            "id": "B",
+            "content": "df -h"
+          },
+          {
+            "id": "C",
+            "content": "fdisk -l"
+          },
+          {
+            "id": "D",
+            "content": "ls -lh"
+          }
+        ],
+        "explanation": "Lệnh 'df' (disk free) với tùy chọn '-h' (human-readable) hiển thị báo cáo về không gian đĩa của toàn bộ các hệ thống tệp đang hoạt động. Kết luận Lý giải df -h"
+      },
+      {
+        "id": "q11",
+        "text": "Trong tệp cấu hình '/etc/sudoers', ký hiệu nào cho phép một người dùng thực hiện tất cả các lệnh với quyền của bất kỳ người dùng nào trên bất kỳ máy chủ nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ALL=(ALL) ALL"
+          },
+          {
+            "id": "B",
+            "content": "root=(ALL) ALL"
+          },
+          {
+            "id": "C",
+            "content": "ALL=(root) /bin/bash"
+          },
+          {
+            "id": "D",
+            "content": "USER=(ALL) NOPASSWD"
+          }
+        ],
+        "explanation": "Cú pháp 'ALL=(ALL:ALL) ALL' trong sudoers là đặc quyền cao nhất, cho phép chạy mọi lệnh từ mọi nơi dưới danh nghĩa mọi người dùng/nhóm. Kết luận Lý giải ALL=(ALL) ALL"
+      },
+      {
+        "id": "q12",
+        "text": "Quyền đặc biệt 'Sticky Bit' khi được thiết lập trên một thư mục (ví dụ /tmp) có tác dụng gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Cho phép tất cả người dùng thực thi tệp tin trong đó."
+          },
+          {
+            "id": "B",
+            "content": "Chỉ chủ sở hữu của tệp tin hoặc root mới có quyền xóa tệp tin đó trong thư mục."
+          },
+          {
+            "id": "C",
+            "content": "Khiến tệp tin mới tạo trong thư mục thuộc về nhóm của thư mục đó."
+          },
+          {
+            "id": "D",
+            "content": "Ngăn chặn người dùng đọc nội dung các tệp tin của người khác."
+          }
+        ],
+        "explanation": "Sticky Bit (chmod +t) bảo vệ các tệp trong thư mục dùng chung bằng cách chỉ cho phép chủ sở hữu tệp hoặc root xóa hoặc đổi tên chúng. Kết luận Lý giải Chỉ chủ sở hữu của tệp tin hoặc root mới có quyền xóa tệp tin đó trong thư mục."
+      },
+      {
+        "id": "q13",
+        "text": "Ký hiệu nào được sử dụng trong dòng lệnh Linux để chuyển hướng đầu ra tiêu chuẩn (stdout) của lệnh này làm đầu vào tiêu chuẩn (stdin) cho lệnh kia?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Dấu lớn hơn ( > )"
+          },
+          {
+            "id": "B",
+            "content": "Dấu và ( & )"
+          },
+          {
+            "id": "C",
+            "content": "Dấu gạch đứng ( | )"
+          },
+          {
+            "id": "D",
+            "content": "Dấu phẩy ( , )"
+          }
+        ],
+        "explanation": "Cơ chế 'Pipe' (đường ống) sử dụng ký tự gạch đứng để kết nối các tiến trình bằng cách truyền luồng dữ liệu giữa chúng. Kết luận Lý giải Dấu gạch đứng ( | )"
+      },
+      {
+        "id": "q14",
+        "text": "Biến môi trường nào lưu trữ danh sách các đường dẫn thư mục mà Shell sẽ tìm kiếm các tệp thực thi khi người dùng nhập một lệnh?",
+        "options": [
+          {
+            "id": "A",
+            "content": "$HOME"
+          },
+          {
+            "id": "B",
+            "content": "$PWD"
+          },
+          {
+            "id": "C",
+            "content": "$USER"
+          },
+          {
+            "id": "D",
+            "content": "$PATH"
+          }
+        ],
+        "explanation": "Biến '$PATH' chứa các đường dẫn được phân tách bằng dấu hai chấm, nơi hệ thống quét tìm các chương trình tương ứng với lệnh được gõ. Kết luận Lý giải $PATH"
+      },
+      {
+        "id": "q15",
+        "text": "Trong hệ điều hành Linux, tài khoản người dùng siêu cấp (root) luôn có mã định danh người dùng (UID) là bao nhiêu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "1000"
+          },
+          {
+            "id": "B",
+            "content": "1"
+          },
+          {
+            "id": "C",
+            "content": "0"
+          },
+          {
+            "id": "D",
+            "content": "500"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn POSIX và thiết kế của Linux, người dùng root luôn được gán UID cố định là 0 để hệ thống nhận diện quyền quản trị cao nhất. Kết luận Lý giải 0"
+      },
+      {
+        "id": "q16",
+        "text": "Nếu giá trị 'umask' của hệ thống là 027, thì quyền mặc định của một tệp tin mới được tạo (không tính thư mục) sẽ là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "(rw-r-----)"
+          },
+          {
+            "id": "B",
+            "content": "(rwxr-x---)"
+          },
+          {
+            "id": "C",
+            "content": "(rw-r--r--)"
+          },
+          {
+            "id": "D",
+            "content": "(rwxrwxrwx)"
+          }
+        ],
+        "explanation": "Quyền tối đa cho tệp là 666, khi áp dụng umask 027 (666 - 027), kết quả nhận được là quyền 640. Kết luận Lý giải 640 (rw-r-----)"
+      },
+      {
+        "id": "q17",
+        "text": "Lệnh nào dùng để tìm kiếm các tệp tin có tên kết thúc bằng '.conf' trong thư mục '/etc' đã được sửa đổi trong vòng 7 ngày qua?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find /etc -name '*.conf' -mtime -7"
+          },
+          {
+            "id": "B",
+            "content": "find /etc -name '*.conf' -atime +7"
+          },
+          {
+            "id": "C",
+            "content": "ls /etc/*.conf -days 7"
+          },
+          {
+            "id": "D",
+            "content": "search /etc -name '*.conf' -mod 7"
+          }
+        ],
+        "explanation": "Lệnh 'find' sử dụng '-name' để khớp mẫu tên và '-mtime -7' để lọc các tệp được sửa đổi trong khoảng thời gian ít hơn 7 ngày. Kết luận Lý giải find /etc -name '*.conf' -mtime -7"
+      },
+      {
+        "id": "q18",
+        "text": "Trong kiến trúc Quản lý khối logic (LVM), thành phần nào đóng vai trò là các phân vùng đĩa vật lý hoặc toàn bộ đĩa cứng đã được khởi tạo để sử dụng bởi LVM?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Logical Volume (LV)"
+          },
+          {
+            "id": "B",
+            "content": "Volume Group (VG)"
+          },
+          {
+            "id": "C",
+            "content": "Physical Volume (PV)"
+          },
+          {
+            "id": "D",
+            "content": "Physical Extent (PE)"
+          }
+        ],
+        "explanation": "Physical Volume (PV) là lớp thấp nhất trong LVM, đại diện cho các thiết bị lưu trữ vật lý thực tế sau khi được lệnh 'pvcreate' chuẩn bị. Kết luận Lý giải Physical Volume (PV)"
+      },
+      {
+        "id": "q19",
+        "text": "Sự khác biệt cơ bản giữa lệnh 'apt update' và 'apt upgrade' trên các hệ thống dựa trên Debian là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "'update' cài đặt các bản vá bảo mật, 'upgrade' cài đặt các tính năng mới."
+          },
+          {
+            "id": "B",
+            "content": "'update' cập nhật danh sách gói từ kho lưu trữ, 'upgrade' cài đặt các phiên bản mới của các gói đã cài."
+          },
+          {
+            "id": "C",
+            "content": "'update' nâng cấp nhân hệ điều hành, 'upgrade' cập nhật các phần mềm ứng dụng."
+          },
+          {
+            "id": "D",
+            "content": "Hai lệnh này có chức năng hoàn toàn giống nhau."
+          }
+        ],
+        "explanation": "Theo quy trình quản lý gói, 'update' chỉ làm mới thông tin về các gói có sẵn, trong khi 'upgrade' mới thực hiện tải và cài đặt các phiên bản mới. Kết luận Lý giải 'update' cập nhật danh sách gói từ kho lưu trữ, 'upgrade' cài đặt các phiên bản mới của các gói đã cài."
+      },
+      {
+        "id": "q20",
+        "text": "Trong trình soạn thảo văn bản Vi/Vim, bạn đang ở 'Command mode', phím nào được nhấn để chuyển sang 'Insert mode' tại vị trí con trỏ hiện tại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Phím Esc"
+          },
+          {
+            "id": "B",
+            "content": "Phím :"
+          },
+          {
+            "id": "C",
+            "content": "Phím i"
+          },
+          {
+            "id": "D",
+            "content": "Phím x"
+          }
+        ],
+        "explanation": "Phím 'i' (insert) là phím chuẩn trong Vi/Vim để chuyển đổi từ chế độ lệnh sang chế độ nhập liệu văn bản. Kết luận Lý giải Phím i"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh nào được sử dụng để hiển thị các cổng mạng (ports) đang mở và các kết nối mạng đang hoạt động trên hệ thống Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ip link show"
+          },
+          {
+            "id": "B",
+            "content": "netstat -tuln"
+          },
+          {
+            "id": "C",
+            "content": "ping -c 4 localhost"
+          },
+          {
+            "id": "D",
+            "content": "ifconfig -a"
+          }
+        ],
+        "explanation": "Lệnh 'netstat' với các tùy chọn '-t' (TCP), '-u' (UDP), '-l' (listening) và '-n' (numeric) thường được dùng để kiểm tra trạng thái các cổng dịch vụ. Kết luận Lý giải netstat -tuln"
+      },
+      {
+        "id": "q22",
+        "text": "Tệp tin nào chứa tên của máy tính (hostname) trên các hệ thống Linux hiện đại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/hosts"
+          },
+          {
+            "id": "B",
+            "content": "/etc/hostname"
+          },
+          {
+            "id": "C",
+            "content": "/etc/resolv.conf"
+          },
+          {
+            "id": "D",
+            "content": "/etc/networks"
+          }
+        ],
+        "explanation": "Trong cấu trúc phân cấp tệp tin, '/etc/hostname' là tệp văn bản đơn giản chỉ chứa tên định danh duy nhất của máy tính trong mạng. Kết luận Lý giải /etc/hostname"
+      },
+      {
+        "id": "q23",
+        "text": "Chế độ chạy (Runlevel) nào trong hệ thống Linux truyền thống được sử dụng để khởi động lại máy tính?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Runlevel 0"
+          },
+          {
+            "id": "B",
+            "content": "Runlevel 1"
+          },
+          {
+            "id": "C",
+            "content": "Runlevel 5"
+          },
+          {
+            "id": "D",
+            "content": "Runlevel 6"
+          }
+        ],
+        "explanation": "Theo quy ước SysVinit truyền thống, Runlevel 6 được định nghĩa là trạng thái dẫn đến việc khởi động lại hệ thống (reboot). Kết luận Lý giải Runlevel 6"
+      },
+      {
+        "id": "q24",
+        "text": "Khái niệm 'Inode' trong hệ thống tệp tin Linux lưu trữ thông tin gì về một tệp tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tên tệp tin và dữ liệu thực tế của tệp tin đó."
+          },
+          {
+            "id": "B",
+            "content": "Siêu dữ liệu (metadata) như quyền hạn, chủ sở hữu, kích thước và vị trí dữ liệu trên đĩa."
+          },
+          {
+            "id": "C",
+            "content": "Lịch sử tất cả các lần thay đổi nội dung của tệp tin."
+          },
+          {
+            "id": "D",
+            "content": "Địa chỉ IP của máy chủ lưu trữ tệp tin đó."
+          }
+        ],
+        "explanation": "Inode là một cấu trúc dữ liệu lưu trữ mọi thuộc tính của tệp trừ tên tệp và dữ liệu nội dung thực tế. Kết luận Lý giải Siêu dữ liệu (metadata) như quyền hạn, chủ sở hữu, kích thước và vị trí dữ liệu trên đĩa."
+      },
+      {
+        "id": "q25",
+        "text": "Lệnh 'sed' nào sau đây sẽ thay thế TẤT CẢ các lần xuất hiện của từ 'apple' thành 'orange' trong mỗi dòng của tệp tin 'fruit.txt'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "sed 's/apple/orange/' fruit.txt"
+          },
+          {
+            "id": "B",
+            "content": "sed 'r/apple/orange/g' fruit.txt"
+          },
+          {
+            "id": "C",
+            "content": "sed 's/apple/orange/g' fruit.txt"
+          },
+          {
+            "id": "D",
+            "content": "sed 'change apple to orange' fruit.txt"
+          }
+        ],
+        "explanation": "Trong lệnh 'sed', cờ 'g' (global) đặt sau lệnh thay thế 's' đảm bảo mọi khớp nối trong một dòng đều bị tác động thay vì chỉ cái đầu tiên. Kết luận Lý giải sed 's/apple/orange/g' fruit.txt"
+      }
+    ],
+    "logic_map": {
+      "q1": "B",
+      "q2": "A",
+      "q3": "B",
+      "q4": "C",
+      "q5": "B",
+      "q6": "B",
+      "q7": "D",
+      "q8": "B",
+      "q9": "B",
+      "q10": "B",
+      "q11": "A",
+      "q12": "B",
+      "q13": "C",
+      "q14": "D",
+      "q15": "C",
+      "q16": "A",
+      "q17": "A",
+      "q18": "C",
+      "q19": "B",
+      "q20": "C",
+      "q21": "B",
+      "q22": "B",
+      "q23": "D",
+      "q24": "B",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

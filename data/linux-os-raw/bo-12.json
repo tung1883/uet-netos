@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 12 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong hệ điều hành Linux, thành phần nào đóng vai trò là cầu nối trực tiếp giữa phần cứng máy tính và các ứng dụng người dùng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Kernel (Nhân)"
+          },
+          {
+            "id": "B",
+            "content": "Shell (Vỏ)"
+          },
+          {
+            "id": "C",
+            "content": "Compiler (Trình biên dịch)"
+          },
+          {
+            "id": "D",
+            "content": "Desktop Environment (Môi trường máy tính để bàn)"
+          }
+        ],
+        "explanation": "Theo kiến trúc hệ điều hành, Kernel là thành phần cốt lõi quản lý tài nguyên hệ thống và điều phối giao tiếp giữa phần cứng và phần mềm. Kết luận Lý giải: Kernel (Nhân)"
+      },
+      {
+        "id": "q2",
+        "text": "Lệnh nào sau đây được sử dụng để thay đổi quyền truy cập của một tệp tin trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chown"
+          },
+          {
+            "id": "B",
+            "content": "chmod"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Lệnh 'chmod' (change mode) được sử dụng rộng rãi để thiết lập hoặc thay đổi các quyền đọc, ghi và thực thi cho chủ sở hữu, nhóm và người dùng khác. Kết luận Lý giải: chmod"
+      },
+      {
+        "id": "q3",
+        "text": "Thư mục nào trong hệ thống tệp Linux thường chứa các tệp cấu hình của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/home"
+          },
+          {
+            "id": "C",
+            "content": "/etc"
+          },
+          {
+            "id": "D",
+            "content": "/var"
+          }
+        ],
+        "explanation": "Theo Tiêu chuẩn phân cấp hệ thống tệp (FHS), thư mục '/etc' là nơi lưu trữ tập trung các tệp cấu hình dành cho hệ điều hành và các ứng dụng cài đặt. Kết luận Lý giải: /etc"
+      },
+      {
+        "id": "q4",
+        "text": "Để tìm kiếm một chuỗi ký tự cụ thể bên trong một tệp văn bản, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find"
+          },
+          {
+            "id": "B",
+            "content": "locate"
+          },
+          {
+            "id": "C",
+            "content": "grep"
+          },
+          {
+            "id": "D",
+            "content": "cat"
+          }
+        ],
+        "explanation": "Lệnh 'grep' (Global Regular Expression Print) là công cụ mạnh mẽ dùng để tìm kiếm các dòng chứa một mẫu văn bản xác định trong tệp. Kết luận Lý giải: grep"
+      },
+      {
+        "id": "q5",
+        "text": "Trong Linux, ký hiệu nào đại diện cho thư mục hiện tại của người dùng đang đăng nhập?",
+        "options": [
+          {
+            "id": "A",
+            "content": ".."
+          },
+          {
+            "id": "B",
+            "content": "~"
+          },
+          {
+            "id": "C",
+            "content": "/"
+          },
+          {
+            "id": "D",
+            "content": "."
+          }
+        ],
+        "explanation": "Trong quy ước đường dẫn của Linux, một dấu chấm đơn đại diện cho thư mục hiện tại, trong khi hai dấu chấm đại diện cho thư mục cha. Kết luận Lý giải: ."
+      },
+      {
+        "id": "q6",
+        "text": "Lệnh 'tar -czvf backup.tar.gz /home/user' thực hiện hành động gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Giải nén tệp tin backup.tar.gz vào thư mục /home/user"
+          },
+          {
+            "id": "B",
+            "content": "Xóa thư mục /home/user sau khi nén thành tệp backup.tar.gz"
+          },
+          {
+            "id": "C",
+            "content": "Nén thư mục /home/user thành tệp lưu trữ tar và nén bằng gzip"
+          },
+          {
+            "id": "D",
+            "content": "Chỉ liệt kê nội dung của thư mục /home/user mà không nén"
+          }
+        ],
+        "explanation": "Tùy chọn '-c' dùng để tạo mới, '-z' dùng để nén bằng gzip, '-v' hiển thị quá trình và '-f' xác định tên tệp lưu trữ. Kết luận Lý giải: Nén thư mục /home/user thành tệp lưu trữ tar và nén bằng gzip"
+      },
+      {
+        "id": "q7",
+        "text": "Để xem các tiến trình đang chạy và mức tiêu thụ tài nguyên hệ thống theo thời gian thực, lệnh nào là phù hợp nhất?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -ef"
+          },
+          {
+            "id": "B",
+            "content": "free -m"
+          },
+          {
+            "id": "C",
+            "content": "top"
+          },
+          {
+            "id": "D",
+            "content": "df -h"
+          }
+        ],
+        "explanation": "Lệnh 'top' cung cấp một cái nhìn động và cập nhật liên tục về hoạt động của CPU, bộ nhớ và các tiến trình đang thực thi. Kết luận Lý giải: top"
+      },
+      {
+        "id": "q8",
+        "text": "Tệp tin '/etc/shadow' trong Linux được sử dụng để lưu trữ thông tin gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Danh sách tất cả các nhóm người dùng"
+          },
+          {
+            "id": "B",
+            "content": "Mật khẩu đã được mã hóa của người dùng"
+          },
+          {
+            "id": "C",
+            "content": "Lịch sử đăng nhập của người dùng"
+          },
+          {
+            "id": "D",
+            "content": "Các biến môi trường toàn cục"
+          }
+        ],
+        "explanation": "Vì lý do bảo mật, tệp '/etc/shadow' chỉ cho phép người dùng root truy cập để lưu giữ thông tin mật khẩu đã băm (hashed). Kết luận Lý giải: Mật khẩu đã được mã hóa của người dùng"
+      },
+      {
+        "id": "q9",
+        "text": "Lệnh nào được sử dụng để hiển thị dung lượng đĩa còn trống trên các phân vùng hệ thống tệp đã gắn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du"
+          },
+          {
+            "id": "B",
+            "content": "df"
+          },
+          {
+            "id": "C",
+            "content": "lsblk"
+          },
+          {
+            "id": "D",
+            "content": "fdisk"
+          }
+        ],
+        "explanation": "Lệnh 'df' (disk free) báo cáo lượng không gian đĩa đã sử dụng và còn trống trên các hệ thống tệp được gắn vào máy máy. Kết luận Lý giải: df"
+      },
+      {
+        "id": "q10",
+        "text": "Khi sử dụng lệnh 'chmod 755 file.sh', quyền hạn của 'nhóm' (group) đối với tệp tin này là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chỉ có quyền đọc"
+          },
+          {
+            "id": "B",
+            "content": "Quyền đọc và thực thi"
+          },
+          {
+            "id": "C",
+            "content": "Quyền đọc và ghi"
+          },
+          {
+            "id": "D",
+            "content": "Toàn quyền đọc, ghi và thực thi"
+          }
+        ],
+        "explanation": "Số 5 trong mã octal (nhị phân 101) tương ứng với quyền đọc (4) và quyền thực thi (1), không có quyền ghi (2). Kết luận Lý giải: Quyền đọc và thực thi"
+      },
+      {
+        "id": "q11",
+        "text": "Lệnh nào cho phép người dùng thực thi một lệnh với đặc quyền của người dùng siêu cấp (root)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "su"
+          },
+          {
+            "id": "B",
+            "content": "runas"
+          },
+          {
+            "id": "C",
+            "content": "sudo"
+          },
+          {
+            "id": "D",
+            "content": "admin"
+          }
+        ],
+        "explanation": "Lệnh 'sudo' (superuser do) cho phép người dùng chạy các chương trình với các quyền bảo mật của một người dùng khác, thông thường là root. Kết luận Lý giải: sudo"
+      },
+      {
+        "id": "q12",
+        "text": "Tín hiệu mặc định được gửi khi sử dụng lệnh 'kill [PID]' mà không có tham số đi kèm là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGKILL (9)"
+          },
+          {
+            "id": "B",
+            "content": "SIGTERM (15)"
+          },
+          {
+            "id": "C",
+            "content": "SIGSTOP (19)"
+          },
+          {
+            "id": "D",
+            "content": "SIGHUP (1)"
+          }
+        ],
+        "explanation": "Lệnh 'kill' mặc định gửi tín hiệu SIGTERM (số 15), yêu cầu tiến trình kết thúc một cách an toàn và dọn dẹp tài nguyên. Kết luận Lý giải: SIGTERM (15)"
+      },
+      {
+        "id": "q13",
+        "text": "Trong Shell Scripting, biến đặc biệt '$1' đại diện cho điều gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tên của tập lệnh đang thực thi"
+          },
+          {
+            "id": "B",
+            "content": "Tổng số lượng đối số được truyền vào"
+          },
+          {
+            "id": "C",
+            "content": "Đối số đầu tiên được truyền vào tập lệnh"
+          },
+          {
+            "id": "D",
+            "content": "Mã thoát của lệnh thực thi gần nhất"
+          }
+        ],
+        "explanation": "Trong Bash, các biến từ $1 đến $n được sử dụng để truy cập các tham số dòng lệnh tương ứng được truyền vào script. Kết luận Lý giải: Đối số đầu tiên được truyền vào tập lệnh"
+      },
+      {
+        "id": "q14",
+        "text": "Lệnh nào dùng để thay đổi chủ sở hữu của một tệp tin hoặc thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chown"
+          },
+          {
+            "id": "C",
+            "content": "passwd"
+          },
+          {
+            "id": "D",
+            "content": "usermod"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) được sử dụng để thay đổi người dùng sở hữu và/hoặc nhóm sở hữu của tệp hoặc thư mục. Kết luận Lý giải: chown"
+      },
+      {
+        "id": "q15",
+        "text": "Ký hiệu '>>' trong dòng lệnh Linux có ý nghĩa gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Ghi đè nội dung đầu ra vào một tệp tin"
+          },
+          {
+            "id": "B",
+            "content": "Lấy nội dung của tệp tin làm đầu vào cho lệnh"
+          },
+          {
+            "id": "C",
+            "content": "Nối thêm nội dung đầu ra vào cuối một tệp tin"
+          },
+          {
+            "id": "D",
+            "content": "Chuyển hướng lỗi tiêu chuẩn sang một tệp tin"
+          }
+        ],
+        "explanation": "Toán tử '>>' thực hiện chuyển hướng đầu ra tiêu chuẩn bằng cách thêm dữ liệu mới vào cuối tệp hiện có mà không làm mất dữ liệu cũ. Kết luận Lý giải: Nối thêm nội dung đầu ra vào cuối một tệp tin"
+      },
+      {
+        "id": "q16",
+        "text": "Thư mục nào chứa các tệp thiết bị đặc biệt đại diện cho phần cứng trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/sys"
+          },
+          {
+            "id": "B",
+            "content": "/proc"
+          },
+          {
+            "id": "C",
+            "content": "/dev"
+          },
+          {
+            "id": "D",
+            "content": "/mnt"
+          }
+        ],
+        "explanation": "Thư mục '/dev' chứa các tệp thiết bị (device files) cho phép người dùng và ứng dụng tương tác với trình điều khiển phần cứng. Kết luận Lý giải: /dev"
+      },
+      {
+        "id": "q17",
+        "text": "Lệnh 'mkdir -p project/src/main' thực hiện việc gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chỉ tạo thư mục main nếu project/src đã tồn tại"
+          },
+          {
+            "id": "B",
+            "content": "Tạo cấu trúc thư mục phân cấp, bao gồm cả các thư mục cha nếu chúng chưa tồn tại"
+          },
+          {
+            "id": "C",
+            "content": "Tạo một thư mục có tên là 'project/src/main' (bao gồm cả dấu gạch chéo)"
+          },
+          {
+            "id": "D",
+            "content": "Tạo thư mục project và src, sau đó báo lỗi nếu main đã tồn tại"
+          }
+        ],
+        "explanation": "Tùy chọn '-p' (parents) trong lệnh mkdir cho phép tạo toàn bộ đường dẫn thư mục cần thiết mà không báo lỗi nếu thư mục đã hiện hữu. Kết luận Lý giải: Tạo cấu trúc thư mục phân cấp, bao gồm cả các thư mục cha nếu chúng chưa tồn tại"
+      },
+      {
+        "id": "q18",
+        "text": "Trong trình soạn thảo 'vi' hoặc 'vim', lệnh nào được dùng để lưu tệp và thoát?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":q!"
+          },
+          {
+            "id": "B",
+            "content": ":w"
+          },
+          {
+            "id": "C",
+            "content": ":wq"
+          },
+          {
+            "id": "D",
+            "content": ":exit"
+          }
+        ],
+        "explanation": "Trong chế độ dòng lệnh của vim, lệnh ':wq' kết hợp ghi dữ liệu vào đĩa (write) và thoát khỏi chương trình (quit). Kết luận Lý giải: :wq"
+      },
+      {
+        "id": "q19",
+        "text": "Lệnh nào được sử dụng để kiểm tra địa chỉ IP của các giao diện mạng trên hệ thống Linux hiện đại (thay thế cho ifconfig)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "netstat"
+          },
+          {
+            "id": "B",
+            "content": "ip addr"
+          },
+          {
+            "id": "C",
+            "content": "networkctl"
+          },
+          {
+            "id": "D",
+            "content": "route -n"
+          }
+        ],
+        "explanation": "Công cụ 'ip' từ gói iproute2 là giải pháp hiện đại được khuyến khích sử dụng thay thế cho các lệnh mạng cũ như ifconfig. Kết luận Lý giải: ip addr"
+      },
+      {
+        "id": "q20",
+        "text": "Hệ thống quản lý dịch vụ và khởi tạo (init system) phổ biến nhất trên các bản phân phối Linux hiện nay là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SysVinit"
+          },
+          {
+            "id": "B",
+            "content": "Upstart"
+          },
+          {
+            "id": "C",
+            "content": "systemd"
+          },
+          {
+            "id": "D",
+            "content": "OpenRC"
+          }
+        ],
+        "explanation": "Hầu hết các bản phân phối chính như Ubuntu, Fedora, và Debian đã chuyển sang sử dụng 'systemd' làm hệ thống khởi tạo mặc định. Kết luận Lý giải: systemd"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh 'tail -f /var/log/syslog' có tác dụng gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hiển thị 10 dòng đầu tiên của tệp syslog"
+          },
+          {
+            "id": "B",
+            "content": "Hiển thị nội dung tệp syslog và cập nhật liên tục khi có dữ liệu mới"
+          },
+          {
+            "id": "C",
+            "content": "Tìm kiếm các lỗi trong tệp syslog"
+          },
+          {
+            "id": "D",
+            "content": "Xóa toàn bộ nội dung của tệp syslog"
+          }
+        ],
+        "explanation": "Tùy chọn '-f' (follow) cho phép lệnh tail giữ tệp mở và in ra các dòng mới ngay khi chúng được thêm vào cuối tệp. Kết luận Lý giải: Hiển thị nội dung tệp syslog và cập nhật liên tục khi có dữ liệu mới"
+      },
+      {
+        "id": "q22",
+        "text": "Để thay đổi giá trị ưu tiên (priority) của một tiến trình đang chạy, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "nice"
+          },
+          {
+            "id": "B",
+            "content": "renice"
+          },
+          {
+            "id": "C",
+            "content": "priority"
+          },
+          {
+            "id": "D",
+            "content": "setpriority"
+          }
+        ],
+        "explanation": "Trong khi 'nice' dùng để đặt độ ưu tiên khi bắt đầu tiến trình, 'renice' được dùng để thay đổi độ ưu tiên của một tiến trình đã tồn tại. Kết luận Lý giải: renice"
+      },
+      {
+        "id": "q23",
+        "text": "Liên kết cứng (Hard Link) trong Linux có đặc điểm nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Có thể trỏ đến một thư mục"
+          },
+          {
+            "id": "B",
+            "content": "Có cùng chỉ số inode với tệp gốc"
+          },
+          {
+            "id": "C",
+            "content": "Sẽ bị hỏng nếu tệp gốc bị xóa"
+          },
+          {
+            "id": "D",
+            "content": "Có thể liên kết giữa các hệ thống tệp khác nhau"
+          }
+        ],
+        "explanation": "Liên kết cứng là một mục nhập thư mục trỏ trực tiếp đến cùng một inode (cấu trúc dữ liệu tệp) trên đĩa như tệp gốc. Kết luận Lý giải: Có cùng chỉ số inode với tệp gốc"
+      },
+      {
+        "id": "q24",
+        "text": "Lệnh nào dùng để liệt kê danh sách các tệp đang được mở bởi các tiến trình trong hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls"
+          },
+          {
+            "id": "B",
+            "content": "lsof"
+          },
+          {
+            "id": "C",
+            "content": "ps"
+          },
+          {
+            "id": "D",
+            "content": "netstat"
+          }
+        ],
+        "explanation": "Lệnh 'lsof' (list open files) cung cấp thông tin chi tiết về mọi tệp tin đang được sử dụng bởi bất kỳ tiến trình nào trên hệ thống. Kết luận Lý giải: lsof"
+      },
+      {
+        "id": "q25",
+        "text": "Trong biểu thức quyền hạn 'drwxr-xr--', ký tự đầu tiên 'd' có ý nghĩa gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Đây là một tệp dữ liệu (data)"
+          },
+          {
+            "id": "B",
+            "content": "Đây là một thiết bị (device)"
+          },
+          {
+            "id": "C",
+            "content": "Đây là một thư mục (directory)"
+          },
+          {
+            "id": "D",
+            "content": "Quyền thực thi cho chủ sở hữu"
+          }
+        ],
+        "explanation": "Trong đầu ra của lệnh 'ls -l', ký tự đầu tiên chỉ định loại tệp, trong đó 'd' đại diện cho thư mục và '-' đại diện cho tệp thông thường. Kết luận Lý giải: Đây là một thư mục (directory)"
+      }
+    ],
+    "logic_map": {
+      "q1": "A",
+      "q2": "B",
+      "q3": "C",
+      "q4": "C",
+      "q5": "D",
+      "q6": "C",
+      "q7": "C",
+      "q8": "B",
+      "q9": "B",
+      "q10": "B",
+      "q11": "C",
+      "q12": "B",
+      "q13": "C",
+      "q14": "B",
+      "q15": "C",
+      "q16": "C",
+      "q17": "B",
+      "q18": "C",
+      "q19": "B",
+      "q20": "C",
+      "q21": "B",
+      "q22": "B",
+      "q23": "B",
+      "q24": "B",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

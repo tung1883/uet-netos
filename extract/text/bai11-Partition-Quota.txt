@@ -1,0 +1,540 @@
+thanh 
+ Normal 
+ thanh 
+ 2 
+ 4 
+ 2017-02-16T04:48:00Z 
+ 2017-02-16T04:48:00Z 
+ 10 
+ 1723 
+ 9826 
+ Hudevelop 
+ 81 
+ 23 
+ 11526 
+ 12.00 
+
+ false 
+
+ Normal 
+ 0 pt 
+ 0 pt 
+ 0 
+ 0 
+
+ false 
+ false 
+ false 
+ 
+ EN-US 
+ X-NONE 
+ X-NONE 
+ 0 pt 
+ 0 pt 
+
+ MicrosoftInternetExplorer4 
+
+ Bài 11. Phân cùng và hạn ngạch 
+
+ I. Phân vùng 
+
+ 1. Kiến trúc Ổ đĩa (MBR, Primary,
+Extended, Logic) 
+
+ Mỗi
+ổ IDE chỉ cho phép có 4 phân vùng chính và một trong số chúng có thể được đánh
+dấu là phân vùng mở rộng. Phân vùng này có thể được đánh chia thành nhiều phân
+vùng con bên trong. Linux hỗ trợ tối đa 64 phân vùng trên ổ IDE và 16 phân vùng
+trên ổ SCSI. 
+
+ Trong ví dụ
+trên (dùng fdisk -l ), hệ thống có ba
+phân vùng chính được định danh từ hda1 đến hda3. Phân vùng thứ 3 được đánh dấu
+là mở rộng và chứa trong nó 7 phân vùng con. Do đó hda3 không được dùng. Các
+phân vùng con được định danh từ hda5 trở đi. 
+
+ 2. Định danh ổ (/dev/sd…) fdisk –l
+| grep ‘/dev/sd’ 
+
+ Để
+nhận dạng các ổ cứng trong /dev, Linux dùng hai ký tự bắt đầu là hd cho các thiết
+bị IDE, sd cho các thiết bị SCSI hoặc ổ đĩa USB (nhưng lại dùng st cho ổ băng
+SCSI). Sau đó là các ký tự thêm vào để định danh các thiết bị cùng họ: 
+
+ hda 
+
+ Primary Master 
+
+ hdb 
+
+ Primary Slave 
+
+ hdc 
+
+ Secondary Master 
+
+ hdd 
+
+ Secondary Slave 
+
+ sda 
+
+ First SCSI/USB disk 
+
+ sdb 
+
+ Second SCSI/USB disk 
+
+ 3. Sai số về dung lượng giữa Gi,
+Mi, Ki và G, M, K 
+
+ http://en.wikipedia.org/wiki/Wikipedia:GIBIBYTE#Quantities_of_bytes_and_bits 
+
+ http://en.wikipedia.org/wiki/Binary_prefix 
+
+ Kilobytes:        Ki = 2 10 bytes K = 10 2 bytes 
+
+ Gigabytes:       Gi = 2 20 bytes G = 10 4 bytes 
+
+ … 
+
+ Ki for size of
+RAM 
+
+ K for size of
+hard disk 
+
+ 4. Phân vùng 
+
+ Để
+có thể sử dụng được, các đĩa cứng cần phải được phân vùng. Linux thêm vào đằng
+sau định danh đĩa cứng số hiệu của các phân vùng để quản lý. 
+
+ hda1 
+
+ Partition đầu tiên trên ổ IDE đầu
+ tiên 
+
+ hda2 
+
+ Partition thứ hai trên ổ IDE đầu
+ tiên 
+
+ sdc3 
+
+ Partition thứ ba trên ổ SCSI thứ
+ ba 
+
+ fdisk <tên ổ> 
+
+ fdisk luôn là
+công cụ được lựa chọn để phân vùng các đĩa cứng. Tập lệnh của fdisk tương đối
+đơn giản, chỉ gần gõ lệnh m để xem đầy đủ các lệnh của nó. 
+
+ Sau khi fdisk,
+nếu có thông báo “Device or Resource are busy” thì cần reboot lại. Để sử dụng
+được các phân vùng này, phải định dạng chúng với các định dạng hệ thống file mà
+Linux hiểu được thông qua các lệnh: mkfs 
+hoặc mke2fs . 
+
+ 5. Định dạng 
+
+ mkfs [-t kiểu]
+<tên ph.vùng> 
+
+ 6. Ánh xạ 
+
+ Mount 
+
+ mount <tên
+ph.vùng> <thư mục> [-t kiểu] [-o t.chọn kiểu] 
+
+ Thiết bị phải
+được gắn vào 1 thư mục trống bất kỳ có sẵn trên cây thư mục trước khi bạn có thể
+truy cập tới nó. Thư mục trống mà gắn với thiết bị kể trên được gọi là mount
+point. 
+
+ Sau khi mount
+thiết bị, bạn có thể truy cập tới dữ liệu trong thiết bị bằng cách truy cập vào
+mount point. Bạn cần thực hiện thao thác unmount để hủy gắn kết thiết bị với hệ
+thống khi không còn cần truy cập tới thiết bị nữa. 
+
+ Tùy chọn kiểu
+của lệnh mount giống hệt tùy chọn kiểu được sử dụng trong file /etc/fstab. 
+
+ Ánh xạ tự động qua
+/etc/fstab (mount –a) 
+
+ File cấu hình
+/etc/fstab chứa thông tin về các thiết bị (phân vùng ổ cứng, CD/DVD, USB, ISO
+image…) trên máy tính bao gồm: 
+
+ + Đường dẫn tới
+file đại diện cho thiết bị. 
+
+ + Mount point:
+cho biết thiết bị được mount vào thư mục nào. 
+
+ + Các tùy chọn
+(option): chỉ ra thiết bị được mount như thế nào? 
+
+ v.v.. 
+
+ fstab 
+là file dạng văn bản (plain text), vì thế bạn có thể mở và chỉnh sửa nó sử dụng
+bất kỳ công cụ Text Editor nào với điều kiện bạn phải có đặc quyền root để lưu
+lại những thay đổi. Nếu bạn đang đăng nhập với tài khoản người dùng thông thường
+thì có thể sử dụng 2 lệnh su hoặc sudo để tạm thời chuyển sang đặc quyền root. 
+
+ Xem chi tiết về
+/etc/fstab bằng man 5 fstab 
+
+ Mỗi dòng trong
+file fstab chứa thông tin về một thiết
+bị. Các cột ở mỗi hàng được phân cách bởi khoảng trắng. Thứ tự các dòng là
+không quan trọng. Sau đây phần giải thích kỹ hơn ý nghĩa của từng cột: 
+
+ + Cột 1: cho
+biết loại thiết bị (phân vùng, CD/DVD, USB, ISO image…). Đồng thời cũng cho biết
+đường dẫn tới file đại diện cho thiết bị (device file) . Trong Linux, mọi tài
+nguyên phần cứng lẫn phần mềm đều được xem là file, các device file thường nằm ở
+thư mục /dev 
+
+ + Cột 2: đường
+dẫn của mount point, là một thư mục trống được tạo sẵn trong cây thư mục. Khi
+gõ lệnh mount, nếu bạn không chỉ định rõ mount point thì đây là mount point mặc
+định cho thiết bị ở cột 1. Thư mục chứa mount point thường là /mnt hay /media ,
+mặc dù bạn có thể mount thiết bị vào bất cứ thư mục trống nào. 
+
+ + Cột 3: là kiểu
+filesystem của thiết bị. Linux hỗ trợ nhiều kiểu filesystem, dưới đây là 1 số
+filesystem phổ biến: 
+
+ ·         
+ Ext2, Ext3 và Ext4: điểm khác biệt lớn
+nhất giữa Ext2 và Ext3 (Ext4) là Ext3(4) hỗ trợ tính năng journaling, tức là
+khi bạn tắt máy không đúng cách (do cúp điện đột ngột, hệ thống bị treo nên phải
+nhấn nút khởi động lại…) thì khả năng mất mát dữ liệu ở mức thấp, đồng thời hệ
+điều hành sẽ không phải tốn thời gian để kiểm tra, tìm lỗi trên filesystem
+trong lần khởi động kế tiếp. 
+
+ Xem thêm tại http://en.wikipedia.org/wiki/Ext4 
+
+ ·         
+ swap: phân vùng làm không gian bộ nhớ ảo,
+dùng để bổ sung thêm bộ nhớ cho hệ thống khi hệ điều hành phát hiện việc thiếu
+hụt bộ nhớ RAM. 
+
+ ·         
+ Vfat (FAT16, FAT32) và NTFS: đây là
+các filesystem được Windows hỗ trợ. 
+
+ ·         
+ nfs: dành cho các tài nguyên ở xa, được
+chia sẻ qua mạng sử dụng NFS 
+
+ ·         
+ auto: đây không phải là 1 filesytem.
+Nó có nghĩa là hệ thống sẽ tự động nhận diện loại filesystem của thiết bị khi
+thiết bị đó được mount. 
+
+ + Cột 4: là
+các tùy chọn khi mount. 
+
+ Nếu có nhiều
+tùy chọn thì chúng được phân cách bởi dấu phẩy. Dưới đây là 1 số tùy chọn đáng
+chú ý: 
+
+ ·         
+ auto: tự động mount thiết bị khi máy
+tính khởi động. 
+
+ ·         
+ noauto: không tự động mount, nếu muốn
+sử dụng thiết bị thì sau khi khởi động vào hệ thống bạn cần chạy lệnh mount. 
+
+ ·         
+ user: cho phép người dùng thông thường
+được quyền mount. 
+
+ ·         
+ nouser: chỉ có người dùng root mới có
+quyền mount. 
+
+ ·         
+ exec: cho phép chạy các file nhị phân
+(binary) trên thiết bị. 
+
+ ·         
+ noexec: không cho phép chạy các file
+binary trên thiết bị. 
+
+ ·         
+ ro (read-only): chỉ cho phép quyền đọc
+trên thiết bị. 
+
+ ·         
+ rw (read-write): cho phép quyền đọc/ghi
+trên thiết bị. 
+
+ ·         
+ sync: thao tác nhập xuất (I/O) trên
+filesystem được đồng bộ hóa. 
+
+ ·         
+ async: thao tác nhập xuất (I/O) trên
+filesystem diễn ra không đồng bộ. 
+
+ ·         
+ defaults: tương đương với tập các tùy
+chọn rw, suid, dev, exec, auto, nouser, async 
+
+ + Cột 5 là tùy
+chọn cho chương trình dump, công cụ sao lưu filesystem. Điền 0: bỏ qua việc sao
+lưu, 1: thực hiện sao lưu. 
+
+ + Cột 6 là tùy
+chọn cho chương trình fsck, công cụ dò lỗi trên filesystem. Điền 0: bỏ qua việc
+kiểm tra, 1: thực hiện kiểm tra cho root, 2: thực hiện kiểm tra cho các
+filesystem khác. 
+
+ File
+/etc/fstab cung cấp các chỉ dẫn cho hệ điều hành trong việc nhận diện, quản lý
+việc mount các thiết bị. Đồng thời việc cấu hình lại file fstab cũng giúp ích cho bạn trong việc giảm bớt thời gian mount thiết
+bị bằng lệnh cũng như là kiểm soát việc truy cập tới thiết bị của người dùng. 
+
+ Một
+số chú ý với mount và /etc/fstab 
+
+ Chương trình mount sẽ đọc /etc/fstab và quyết định
+tài nguyên (hoặc điểm kết nối) nào sẽ được sử dụng và các tham số của việc kết
+nối cũng có thể được xác định tại bước này. Các tham số của mount và trong file
+fstab là giống nhau. 
+
+ Nếu sử dụng với
+tham số -a , mount sẽ tự động ánh xạ
+tất cả các khai báo trong /etc/fstab mà chưa được mount và không có tùy chọn noauto . 
+
+ LABEL and UUID 
+
+ Một số thiết bị
+được truy cập thông qua các nhãn hoặc UUID (Universally Unique Identifier). 
+
+ Nhãn được gán
+cho thiết bị bởi lệnh tune2fs : 
+
+              tune2fs –L /usr/local /dev/hdb12 
+
+ Nhãn được gán
+cho thiết bị bởi lệnh e2label : 
+
+              e2label device [new-label] 
+
+ UUID được gán
+cho thiết bị bởi lệnh tune2fs : 
+
+ tune2fs –U random <tên ph.vùng> 
+
+ Xem UUID của
+phân vùng 
+
+ tune2fs –l <tên ph.vùng> | grep UUID 
+
+ Remount 
+
+ Khi muốn thay
+đổi các option của một filesystem đã được mount, chúng ta không cần thiết phải
+unmount rồi mount lại với các option mới mà có thể dùng lệnh mount với tham số
+remount mà không cần phải thay đổi tên phân vùng hay mount point. 
+
+ Thường thì
+chúng ta remount để chuyển một filesystem từ chế độ chỉ đọc sang đọc và ghi như
+sau: 
+
+ mount -o remount,rw /dev/sdb2 
+
+ Default mount
+option 
+
+              tune2fs –l <tên ph.vùng> |
+grep option 
+
+              tune2fs –o <d.sách tùy chọn>
+<tên ph.vùng> 
+
+ II. Quota 
+
+ 1. Khái niệm Hạn ngạch 
+
+ Quota
+là công cụ cho phép quản trị hệ thống thiết lập hạn ngạch lưu trữ trên đĩa.
+Công cụ này không yêu cầu khởi động lại hệ thống. 
+
+ Có hai loại quản
+lý hạn ngạch cơ bản: theo dung lượng đĩa cứng sử dụng (block quota) và theo số
+file và thư mục được tạo ra (inode quota). 
+
+ -          
+ Block quota sẽ tính tổng dung lượng của
+tất cả các file và thư mục của người dùng tạo ra trong filesystem theo số các
+block. Kích thước mặc định của các block khác nhau trong từng hệ thống file.. 
+
+ -          
+ Inode quota sẽ tính tổng số lượng file
+và thư mục của người dùng được tạo ra trong hệ thống file (mỗi file và thư mục
+thường chiếm 1 inode). 
+
+ Hạn ngạch đĩa
+thường được áp dụng cho người dùng hoặc nhóm người dùng. Việc đặt ra hạn ngạch
+sẽ do người quản trị hệ thống thực hiện cho từng người dùng hoặc nhóm người
+dùng. 
+
+ Có hai loại mức
+hạn ngạch (cho cả block và inode): mềm (soft) và cứng (hard). Thông thường thì
+soft quota < hard quota. Khi soft quota bị vi phạm, hệ thống sẽ gửi một cảnh
+báo đến người dùng. Khi hard quota bị vi phạm, hệ thống sẽ ngăn chặn hành động
+ghi dữ liệu của người dùng vào hệ thống file và nhận một thông báo về việc ghi
+không thành công. 
+
+ 2. Các bước cài đặt quota cho
+người dùng 
+
+ Để có thể áp dụng
+tính năng hạn ngạch trên hệ thống file, cần phải làm các bước sau. 
+
+ 1. Thêm tùy chọn
+usrquota vào file /etc/fstab tại dòng chứa phân vùng cần phân hạn ngạch. 
+
+ 2.
+Remount lại phân vùng này 
+
+ mount
+-o remount /data 
+
+ 3.T h ự c h i ệ n q uo t ac h ec k : 
+
+ q u o t a c h e c k – a v u g 
+
+ - a : K i ể m t r a t ấ t c ả n h ữ n g h ệ t h ố n g t ậ p t i n c ấ u h ì n h q uo t a . 
+
+ -v : H i ể n t h ị t h ô n g tin t r ạ n g t h á i k h i k i ể m t r a . 
+
+ - u : K i ể m t r a q uo ta c ủ a ngư ờ i d ù n g . 
+
+ - g : K i ể m t r a q u o ta c ủ a n h óm . 
+
+ Nế u c hư a t ạ o t ậ p t i n l ư u t r ữ t h ô n g tin c ấ u h ì n h c ủ a u s e r ( ) v à n h ó m ( ) t r o n g / d a t a , T h ì k h i c h ạ y l ệ n h q u o t a c h ec k s ẽ b á o l ỗ i k h ô n g tìm t h ấ y đ ồ n g t h ờ i c ũ n g s ẽ tự t ạ o 2 t ậ p t i n t r ê n a q u o t a . u s e r , a qu o t a . g r o up t r o n g /d a t a . 
+
+ K i ể m t r a 2 f i l e s l ư u t r ữ t h ô n g ti n cấ u h ì n h q u o t a : ls – l /d a t a 
+
+ C h ạ y l ạ i l ệ n h q uo t a c h ec k : 
+
+ q u o t a c h e c k – a v u g 
+
+ 4. Bật quota bằng
+quotaon hoặc reboot 
+
+              quotaon –a 
+
+ 5. P h â n b ổ q uo t a c h o u s e r a : 
+
+ e d qu o t a – u u s e r a 
+
+ M ộ t s ố op t i o n s c ủ a l ệ n h e d q uo ta : 
+
+ - u : T h i ế t l ậ p q uo t a c h o u s e r . 
+
+ - g : T h i ế t l ậ p q uo t a c h o g r o u p . 
+
+ - p : S a o c h é p q uo ta từ n g ư ờ i d ù n g n à y qu a n g ư ờ i d ù n g k h á c . 
+
+ - t: C h ỉ n h s ử a t h ờ i g i a n c ủ a g i ớ i h ạ n m ề m ( s of t li m it ) . 
+
+ N h ậ p v à o g i ớ i h ạ n m ề m ( s o f t l i m it) v à g i ớ i h ạ n c ừ n g ( h a r d li m i t) c h o u s e r a . Đ ể t h o á t r a , ấ n p h ím : w q 
+
+ 6. Đặ t t h ờ i g i a n c h u y ể n từ g i ớ i h ạ n m ề m s a n g g i ớ i h ạ n c ứ n g : e d qu o t a – t 
+
+ 7. Ki ể m t r a q u o ta c ủ a
+ u s e r a : q u o t a – u u s e r a 
+
+ 8. N ế u b ạ n c ố tì n h l ư u t r ữ l ớ n h ơ n h ạ n ng ạ c h đ ã t h i ế t l ậ p c h o / d a t a t h ì s ẽ b á o l ỗ i s a u: 
+
+ * N g o à i r a ta c ó t h ể s ử dụ n g l ệ n h qu o t a s t at s , r e p q u o t a để
+xem một số thông tin về q u o t a 
+
+ III. Thực hành 
+
+ · Bài
+1: Phân vùng ổ cứng mới 
+
+ Thêm 1 ổ cứng
+mới 50GiB. 
+
+ + Tên ổ mới là
+gì 
+
+ + Chia ổ thành
+các phân vùng như sau: 
+
+ -          
+ 1; Primary; 15GiB 
+
+ -          
+ 2; Primary; 15GiB 
+
+ -          
+ 3; Extended; Toàn bộ phần còn lại 
+
+ -          
+ 5; Logic; 10GiB 
+
+ -          
+ 6; Logic; Toàn bộ phần còn lại 
+
+ · Bài
+2: Phân vùng ổ cứng đã có 
+
+ Xóa phân vùng
+/dev/sda2 (25GiB) sau đó tạo các phân vùng sau 
+
+ + /dev/sda4;
+Extended; chứa phần cuối (65GiB) 
+
+ + 5; Logic;
+20GiB 
+
+ + 6; Logic;
+20GiB 
+
+ + 7; Logic;
+25GiB 
+
+ · Bài
+3: Định dạng và Ánh xạ 
+
+ Ánh xạ tự động
+/dev/sda{5,6,7} vào /lab/p{5,6,7} bằng tên tuyệt đối 
+
+ Ánh xạ tự động
+/dev/sdb1 vào /lab/label bằng nhãn 
+
+ Ánh xạ tự động
+/dev/sdb2 vào /lab/uuid bằng UUID 
+
+ · Bài
+4: Thực hành phân hạn ngạch 
+
+ Ánh xạ tự động
+/dev/sdb5 vào /lab/quota hỗ trợ usrquota, grpquota 
+
+ Hạn chế người
+dùng test có hạn ngạch như sau: 
+
+ 0 0 100 120
+(Block, Inode: {Soft, Hard}) 
+
+ Hạn chế nhóm
+public chứa người dùng t1, t2 có hạn ngạch như sau: 
+
+ 120000000
+150000000 0 0 (Block, Inode: {Soft, Hard})

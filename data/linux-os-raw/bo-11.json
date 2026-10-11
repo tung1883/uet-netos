@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 11 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong kiến trúc hệ điều hành Linux, thành phần nào chịu trách nhiệm trực tiếp quản lý tài nguyên phần cứng và điều phối hoạt động giữa phần cứng và ứng dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Shell"
+          },
+          {
+            "id": "B",
+            "content": "Kernel"
+          },
+          {
+            "id": "C",
+            "content": "Desktop Environment"
+          },
+          {
+            "id": "D",
+            "content": "GNU Utilities"
+          }
+        ],
+        "explanation": "Theo cấu trúc phân lớp của Linux, Kernel là lõi của hệ điều hành đóng vai trò trung gian điều phối và quản lý mọi tài nguyên phần cứng cho các tiến trình phần mềm. Kết luận Lý giải Kernel"
+      },
+      {
+        "id": "q2",
+        "text": "Thư mục nào trong hệ thống tệp tin Linux (FHS) thường chứa các tệp tin cấu hình của hệ thống và các dịch vụ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/var"
+          },
+          {
+            "id": "C",
+            "content": "/etc"
+          },
+          {
+            "id": "D",
+            "content": "/home"
+          }
+        ],
+        "explanation": "Thư mục /etc được quy định theo tiêu chuẩn FHS là nơi lưu trữ các tệp tin cấu hình tĩnh phục vụ cho hoạt động của hệ điều hành và các ứng dụng cài đặt. Kết luận Lý giải /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Để thay đổi quyền truy cập của một tệp tin sao cho chủ sở hữu có toàn quyền, nhóm và người dùng khác chỉ có quyền đọc và thực thi, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod 755 [tên_tệp]"
+          },
+          {
+            "id": "B",
+            "content": "chmod 644 [tên_tệp]"
+          },
+          {
+            "id": "C",
+            "content": "chmod 777 [tên_tệp]"
+          },
+          {
+            "id": "D",
+            "content": "chmod 711 [tên_tệp]"
+          }
+        ],
+        "explanation": "Giá trị 755 tương ứng với chủ sở hữu có quyền 7 (rwx), nhóm và những người khác có quyền 5 (r-x). Kết luận Lý giải chmod 755 [tên_tệp]"
+      },
+      {
+        "id": "q4",
+        "text": "Lệnh nào được sử dụng để tìm kiếm các tệp tin trong một cây thư mục dựa trên các tiêu chí như tên, kích thước hoặc thời gian sửa đổi?",
+        "options": [
+          {
+            "id": "A",
+            "content": "locate"
+          },
+          {
+            "id": "B",
+            "content": "grep"
+          },
+          {
+            "id": "C",
+            "content": "find"
+          },
+          {
+            "id": "D",
+            "content": "whereis"
+          }
+        ],
+        "explanation": "Lệnh find thực hiện tìm kiếm trực tiếp trên cấu trúc cây thư mục với nhiều bộ lọc thuộc tính chi tiết hơn so với lệnh locate vốn chỉ tìm trong cơ sở dữ liệu có sẵn. Kết luận Lý giải find"
+      },
+      {
+        "id": "q5",
+        "text": "Điểm khác biệt cơ bản nhất giữa Soft Link (Symbolic Link) và Hard Link trong Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hard Link có thể trỏ tới một thư mục, còn Soft Link thì không"
+          },
+          {
+            "id": "B",
+            "content": "Soft Link có thể liên kết giữa các hệ thống tệp (filesystems) khác nhau, còn Hard Link thì không"
+          },
+          {
+            "id": "C",
+            "content": "Soft Link chia sẻ cùng chỉ số inode với tệp gốc"
+          },
+          {
+            "id": "D",
+            "content": "Khi xóa tệp gốc, Hard Link sẽ bị hỏng và không truy cập được dữ liệu"
+          }
+        ],
+        "explanation": "Soft Link là một tệp riêng biệt chứa đường dẫn đến tệp khác nên có thể hoạt động xuyên suốt các phân vùng đĩa khác nhau, trong khi Hard Link bị giới hạn trong cùng một filesystem do ràng buộc về inode. Kết luận Lý giải Soft Link có thể liên kết giữa các hệ thống tệp (filesystems) khác nhau, còn Hard Link thì không"
+      },
+      {
+        "id": "q6",
+        "text": "Trong Bash Shell, ký hiệu nào được sử dụng để chuyển hướng kết quả đầu ra của một lệnh và ghi nối tiếp vào cuối một tệp tin hiện có?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": "|"
+          },
+          {
+            "id": "C",
+            "content": ">>"
+          },
+          {
+            "id": "D",
+            "content": "2>"
+          }
+        ],
+        "explanation": "Ký hiệu hai dấu ngoặc nhọn đóng (>>) thực hiện chuyển hướng đầu ra tiêu chuẩn vào tệp tin mà không xóa nội dung cũ, thay vào đó là ghi thêm vào cuối tệp. Kết luận Lý giải >>"
+      },
+      {
+        "id": "q7",
+        "text": "Để khởi động lại một dịch vụ hệ thống (ví dụ: nginx) trên các bản phân phối Linux sử dụng systemd, lệnh nào sau đây là đúng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "service nginx reload"
+          },
+          {
+            "id": "B",
+            "content": "systemctl restart nginx"
+          },
+          {
+            "id": "C",
+            "content": "systemctl start nginx"
+          },
+          {
+            "id": "D",
+            "content": "stop nginx && start nginx"
+          }
+        ],
+        "explanation": "Công cụ systemctl là giao diện chuẩn để quản lý các đơn vị dịch vụ trong systemd và tham số restart được dùng để tắt và bật lại dịch vụ ngay lập tức. Kết luận Lý giải systemctl restart nginx"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh grep nào sau đây giúp tìm kiếm một chuỗi ký tự trong tệp tin mà không phân biệt chữ hoa và chữ thường?",
+        "options": [
+          {
+            "id": "A",
+            "content": "grep -v [chuỗi] [tệp]"
+          },
+          {
+            "id": "B",
+            "content": "grep -l [chuỗi] [tệp]"
+          },
+          {
+            "id": "C",
+            "content": "grep -i [chuỗi] [tệp]"
+          },
+          {
+            "id": "D",
+            "content": "grep -n [chuỗi] [tệp]"
+          }
+        ],
+        "explanation": "Tùy chọn -i (ignore-case) trong lệnh grep cho phép trình tìm kiếm bỏ qua sự khác biệt giữa ký tự hoa và thường trong mẫu truy vấn. Kết luận Lý giải grep -i [chuỗi] [tệp]"
+      },
+      {
+        "id": "q9",
+        "text": "Khi sử dụng lệnh top, thông số 'Load Average' hiển thị ba giá trị đại diện cho trung bình tải của hệ thống trong các khoảng thời gian nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "phút, 5 phút và 15 phút"
+          },
+          {
+            "id": "B",
+            "content": "giây, 5 giây và 15 giây"
+          },
+          {
+            "id": "C",
+            "content": "giờ, 5 giờ và 15 giờ"
+          },
+          {
+            "id": "D",
+            "content": "phút, 10 phút và 30 phút"
+          }
+        ],
+        "explanation": "Theo thiết kế của nhân Linux, Load Average cung cấp cái nhìn về xu hướng tải của CPU và I/O thông qua trung bình số tiến trình đợi trong 1, 5 và 15 phút gần nhất. Kết luận Lý giải 1 phút, 5 phút và 15 phút"
+      },
+      {
+        "id": "q10",
+        "text": "Biến môi trường nào lưu trữ đường dẫn đến thư mục cá nhân của người dùng đang đăng nhập?",
+        "options": [
+          {
+            "id": "A",
+            "content": "$PATH"
+          },
+          {
+            "id": "B",
+            "content": "$USER"
+          },
+          {
+            "id": "C",
+            "content": "$HOME"
+          },
+          {
+            "id": "D",
+            "content": "$PWD"
+          }
+        ],
+        "explanation": "Biến $HOME là biến môi trường tiêu chuẩn trong hệ thống Unix-like dùng để xác định vị trí thư mục gốc của người dùng hiện tại. Kết luận Lý giải $HOME"
+      },
+      {
+        "id": "q11",
+        "text": "Để thay đổi chủ sở hữu của một thư mục và toàn bộ nội dung bên trong nó (tất cả tệp và thư mục con), bạn cần sử dụng tùy chọn nào với lệnh chown?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-f"
+          },
+          {
+            "id": "B",
+            "content": "-R"
+          },
+          {
+            "id": "C",
+            "content": "-v"
+          },
+          {
+            "id": "D",
+            "content": "-a"
+          }
+        ],
+        "explanation": "Tùy chọn -R (Recursive) cho phép lệnh chown áp dụng thay đổi quyền sở hữu đệ quy cho mọi đối tượng nằm bên trong thư mục chỉ định. Kết luận Lý giải -R"
+      },
+      {
+        "id": "q12",
+        "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa cứng đã sử dụng và còn trống trên các phân vùng đã được gắn (mounted) của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du -sh"
+          },
+          {
+            "id": "B",
+            "content": "free -m"
+          },
+          {
+            "id": "C",
+            "content": "df -h"
+          },
+          {
+            "id": "D",
+            "content": "lsblk"
+          }
+        ],
+        "explanation": "Lệnh df (disk free) với tùy chọn -h hiển thị báo cáo về không gian đĩa của hệ thống tệp dưới định dạng dễ đọc cho con người. Kết luận Lý giải df -h"
+      },
+      {
+        "id": "q13",
+        "text": "Tín hiệu (signal) nào sau đây được gửi bởi lệnh 'kill -9' để buộc một tiến trình phải dừng ngay lập tức mà không thể bị bỏ qua hoặc trì hoãn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGTERM"
+          },
+          {
+            "id": "B",
+            "content": "SIGINT"
+          },
+          {
+            "id": "C",
+            "content": "SIGKILL"
+          },
+          {
+            "id": "D",
+            "content": "SIGHUP"
+          }
+        ],
+        "explanation": "SIGKILL (mã 9) là tín hiệu dừng cưỡng bức do hạt nhân thực hiện, không cho phép tiến trình thực hiện các thao tác dọn dẹp hay chặn tín hiệu. Kết luận Lý giải SIGKILL"
+      },
+      {
+        "id": "q14",
+        "text": "Tệp tin nào được sử dụng để cấu hình danh sách người dùng hoặc nhóm có quyền thực thi lệnh dưới danh nghĩa người dùng tối cao (root)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "C",
+            "content": "/etc/sudoers"
+          },
+          {
+            "id": "D",
+            "content": "/etc/group"
+          }
+        ],
+        "explanation": "Tệp /etc/sudoers chứa các quy tắc phân quyền cho phép chương trình sudo xác định xem một người dùng có quyền quản trị hay không. Kết luận Lý giải /etc/sudoers"
+      },
+      {
+        "id": "q15",
+        "text": "Trong quá trình làm việc với SSH, lệnh nào được sử dụng để tạo ra cặp khóa công khai (public key) và khóa bí mật (private key) phục vụ xác thực không dùng mật khẩu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ssh-agent"
+          },
+          {
+            "id": "B",
+            "content": "ssh-add"
+          },
+          {
+            "id": "C",
+            "content": "ssh-keygen"
+          },
+          {
+            "id": "D",
+            "content": "ssh-copy-id"
+          }
+        ],
+        "explanation": "Tiện ích ssh-keygen là công cụ tiêu chuẩn trong bộ OpenSSH dùng để khởi tạo cặp khóa xác thực cho giao thức SSH. Kết luận Lý giải ssh-keygen"
+      },
+      {
+        "id": "q16",
+        "text": "Để nén nhiều tệp tin thành một tệp lưu trữ duy nhất có định dạng '.tar.gz', bạn nên sử dụng tổ hợp tham số nào với lệnh tar?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-xvf"
+          },
+          {
+            "id": "B",
+            "content": "-cvf"
+          },
+          {
+            "id": "C",
+            "content": "-czvf"
+          },
+          {
+            "id": "D",
+            "content": "-tvf"
+          }
+        ],
+        "explanation": "Trong lệnh tar, tham số 'c' để tạo mới, 'z' để nén bằng gzip, 'v' để hiển thị quá trình và 'f' để chỉ định tên tệp đầu ra. Kết luận Lý giải -czvf"
+      },
+      {
+        "id": "q17",
+        "text": "Nếu một người dùng thiết lập giá trị umask là 022, thì quyền truy cập mặc định cho các thư mục mới được tạo ra bởi người dùng đó sẽ là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "777"
+          },
+          {
+            "id": "B",
+            "content": "755"
+          },
+          {
+            "id": "C",
+            "content": "644"
+          },
+          {
+            "id": "D",
+            "content": "700"
+          }
+        ],
+        "explanation": "Quyền mặc định của thư mục được tính bằng cách lấy giá trị gốc 777 trừ đi giá trị umask (777 - 022 = 755). Kết luận Lý giải 755"
+      },
+      {
+        "id": "q18",
+        "text": "Lệnh nào cho phép người dùng sửa đổi danh sách các tác vụ định kỳ (cron jobs) được lập lịch cho chính họ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "crontab -l"
+          },
+          {
+            "id": "B",
+            "content": "crontab -r"
+          },
+          {
+            "id": "C",
+            "content": "crontab -e"
+          },
+          {
+            "id": "D",
+            "content": "cron -s"
+          }
+        ],
+        "explanation": "Tham số -e (edit) trong lệnh crontab mở trình soạn thảo văn bản mặc định để người dùng thay đổi tệp lập lịch cá nhân. Kết luận Lý giải crontab -e"
+      },
+      {
+        "id": "q19",
+        "text": "Trong trình soạn thảo Vi/Vim, để lưu các thay đổi đã thực hiện và thoát khỏi chương trình, bạn gõ lệnh nào ở chế độ Command mode?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":q!"
+          },
+          {
+            "id": "B",
+            "content": ":w"
+          },
+          {
+            "id": "C",
+            "content": ":wq"
+          },
+          {
+            "id": "D",
+            "content": "Esc"
+          }
+        ],
+        "explanation": "Trong chế độ dòng lệnh của Vi/Vim, tổ hợp ':w' (write) và 'q' (quit) thực hiện ghi dữ liệu xuống đĩa và đóng trình soạn thảo. Kết luận Lý giải :wq"
+      },
+      {
+        "id": "q20",
+        "text": "Trong hệ thống Linux truyền thống, Runlevel 0 đại diện cho trạng thái nào của máy tính?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chế độ một người dùng (Single-user mode)"
+          },
+          {
+            "id": "B",
+            "content": "Chế độ đa người dùng có mạng"
+          },
+          {
+            "id": "C",
+            "content": "Tắt máy (Halt/Shutdown)"
+          },
+          {
+            "id": "D",
+            "content": "Khởi động lại (Reboot)"
+          }
+        ],
+        "explanation": "Theo quy ước chuẩn của hệ thống khởi động SysVinit, Runlevel 0 là mức chạy được dành riêng cho việc dừng hoàn toàn hoạt động của hệ thống. Kết luận Lý giải Tắt máy (Halt/Shutdown)"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh sed nào sau đây thực hiện thay thế tất cả các lần xuất hiện của từ 'apple' thành 'orange' trong toàn bộ tệp tin 'fruit.txt'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "sed 's/apple/orange/' fruit.txt"
+          },
+          {
+            "id": "B",
+            "content": "sed 'r/apple/orange/g' fruit.txt"
+          },
+          {
+            "id": "C",
+            "content": "sed 's/apple/orange/g' fruit.txt"
+          },
+          {
+            "id": "D",
+            "content": "sed 'g/apple/orange/s' fruit.txt"
+          }
+        ],
+        "explanation": "Cấu trúc 's/mẫu/thay_thế/g' của sed thực hiện thay thế chuỗi (s - substitute) trên phạm vi toàn cục (g - global) của mỗi dòng lệnh. Kết luận Lý giải sed 's/apple/orange/g' fruit.txt"
+      },
+      {
+        "id": "q22",
+        "text": "Để liệt kê tất cả các tệp tin trong thư mục, bao gồm cả các tệp ẩn (bắt đầu bằng dấu chấm), bạn sử dụng tùy chọn nào với lệnh ls?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-l"
+          },
+          {
+            "id": "B",
+            "content": "-h"
+          },
+          {
+            "id": "C",
+            "content": "-a"
+          },
+          {
+            "id": "D",
+            "content": "-t"
+          }
+        ],
+        "explanation": "Tùy chọn -a (all) yêu cầu lệnh ls hiển thị mọi đối tượng trong thư mục mà không bỏ qua các tệp ẩn theo quy ước của Linux. Kết luận Lý giải -a"
+      },
+      {
+        "id": "q23",
+        "text": "Dịch vụ Web (HTTP) mặc định lắng nghe kết nối trên cổng (port) số mấy?",
+        "options": [
+          {
+            "id": "A",
+            "content": "21"
+          },
+          {
+            "id": "B",
+            "content": "22"
+          },
+          {
+            "id": "C",
+            "content": "80"
+          },
+          {
+            "id": "D",
+            "content": "443"
+          }
+        ],
+        "explanation": "Theo quy định của IANA, cổng 80 là cổng tiêu chuẩn dành cho giao thức truyền tải siêu văn bản (HTTP) không mã hóa. Kết luận Lý giải 80"
+      },
+      {
+        "id": "q24",
+        "text": "Vùng không gian Swap trên đĩa cứng trong Linux được sử dụng chủ yếu để làm gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu trữ các tệp tin sao lưu của hệ thống"
+          },
+          {
+            "id": "B",
+            "content": "Làm bộ nhớ đệm cho các tệp tin tải về từ internet"
+          },
+          {
+            "id": "C",
+            "content": "Mở rộng bộ nhớ RAM vật lý khi hệ thống bị thiếu hụt bộ nhớ"
+          },
+          {
+            "id": "D",
+            "content": "Chứa mã nguồn của nhân Linux (Kernel)"
+          }
+        ],
+        "explanation": "Swap đóng vai trò là bộ nhớ ảo, cho phép hệ điều hành di chuyển các trang nhớ ít sử dụng từ RAM sang đĩa cứng để giải phóng tài nguyên cho các ứng dụng khác. Kết luận Lý giải Mở rộng bộ nhớ RAM vật lý khi hệ thống bị thiếu hụt bộ nhớ"
+      },
+      {
+        "id": "q25",
+        "text": "Lệnh nào được s�� dụng để tạo một tài khoản người dùng mới trong hệ thống Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "userdel"
+          },
+          {
+            "id": "B",
+            "content": "usermod"
+          },
+          {
+            "id": "C",
+            "content": "useradd"
+          },
+          {
+            "id": "D",
+            "content": "groupadd"
+          }
+        ],
+        "explanation": "Lệnh useradd (hoặc adduser trên một số hệ thống) là công cụ dòng lệnh cấp thấp để khởi tạo các thông tin cơ bản cho một người dùng mới. Kết luận Lý giải useradd"
+      }
+    ],
+    "logic_map": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "A",
+      "q4": "C",
+      "q5": "B",
+      "q6": "C",
+      "q7": "B",
+      "q8": "C",
+      "q9": "A",
+      "q10": "C",
+      "q11": "B",
+      "q12": "C",
+      "q13": "C",
+      "q14": "C",
+      "q15": "C",
+      "q16": "C",
+      "q17": "B",
+      "q18": "C",
+      "q19": "C",
+      "q20": "C",
+      "q21": "C",
+      "q22": "C",
+      "q23": "C",
+      "q24": "C",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

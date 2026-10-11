@@ -1,0 +1,363 @@
+thanh 
+ Normal 
+ thanh 
+ 2 
+ 3 
+ 2017-02-15T03:21:00Z 
+ 2017-02-15T03:21:00Z 
+ 6 
+ 1242 
+ 7081 
+ Hudevelop 
+ 59 
+ 16 
+ 8307 
+ 12.00 
+
+ false 
+
+ Normal 
+ 0 pt 
+ 0 pt 
+ 0 
+ 0 
+
+ false 
+ false 
+ false 
+ 
+ EN-US 
+ X-NONE 
+ X-NONE 
+ 0 pt 
+ 0 pt 
+
+ MicrosoftInternetExplorer4 
+
+ Bài
+4. Công cụ soạn thảo   &   Chuyển hướng vào/ra 
+
+ 1. gedit 
+
+ Là phần mềm soạn thảo
+văn bản tương tự notepad trong MS Windows, tuy nhiên hơn thế nữa, gedit hiện tại
+có thể hiểu được cú pháp của khá nhiều loại file khác nhau nên người dùng có
+thêm chức năng highlight mà notepad không có. 
+
+ 2. nano 
+
+ Là phần mềm soạn thảo
+văn bản trong môi trường text phổ biến trong nhiều distro linux khác nhau. nano
+được cài đặt rộng rãi vì sự nhỏ gọn, dễ sử dụng. Tất cả các menu lệnh, hỏi đáp
+với người dùng được thể hiện tại hai dòng cuối cùng của cửa sổ lệnh. Người dùng
+chỉ cần hiểu ^X tương đương với nhấn Ctrl và X là có thể thao tác dễ dàng với
+nano. 
+
+ 3. vi 
+
+ Phần mềm soạn thảo
+văn bản nổi tiếng nhất trong môi trường …ix. Rất mạnh và cũng rất … khó điều
+khiển tuy nhiên 100% những người dùng Linux chuyên nghiệp đều thành thạo vi.
+Trong các distro CentOS 6.x, vi có hai phiên bản vim-minimal có các tính năng
+cơ bản và vim-enhanced với các tính năng nâng cao. Theo mặc định, để sử dụng bản
+minimal người dùng cần chạy lệnh vi và để sử dụng bản enhanced cần chạy lệnh
+vim. Tuy nhiên trong phòng thực hành, người dùng root tại các máy ảo đã được
+thiết lập sẵn một   alias vi=vim   để luôn sử dụng vim-enhanced bằng lệnh vi. 
+
+ a. Các chế độ hoạt động 
+
+ vi có nhiều chế độ hoạt
+động khác nhau, tuy nhiên tài liệu này chỉ giới thiệu hai chế độ hoạt động cơ bản
+nhất: 
+
+ · Chế
+độ lệnh 
+
+ Là chế độ mặc định
+khi bắt đầu khởi động vi. Trong chế độ này, người sử dụng ra các lệnh điều khiển
+và vi thực hiện theo. Người dùng có thể thay đổi nội dung văn bản cần soạn thảo
+nhưng không thể dễ dàng nhập nội dung mới như trong các trình soạn thảo văn bản
+khác. 
+
+ · Chế
+độ soạn thảo 
+
+ Biểu hiện bằng đoạn
+ký tự   --INSERT--   tại góc dưới bên trái màn hình. Trong chế độ
+này, bàn phím được sử dụng để nhập văn bản như các trình soạn thảo văn bản
+thông dụng   khác. 
+
+ Để chuyển sang chế độ này từ chế độ lệnh gõ phím   i   . 
+
+ Để quay về chế độ lệnh gõ phím   Esc   trên bàn phím. 
+
+ b. Di chuyển, tìm kiếm
+trong vi 
+
+ Cách thức di chuyển, tìm kiếm trong chế độ lệnh của
+vi giống như trong môi trường man. 
+
+ c. Sử dụng trợ giúp
+trong vi 
+
+ Tại chế độ lệnh, gõ lệnh :help và nhấn Enter.
+Trong màn hình trợ giúp, các chỉ mục thường được đặt giữa các ký tự | và có màu
+xanh ví dụ   |tutor|   để theo dõi các chỉ mục này, di chuyển dấu nhắc
+vào chỉ mục, nhấn Ctrl+], nếu muốn BACK lại thì nhấn Ctrl+T hoặc Ctrl+O. Nói
+chung di chuyển trong tài liệu trợ giúp của vi giống như đang duyệt web. 
+
+ d. Một số lệnh cơ bản
+trong chế độ lệnh 
+
+ +
+ :q                                        Thoát 
+
+ +
+ :q!                           Thoát
+và không ghi thay đổi 
+
+ +
+ :w                                       Ghi
+thay đổi 
+
+ +
+ :wq                                    Ghi
+thay đổi và thoát 
+
+ +
+ :x                                        Giống
+:wq 
+
+ +
+ :x!                           Nhất
+định ghi thay đổi và thoát nếu có quyền 
+
+ +
+ dd                                      Xóa
+dòng đang đứng 
+
+ +
+ :saveas <tên file>             Ghi thành file có tên khác 
+
+ +
+ :open <tên file>    Mở một file 
+
+ 4. mcedit 
+
+ Là một phần của bộ
+công cụ nổi tiếng mc (Midnight Commander). mcedit cho phép làm việc khá tốt với
+nhiều loại file. Với hệ thống menu giao diện mạnh, mcedit rất thuận tiện trong
+soạn thảo và đặc biệt mạnh khi làm việc với khối. 
+
+ II. Chuyển hướng
+kết xuất 
+
+ Mặc định mỗi tiến trình trong Linux khi được nạp
+vào bộ nhớ đều được HĐH cấp phát cho ba kênh nhập-xuất dữ liệu chuẩn để có thể
+làm việc mà không cần quan tâm đến nhập-xuất dữ liệu. Kênh nhập chuẩn là bàn
+phím và kênh xuất chuẩn là màn hình. Việc chuyển kênh mặc định được thực hiện bởi
+các ký hiệu chuyển kênh nêu dưới đây. Nếu có nhiều yêu cầu chuyển kênh trong một
+lần gọi, HĐH sẽ chuyển kênh theo thứ tự ưu tiên từ phải sang trái của dòng lệnh. 
+
+ 1. stdin 
+
+ 0<          hoặc
+viết tắt là           < 
+
+ Được sử dụng để thay đổi stdin mặc định của tiến
+trình là bàn phím thành file được chỉ định. 
+
+ 2. stdout 
+
+ 1>          hoặc
+viết tắt là           > 
+
+ Được sử dụng để thay đổi stdout mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có sẽ bị xóa hết nội
+dung trước khi nhận output của tiến trình. 
+
+ 1>>        hoặc
+viết tắt là           >> 
+
+ Được sử dụng để thay đổi stdout mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có nội dung sẽ ghi
+output của tiến trình vào sau nội dung cũ đã có. 
+
+ | 
+
+ Được sử dụng để thay đổi stdout mặc định của tiến
+trình là màn hình thành stdin của tiến trình được chỉ định sau ký hiệu chuyển
+hướng này. Cơ chế chuyển hướng này còn gọi là cơ chế nối dòng, là linh hồn của
+các shell script sử dụng trong quản lý hệ thống. 
+
+ 3. stderr 
+
+ 2> 
+
+ Được sử dụng để thay đổi stderr mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có sẽ bị xóa hết nội
+dung trước khi nhận warning hoặc error của tiến trình. 
+
+ 2>> 
+
+ Được sử dụng để thay đổi stderr mặc định của tiến
+trình là màn hình thành file được chỉ định. File này nếu có nội dung sẽ ghi
+warning hoặc error của tiến trình vào sau nội dung cũ đã có. 
+
+ 2>&1 
+
+ Được sử dụng để thay đổi stderr mặc định của tiến
+trình là màn hình thành stdout. 
+
+ III. Thực hành 
+
+ · Bài
+1: Thực hành nano 
+
+ Tạo file /tmp/diem.txt có tối thiểu 20 với các yêu
+cầu sau 
+
+ + Mỗi dòng có 5 trường thể hiện các nội dung về
+(Tên, Giới tính, Điểm 1, Điểm 2, Điểm Tổng) 
+
+ + Tổng = Điểm 1 + Điểm 2 (các giá trị này là
+nguyên dương) 
+
+ + Tên không giống nhau với mỗi dòng và không bao gồm
+dấu cách. Lưu ý, Tên chứ không phải Họ và Tên 
+
+ + Mỗi trường cách nhau bằng đúng một dấu cách, mỗi
+dòng có đúng 4 dấu cách 
+
+ + Giới tính có hai loại là nam và nữ 
+
+ + Tất cả các ký tự trong file đều là chữ thường,
+không có dấu. 
+
+ Copy file /root/install.log thành file
+/tmp/nano.txt 
+
+ Sử dụng lệnh nano thực hiện 1 số thao tác soạn thảo
+file trên, di chuyển trong nội dung file, ghi file sau khi soạn thảo, sau đó
+ghi thành file mới có tên /tmp/vi.txt 
+
+ · Bài
+2: Thực hành vi 
+
+ Chạy lệnh vi, sau đó mở file /tmp/vi.txt của bài
+trước. 
+
+ Di chuyển đến đầu/cuối file, sau đó di chuyển đến
+dòng thứ 234 tính từ đầu file, rồi tiếp tục di chuyển đến dòng có vị trí khoảng
+70%. 
+
+ Tìm từ “lib” đầu tiên trong file, sau đó tìm lên
+trên 3 từ rồi tìm ngược lại 1 từ. Thay thế tất cả các từ “rpm” thành RPM. 
+
+ Ghi file đang soạn thảo thành file /tmp/mcedit.txt 
+
+ · Bài
+3: Thực hành mcedit 
+
+ Chạy lệnh mcedit /tmp/mcedit.txt để mở file đã tạo
+trước đó. Thực hiện đánh dấu 1 khối từ dòng 30 đến dòng 35. Copy khối 3 lần tại
+chỗ sau đó di chuyển tới dòng cuối cung và di chuyển khối đang đánh dấu đến đó.
+Hủy đánh dấu khối. Ghi lại file thành /tmp/end.txt 
+
+ · Bài
+4: Thực hành chuyển hướng kết xuất (1) 
+
+ Chạy lệnh sau   cat > /tmp/new.txt   gõ một số đoạn ký tự có xuống dòng rồi nhấn
+Ctrl+D để kết thúc nhập. Giải thích các thao tác trên 
+
+ Tạo file sum.sh có nội dung như sau: 
+
+   echo –n “Nhap A: ”;
+read A 
+
+   echo –n “Nhap B: ”;
+read B 
+
+   echo “A + B = $(($A +
+$B)) 
+
+ Sau đó thực hiện các lệnh sau để chạy file mới tạo 
+
+   chmod a+x sum.sh 
+
+   ./sum.sh 
+
+ Nhập A, B bằng bàn phím để tính A + B. Sau đó tạo
+file input.txt có nội dung như sau (lưu ý có 3 dòng, dòng thứ 3 trống) 
+
+   16 
+
+   27 
+
+ Sau đó chạy lệnh sau để kiểm tra chuyển hướng đầu
+vào (stdin) 
+
+   ./sum.sh <
+input.txt 
+
+ · Bài
+5: Thực hành chuyển hướng kết xuất (2) 
+
+ Chạy lệnh sau để đảm bảo không có file   nofile rm
+–f nofile   sau đó lần lượt chạy các lệnh sau 
+
+   cat nofile >
+output.txt 2>&1 
+
+   cat nofile
+2>&1 > output.txt 
+
+ Hãy giải thích các hiện tượng diễn ra trên màn
+hình và nội dung file output.txt 
+
+ · Bài
+6: Thực hành chuyển hướng kết xuất (3) 
+
+ Sử dụng lệnh   adduser test   để tạo người dùng test, hãy kết hợp hai lệnh
+echo và passwd để thay đổi mật khẩu của người dùng này chỉ cần 1 lần nhấn Enter 
+
+ Biết A là biến chứa một số nguyên dương. Hãy kết hợp
+giữa hai lệnh head và tail để hiện thị dòng thứ A trong file /var/log/messages
+(không cần kiểm tra A có lớn hơn số dòng trong file không) 
+
+ Hãy hiển thị tất cả các dòng không có từ nologin
+trong /etc/passwd 
+
+ · Bài
+7: Thực hành chuyển hướng kết xuất (4) 
+
+ Hiển thị danh sách trong file /tmp/diem.txt theo
+thứ tự tăng dần của Tên 
+
+ Hiển thị danh sách trên theo tứ tự tăng dần của Tổng
+điểm 
+
+ Đếm số bạn nam, nữ trong file 
+
+ Tạo thêm file /tmp/ds.txt có hai trường Tên, Ngày
+sinh có số dòng và Tên như trong file /tmp/diem.txt. Hãy tạo file /tmp/full.txt
+chứa nội dung hai file trước nhưng cột Ngày sinh nằm sau cột Giới tính 
+
+ · Bài
+8: Thực hành chuyển hướng kết xuất (5) 
+
+ Sử dụng lệnh sed để thay đổi các từ Install trong
+file /tmp/mcedit.txt thành INSTALL 
+
+ Tạo file /tmp/backup là nội dung file /etc/passwd
+nhưng tất cả các chữ thường đã được chuyển thành chữ hoa. 
+
+ · Bài
+9: Thực hành chuyển hướng kết xuất (6) 
+
+ Biết lệnh ps sẽ hiển thị các tiến trình trong bộ
+nhớ, hãy hiển thị một danh sách 10 tiến trình chiếm nhiều CPU nhất theo dạng 2
+cột (PID, %CPU) và sắp xếp theo thứ tự giảm dần của CPU. 
+
+ Thực hiện như trên nhưng thay tỷ lệ dùng CPU thành
+tỷ lệ dùng RAM

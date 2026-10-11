@@ -1,0 +1,81 @@
+ĐỀ
+THI KẾT THÚC HỌC PHẦN 
+
+ THỰC
+HÀNH HỆ ĐIỀU HÀNH MẠNG 
+
+ Thời
+gian làm bài: 90 phút 
+
+ Giả sử máy
+Linux ảo mà bạn đang dùng để làm bài thi là server bạn
+cần quản lý (server của bạn).
+
+ Câu 1 .
+ (5 điểm ) Trên server của bạn,
+cho tệp /data/ u s r.txt chứa danh sách người
+dùng có yêu cầu được cấp tài khoản trên hệ thống,
+mỗi người dùng trên một dòng với thông tin duy nhất là
+tên tài khoản cần cấp. Ví dụ tệp ur.txt có nội dung
+như sau:
+
+ hoangtt
+
+ mainn
+
+ binhqq
+
+ Lưu ý, nếu chưa
+có tệp /data/usr.txt hoặc tệp rỗng thì hãy tạo tệp và
+đưa nội dung mẫu ở trên vào tệp để bạn có thể
+hoàn thành câu này.
+
+ Viết kịch bản
+shell / scripts/ crtusr .sh đọc danh sách
+người dùng từ tệp / data/ u s r.txt ,
+và với mỗi người dùng,
+
+ - ( 2 điểm )
+kiểm tra người dùng đã tồn tại trong hệ thống hay
+chưa, nếu chưa thì tạo người dùng với tên tài khoản
+tương ứng và mật khẩu là “ Kiemtracuoiky2016 ”.
+
+ - (1 điểm )
+kiểm tra đã tồn tại thư mục /data/[user] hay chưa (thay
+[user] bằng tên tài khoản tương ứng), nếu chưa thì tạo
+thư mục này
+
+ - ( 1 điểm )
+chuyển quyền sở hữu thư mục /data/[user] cho người dùng
+[user]
+
+ - ( 1 điểm )
+cấp quyền trên thư mục /data/[user] sao cho người dùng
+[user] có đủ quyền (wrx), mọi người dùng khác [user] đều
+không có quyền gì trên /data/[user].
+
+ Câu 2 .
+(2 điểm) Cài đặt hoặc kiểm tra SSHD đã được cài
+đặt trên server của bạn hay chưa, cho SSHD chạy.
+
+ Câu 3. (3 điểm) 
+Từ máy trạm (máy tính khác server của bạn), 
+
+ - Soạn một tệp
+ usr.txt chứa danh sách
+người dùng mới. 
+
+ -
+ ( 2 điểm )
+ Kết nối đến server và
+copy tệp usr.txt lên
+serser, ghi đè lên tệp /data/usr.txt trên server. 
+
+ -
+ ( 1 điểm )
+ Chạy / scripts/ crtusr .sh
+ trên server để tạo
+người dùng mới và thư mục cho người dùng mới. 
+
+ ----------
+ Hết -----------

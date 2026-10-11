@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 1 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.327Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Ai là người khởi xướng và phát triển phiên bản đầu tiên của nhân Linux vào năm 1991?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Bill Gates"
+          },
+          {
+            "id": "B",
+            "content": "Steve Jobs"
+          },
+          {
+            "id": "C",
+            "content": "Linus Torvalds"
+          },
+          {
+            "id": "D",
+            "content": "Richard Stallman"
+          }
+        ],
+        "explanation": "Dựa trên lịch sử phát triển mã nguồn mở, Linus Torvalds là sinh viên người Phần Lan đã viết và công bố nhân Linux đầu tiên. Kết luận Lý giải Linus Torvalds"
+      },
+      {
+        "id": "q2",
+        "text": "Trong cấu trúc cây thư mục của Linux, thư mục nào chứa các tệp cấu hình hệ thống quan trọng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/home"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn phân cấp hệ thống tệp (FHS), thư mục /etc là nơi lưu trữ các tệp cấu hình cho hệ thống và các ứng dụng cài đặt. Kết luận Lý giải /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Lệnh nào được sử dụng để hiển thị đường dẫn của thư mục hiện hành mà người dùng đang đứng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls"
+          },
+          {
+            "id": "B",
+            "content": "cd"
+          },
+          {
+            "id": "C",
+            "content": "dir"
+          },
+          {
+            "id": "D",
+            "content": "pwd"
+          }
+        ],
+        "explanation": "Lệnh 'pwd' viết tắt của 'print working directory' dùng để in ra đường dẫn tuyệt đối của thư mục làm việc hiện tại. Kết luận Lý giải pwd"
+      },
+      {
+        "id": "q4",
+        "text": "Để thay đổi quyền truy cập (permission) của một tệp tin hoặc thư mục, người dùng sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chown"
+          },
+          {
+            "id": "B",
+            "content": "chmod"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "assign"
+          }
+        ],
+        "explanation": "Lệnh 'chmod' được sử dụng để thay đổi chế độ truy cập (đọc, ghi, thực thi) của tệp hoặc thư mục cho các đối tượng người dùng. Kết luận Lý giải chmod"
+      },
+      {
+        "id": "q5",
+        "text": "Mã định danh (UID) của người dùng tối cao (root) trong hệ thống Linux mặc định là bao nhiêu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "1000"
+          },
+          {
+            "id": "B",
+            "content": "1"
+          },
+          {
+            "id": "C",
+            "content": "0"
+          },
+          {
+            "id": "D",
+            "content": "500"
+          }
+        ],
+        "explanation": "Trong hầu hết các bản phân phối Linux, tài khoản quản trị viên hệ thống (root) luôn có mã định danh người dùng là 0. Kết luận Lý giải 0"
+      },
+      {
+        "id": "q6",
+        "text": "Ký hiệu nào sau đây được sử dụng để chuyển hướng đầu ra của một lệnh và ghi đè vào một tệp tin mới?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Ký hiệu 'dấu lớn hơn' (>)"
+          },
+          {
+            "id": "B",
+            "content": "Ký hiệu 'hai dấu lớn hơn' (>>)"
+          },
+          {
+            "id": "C",
+            "content": "Ký hiệu 'dấu nhỏ hơn' (<)"
+          },
+          {
+            "id": "D",
+            "content": "Ký hiệu 'dấu gạch đứng' (|)"
+          }
+        ],
+        "explanation": "Trong Shell Linux, toán tử '>' dùng để chuyển hướng đầu ra tiêu chuẩn vào một tệp và sẽ xóa nội dung cũ nếu tệp đã tồn tại. Kết luận Lý giải Ký hiệu 'dấu lớn hơn' (>)"
+      },
+      {
+        "id": "q7",
+        "text": "Quyền truy cập tệp '644' trong Linux tương ứng với chuỗi ký tự nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rwx------"
+          },
+          {
+            "id": "B",
+            "content": "rwxr-xr-x"
+          },
+          {
+            "id": "C",
+            "content": "rw-r--r--"
+          },
+          {
+            "id": "D",
+            "content": "rw-rw-rw-"
+          }
+        ],
+        "explanation": "Số 6 tương ứng với 'read và write' (rw-), còn số 4 tương ứng với 'read-only' (r--), tạo nên chuỗi quyền rw-r--r--. Kết luận Lý giải rw-r--r--"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh nào dùng để liệt kê danh sách các tệp và thư mục bên trong thư mục hiện hành?",
+        "options": [
+          {
+            "id": "A",
+            "content": "list"
+          },
+          {
+            "id": "B",
+            "content": "ls"
+          },
+          {
+            "id": "C",
+            "content": "show"
+          },
+          {
+            "id": "D",
+            "content": "dir -s"
+          }
+        ],
+        "explanation": "Lệnh 'ls' là lệnh tiêu chuẩn dùng để liệt kê nội dung của một thư mục trong giao diện dòng lệnh Linux. Kết luận Lý giải ls"
+      },
+      {
+        "id": "q9",
+        "text": "Thành phần nào của hệ điều hành Linux chịu trách nhiệm quản lý trực tiếp tài nguyên phần cứng và cung cấp dịch vụ cho các ứng dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Shell"
+          },
+          {
+            "id": "B",
+            "content": "Desktop Environment"
+          },
+          {
+            "id": "C",
+            "content": "Terminal"
+          },
+          {
+            "id": "D",
+            "content": "Kernel"
+          }
+        ],
+        "explanation": "Kernel (Nhân) là thành phần cốt lõi của hệ điều hành thực hiện việc giao tiếp giữa phần cứng và phần mềm. Kết luận Lý giải Kernel"
+      },
+      {
+        "id": "q10",
+        "text": "Thư mục nào thường chứa các tệp thiết bị đại diện cho phần cứng như ổ đĩa, chuột, bàn phím?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc"
+          },
+          {
+            "id": "B",
+            "content": "/dev"
+          },
+          {
+            "id": "C",
+            "content": "/mnt"
+          },
+          {
+            "id": "D",
+            "content": "/proc"
+          }
+        ],
+        "explanation": "Thư mục /dev (viết tắt của devices) chứa các tệp đặc biệt dùng để giao tiếp với các thiết bị phần cứng của hệ thống. Kết luận Lý giải /dev"
+      },
+      {
+        "id": "q11",
+        "text": "Để tìm kiếm một chuỗi ký tự cụ thể bên trong một tệp văn bản, bạn nên sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find"
+          },
+          {
+            "id": "B",
+            "content": "locate"
+          },
+          {
+            "id": "C",
+            "content": "grep"
+          },
+          {
+            "id": "D",
+            "content": "search"
+          }
+        ],
+        "explanation": "Lệnh 'grep' (Global Regular Expression Print) là công cụ mạnh mẽ dùng để tìm kiếm các dòng văn bản khớp với một mẫu cụ thể. Kết luận Lý giải grep"
+      },
+      {
+        "id": "q12",
+        "text": "Tín hiệu (Signal) nào yêu cầu một tiến trình dừng lại ngay lập tức mà không thể bị bỏ qua hoặc bắt giữ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGTERM (15)"
+          },
+          {
+            "id": "B",
+            "content": "SIGINT (2)"
+          },
+          {
+            "id": "C",
+            "content": "SIGKILL (9)"
+          },
+          {
+            "id": "D",
+            "content": "SIGHUP (1)"
+          }
+        ],
+        "explanation": "SIGKILL với mã số 9 là tín hiệu cưỡng bức chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình thực hiện các thao tác dọn dẹp. Kết luận Lý giải SIGKILL (9)"
+      },
+      {
+        "id": "q13",
+        "text": "Lệnh nào dùng để tạo một thư mục mới trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "newdir"
+          },
+          {
+            "id": "B",
+            "content": "mkdir"
+          },
+          {
+            "id": "C",
+            "content": "create"
+          },
+          {
+            "id": "D",
+            "content": "md"
+          }
+        ],
+        "explanation": "Lệnh 'mkdir' (make directory) được s�� dụng để tạo một hoặc nhiều thư mục mới trên hệ thống tệp. Kết luận Lý giải mkdir"
+      },
+      {
+        "id": "q14",
+        "text": "Để đọc hướng dẫn chi tiết về cách sử dụng một lệnh cụ thể trong Linux, bạn nên sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "help"
+          },
+          {
+            "id": "B",
+            "content": "info"
+          },
+          {
+            "id": "C",
+            "content": "guide"
+          },
+          {
+            "id": "D",
+            "content": "man"
+          }
+        ],
+        "explanation": "Lệnh 'man' (manual) mở trang hướng dẫn sử dụng chi tiết cho các lệnh, hàm và tệp cấu hình trong Linux. Kết luận Lý giải man"
+      },
+      {
+        "id": "q15",
+        "text": "Thư mục nào thường chứa các tệp thực thi (lệnh) cơ bản mà cả người dùng thường và quản trị viên đều có thể sử dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/sbin"
+          },
+          {
+            "id": "C",
+            "content": "/root"
+          },
+          {
+            "id": "D",
+            "content": "/lib"
+          }
+        ],
+        "explanation": "Thư mục /bin chứa các lệnh thực thi cơ bản cần thiết cho tất cả người dùng hệ thống trong chế độ đơn người dùng hoặc đa người dùng. Kết luận Lý giải /bin"
+      },
+      {
+        "id": "q16",
+        "text": "Trong hệ điều hành Linux, các tệp tin bắt đầu bằng dấu chấm (ví dụ: .bashrc) được hiểu là loại tệp gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tệp hệ thống"
+          },
+          {
+            "id": "B",
+            "content": "Tệp tạm thời"
+          },
+          {
+            "id": "C",
+            "content": "Tệp ẩn"
+          },
+          {
+            "id": "D",
+            "content": "Tệp thực thi"
+          }
+        ],
+        "explanation": "Theo quy ước của Linux và các hệ điều hành tương tự Unix, bất kỳ tệp hoặc thư mục nào bắt đầu bằng dấu chấm sẽ được coi là ẩn. Kết luận Lý giải Tệp ẩn"
+      },
+      {
+        "id": "q17",
+        "text": "Lệnh nào được sử dụng để di chuyển một tệp từ thư mục này sang thư mục khác hoặc để đổi tên tệp?",
+        "options": [
+          {
+            "id": "A",
+            "content": "cp"
+          },
+          {
+            "id": "B",
+            "content": "mv"
+          },
+          {
+            "id": "C",
+            "content": "rm"
+          },
+          {
+            "id": "D",
+            "content": "move"
+          }
+        ],
+        "explanation": "Lệnh 'mv' (move) có chức năng di chuyển vị trí tệp tin hoặc đổi tên tệp tin nếu đích đến nằm trong cùng một thư mục. Kết luận Lý giải mv"
+      },
+      {
+        "id": "q18",
+        "text": "Ký hiệu nào cho phép kết hợp nhiều lệnh lại với nhau bằng cách lấy đầu ra của lệnh trước làm đầu vào cho lệnh sau?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Dấu phẩy (,)"
+          },
+          {
+            "id": "B",
+            "content": "Dấu gạch đứng (|)"
+          },
+          {
+            "id": "C",
+            "content": "Dấu và (&)"
+          },
+          {
+            "id": "D",
+            "content": "Dấu chấm phẩy (;)"
+          }
+        ],
+        "explanation": "Cơ chế đường ống (Pipe) sử dụng ký hiệu '|' để truyền luồng dữ liệu giữa các tiến trình khác nhau. Kết luận Lý giải Dấu gạch đứng (|)"
+      },
+      {
+        "id": "q19",
+        "text": "Lệnh nào dùng để thay đổi mật khẩu của người dùng hiện tại hoặc người dùng khác (nếu có quyền root)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "password"
+          },
+          {
+            "id": "B",
+            "content": "passwd"
+          },
+          {
+            "id": "C",
+            "content": "userpass"
+          },
+          {
+            "id": "D",
+            "content": "setpass"
+          }
+        ],
+        "explanation": "Lệnh 'passwd' là công cụ chuẩn để cập nhật mật khẩu cho các tài khoản người dùng trên hệ thống Linux. Kết luận Lý giải passwd"
+      },
+      {
+        "id": "q20",
+        "text": "Trong trình soạn thảo văn bản Vi, để chuyển từ chế độ lệnh (Command mode) sang chế độ chèn (Insert mode), bạn nhấn phím nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Phím i"
+          },
+          {
+            "id": "B",
+            "content": "Phím Esc"
+          },
+          {
+            "id": "C",
+            "content": "Phím :"
+          },
+          {
+            "id": "D",
+            "content": "Phím x"
+          }
+        ],
+        "explanation": "Nhấn phím 'i' trong trình soạn thảo Vi cho phép người dùng bắt đầu chèn văn bản tại vị trí con trỏ hiện tại. Kết luận Lý giải Phím i"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh 'df' (disk free) thường được người quản trị sử dụng để làm gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Xóa các tệp tin thừa"
+          },
+          {
+            "id": "B",
+            "content": "Kiểm tra dung lượng sử dụng và còn trống của các hệ thống tệp"
+          },
+          {
+            "id": "C",
+            "content": "Định dạng lại ổ đĩa cứng"
+          },
+          {
+            "id": "D",
+            "content": "Hiển thị danh sách các ổ đĩa đang kết nối"
+          }
+        ],
+        "explanation": "Lệnh 'df' hiển thị lượng không gian đĩa đã sử dụng và còn trống trên các hệ thống tệp đã được gắn (mounted) vào hệ thống. Kết luận Lý giải Kiểm tra dung lượng sử dụng và còn trống của các hệ thống tệp"
+      },
+      {
+        "id": "q22",
+        "text": "Thư mục nào trong Linux thường lưu trữ các dữ liệu có tính chất thay đổi liên tục như nhật ký hệ thống (log files) và hàng đợi in ấn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/home"
+          },
+          {
+            "id": "B",
+            "content": "/var"
+          },
+          {
+            "id": "C",
+            "content": "/tmp"
+          },
+          {
+            "id": "D",
+            "content": "/opt"
+          }
+        ],
+        "explanation": "Thư mục /var (viết tắt của variable) được thiết kế để chứa các tệp dữ liệu mà kích thước và nội dung thay đổi thường xuyên trong quá trình vận hành. Kết luận Lý giải /var"
+      },
+      {
+        "id": "q23",
+        "text": "Lệnh nào dùng để thay đổi chủ sở hữu (owner) của một tệp tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chown"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "usermod"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) cho phép thay đổi người dùng và/hoặc nhóm sở hữu một tệp hoặc thư mục cụ thể. Kết luận Lý giải chown"
+      },
+      {
+        "id": "q24",
+        "text": "Khi muốn chấm dứt một tiến trình đang chạy dựa trên mã định danh tiến trình (PID), bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "stop"
+          },
+          {
+            "id": "B",
+            "content": "end"
+          },
+          {
+            "id": "C",
+            "content": "kill"
+          },
+          {
+            "id": "D",
+            "content": "halt"
+          }
+        ],
+        "explanation": "Lệnh 'kill' gửi một tín hiệu đến tiến trình (mặc định là SIGTERM) để yêu cầu tiến trình đó dừng hoạt động. Kết luận Lý giải kill"
+      },
+      {
+        "id": "q25",
+        "text": "Trong Linux, thư mục nào đóng vai trò là thư mục gốc cao nhất của toàn bộ hệ thống tệp?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/root"
+          },
+          {
+            "id": "B",
+            "content": "/home"
+          },
+          {
+            "id": "C",
+            "content": "/"
+          },
+          {
+            "id": "D",
+            "content": "/boot"
+          }
+        ],
+        "explanation": "Dấu gạch chéo '/' đại diện cho thư mục gốc (root directory), là điểm bắt đầu của mọi đường dẫn trong cấu trúc cây thư mục Linux. Kết luận Lý giải /"
+      }
+    ],
+    "logic_map": {
+      "q1": "C",
+      "q2": "B",
+      "q3": "D",
+      "q4": "B",
+      "q5": "C",
+      "q6": "A",
+      "q7": "C",
+      "q8": "B",
+      "q9": "D",
+      "q10": "B",
+      "q11": "C",
+      "q12": "C",
+      "q13": "B",
+      "q14": "D",
+      "q15": "A",
+      "q16": "C",
+      "q17": "B",
+      "q18": "B",
+      "q19": "B",
+      "q20": "A",
+      "q21": "B",
+      "q22": "B",
+      "q23": "B",
+      "q24": "C",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

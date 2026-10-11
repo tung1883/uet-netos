@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 4 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong hệ điều hành Linux, tín hiệu (signal) nào được gửi mặc định khi sử dụng lệnh 'kill' để yêu cầu một tiến trình kết thúc một cách an toàn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGKILL (9)"
+          },
+          {
+            "id": "B",
+            "content": "SIGSTOP (19)"
+          },
+          {
+            "id": "C",
+            "content": "SIGTERM (15)"
+          },
+          {
+            "id": "D",
+            "content": "SIGINT (2)"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn POSIX, tín hiệu SIGTERM (15) là tín hiệu mặc định của lệnh 'kill' giúp tiến trình có cơ hội dọn dẹp tài nguyên và đóng các tệp tin trước khi dừng lại. Kết luận Lý giải SIGTERM (15)."
+      },
+      {
+        "id": "q2",
+        "text": "Thư mục nào trong cấu trúc phân cấp hệ thống tệp tin Linux chứa các tệp tin cấu hình cho toàn bộ hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/var"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Thư mục '/etc' được thiết kế để lưu trữ tất cả các tệp tin cấu hình hệ thống và các kịch bản khởi động của các dịch vụ. Kết luận Lý giải /etc."
+      },
+      {
+        "id": "q3",
+        "text": "Quyền truy cập tệp tin được biểu diễn dưới dạng bát phân là '755' tương ứng với những quyền nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rwxr-xr-x"
+          },
+          {
+            "id": "B",
+            "content": "rwx-r--r--"
+          },
+          {
+            "id": "C",
+            "content": "rwxrwxrwx"
+          },
+          {
+            "id": "D",
+            "content": "rw-r--r--"
+          }
+        ],
+        "explanation": "Giá trị '755' tương ứng với quyền 'rwx' (7) cho chủ sở hữu, 'r-x' (5) cho nhóm và 'r-x' (5) cho những người dùng khác. Kết luận Lý giải rwxr-xr-x."
+      },
+      {
+        "id": "q4",
+        "text": "Tùy chọn nào của lệnh 'grep' cho phép tìm kiếm một chuỗi ký tự mà không phân biệt chữ hoa và chữ thường?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-v"
+          },
+          {
+            "id": "B",
+            "content": "-l"
+          },
+          {
+            "id": "C",
+            "content": "-n"
+          },
+          {
+            "id": "D",
+            "content": "-i"
+          }
+        ],
+        "explanation": "Tùy chọn '-i' (ignore case) trong lệnh 'grep' được sử dụng để bỏ qua sự khác biệt giữa chữ hoa và chữ thường trong quá trình tìm kiếm. Kết luận Lý giải -i."
+      },
+      {
+        "id": "q5",
+        "text": "Để ghi thêm nội dung vào cuối một tệp tin hiện có mà không làm mất dữ liệu cũ, bạn nên sử dụng ký hiệu chuyển hướng nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": ">>"
+          },
+          {
+            "id": "C",
+            "content": "2>"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Ký hiệu '>>' trong Linux thực hiện việc chuyển hướng đầu ra tiêu chuẩn vào cuối một tệp tin thay vì ghi đè hoàn toàn nội dung cũ như ký hiệu '>'. Kết luận Lý giải >>."
+      },
+      {
+        "id": "q6",
+        "text": "Lệnh nào sau đây được sử dụng trong các bản phân phối dựa trên Debian để cập nhật danh sách gói phần mềm từ các kho lưu trữ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "apt upgrade"
+          },
+          {
+            "id": "B",
+            "content": "apt install"
+          },
+          {
+            "id": "C",
+            "content": "apt update"
+          },
+          {
+            "id": "D",
+            "content": "apt remove"
+          }
+        ],
+        "explanation": "Lệnh 'apt update' có nhiệm vụ tải xuống thông tin gói mới nhất từ kho lưu trữ để hệ thống biết các phiên bản phần mềm nào hiện có sẵn. Kết luận Lý giải apt update."
+      },
+      {
+        "id": "q7",
+        "text": "Tệp tin nào lưu trữ thông tin mật khẩu đã được mã hóa của người dùng trong hệ thống Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "C",
+            "content": "/etc/group"
+          },
+          {
+            "id": "D",
+            "content": "/etc/gshadow"
+          }
+        ],
+        "explanation": "Trong các hệ thống Linux hiện đại, tệp '/etc/shadow' được sử dụng để lưu trữ mật khẩu đã mã hóa nhằm tăng cường bảo mật so với việc lưu trực tiếp trong '/etc/passwd'. Kết luận Lý giải /etc/shadow."
+      },
+      {
+        "id": "q8",
+        "text": "Trong Shell Bash, lệnh nào được sử dụng để biến một biến cục bộ thành biến môi trường có thể truy cập bởi các tiến trình con?",
+        "options": [
+          {
+            "id": "A",
+            "content": "set"
+          },
+          {
+            "id": "B",
+            "content": "alias"
+          },
+          {
+            "id": "C",
+            "content": "export"
+          },
+          {
+            "id": "D",
+            "content": "env"
+          }
+        ],
+        "explanation": "Lệnh 'export' dùng để đánh dấu một biến sao cho nó được truyền vào môi trường của bất kỳ tiến trình con nào được khởi tạo từ shell hiện tại. Kết luận Lý giải export."
+      },
+      {
+        "id": "q9",
+        "text": "Thư mục chuẩn nào trong Linux thường chứa các tệp tin nhật ký (log files) của hệ thống và các ứng dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/var/log"
+          },
+          {
+            "id": "B",
+            "content": "/usr/log"
+          },
+          {
+            "id": "C",
+            "content": "/etc/log"
+          },
+          {
+            "id": "D",
+            "content": "/home/log"
+          }
+        ],
+        "explanation": "Hầu hết các tệp tin nhật ký ghi lại hoạt động của hệ thống và dịch vụ đều được lưu trữ tập trung tại thư mục '/var/log'. Kết luận Lý giải /var/log."
+      },
+      {
+        "id": "q10",
+        "text": "Để thiết lập một dịch vụ tự động khởi động cùng hệ thống bằng 'systemd', bạn cần sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "systemctl start"
+          },
+          {
+            "id": "B",
+            "content": "systemctl enable"
+          },
+          {
+            "id": "C",
+            "content": "systemctl reload"
+          },
+          {
+            "id": "D",
+            "content": "systemctl status"
+          }
+        ],
+        "explanation": "Lệnh 'systemctl enable' tạo các liên kết tượng trưng cần thiết để hệ thống 'systemd' biết rằng dịch vụ đó phải được khởi động ở bước boot tiếp theo. Kết luận Lý giải systemctl enable."
+      },
+      {
+        "id": "q11",
+        "text": "Lệnh nào được sử dụng để xem dung lượng đĩa được sử dụng bởi một thư mục cụ thể theo định dạng dễ đọc cho con người (human-readable)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "df -h"
+          },
+          {
+            "id": "B",
+            "content": "du -sh"
+          },
+          {
+            "id": "C",
+            "content": "ls -l"
+          },
+          {
+            "id": "D",
+            "content": "free -m"
+          }
+        ],
+        "explanation": "Lệnh 'du -sh' (disk usage) tính toán tổng dung lượng của thư mục và hiển thị kết quả rút gọn dưới các đơn vị như KB, MB hoặc GB. Kết luận Lý giải du -sh."
+      },
+      {
+        "id": "q12",
+        "text": "Thành phần nào trong hệ thống tệp tin Linux chứa các siêu dữ liệu (metadata) của tệp tin như quyền truy cập, kích thước và thời gian sửa đổi nhưng không chứa tên tệp?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Superblock"
+          },
+          {
+            "id": "B",
+            "content": "Data block"
+          },
+          {
+            "id": "C",
+            "content": "Inode"
+          },
+          {
+            "id": "D",
+            "content": "Hard link"
+          }
+        ],
+        "explanation": "Mỗi tệp tin trong hệ thống tệp tin Linux được đại diện bởi một 'Inode' (index node) chứa tất cả thông tin về tệp ngoại trừ tên tệp và nội dung dữ liệu thực tế. Kết luận Lý giải Inode."
+      },
+      {
+        "id": "q13",
+        "text": "Cổng dịch vụ mặc định được sử dụng cho giao thức truyền tải tệp tin an toàn (SSH) là cổng nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "21"
+          },
+          {
+            "id": "B",
+            "content": "22"
+          },
+          {
+            "id": "C",
+            "content": "23"
+          },
+          {
+            "id": "D",
+            "content": "80"
+          }
+        ],
+        "explanation": "Giao thức SSH (Secure Shell) theo tiêu chuẩn sử dụng cổng TCP số 22 để thiết lập các kết nối điều khiển từ xa được mã hóa. Kết luận Lý giải 22."
+      },
+      {
+        "id": "q14",
+        "text": "Vùng không gian trên đĩa cứng được sử dụng để mở rộng bộ nhớ RAM vật lý khi hệ thống bị thiếu hụt bộ nhớ được gọi là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Cache memory"
+          },
+          {
+            "id": "B",
+            "content": "Buffer memory"
+          },
+          {
+            "id": "C",
+            "content": "Swap space"
+          },
+          {
+            "id": "D",
+            "content": "Virtual drive"
+          }
+        ],
+        "explanation": "Không gian 'Swap' (vùng hoán đổi) cho phép hệ điều hành di chuyển các trang bộ nhớ ít sử dụng từ RAM ra đĩa cứng để giải phóng dung lượng RAM cho các tác vụ khác. Kết luận Lý giải Swap space."
+      },
+      {
+        "id": "q15",
+        "text": "Lệnh nào cho phép bạn xem lại danh sách các câu lệnh mà bạn đã thực hiện trong phiên làm việc hiện tại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "last"
+          },
+          {
+            "id": "B",
+            "content": "history"
+          },
+          {
+            "id": "C",
+            "content": "logs"
+          },
+          {
+            "id": "D",
+            "content": "echo"
+          }
+        ],
+        "explanation": "Lệnh 'history' truy xuất tệp lịch sử của shell để hiển thị danh sách các câu lệnh người dùng đã nhập trước đó. Kết luận Lý giải history."
+      },
+      {
+        "id": "q16",
+        "text": "Để liệt kê tất cả các tiến trình đang chạy trên hệ thống bao gồm cả các tiến trình của người dùng khác, bạn thường sử dụng lệnh 'ps' với tùy chọn nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -a"
+          },
+          {
+            "id": "B",
+            "content": "ps -x"
+          },
+          {
+            "id": "C",
+            "content": "ps -ef"
+          },
+          {
+            "id": "D",
+            "content": "ps -u"
+          }
+        ],
+        "explanation": "Tùy chọn '-ef' (hoặc 'aux') của lệnh 'ps' cung cấp danh sách đầy đủ tất cả các tiến trình đang hoạt động của mọi người dùng trên toàn hệ thống. Kết luận Lý giải ps -ef."
+      },
+      {
+        "id": "q17",
+        "text": "Biến môi trường nào chứa đường dẫn đến trình bao (shell) mặc định đang được sử dụng bởi người dùng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "$HOME"
+          },
+          {
+            "id": "B",
+            "content": "$PATH"
+          },
+          {
+            "id": "C",
+            "content": "$USER"
+          },
+          {
+            "id": "D",
+            "content": "$SHELL"
+          }
+        ],
+        "explanation": "Biến '$SHELL' lưu trữ đường dẫn tuyệt đối đến tệp thực thi của trình bao mà người dùng đang sử dụng, chẳng hạn như '/bin/bash'. Kết luận Lý giải $SHELL."
+      },
+      {
+        "id": "q18",
+        "text": "Câu lệnh nào được sử dụng để giải nén một tệp tin có định dạng '.tar.gz'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "tar -czvf tệp_tin.tar.gz"
+          },
+          {
+            "id": "B",
+            "content": "tar -xzvf tệp_tin.tar.gz"
+          },
+          {
+            "id": "C",
+            "content": "tar -tvf tệp_tin.tar.gz"
+          },
+          {
+            "id": "D",
+            "content": "tar -rzvf tệp_tin.tar.gz"
+          }
+        ],
+        "explanation": "Trong lệnh 'tar', tùy chọn '-x' dùng để giải nén, '-z' dùng cho định dạng gzip, '-v' để hiển thị quá trình và '-f' để chỉ định tệp tin. Kết luận Lý giải tar -xzvf tệp_tin.tar.gz."
+      },
+      {
+        "id": "q19",
+        "text": "Trong trình soạn thảo văn bản Vi/Vim, tổ hợp phím nào được dùng để lưu các thay đổi và thoát khỏi chương trình?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":q!"
+          },
+          {
+            "id": "B",
+            "content": ":w"
+          },
+          {
+            "id": "C",
+            "content": ":wq"
+          },
+          {
+            "id": "D",
+            "content": ":x!"
+          }
+        ],
+        "explanation": "Trong chế độ dòng lệnh của Vim, lệnh ':wq' (write and quit) thực hiện đồng thời việc ghi dữ liệu vào đĩa và đóng trình soạn thảo. Kết luận Lý giải :wq."
+      },
+      {
+        "id": "q20",
+        "text": "Lệnh nào dùng để kiểm tra thông tin về các phân vùng đĩa cứng và dung lượng còn trống của chúng trên hệ thống Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "free -h"
+          },
+          {
+            "id": "B",
+            "content": "df -h"
+          },
+          {
+            "id": "C",
+            "content": "du -sh"
+          },
+          {
+            "id": "D",
+            "content": "mount"
+          }
+        ],
+        "explanation": "Lệnh 'df -h' (disk free) báo cáo dung lượng đĩa đã sử dụng và còn trống trên các hệ thống tệp tin đã gắn (mounted) dưới dạng dễ đọc. Kết luận Lý giải df -h."
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh nào được sử dụng để thay đổi chủ sở hữu của một tệp tin hoặc thư mục trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chown"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) cho phép người quản trị thay đổi người dùng sở hữu và nhóm sở hữu của tệp tin hoặc thư mục. Kết luận Lý giải chown."
+      },
+      {
+        "id": "q22",
+        "text": "Để tìm kiếm các tệp tin có tên kết thúc bằng đuôi '.log' trong thư mục hiện tại và các thư mục con, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls *.log"
+          },
+          {
+            "id": "B",
+            "content": "find . -name '*.log'"
+          },
+          {
+            "id": "C",
+            "content": "search . -name *.log"
+          },
+          {
+            "id": "D",
+            "content": "locate *.log"
+          }
+        ],
+        "explanation": "Lệnh 'find' với tham số '.' để chỉ thư mục hiện tại và '-name' để chỉ định mẫu tên tệp tin cần tìm kiếm. Kết luận Lý giải find . -name '*.log'."
+      },
+      {
+        "id": "q23",
+        "text": "Giá trị 'umask' mặc định nào sẽ khiến các tệp tin mới tạo có quyền truy cập là '666' (đọc và ghi cho tất cả mọi người)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "022"
+          },
+          {
+            "id": "B",
+            "content": "077"
+          },
+          {
+            "id": "C",
+            "content": "000"
+          },
+          {
+            "id": "D",
+            "content": "002"
+          }
+        ],
+        "explanation": "Giá trị 'umask' đóng vai trò là mặt nạ loại bỏ quyền, do đó '000' sẽ không loại bỏ quyền nào, giữ nguyên quyền mặc định của hệ thống cho tệp mới là '666'. Kết luận Lý giải 000."
+      },
+      {
+        "id": "q24",
+        "text": "Trong cấu trúc cây thư mục Linux, thư mục nào thường chứa dữ liệu cá nhân và các tệp cấu hình của người dùng thông thường?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/root"
+          },
+          {
+            "id": "B",
+            "content": "/home"
+          },
+          {
+            "id": "C",
+            "content": "/usr"
+          },
+          {
+            "id": "D",
+            "content": "/var"
+          }
+        ],
+        "explanation": "Thư mục '/home' là vị trí mặc định nơi hệ thống tạo các thư mục con riêng biệt cho từng người dùng để lưu trữ dữ liệu cá nhân. Kết luận Lý giải /home."
+      },
+      {
+        "id": "q25",
+        "text": "Ký tự 'shebang' nào thường xuất hiện ở dòng đầu tiên của một kịch bản shell để chỉ định trình thông dịch sẽ thực thi kịch bản đó?",
+        "options": [
+          {
+            "id": "A",
+            "content": "!!/bin/bash"
+          },
+          {
+            "id": "B",
+            "content": "##/bin/bash"
+          },
+          {
+            "id": "C",
+            "content": "#!/bin/bash"
+          },
+          {
+            "id": "D",
+            "content": "$!/bin/bash"
+          }
+        ],
+        "explanation": "Chuỗi '#!' (đọc là shebang) theo sau là đường dẫn trình thông dịch thông báo cho nhân hệ điều hành biết chương trình nào cần dùng để chạy tệp kịch bản. Kết luận Lý giải #!/bin/bash."
+      }
+    ],
+    "logic_map": {
+      "q1": "C",
+      "q2": "B",
+      "q3": "A",
+      "q4": "D",
+      "q5": "B",
+      "q6": "C",
+      "q7": "B",
+      "q8": "C",
+      "q9": "A",
+      "q10": "B",
+      "q11": "B",
+      "q12": "C",
+      "q13": "B",
+      "q14": "C",
+      "q15": "B",
+      "q16": "C",
+      "q17": "D",
+      "q18": "B",
+      "q19": "C",
+      "q20": "B",
+      "q21": "B",
+      "q22": "B",
+      "q23": "C",
+      "q24": "B",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

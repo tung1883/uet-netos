@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 14 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Ai là người đã viết phiên bản đầu tiên của nhân (kernel) Linux vào năm 1991?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Bill Gates"
+          },
+          {
+            "id": "B",
+            "content": "Steve Jobs"
+          },
+          {
+            "id": "C",
+            "content": "Linus Torvalds"
+          },
+          {
+            "id": "D",
+            "content": "Richard Stallman"
+          }
+        ],
+        "explanation": "Theo lịch sử phát triển phần mềm mã nguồn mở, Linus Torvalds là người đã khởi xướng và viết phiên bản đầu tiên của nhân Linux. Kết luận Lý giải: Linus Torvalds"
+      },
+      {
+        "id": "q2",
+        "text": "Trong hệ điều hành Linux, thư mục nào thường chứa các tập tin cấu hình của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/dev"
+          },
+          {
+            "id": "D",
+            "content": "/root"
+          }
+        ],
+        "explanation": "Thư mục /etc trong cấu trúc cây thư mục Linux là nơi lưu trữ tất cả các tập tin cấu hình hệ thống và dịch vụ. Kết luận Lý giải: /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Lệnh nào được sử dụng để tìm kiếm một chuỗi ký tự cụ thể bên trong một tập tin văn bản?",
+        "options": [
+          {
+            "id": "A",
+            "content": "grep"
+          },
+          {
+            "id": "B",
+            "content": "find"
+          },
+          {
+            "id": "C",
+            "content": "locate"
+          },
+          {
+            "id": "D",
+            "content": "search"
+          }
+        ],
+        "explanation": "Công cụ grep (Global Regular Expression Print) là lệnh phổ biến nhất được sử dụng để lọc và tìm kiếm văn bản theo mẫu trong Linux. Kết luận Lý giải: grep"
+      },
+      {
+        "id": "q4",
+        "text": "Quyền truy cập tập tin 'chmod 755' có nghĩa là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chủ sở hữu có quyền đọc và viết, nhóm và người khác không có quyền gì"
+          },
+          {
+            "id": "B",
+            "content": "Chủ sở hữu có toàn quyền, nhóm và người khác có quyền đọc và thực thi"
+          },
+          {
+            "id": "C",
+            "content": "Mọi người dùng trên hệ thống đều có toàn quyền"
+          },
+          {
+            "id": "D",
+            "content": "Chủ sở hữu có quyền đọc, nhóm có quyền viết, người khác có quyền thực thi"
+          }
+        ],
+        "explanation": "Trong hệ thống bát phân, số 7 tương ��ng với rwx (toàn quyền) và số 5 tương ứng với r-x (đọc và thực thi). Kết luận Lý giải: Chủ sở hữu có toàn quyền, nhóm và người khác có quyền đọc và thực thi"
+      },
+      {
+        "id": "q5",
+        "text": "Lệnh nào cho phép xem các tiến trình đang chạy trong hệ thống theo thời gian thực?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -ef"
+          },
+          {
+            "id": "B",
+            "content": "list"
+          },
+          {
+            "id": "C",
+            "content": "top"
+          },
+          {
+            "id": "D",
+            "content": "show proc"
+          }
+        ],
+        "explanation": "Lệnh top cung cấp một cái nhìn động và cập nhật liên tục về các tiến trình đang hoạt động cũng như việc sử dụng tài nguyên hệ thống. Kết luận Lý giải: top"
+      },
+      {
+        "id": "q6",
+        "text": "Để thay đổi chủ sở hữu của một tập tin hoặc thư mục, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chown"
+          },
+          {
+            "id": "C",
+            "content": "attrib"
+          },
+          {
+            "id": "D",
+            "content": "owner"
+          }
+        ],
+        "explanation": "Lệnh chown (change owner) được sử dụng để thay đổi quyền sở hữu tập tin hoặc thư mục cho một người dùng hoặc nhóm cụ thể. Kết luận Lý giải: chown"
+      },
+      {
+        "id": "q7",
+        "text": "Trên các bản phân phối dựa trên Debian như Ubuntu, lệnh nào được dùng để cập nhật danh sách gói phần mềm từ kho lưu trữ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "apt upgrade"
+          },
+          {
+            "id": "B",
+            "content": "apt install"
+          },
+          {
+            "id": "C",
+            "content": "apt-get update"
+          },
+          {
+            "id": "D",
+            "content": "apt search"
+          }
+        ],
+        "explanation": "Lệnh apt-get update hoặc apt update dùng để đồng bộ hóa các chỉ mục gói từ các nguồn được cấu hình trong hệ thống. Kết luận Lý giải: apt-get update"
+      },
+      {
+        "id": "q8",
+        "text": "Trong trình soạn thảo văn bản Vi/Vim, tổ hợp phím nào dùng để lưu tập tin và thoát khỏi trình soạn thảo?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":q!"
+          },
+          {
+            "id": "B",
+            "content": ":s"
+          },
+          {
+            "id": "C",
+            "content": ":wq"
+          },
+          {
+            "id": "D",
+            "content": ":exit"
+          }
+        ],
+        "explanation": "Lệnh :wq trong chế độ dòng lệnh của Vi/Vim thực hiện ghi (write) nội dung vào đĩa và sau đó thoát (quit). Kết luận Lý giải: :wq"
+      },
+      {
+        "id": "q9",
+        "text": "Ký hiệu nào được dùng để chuyển hướng đầu ra của một lệnh và ghi đè vào một tập tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">>"
+          },
+          {
+            "id": "B",
+            "content": "|"
+          },
+          {
+            "id": "C",
+            "content": ">"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Toán tử '>' được dùng để chuyển hướng đầu ra tiêu chuẩn vào tập tin và sẽ ghi đè nếu tập tin đó đã tồn tại. Kết luận Lý giải: >"
+      },
+      {
+        "id": "q10",
+        "text": "Điểm khác biệt cơ bản nhất giữa Hard link và Soft link (Symbolic link) trong Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hard link có thể liên kết giữa các phân vùng khác nhau"
+          },
+          {
+            "id": "B",
+            "content": "Soft link chia sẻ cùng số Inode với tập tin gốc"
+          },
+          {
+            "id": "C",
+            "content": "Hard link chia sẻ cùng số Inode với tập tin gốc, trong khi Soft link thì không"
+          },
+          {
+            "id": "D",
+            "content": "Khi xóa tập tin gốc, Hard link sẽ bị hỏng"
+          }
+        ],
+        "explanation": "Hard link thực chất là một cái tên khác trỏ đến cùng một Inode vật lý trên đĩa, trong khi Soft link chỉ là một tập tin chứa đường dẫn đến tập tin khác. Kết luận Lý giải: Hard link chia sẻ cùng số Inode với tập tin gốc, trong khi Soft link thì không"
+      },
+      {
+        "id": "q11",
+        "text": "Tiến trình đầu tiên được nhân Linux khởi chạy (có PID bằng 1) trong các hệ thống truyền thống là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "bash"
+          },
+          {
+            "id": "B",
+            "content": "systemd hoặc init"
+          },
+          {
+            "id": "C",
+            "content": "kernel"
+          },
+          {
+            "id": "D",
+            "content": "kswapd"
+          }
+        ],
+        "explanation": "Sau khi nhân được tải, nó sẽ khởi chạy tiến trình init (hoặc systemd trên các hệ thống hiện đại) làm cha của tất cả các tiến trình khác. Kết luận Lý giải: systemd hoặc init"
+      },
+      {
+        "id": "q12",
+        "text": "Lệnh nào dùng để kiểm tra dung lượng còn trống của các phân vùng đĩa cứng dưới dạng dễ đọc (ví dụ: GB, MB)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du -sh"
+          },
+          {
+            "id": "B",
+            "content": "free -m"
+          },
+          {
+            "id": "C",
+            "content": "df -h"
+          },
+          {
+            "id": "D",
+            "content": "ls -l"
+          }
+        ],
+        "explanation": "Lệnh df (disk free) với tùy chọn -h (human-readable) hiển thị thông tin về không gian đĩa của các hệ thống tập tin. Kết luận Lý giải: df -h"
+      },
+      {
+        "id": "q13",
+        "text": "Lệnh nào được dùng để hiển thị 20 dòng cuối cùng của một tập tin văn bản?",
+        "options": [
+          {
+            "id": "A",
+            "content": "head -n 20"
+          },
+          {
+            "id": "B",
+            "content": "last 20"
+          },
+          {
+            "id": "C",
+            "content": "tail -n 20"
+          },
+          {
+            "id": "D",
+            "content": "show -20"
+          }
+        ],
+        "explanation": "Lệnh tail mặc định hiển thị phần cuối của tập tin, và tùy chọn -n cho phép chỉ định chính xác số dòng cần xem. Kết luận Lý giải: tail -n 20"
+      },
+      {
+        "id": "q14",
+        "text": "Tập tin nào trong hệ thống Linux lưu trữ thông tin mật khẩu đã được mã hóa của người dùng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "C",
+            "content": "/etc/group"
+          },
+          {
+            "id": "D",
+            "content": "/etc/config"
+          }
+        ],
+        "explanation": "Để bảo mật, các bản phân phối Linux hiện đại lưu trữ mã băm mật khẩu trong /etc/shadow, nơi chỉ người dùng root mới có quyền đọc. Kết luận Lý giải: /etc/shadow"
+      },
+      {
+        "id": "q15",
+        "text": "Lệnh nào dùng để giải nén một tập tin có định dạng '.tar.gz'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "tar -cvf filename.tar.gz"
+          },
+          {
+            "id": "B",
+            "content": "zip -d filename.tar.gz"
+          },
+          {
+            "id": "C",
+            "content": "tar -xzvf filename.tar.gz"
+          },
+          {
+            "id": "D",
+            "content": "extract filename.tar.gz"
+          }
+        ],
+        "explanation": "Trong lệnh tar, tùy chọn -x dùng để giải nén, -z để xử lý định dạng gzip, -v để hiển thị quá trình và -f để chỉ định tên tập tin. Kết luận Lý giải: tar -xzvf filename.tar.gz"
+      },
+      {
+        "id": "q16",
+        "text": "Để buộc dừng ngay lập tức một tiến trình đang bị treo bằng mã định danh (PID), bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "kill -1 PID"
+          },
+          {
+            "id": "B",
+            "content": "stop PID"
+          },
+          {
+            "id": "C",
+            "content": "kill -9 PID"
+          },
+          {
+            "id": "D",
+            "content": "terminate PID"
+          }
+        ],
+        "explanation": "Tín hiệu số 9 (SIGKILL) gửi thông điệp yêu cầu nhân Linux chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó dọn dẹp tài nguyên. Kết luận Lý giải: kill -9 PID"
+      },
+      {
+        "id": "q17",
+        "text": "Dòng đầu tiên của một tệp lệnh Bash script (Shebang) thường bắt đầu bằng ký tự nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "!! /bin/bash"
+          },
+          {
+            "id": "B",
+            "content": "// bin/bash"
+          },
+          {
+            "id": "C",
+            "content": "#! /bin/bash"
+          },
+          {
+            "id": "D",
+            "content": "$$ /bin/bash"
+          }
+        ],
+        "explanation": "Chuỗi '#!' được gọi là Shebang, dùng để chỉ định chương trình thông dịch sẽ thực thi các dòng lệnh bên dưới nó. Kết luận Lý giải: #! /bin/bash"
+      },
+      {
+        "id": "q18",
+        "text": "Thành phần nào của hệ thống Linux được dùng làm bộ nhớ ảo khi bộ nhớ RAM vật lý đã đầy?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Cache"
+          },
+          {
+            "id": "B",
+            "content": "Buffer"
+          },
+          {
+            "id": "C",
+            "content": "Swap"
+          },
+          {
+            "id": "D",
+            "content": "Virtual RAM"
+          }
+        ],
+        "explanation": "Swap là không gian trên đĩa cứng được hệ điều hành sử dụng để tạm thời lưu trữ dữ liệu từ RAM khi dung lượng RAM vật lý không còn đủ. Kết luận Lý giải: Swap"
+      },
+      {
+        "id": "q19",
+        "text": "Lệnh nào được dùng để lập lịch thực hiện các công việc định kỳ trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "at"
+          },
+          {
+            "id": "B",
+            "content": "schedule"
+          },
+          {
+            "id": "C",
+            "content": "crontab"
+          },
+          {
+            "id": "D",
+            "content": "timer"
+          }
+        ],
+        "explanation": "Dịch vụ cron sử dụng bảng crontab để quản lý các lệnh cần chạy tự động theo các khoảng thời gian xác định. Kết luận Lý giải: crontab"
+      },
+      {
+        "id": "q20",
+        "text": "Ký hiệu đường ống (pipe) '|' trong Linux có chức năng gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu kết quả của lệnh vào một tập tin"
+          },
+          {
+            "id": "B",
+            "content": "Nối hai tập tin văn bản lại với nhau"
+          },
+          {
+            "id": "C",
+            "content": "Lấy đầu ra của lệnh phía trước làm đầu vào cho lệnh phía sau"
+          },
+          {
+            "id": "D",
+            "content": "Chạy hai lệnh cùng một lúc một cách độc lập"
+          }
+        ],
+        "explanation": "Đường ống cho phép kết hợp các lệnh đơn giản lại với nhau bằng cách chuyển dữ liệu từ đầu ra tiêu chuẩn của lệnh này sang đầu vào tiêu chuẩn của lệnh kia. Kết luận Lý giải: Lấy đầu ra của lệnh phía trước làm đầu vào cho lệnh phía sau"
+      },
+      {
+        "id": "q21",
+        "text": "Thư mục nào trong Linux chứa các tập tin nhật ký (log files) ghi lại hoạt động của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/logs"
+          },
+          {
+            "id": "B",
+            "content": "/home/logs"
+          },
+          {
+            "id": "C",
+            "content": "/var/log"
+          },
+          {
+            "id": "D",
+            "content": "/usr/log"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn phân cấp hệ thống tập tin (FHS), thư mục /var/log là nơi lưu trữ các bản ghi nhật ký của hệ thống và các ứng dụng. Kết luận Lý giải: /var/log"
+      },
+      {
+        "id": "q22",
+        "text": "Lệnh nào dùng để xem hướng dẫn sử dụng chi tiết của một lệnh khác trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "help"
+          },
+          {
+            "id": "B",
+            "content": "info"
+          },
+          {
+            "id": "C",
+            "content": "man"
+          },
+          {
+            "id": "D",
+            "content": "guide"
+          }
+        ],
+        "explanation": "Lệnh man (manual) hiển thị các trang tài liệu hướng dẫn về các câu lệnh, định dạng tệp và thư viện hệ thống. Kết luận Lý giải: man"
+      },
+      {
+        "id": "q23",
+        "text": "Phần lõi của hệ điều hành Linux, chịu trách nhiệm quản lý tài nguyên phần cứng và giao tiếp với ứng dụng, được gọi là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Shell"
+          },
+          {
+            "id": "B",
+            "content": "GUI"
+          },
+          {
+            "id": "C",
+            "content": "Kernel"
+          },
+          {
+            "id": "D",
+            "content": "Compiler"
+          }
+        ],
+        "explanation": "Kernel là tầng thấp nhất của hệ điều hành, đóng vai trò cầu nối trung gian giữa phần cứng máy tính và các tiến trình ứng dụng. Kết luận Lý giải: Kernel"
+      },
+      {
+        "id": "q24",
+        "text": "Để tìm kiếm tất cả các tập tin có tên kết thúc bằng '.log' trong thư mục hiện tại và các thư mục con, bạn dùng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "search . -name '*.log'"
+          },
+          {
+            "id": "B",
+            "content": "ls -R *.log"
+          },
+          {
+            "id": "C",
+            "content": "find . -name '*.log'"
+          },
+          {
+            "id": "D",
+            "content": "grep -r '*.log' ."
+          }
+        ],
+        "explanation": "Lệnh find với tùy chọn -name và ký tự đại diện '*' là cách hiệu quả nhất để tìm tập tin theo tên một cách đệ quy. Kết luận Lý giải: find . -name '*.log'"
+      },
+      {
+        "id": "q25",
+        "text": "Lệnh nào dùng để đếm số dòng trong một tập tin văn bản?",
+        "options": [
+          {
+            "id": "A",
+            "content": "count -l"
+          },
+          {
+            "id": "B",
+            "content": "lines"
+          },
+          {
+            "id": "C",
+            "content": "wc -l"
+          },
+          {
+            "id": "D",
+            "content": "total -l"
+          }
+        ],
+        "explanation": "Lệnh wc (word count) với tham số -l (lines) trả về tổng số dòng có trong tập tin được chỉ định. Kết luận Lý giải: wc -l"
+      }
+    ],
+    "logic_map": {
+      "q1": "C",
+      "q2": "B",
+      "q3": "A",
+      "q4": "B",
+      "q5": "C",
+      "q6": "B",
+      "q7": "C",
+      "q8": "C",
+      "q9": "C",
+      "q10": "C",
+      "q11": "B",
+      "q12": "C",
+      "q13": "C",
+      "q14": "B",
+      "q15": "C",
+      "q16": "C",
+      "q17": "C",
+      "q18": "C",
+      "q19": "C",
+      "q20": "C",
+      "q21": "C",
+      "q22": "C",
+      "q23": "C",
+      "q24": "C",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

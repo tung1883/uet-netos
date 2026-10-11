@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 6 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Quyền truy cập tệp tin 'rwxr-x---' tương ứng với giá trị bát phân (octal) nào trong hệ điều hành Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "755"
+          },
+          {
+            "id": "B",
+            "content": "750"
+          },
+          {
+            "id": "C",
+            "content": "640"
+          },
+          {
+            "id": "D",
+            "content": "710"
+          }
+        ],
+        "explanation": "Theo quy ước phân quyền, giá trị r=4, w=2, x=1 nên cụm rwx là 7, r-x là 5 và --- là 0. Kết luận Lý giải: 750"
+      },
+      {
+        "id": "q2",
+        "text": "Lệnh nào được sử dụng để tìm kiếm các tệp tin có đuôi '.log' trong thư mục '/var/log' bao gồm cả các thư mục con?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls /var/log/*.log"
+          },
+          {
+            "id": "B",
+            "content": "search /var/log -name '*.log'"
+          },
+          {
+            "id": "C",
+            "content": "find /var/log -name '*.log'"
+          },
+          {
+            "id": "D",
+            "content": "locate /var/log/*.log"
+          }
+        ],
+        "explanation": "Lệnh 'find' là công cụ mạnh mẽ dùng để tìm kiếm tệp tin dựa trên tên, kích thước hoặc thuộc tính trong toàn bộ cấu trúc cây thư mục. Kết luận Lý giải: find /var/log -name '*.log'"
+      },
+      {
+        "id": "q3",
+        "text": "Tín hiệu (signal) mặc định được gửi đến một tiến trình khi người dùng thực hiện lệnh 'kill [PID]' mà không kèm tham số là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGKILL"
+          },
+          {
+            "id": "B",
+            "content": "SIGSTOP"
+          },
+          {
+            "id": "C",
+            "content": "SIGTERM"
+          },
+          {
+            "id": "D",
+            "content": "SIGINT"
+          }
+        ],
+        "explanation": "Lệnh 'kill' mặc định gửi tín hiệu SIGTERM (số hiệu 15) để yêu cầu tiến trình kết thúc một cách an toàn và có kiểm soát. Kết luận Lý giải: SIGTERM"
+      },
+      {
+        "id": "q4",
+        "text": "Để đếm tổng số dòng có chứa từ 'error' trong tệp 'syslog' mà không phân biệt chữ hoa hay chữ thường, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "grep -ic 'error' syslog"
+          },
+          {
+            "id": "B",
+            "content": "grep -n 'error' syslog"
+          },
+          {
+            "id": "C",
+            "content": "count 'error' syslog"
+          },
+          {
+            "id": "D",
+            "content": "grep -v 'error' syslog"
+          }
+        ],
+        "explanation": "Trong lệnh 'grep', tùy chọn '-i' dùng để bỏ qua phân biệt chữ hoa chữ thường và '-c' dùng để đếm số dòng khớp với mẫu. Kết luận Lý giải: grep -ic 'error' syslog"
+      },
+      {
+        "id": "q5",
+        "text": "Thành phần nào trong hệ thống tệp Linux lưu trữ siêu dữ liệu (metadata) của tệp tin như kích thước, chủ sở hữu và quyền hạn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Superblock"
+          },
+          {
+            "id": "B",
+            "content": "Inode"
+          },
+          {
+            "id": "C",
+            "content": "Data block"
+          },
+          {
+            "id": "D",
+            "content": "Directory entry"
+          }
+        ],
+        "explanation": "Inode là một cấu trúc dữ liệu trên hệ thống tệp chứa thông tin chi tiết về tệp tin ngoại trừ tên tệp và nội dung dữ liệu thực tế. Kết luận Lý giải: Inode"
+      },
+      {
+        "id": "q6",
+        "text": "Điểm khác biệt cơ bản nhất giữa Hard Link và Symbolic Link (Soft Link) trong Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hard Link có thể trỏ đến thư mục còn Symbolic Link thì không"
+          },
+          {
+            "id": "B",
+            "content": "Hard Link trỏ đến cùng một số hiệu Inode của tệp gốc trong khi Symbolic Link tạo Inode mới"
+          },
+          {
+            "id": "C",
+            "content": "Symbolic Link không thể hoạt động nếu tệp gốc bị di chuyển sang phân vùng khác"
+          },
+          {
+            "id": "D",
+            "content": "Hard Link tốn nhiều dung lượng đĩa cứng hơn so với Symbolic Link"
+          }
+        ],
+        "explanation": "Hard Link liên kết trực tiếp với Inode của tệp nguồn trên cùng một phân vùng, trong khi Symbolic Link chỉ chứa đường dẫn văn bản đến tệp đó. Kết luận Lý giải: Hard Link trỏ đến cùng một số hiệu Inode của tệp gốc trong khi Symbolic Link tạo Inode mới"
+      },
+      {
+        "id": "q7",
+        "text": "Biến môi trường nào quy định danh sách các đường dẫn thư mục mà hệ thống sẽ tìm kiếm khi người dùng thực thi một lệnh?",
+        "options": [
+          {
+            "id": "A",
+            "content": "HOME"
+          },
+          {
+            "id": "B",
+            "content": "SHELL"
+          },
+          {
+            "id": "C",
+            "content": "PATH"
+          },
+          {
+            "id": "D",
+            "content": "PWD"
+          }
+        ],
+        "explanation": "Biến 'PATH' chứa danh sách các thư mục được phân cách bởi dấu hai chấm để shell tìm kiếm các tệp thực thi tương ứng với lệnh được nhập. Kết luận Lý giải: PATH"
+      },
+      {
+        "id": "q8",
+        "text": "Trong hệ thống Linux, tệp tin nào lưu trữ các mật khẩu đã được mã hóa của người dùng để tăng cường tính bảo mật?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "C",
+            "content": "/etc/group"
+          },
+          {
+            "id": "D",
+            "content": "/etc/gshadow"
+          }
+        ],
+        "explanation": "Tệp '/etc/shadow' được thiết kế để lưu trữ mật khẩu mã hóa và các thông tin liên quan đến hết hạn mật khẩu, chỉ có quyền root mới có thể đọc. Kết luận Lý giải: /etc/shadow"
+      },
+      {
+        "id": "q9",
+        "text": "Toán tử nào được sử dụng trong dòng lệnh để ghi thêm (append) kết quả của một lệnh vào cuối một tệp tin hiện có?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": "|"
+          },
+          {
+            "id": "C",
+            "content": ">>"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Toán tử '>>' thực hiện chuyển hướng đầu ra tiêu chuẩn vào một tệp tin bằng cách ghi nối tiếp vào cuối nội dung cũ thay vì ghi đè. Kết luận Lý giải: >>"
+      },
+      {
+        "id": "q10",
+        "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa cứng đã sử dụng và còn tr��ng trên các hệ thống tệp đang được gắn (mounted)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du"
+          },
+          {
+            "id": "B",
+            "content": "df"
+          },
+          {
+            "id": "C",
+            "content": "free"
+          },
+          {
+            "id": "D",
+            "content": "lsblk"
+          }
+        ],
+        "explanation": "Lệnh 'df' (disk free) hiển thị báo cáo chi tiết về không gian đĩa của các hệ thống tệp đang hoạt động trên máy tính. Kết luận Lý giải: df"
+      },
+      {
+        "id": "q11",
+        "text": "Trên các bản phân phối dựa trên Debian như Ubuntu, lệnh nào dùng để đồng bộ hóa danh sách gói phần mềm từ máy chủ về máy cục bộ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "sudo apt install"
+          },
+          {
+            "id": "B",
+            "content": "sudo apt upgrade"
+          },
+          {
+            "id": "C",
+            "content": "sudo apt update"
+          },
+          {
+            "id": "D",
+            "content": "sudo apt dist-upgrade"
+          }
+        ],
+        "explanation": "Lệnh 'apt update' dùng để cập nhật chỉ mục các gói phần mềm từ kho lưu trữ để hệ thống biết về các phiên bản mới có sẵn. Kết luận Lý giải: sudo apt update"
+      },
+      {
+        "id": "q12",
+        "text": "Thư mục nào trong cấu trúc hệ thống tệp Linux (FHS) chứa các tệp cấu hình quan trọng của toàn bộ hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/var"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Thư mục '/etc' là nơi lưu trữ các tệp cấu hình tĩnh cho hệ điều hành và các ứng dụng dịch vụ được cài đặt trên hệ thống. Kết luận Lý giải: /etc"
+      },
+      {
+        "id": "q13",
+        "text": "Ký hiệu đường ống '|' (pipe) trong Linux có chức năng chính là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chạy hai lệnh cùng một lúc một cách song song"
+          },
+          {
+            "id": "B",
+            "content": "Ghi kết quả của lệnh vào một tệp tin"
+          },
+          {
+            "id": "C",
+            "content": "Chuyển đầu ra của lệnh đứng trước làm đầu vào cho lệnh đứng sau"
+          },
+          {
+            "id": "D",
+            "content": "Dừng thực hiện lệnh nếu có lỗi xảy ra"
+          }
+        ],
+        "explanation": "Đường ống pipe cho phép kết nối các lệnh lại với nhau bằng cách lấy kết quả từ stdout của lệnh này làm stdin cho lệnh kia. Kết luận Lý giải: Chuyển đầu ra của lệnh đứng trước làm đầu vào cho lệnh đứng sau"
+      },
+      {
+        "id": "q14",
+        "text": "Để chạy một chương trình hoặc một tập lệnh trong nền (background) ngay từ khi bắt đầu, bạn cần thêm ký tự nào vào cuối câu lệnh?",
+        "options": [
+          {
+            "id": "A",
+            "content": "%"
+          },
+          {
+            "id": "B",
+            "content": "!"
+          },
+          {
+            "id": "C",
+            "content": "&"
+          },
+          {
+            "id": "D",
+            "content": "@"
+          }
+        ],
+        "explanation": "Việc thêm ký tự '&' vào cuối câu lệnh sẽ yêu cầu shell thực thi tiến trình đó ở chế độ nền, giúp người dùng tiếp tục nhập lệnh khác. Kết luận Lý giải: &"
+      },
+      {
+        "id": "q15",
+        "text": "Thuộc tính 'Sticky Bit' khi được thiết lập trên một thư mục dùng chung (như /tmp) có tác dụng gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Ngăn chặn mọi người dùng ghi dữ liệu vào thư mục đó"
+          },
+          {
+            "id": "B",
+            "content": "Chỉ cho phép chủ sở hữu của tệp tin mới có quyền xóa tệp đó trong thư mục"
+          },
+          {
+            "id": "C",
+            "content": "Tự động sao lưu tất cả tệp tin khi chúng được tạo ra"
+          },
+          {
+            "id": "D",
+            "content": "Cho phép mọi người dùng có quyền thực thi bất kỳ tệp nào trong thư mục"
+          }
+        ],
+        "explanation": "Sticky Bit bảo vệ các tệp trong thư mục công cộng bằng cách hạn chế quyền xóa tệp chỉ dành cho chủ sở hữu của tệp hoặc người dùng root. Kết luận Lý giải: Chỉ cho phép chủ sở hữu của tệp tin mới có quyền xóa tệp đó trong thư mục"
+      },
+      {
+        "id": "q16",
+        "text": "Lệnh nào được dùng để xem thông tin về thời gian hệ thống đã chạy, số người dùng đang đăng nhập và tải trung bình của CPU?",
+        "options": [
+          {
+            "id": "A",
+            "content": "top"
+          },
+          {
+            "id": "B",
+            "content": "uptime"
+          },
+          {
+            "id": "C",
+            "content": "who"
+          },
+          {
+            "id": "D",
+            "content": "stat"
+          }
+        ],
+        "explanation": "Lệnh 'uptime' cung cấp một dòng thông báo tóm tắt về trạng thái hoạt động và mức độ bận rộn của hệ thống. Kết luận Lý giải: uptime"
+      },
+      {
+        "id": "q17",
+        "text": "Lệnh 'sudo' trong Linux được sử dụng với mục đích chính là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Đổi mật khẩu cho người dùng hiện tại"
+          },
+          {
+            "id": "B",
+            "content": "Tạo một tài khoản người dùng mới trên hệ thống"
+          },
+          {
+            "id": "C",
+            "content": "Thực thi lệnh với quyền hạn của người dùng quản trị (root)"
+          },
+          {
+            "id": "D",
+            "content": "Liệt kê tất cả các tiến trình đang chạy"
+          }
+        ],
+        "explanation": "Lệnh 'sudo' (superuser do) cho phép người dùng bình thường thực hiện các tác vụ quản trị sau khi xác thực mật khẩu cá nhân. Kết luận Lý giải: Thực thi lệnh với quyền h���n của người dùng quản trị (root)"
+      },
+      {
+        "id": "q18",
+        "text": "Để kiểm tra địa chỉ IP hiện tại của các giao diện mạng trên hệ thống Linux hiện đại, lệnh nào sau đây được khuyến nghị sử dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ifconfig"
+          },
+          {
+            "id": "B",
+            "content": "netstat -rn"
+          },
+          {
+            "id": "C",
+            "content": "ip addr"
+          },
+          {
+            "id": "D",
+            "content": "ping localhost"
+          }
+        ],
+        "explanation": "Trong các bản phân phối Linux mới, lệnh 'ip addr' từ gói iproute2 đã thay thế cho lệnh 'ifconfig' vốn đã lỗi thời. Kết luận Lý giải: ip addr"
+      },
+      {
+        "id": "q19",
+        "text": "Trình nạp khởi động (bootloader) phổ biến nhất được sử dụng để quản lý quá trình khởi động của các bản phân phối Linux hiện nay là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "LILO"
+          },
+          {
+            "id": "B",
+            "content": "GRUB"
+          },
+          {
+            "id": "C",
+            "content": "BOOTMGR"
+          },
+          {
+            "id": "D",
+            "content": "Syslinux"
+          }
+        ],
+        "explanation": "GRUB (Grand Unified Bootloader) là trình nạp khởi động tiêu chuẩn có khả năng tải nhiều hệ điều hành và cung cấp menu tùy chọn khi khởi động. Kết luận Lý giải: GRUB"
+      },
+      {
+        "id": "q20",
+        "text": "Để giải nén một tệp tin có định dạng '.tar.gz' bằng lệnh 'tar', bạn sử dụng tổ hợp các tùy chọn nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-cvf"
+          },
+          {
+            "id": "B",
+            "content": "-tvf"
+          },
+          {
+            "id": "C",
+            "content": "-xzf"
+          },
+          {
+            "id": "D",
+            "content": "-rvf"
+          }
+        ],
+        "explanation": "Tùy chọn 'x' để giải nén, 'z' để xử lý định dạng nén gzip và 'f' để chỉ định tệp tin cần xử lý. Kết luận Lý giải: -xzf"
+      },
+      {
+        "id": "q21",
+        "text": "Tệp cấu hình nào trong thư mục cá nhân của người dùng (~/) được shell thực thi mỗi khi một phiên làm việc Bash mới được bắt đầu?",
+        "options": [
+          {
+            "id": "A",
+            "content": ".bash_history"
+          },
+          {
+            "id": "B",
+            "content": ".bashrc"
+          },
+          {
+            "id": "C",
+            "content": "/etc/profile"
+          },
+          {
+            "id": "D",
+            "content": ".bash_logout"
+          }
+        ],
+        "explanation": "Tệp '.bashrc' chứa các thiết lập môi trường cá nhân, các hàm và bí danh lệnh (alias) được tải cho mỗi shell tương tác. Kết luận Lý giải: .bashrc"
+      },
+      {
+        "id": "q22",
+        "text": "Lệnh nào cho phép bạn theo dõi nội dung của một tệp nhật ký (log) theo thời gian thực khi dữ liệu mới được thêm vào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "cat -n"
+          },
+          {
+            "id": "B",
+            "content": "head -10"
+          },
+          {
+            "id": "C",
+            "content": "tail -f"
+          },
+          {
+            "id": "D",
+            "content": "less +G"
+          }
+        ],
+        "explanation": "Tùy chọn '-f' của lệnh 'tail' giữ cho tệp luôn mở và hiển thị ngay lập tức các dòng mới được ghi vào cuối tệp. Kết luận Lý giải: tail -f"
+      },
+      {
+        "id": "q23",
+        "text": "Lệnh 'free' trong Linux cung cấp thông tin về thành phần nào của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tốc độ xử lý của CPU"
+          },
+          {
+            "id": "B",
+            "content": "Bộ nhớ vật lý (RAM) và bộ nhớ hoán đổi (Swap)"
+          },
+          {
+            "id": "C",
+            "content": "Dung lượng trống trên các ổ đĩa cứng"
+          },
+          {
+            "id": "D",
+            "content": "Băng thông mạng đang sử dụng"
+          }
+        ],
+        "explanation": "Lệnh 'free' hiển thị tổng lượng bộ nhớ thực và bộ nhớ ảo của hệ thống cùng với trạng thái sử dụng của chúng. Kết luận Lý giải: Bộ nhớ vật lý (RAM) và bộ nhớ hoán đổi (Swap)"
+      },
+      {
+        "id": "q24",
+        "text": "Tệp tin '/etc/fstab' đóng vai trò gì trong quá trình vận hành hệ điều hành Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu trữ lịch sử các lệnh đã thực hiện của người dùng root"
+          },
+          {
+            "id": "B",
+            "content": "Cấu hình danh sách các tiến trình khởi động cùng hệ thống"
+          },
+          {
+            "id": "C",
+            "content": "Chứa thông tin cấu hình để tự động gắn kết các phân vùng ổ đĩa"
+          },
+          {
+            "id": "D",
+            "content": "Định nghĩa danh sách các địa chỉ IP bị chặn truy cập"
+          }
+        ],
+        "explanation": "Tệp '/etc/fstab' được hệ thống đọc khi khởi động để xác định cách thức và vị trí gắn các hệ thống tệp vào cây thư mục gốc. Kết luận Lý giải: Chứa thông tin cấu hình ��ể tự động gắn kết các phân vùng ổ đĩa"
+      },
+      {
+        "id": "q25",
+        "text": "Trong trình soạn thảo văn bản Vim, bạn cần nhập lệnh nào để lưu tất cả thay đổi và thoát ra ngoài terminal?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":q!"
+          },
+          {
+            "id": "B",
+            "content": ":w"
+          },
+          {
+            "id": "C",
+            "content": ":wq"
+          },
+          {
+            "id": "D",
+            "content": ":x!"
+          }
+        ],
+        "explanation": "Tổ hợp ':wq' là lệnh kết hợp giữa 'write' (ghi) và 'quit' (thoát) để hoàn tất việc chỉnh sửa văn bản trong Vim. Kết luận Lý giải: :wq"
+      }
+    ],
+    "logic_map": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "C",
+      "q4": "A",
+      "q5": "B",
+      "q6": "B",
+      "q7": "C",
+      "q8": "B",
+      "q9": "C",
+      "q10": "B",
+      "q11": "C",
+      "q12": "B",
+      "q13": "C",
+      "q14": "C",
+      "q15": "B",
+      "q16": "B",
+      "q17": "C",
+      "q18": "C",
+      "q19": "B",
+      "q20": "C",
+      "q21": "B",
+      "q22": "C",
+      "q23": "B",
+      "q24": "C",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

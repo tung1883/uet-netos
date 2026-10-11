@@ -1,0 +1,373 @@
+thanh 
+ Normal 
+ thanh 
+ 2 
+ 164 
+ 2017-04-08T10:56:00Z 
+ 2017-04-08T10:56:00Z 
+ 6 
+ 1181 
+ 6733 
+ Hudevelop 
+ 56 
+ 15 
+ 7899 
+ 12.00 
+
+ false 
+ 
+ Normal 
+ 0 pt 
+ 0 pt 
+ 0 
+ 0 
+
+ false 
+ false 
+ false 
+ 
+ EN-US 
+ X-NONE 
+ X-NONE 
+ 0 pt 
+ 0 pt 
+
+ MicrosoftInternetExplorer4 
+
+ Bài 14.
+Dịch vụ Samba 
+
+ 1.           
+ Giới
+thiệu 
+
+ Trong một LAN có thể tồn tại cả máy
+Linux và máy Windows và yêu cầu cơ bản là các máy dù chạy hệ điều hành khác
+nhau vẫn có thể kết nối mạng và chia sẻ tài nguyên cho nhau. Để thực hiện điều
+này, Ubuntu cung cấp và tích hợp các dịch chung cho môi trường Windows. Các
+dịch vụ này hỗ trợ chia sẽ dữ liệu và thông tin về máy tính cũng như người dùng
+tham gia mạng. Có thể chia các dịch vụ này theo ba nhóm chức năng sau: 
+
+ -        
+ Các dịch vụ chia sẻ tệp và
+máy in: Sử dụng giao thức Server Message Block (SMB) để chia sẻ tệp, thư mục, ổ
+đĩa và máy in trong mạng. SMB là giao thức được Windows
+sử dụng để chia sẻ dữ liệu qua mạng. 
+
+ -        
+ Các dịch vụ thư mục: Chia sẻ các thông
+tin thiết yêu về máy tính và người dùng trong mạng với các công nghệ như Lightweight Directory Access Protocol (LDAP) và Microsoft
+Active Directory®. 
+
+ -        
+ Xác thực và truy cập:
+Thiết lập định danh của máy tính và người dùng trong mạng và xác định thông tin
+mà máy tính hoặc người dùng có quyền được truy cập. 
+
+ Ubuntu sử dụng Samba để thực hiện kết
+nối mạng với Windows. 
+
+ 2.           
+ Cài
+đặt 
+
+ Mở Terminal, chạy lệnh sau để cài đặt
+gói Samba: 
+
+ sudo
+apt install samba 
+
+ 3.           
+ Chia
+sẻ tệp 
+
+ Một trong những cách thức nối mạng phổ
+biến nhất giữa Ubuntu và Windows là cấu hình Samba như một File Server để chia
+sẻ tệp giữa Ubuntu và Windows. 
+
+ Phần này hướng dẫn cấu hình Samba để
+chia sẻ tệp không yêu cầu mật khẩu. Yêu cầu an ninh được trình bày trong Mục 4. 
+
+ 3.1. Cấu hình 
+
+ Tệp cấu hình chính của Samba là
+/etc/samba/smb.conf. Trong tệp cấu hình này, dấu # được đặt đầu dòng chú
+thích. Dòng không có dấu # ở đầu là dòng cấu hình. 
+
+ Cập nhật tệp /etc/samba/smb.conf. Trong phần
+[global], đặt giá trị cho tham số workgroup là tên nhóm và security là user như
+sau: 
+
+ [global] 
+
+ workgroup
+= EXAMPLE 
+
+                ... 
+
+             security = user 
+
+ Tham số workgroup xác định tên nhóm của Windows
+mà máy Linux đăng nhập, nhóm này phải tồn tại trước khi cấu hình
+Samba. 
+
+ # server string is the equivalent of the NT Description field 
+
+ server string = Samba Server 
+
+ server string là tham số gán mô tả về tên
+máy Linux trên mạng. Việc gán giá trị cho tham số này không ảnh hưởng
+lớn đến việc cấu hình Samba. 
+
+ Để chia sẻ một thư
+mục, ví dụ /home/thanh/share, thêm một phần cấu hình vào cuối tệp cấu hình
+/etc/samba/smb.conf như sau: 
+
+ [myshare] 
+
+     comment = Ubuntu File Server Share 
+
+     path = /home/thanh/share 
+
+     browsable = yes 
+
+     guest ok = yes 
+
+     read only = no 
+
+     create mask = 0755 
+
+ -          
+ Tham số comment cũng gần giống như
+tham số server string mà chúng ta đã đề cập ở phần trước nhưng chỉ
+khác đây là chú thích cho thư mục. 
+
+ -          
+ Tham số path xác định đường dẫn
+đến thư mục được chia sẻ trên Ubuntu server. 
+
+ -          
+ Nếu đặt browseable = no thì Samba
+sẽ không hiển thị thư mục này trên trình duyệt mạng (ví dụ Windows
+Explorer), mặc dù nó vẫn được chia sẻ, việc này giống như chia sẻ thư
+mục trên Windows với dấu $. 
+
+ -          
+ Tham số guest ok = yes cho các máy
+khác kết nối đến chia sẻ mà không cần mật khẩu. 
+
+ -          
+ Tham số read only sẽ cho phép
+người dùng trên máy trạm có thể  
+ thay đổi nội dung file hay không. 
+
+ -          
+ Tham số create mask cho biết quyền của
+các tệp được tạo mới trên thư mục được chia sẻ. 
+
+ Bây giờ cần tạo thư mục được chia sẻ và thiết lập
+quyền trên thư mục đó. 
+
+ sudo
+mkdir -p /home/thanh/share 
+
+ sudo
+chown nobody:nogroup /home/thanh/share/ 
+
+ Khởi động lại dịch vụ Samba bằng lệnh sau: 
+
+ sudo
+systemctl restart smbd.service nmbd.service 
+
+ Samba server có hai dịch vụ là smbd và nmbd.
+smbd cung cấp dịch vụ chia sẻ tệp và dữ liệu, nmbd cung cấp khả năng
+hỗ trợ NetBIOS name. 
+
+ 3.2. Truy cập thư mục được chia sẻ 
+
+ 3.2.1. Truy cập từ máy Windows 
+
+ Với  
+ Windows, việc truy cập thư mục được chia sẻ bởi Samba server thật dễ
+dàng. Chỉ cần mở Windows Explore và tìm đến domain có máy Ubuntu, nhấn
+chuột lên tên máy Ubuntu sau đó nhập vào tên tài khoản và mật khẩu
+tương ứng, ta   sẽ nhìn thấy các thư
+mục chia sẻ hiện ra. Tại đây ta  
+ cũng có thể thực hiện các tính năng như map ổ đĩa, đồng bộ
+thư mục, sao chép file như ở các máy Windows thông thường. 
+
+ 3.2.2. Truy cập từ máy Linux 
+
+ Từ máy chạy Linux, có thể sử dụng smbclient hoặc
+mount để truy cập đến thư mục được chia sẻ trên Samba server. 
+
+ Smbclient cung cấp giao diện dòng lệnh gần
+giống như   giao diện của FTP để
+truyền file qua mạng. Để liệt kê các thư mục chia sẻ có trên máy
+172.16.200.203 ta   dùng smbclient với
+tham số –L: 
+
+ [root@localhost ~]# smbclient  
+ -L 172.16.200.203 
+
+ Kết quả sẽ cho ra một số thư mục được chia
+sẻ trên trên máy 172.16.200.203. Để vào một trong các thư mục trên
+ta   dùng lệnh smbclient với tham số
+-U tên user (tên user có quyền truy cập vào thư mục tương ứng). 
+
+ [root@localhost ~]# smbclient  
+ //172.16.200.203/tên_thư_mục    -U
+tên_user 
+
+ Sau khi gõ vào mật khẩu ta   sẽ nhận được dấu nhắc: 
+
+ smb:\> 
+
+ Tại dấu nhắc này ta   có thể xem các file bên trong thư mục
+chia sẻ bằng lệnh ls, lấy nó về máy Linux bằng lệnh get hoặc mget. Ví
+dụ 
+
+ smb:\> ls 
+
+   .D         0  
+ Fri Aug 24 00:02:24 2001 
+
+   ..D         0  
+ Fri Aug 24 00:02:24 2001 
+
+ ethereal-setup-0.8.17.exe           
+ A   6153372   Thu Apr 19 18:54:42 2001 
+
+ gozilla39.exe   A   1869172  
+ Thu Jun   7 12:05:50 2001 
+
+ smb:\> mget eth* 
+
+ Get file ethereal-setup-0.8.17.exe? y 
+
+ getting file ethereal-setup-0.8.17.exe of size 6153372 as
+ethereal-setup-   0.8.17.exe (925.624 kb/s)
+(average 925.624 kb/s) 
+
+ smb:\> 
+
+ 4.           
+ Chia
+sẻ máy in 
+
+ Samba cũng thường được sử dụng đẻ chia sẻ máy in
+được cài đặt trên máy Ubuntu. Phần này hướng dẫn cấu hình Samba để chia sẻ máy
+in không yêu cầu mật khẩu. Xem cấu hình an ninh tại Mục 5. 
+
+ Cập nhật tệp cấu hình /etc/samba/smb.conf. Thay
+đổi thuộc tính workgroup với giá trị là tên nhóm trong mạng , đặt security là
+user, như sau: 
+
+    workgroup = EXAMPLE 
+
+    ... 
+
+    security = user 
+
+ Trong phần [printers] đặt các tham số sau: 
+
+    browsable = yes 
+
+    guest ok = yes 
+
+ Khởi động lại Samba bằng lệnh sau: 
+
+ sudo
+systemctl restart smbd.service nmbd.service 
+
+ 5.           
+ Cấu
+hình an ninh 
+
+ 5.1. Các chế độ an ninh của Samba 
+
+ Có hai mức độ an ninh trong giao thức   Common Internet Filesystem (CIFS) là user-level
+và share-level. Samba cung cấp bốn chế độ an ninh mức người dùng và một chế độ
+an ninh mức chia sẻ, bao gồm: 
+
+ -        
+ security = user: Yêu cầu máy khách
+cung cấp tên đăng nhập và mật khẩu để kết nối đến chia sẻ. Tài khoản người dùng
+Samba khác với tài khoản người dùng hệ thống. Tuy nhiên, gói libpam-winbind sẽ
+đồng bộ người dùng hệ thống với CSDL người dùng của Samba. 
+
+ -        
+ security = domain: Cho phép Samba
+server xuất hiện trước Windows như Primary Domain Controller (PDC), Backup
+Domain Controller (BDC), hoặc một Domain Member Server (DMS). 
+
+ -        
+ security = ADS: Cho phép Samba server
+tham gia một Active Directory domain. 
+
+ -        
+ security = server: Cho phép Samba trở
+thành thành viên server. Tuy nhiên, vì lý do an ninh, chế độ này không nên được
+sử dụng. 
+
+ -        
+ security = share: Cho phép máy khác
+kết nối đến chia sẻ mà không cần cùng cấp tên sử dụng và mật khẩu. 
+
+ 5.2. Security = User 
+
+ Sử dụng chế độ security=user để yêu cầu chia sẻ có
+xác thực. Đầu tiên, cài đặt gói libpam-winbind để đồng bộ người dùng hệ thống
+vào CSDL người dùng của Samba. 
+
+ sudo apt install libpam-winbind 
+
+ Cập nhật tệp cấu hình /etc/samba/smb.conf, trong
+phần [myshare] đặt: 
+
+             [myshare] 
+
+             … 
+
+     guest ok = no 
+
+ … 
+
+ Khởi động lại Samba: 
+
+ sudo
+systemctl restart smbd.service nmbd.service 
+
+ Bây giờ khi kết nối đến chia sẻ bạn sẽ cần cung
+cấp tên sử dụng và mật khẩu hệ thống. 
+
+ Có thể giới hạn người dùng và nhóm người dùng được
+quyền kêt nối đến chia sẻ bằng tham số valid user. Ví dụ sau chỉ cho người dùng
+hungpv và nhóm admin được kết nối đến chia sẻ. 
+
+             [myshare] 
+
+             … 
+
+ valid users=hungpv,@admin 
+
+ … 
+
+ 5.3. Thiết lập quyền trên tệp 
+
+ Trong cấu hình chia sẻ, có thể sử dụng các tham số
+read list, write list và admin users để chỉ định người dùng, nhóm người dùng có
+quyền đọc, ghi hay quản trị, tương ứng. Ví dụ 
+
+ [myshare] 
+
+ … 
+
+ read
+list = @qa 
+
+          write list = @sysadmin,
+vincent 
+
+ admin
+users = melissa

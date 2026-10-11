@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 13 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Thành phần nào được coi là nhân của hệ điều hành Linux, chịu trách nhiệm quản lý tài nguyên phần cứng và giao tiếp giữa phần mềm và phần cứng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Shell"
+          },
+          {
+            "id": "B",
+            "content": "Kernel"
+          },
+          {
+            "id": "C",
+            "content": "Desktop Environment"
+          },
+          {
+            "id": "D",
+            "content": "Application Suite"
+          }
+        ],
+        "explanation": "Theo kiến trúc hệ thống Linux, Kernel là thành phần cốt lõi quản lý CPU, bộ nhớ và các thiết bị ngoại vi, đóng vai trò trung gian giữa ứng dụng và phần cứng. Kết luận Lý giải Kernel"
+      },
+      {
+        "id": "q2",
+        "text": "Trong Linux, thư mục nào thường chứa các tệp cấu hình hệ thống toàn cục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/home"
+          },
+          {
+            "id": "C",
+            "content": "/etc"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn phân cấp hệ thống tập tin (FHS), thư mục /etc là nơi lưu trữ các tệp cấu hình tĩnh của hệ thống và các dịch vụ. Kết luận Lý giải /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tệp tin hoặc thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chown"
+          },
+          {
+            "id": "B",
+            "content": "chmod"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Lệnh chmod (change mode) được sử dụng để thay đổi các bit quyền read, write và execute cho chủ sở hữu, nhóm và người dùng khác. Kết luận Lý giải chmod"
+      },
+      {
+        "id": "q4",
+        "text": "Lệnh nào hiển thị đường dẫn đầy đủ của thư mục làm việc hiện tại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "dir"
+          },
+          {
+            "id": "B",
+            "content": "ls"
+          },
+          {
+            "id": "C",
+            "content": "path"
+          },
+          {
+            "id": "D",
+            "content": "pwd"
+          }
+        ],
+        "explanation": "Lệnh pwd (print working directory) trả về đường dẫn tuyệt đối từ thư mục gốc đến thư mục mà người dùng đang thao tác. Kết luận Lý giải pwd"
+      },
+      {
+        "id": "q5",
+        "text": "Ký hiệu nào được sử dụng để chuyển hướng đầu ra của một lệnh và ghi đè vào một tệp tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": ">>"
+          },
+          {
+            "id": "C",
+            "content": "<"
+          },
+          {
+            "id": "D",
+            "content": "|"
+          }
+        ],
+        "explanation": "Trong Shell Linux, toán tử > được dùng để chuyển hướng kết quả đầu ra chuẩn vào một tệp, nếu tệp đã tồn tại nó sẽ bị ghi đè nội dung. Kết luận Lý giải >"
+      },
+      {
+        "id": "q6",
+        "text": "Để tìm kiếm một chuỗi ký tự cụ thể trong một tệp tin, người dùng thường sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find"
+          },
+          {
+            "id": "B",
+            "content": "search"
+          },
+          {
+            "id": "C",
+            "content": "grep"
+          },
+          {
+            "id": "D",
+            "content": "locate"
+          }
+        ],
+        "explanation": "Lệnh grep (Global Regular Expression Print) là công cụ mạnh mẽ dùng để lọc và tìm kiếm các dòng văn bản khớp với một mẫu định sẵn. Kết luận Lý giải grep"
+      },
+      {
+        "id": "q7",
+        "text": "Người dùng có quyền cao nhất trong hệ thống Linux, có UID bằng 0, được gọi là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Administrator"
+          },
+          {
+            "id": "B",
+            "content": "Supervisor"
+          },
+          {
+            "id": "C",
+            "content": "Manager"
+          },
+          {
+            "id": "D",
+            "content": "root"
+          }
+        ],
+        "explanation": "Trong Linux, tài khoản root là tài khoản quản trị hệ thống có toàn quyền thao tác trên mọi tệp tin và tiến trình. Kết luận Lý giải root"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh nào được sử dụng để xem danh sách các tiến trình đang chạy trong hệ thống theo thời gian thực?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps"
+          },
+          {
+            "id": "B",
+            "content": "top"
+          },
+          {
+            "id": "C",
+            "content": "kill"
+          },
+          {
+            "id": "D",
+            "content": "list"
+          }
+        ],
+        "explanation": "Lệnh top cung cấp một cái nhìn động và liên tục về các tiến trình hệ thống, bao gồm mức sử dụng CPU và bộ nhớ của từng tiến trình. Kết luận Lý giải top"
+      },
+      {
+        "id": "q9",
+        "text": "Trong lệnh 'ls -l', cột đầu tiên hiển thị thông tin gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Kích thước tệp"
+          },
+          {
+            "id": "B",
+            "content": "Ngày sửa đổi cuối cùng"
+          },
+          {
+            "id": "C",
+            "content": "Quyền truy cập tệp"
+          },
+          {
+            "id": "D",
+            "content": "Tên chủ sở hữu"
+          }
+        ],
+        "explanation": "Khi thực hiện lệnh ls với tùy chọn -l, cột đầu tiên mô tả loại tệp và các quyền đọc, ghi, thực thi của các đối tượng người dùng. Kết luận Lý giải Quyền truy cập tệp"
+      },
+      {
+        "id": "q10",
+        "text": "Để tạo một thư mục mới trong Linux, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "newdir"
+          },
+          {
+            "id": "B",
+            "content": "touch"
+          },
+          {
+            "id": "C",
+            "content": "mkdir"
+          },
+          {
+            "id": "D",
+            "content": "createdir"
+          }
+        ],
+        "explanation": "Lệnh mkdir (make directory) cho phép người dùng tạo ra một hoặc nhiều thư mục mới tại đường dẫn được chỉ định. Kết luận Lý giải mkdir"
+      },
+      {
+        "id": "q11",
+        "text": "Lệnh nào được dùng để di chuyển hoặc đổi tên tệp tin/thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "cp"
+          },
+          {
+            "id": "B",
+            "content": "mv"
+          },
+          {
+            "id": "C",
+            "content": "rn"
+          },
+          {
+            "id": "D",
+            "content": "move"
+          }
+        ],
+        "explanation": "Lệnh mv (move) thực hiện việc di chuyển tệp từ vị trí này sang vị trí khác hoặc đổi tên tệp nếu nguồn và đích nằm trong cùng một thư mục. Kết luận Lý giải mv"
+      },
+      {
+        "id": "q12",
+        "text": "Trong Linux, tệp tin bắt đầu bằng dấu chấm (.) được hiểu là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tệp tin hệ thống"
+          },
+          {
+            "id": "B",
+            "content": "Tệp tin ẩn"
+          },
+          {
+            "id": "C",
+            "content": "Tệp tin thực thi"
+          },
+          {
+            "id": "D",
+            "content": "Tệp tin nén"
+          }
+        ],
+        "explanation": "Theo quy ước của các trình quản lý tệp và Shell Linux, các tệp hoặc thư mục có tên bắt đầu bằng dấu chấm sẽ không hiển thị khi dùng lệnh ls thông thường. Kết luận Lý giải Tệp tin ẩn"
+      },
+      {
+        "id": "q13",
+        "text": "Lệnh nào dùng để xóa một thư mục rỗng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rm"
+          },
+          {
+            "id": "B",
+            "content": "rmdir"
+          },
+          {
+            "id": "C",
+            "content": "del"
+          },
+          {
+            "id": "D",
+            "content": "erase"
+          }
+        ],
+        "explanation": "Lệnh rmdir (remove directory) chỉ có thể xóa các thư mục không chứa bất kỳ tệp tin hay thư mục con nào bên trong. Kết luận Lý giải rmdir"
+      },
+      {
+        "id": "q14",
+        "text": "Tùy chọn nào của lệnh 'ls' dùng để hiển thị tất cả các tệp, bao gồm cả tệp ẩn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-h"
+          },
+          {
+            "id": "B",
+            "content": "-l"
+          },
+          {
+            "id": "C",
+            "content": "-a"
+          },
+          {
+            "id": "D",
+            "content": "-all"
+          }
+        ],
+        "explanation": "Tùy chọn -a (all) yêu cầu lệnh ls liệt kê mọi thực thể trong thư mục, kể cả các tệp bắt đầu bằng dấu chấm. Kết luận Lý giải -a"
+      },
+      {
+        "id": "q15",
+        "text": "Để kết thúc một tiến trình đang chạy bằng ID của nó (PID), bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "stop"
+          },
+          {
+            "id": "B",
+            "content": "end"
+          },
+          {
+            "id": "C",
+            "content": "kill"
+          },
+          {
+            "id": "D",
+            "content": "exit"
+          }
+        ],
+        "explanation": "Lệnh kill gửi một tín hiệu (mặc định là SIGTERM) đến một tiến trình cụ thể thông qua mã PID để yêu cầu tiến trình đó dừng lại. Kết luận Lý giải kill"
+      },
+      {
+        "id": "q16",
+        "text": "Lệnh nào dùng để hiển thị dung lượng đĩa còn trống của hệ thống tập tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du"
+          },
+          {
+            "id": "B",
+            "content": "df"
+          },
+          {
+            "id": "C",
+            "content": "free"
+          },
+          {
+            "id": "D",
+            "content": "disk"
+          }
+        ],
+        "explanation": "Lệnh df (disk free) báo cáo lượng không gian đĩa đã sử dụng và còn trống trên các hệ thống tập tin được gắn kết. Kết luận Lý giải df"
+      },
+      {
+        "id": "q17",
+        "text": "Trong trình soạn thảo Vi/Vim, để chuyển sang chế độ chèn (insert mode), bạn nhấn phím nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "a"
+          },
+          {
+            "id": "B",
+            "content": "i"
+          },
+          {
+            "id": "C",
+            "content": "o"
+          },
+          {
+            "id": "D",
+            "content": "s"
+          }
+        ],
+        "explanation": "Khi đang ở chế độ lệnh (command mode), phím i được sử dụng để bắt đầu nhập văn bản tại vị trí con trỏ hiện tại. Kết luận Lý giải i"
+      },
+      {
+        "id": "q18",
+        "text": "Ký hiệu nào được dùng để nối đầu ra của lệnh này thành đầu vào của lệnh kia?",
+        "options": [
+          {
+            "id": "A",
+            "content": ";"
+          },
+          {
+            "id": "B",
+            "content": "&"
+          },
+          {
+            "id": "C",
+            "content": "| (Pipe)"
+          },
+          {
+            "id": "D",
+            "content": ">"
+          }
+        ],
+        "explanation": "Toán tử đường ống (pipe) cho phép chuyển hướng luồng dữ liệu chuẩn từ đầu ra của lệnh đứng trước sang đầu vào chuẩn của lệnh đứng sau. Kết luận Lý giải | (Pipe)"
+      },
+      {
+        "id": "q19",
+        "text": "Lệnh nào cho phép xem nội dung của một tệp văn bản mà không cần mở trình soạn thảo?",
+        "options": [
+          {
+            "id": "A",
+            "content": "cat"
+          },
+          {
+            "id": "B",
+            "content": "view"
+          },
+          {
+            "id": "C",
+            "content": "read"
+          },
+          {
+            "id": "D",
+            "content": "show"
+          }
+        ],
+        "explanation": "Lệnh cat (concatenate) thường được dùng để hiển thị toàn bộ nội dung của một hoặc nhiều tệp văn bản ra màn hình terminal. Kết luận Lý giải cat"
+      },
+      {
+        "id": "q20",
+        "text": "Để thay đổi mật khẩu của người dùng hiện tại, lệnh nào được sử dụng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "password"
+          },
+          {
+            "id": "B",
+            "content": "chpass"
+          },
+          {
+            "id": "C",
+            "content": "passwd"
+          },
+          {
+            "id": "D",
+            "content": "setpass"
+          }
+        ],
+        "explanation": "Lệnh passwd cho phép người dùng thay đổi mật khẩu đăng nhập của chính họ hoặc cho phép root thay đổi mật khẩu của người dùng khác. Kết luận Lý giải passwd"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh nào dùng để hiển thị 10 dòng cuối cùng của một tệp tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "last"
+          },
+          {
+            "id": "B",
+            "content": "head"
+          },
+          {
+            "id": "C",
+            "content": "end"
+          },
+          {
+            "id": "D",
+            "content": "tail"
+          }
+        ],
+        "explanation": "Mặc định, lệnh tail sẽ trích xuất và hiển thị một phần cuối của tệp tin, giúp theo dõi các tệp nhật ký (log) dễ dàng hơn. Kết luận Lý giải tail"
+      },
+      {
+        "id": "q22",
+        "text": "Quyền truy cập tệp '755' trong Linux có nghĩa là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chủ sở hữu có toàn quyền, nhóm và người khác chỉ có quyền đọc và thực thi"
+          },
+          {
+            "id": "B",
+            "content": "Chủ sở hữu có quyền đọc, nhóm có quyền ghi, người khác có quyền thực thi"
+          },
+          {
+            "id": "C",
+            "content": "Mọi người đều có toàn quyền trên tệp tin"
+          },
+          {
+            "id": "D",
+            "content": "Chủ sở hữu có quyền đọc và ghi, nhóm và người khác không có quyền gì"
+          }
+        ],
+        "explanation": "Số 7 tương ứng với rwx, số 5 tương ứng với r-x, do đó 755 cấp toàn quyền cho chủ sở hữu và quyền đọc/thực thi cho các đối tượng còn lại. Kết luận Lý giải Chủ sở hữu có toàn quyền, nhóm và người khác chỉ có quyền đọc và thực thi"
+      },
+      {
+        "id": "q23",
+        "text": "Lệnh nào dùng để nén hoặc giải nén các tệp tin có định dạng .tar?",
+        "options": [
+          {
+            "id": "A",
+            "content": "zip"
+          },
+          {
+            "id": "B",
+            "content": "gzip"
+          },
+          {
+            "id": "C",
+            "content": "tar"
+          },
+          {
+            "id": "D",
+            "content": "compress"
+          }
+        ],
+        "explanation": "Lệnh tar (tape archive) được sử dụng để gộp nhiều tệp thành một tệp lưu trữ duy nhất và có khả năng kết hợp với các công cụ nén. Kết luận Lý giải tar"
+      },
+      {
+        "id": "q24",
+        "text": "Thư mục nào trong Linux chứa các tệp thiết bị (device files) như ổ đĩa, bàn phím?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/mnt"
+          },
+          {
+            "id": "B",
+            "content": "/dev"
+          },
+          {
+            "id": "C",
+            "content": "/media"
+          },
+          {
+            "id": "D",
+            "content": "/proc"
+          }
+        ],
+        "explanation": "Theo triết lý 'mọi thứ đều là tệp' của Linux, các thiết bị phần cứng được đại diện bởi các tệp đặc biệt nằm trong thư mục /dev. Kết luận Lý giải /dev"
+      },
+      {
+        "id": "q25",
+        "text": "Lệnh nào dùng để thay đổi chủ sở hữu của một tệp tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chroot"
+          },
+          {
+            "id": "C",
+            "content": "chown"
+          },
+          {
+            "id": "D",
+            "content": "usermod"
+          }
+        ],
+        "explanation": "Lệnh chown (change owner) cho phép người dùng có đặc quyền thay đổi tài khoản sở hữu và nhóm sở hữu của tệp tin hoặc thư mục. Kết luận Lý giải chown"
+      }
+    ],
+    "logic_map": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "B",
+      "q4": "D",
+      "q5": "A",
+      "q6": "C",
+      "q7": "D",
+      "q8": "B",
+      "q9": "C",
+      "q10": "C",
+      "q11": "B",
+      "q12": "B",
+      "q13": "B",
+      "q14": "C",
+      "q15": "C",
+      "q16": "B",
+      "q17": "B",
+      "q18": "C",
+      "q19": "A",
+      "q20": "C",
+      "q21": "D",
+      "q22": "A",
+      "q23": "C",
+      "q24": "B",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

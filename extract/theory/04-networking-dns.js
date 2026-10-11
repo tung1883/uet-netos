@@ -1,0 +1,133 @@
+const WEEKS = require('../weeks');
+module.exports = [
+  {
+    text: 'Default gateway được sử dụng khi nào?',
+    options: ['Khi gửi dữ liệu tới mạng ngoài subnet', 'Khi phân giải tên miền', 'Khi lưu tệp trên máy cục bộ', 'Khi truy cập một máy trong cùng subnet'],
+    correctIndex: 0,
+    explanation: 'Default gateway (router mặc định) được dùng khi đích đến nằm ngoài subnet cục bộ, không khớp bất kỳ route cụ thể nào khác.',
+  },
+  {
+    text: 'Ưu điểm của netplan try khi cấu hình mạng từ xa là gì?',
+    options: ['Xóa cấu hình mạng cũ ngay lập tức', 'Tự hoàn tác nếu cấu hình không được xác nhận', 'Tự động tạo tài khoản quản trị', 'Tự động cài đặt SSH'],
+    correctIndex: 1,
+    explanation: 'netplan try áp dụng tạm cấu hình mới và tự rollback nếu người dùng không xác nhận trong thời gian giới hạn — an toàn khi SSH từ xa.',
+  },
+  {
+    text: 'Subnet mask /24 (255.255.255.0) cho phép tối đa bao nhiêu địa chỉ host khả dụng trong mạng đó?',
+    options: ['256', '254', '255', '128'],
+    correctIndex: 1,
+    explanation: '/24 có 256 địa chỉ, trừ đi 2 (network address và broadcast address) còn 254 host khả dụng.',
+  },
+  {
+    text: 'Bản ghi DNS loại A dùng để làm gì?',
+    options: ['Ánh xạ tên miền sang địa chỉ IPv4', 'Ánh xạ tên miền sang địa chỉ IPv6', 'Chỉ định mail server', 'Chỉ định name server'],
+    correctIndex: 0,
+    explanation: 'Bản ghi A (Address) ánh xạ một tên miền sang địa chỉ IPv4 tương ứng.',
+  },
+  {
+    text: 'Bản ghi DNS loại AAAA dùng để làm gì?',
+    options: ['Ánh xạ tên miền sang địa chỉ IPv4', 'Ánh xạ tên miền sang địa chỉ IPv6', 'Chỉ định alias cho tên miền', 'Chỉ định mail server'],
+    correctIndex: 1,
+    explanation: 'Bản ghi AAAA tương tự bản ghi A nhưng dùng cho địa chỉ IPv6.',
+  },
+  {
+    text: 'Bản ghi DNS loại CNAME dùng để làm gì?',
+    options: [
+      'Tạo một tên bí danh (alias) trỏ tới một tên miền chuẩn khác',
+      'Chỉ định mail server của domain',
+      'Ánh xạ trực tiếp sang IPv4',
+      'Chỉ định name server có thẩm quyền',
+    ],
+    correctIndex: 0,
+    explanation: 'CNAME (Canonical Name) tạo bí danh, trỏ một tên miền sang một tên miền chuẩn khác để phân giải tiếp.',
+  },
+  {
+    text: 'Bản ghi DNS loại MX dùng để làm gì?',
+    options: ['Chỉ định máy chủ xử lý thư điện tử của domain', 'Ánh xạ tên miền sang IP', 'Chỉ định name server', 'Tạo bí danh cho tên miền'],
+    correctIndex: 0,
+    explanation: 'Bản ghi MX (Mail Exchange) khai báo mail server nào sẽ nhận thư gửi tới domain, kèm độ ưu tiên.',
+  },
+  {
+    text: 'Bản ghi DNS loại PTR dùng để làm gì?',
+    options: ['Phân giải xuôi từ tên miền sang IP', 'Phân giải ngược từ địa chỉ IP sang tên miền', 'Chỉ định mail server', 'Chỉ định TTL'],
+    correctIndex: 1,
+    explanation: 'PTR (Pointer) dùng cho reverse DNS, ánh xạ một địa chỉ IP ngược trở lại tên miền.',
+  },
+  {
+    text: 'Bản ghi DNS loại NS dùng để làm gì?',
+    options: ['Chỉ định name server có thẩm quyền quản lý zone', 'Ánh xạ tên miền sang IPv6', 'Chỉ định mail server', 'Tạo alias cho domain'],
+    correctIndex: 0,
+    explanation: 'Bản ghi NS khai báo các name server chịu trách nhiệm trả lời truy vấn DNS cho một zone.',
+  },
+  {
+    text: 'DHCP cấp phát những thông tin gì cho máy khách theo mặc định?',
+    options: [
+      'Chỉ địa chỉ IP',
+      'Địa chỉ IP, subnet mask, default gateway và thường kèm DNS server',
+      'Chỉ địa chỉ MAC',
+      'Chỉ mật khẩu Wi-Fi',
+    ],
+    correctIndex: 1,
+    explanation: 'DHCP server cấp phát động địa chỉ IP cùng các tham số mạng liên quan: gateway, subnet mask, DNS.',
+  },
+  {
+    text: 'Quy trình xin địa chỉ IP qua DHCP được gọi là gì (4 bước)?',
+    options: ['SYN-ACK-FIN-RST', 'DISCOVER-OFFER-REQUEST-ACK (DORA)', 'GET-POST-PUT-DELETE', 'OPEN-READ-WRITE-CLOSE'],
+    correctIndex: 1,
+    explanation: 'Quy trình DHCP gồm 4 bước: Discover (client tìm server), Offer (server đề nghị IP), Request (client yêu cầu), Acknowledge (server xác nhận).',
+  },
+  {
+    text: 'Một lease DHCP hết hạn (expire) thì điều gì xảy ra?',
+    options: [
+      'Máy khách mất kết nối vĩnh viễn',
+      'Máy khách phải xin cấp lại hoặc gia hạn địa chỉ IP',
+      'Server tự xóa toàn bộ cấu hình',
+      'Không có gì xảy ra',
+    ],
+    correctIndex: 1,
+    explanation: 'Khi lease time hết hạn, client cần gửi yêu cầu gia hạn (renew) hoặc xin cấp lại địa chỉ mới từ DHCP server.',
+  },
+  {
+    text: 'Reverse proxy khác forward proxy ở điểm nào?',
+    options: [
+      'Reverse proxy đại diện cho client, forward proxy đại diện cho server',
+      'Reverse proxy đại diện cho server (nhận request từ client bên ngoài rồi chuyển vào server nội bộ), forward proxy đại diện cho client (chuyển request của client ra ngoài)',
+      'Không có sự khác biệt',
+      'Reverse proxy chỉ hoạt động với FTP',
+    ],
+    correctIndex: 1,
+    explanation: 'Forward proxy đứng giữa client và Internet, che giấu client; reverse proxy đứng trước server, che giấu server thật và phân phối tải.',
+    week: WEEKS.W6_LT4,
+  },
+  {
+    text: 'HTTPS khác HTTP chủ yếu ở điểm nào?',
+    options: [
+      'HTTPS nhanh hơn HTTP gấp đôi',
+      'HTTPS mã hóa dữ liệu truyền tải qua TLS/SSL, HTTP truyền dữ liệu dạng rõ (plaintext)',
+      'HTTPS chỉ dùng được cho hình ảnh',
+      'Không có khác biệt thực chất',
+    ],
+    correctIndex: 1,
+    explanation: 'HTTPS = HTTP + TLS/SSL, mã hóa toàn bộ dữ liệu trao đổi giữa client và server, bảo vệ khỏi nghe lén/giả mạo.',
+    week: WEEKS.W6_LT4,
+  },
+  {
+    text: 'Giao thức SMTP dùng để làm gì trong hệ thống mail?',
+    options: ['Nhận thư về máy khách', 'Gửi/chuyển tiếp thư điện tử giữa các mail server và từ client lên server', 'Mã hóa ổ đĩa', 'Phân giải tên miền'],
+    correctIndex: 1,
+    explanation: 'SMTP (Simple Mail Transfer Protocol) là giao thức chuẩn để gửi và chuyển tiếp thư điện tử.',
+    week: WEEKS.W6_LT4,
+  },
+  {
+    text: 'Khác biệt giữa POP3 và IMAP khi nhận thư là gì?',
+    options: [
+      'POP3 thường tải thư về và xóa khỏi server, IMAP đồng bộ và giữ thư trên server, truy cập được từ nhiều thiết bị',
+      'IMAP không hỗ trợ mã hóa còn POP3 có',
+      'POP3 nhanh hơn vì không cần kết nối mạng',
+      'Không có khác biệt',
+    ],
+    correctIndex: 0,
+    explanation: 'POP3 theo mô hình tải-về-và-xóa (đơn thiết bị); IMAP giữ đồng bộ thư trên server, phù hợp truy cập đa thiết bị.',
+    week: WEEKS.W6_LT4,
+  },
+];

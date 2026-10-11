@@ -1,0 +1,44 @@
+2018s-int3301-1: Thực hành hệ điều hành mạng 
+
+ 2018s-int3301-1: Thực hành hệ điều hành mạng
+
+ Tiết 7-11, thứ 2, PM201-G2
+ 
+ Ubuntu Server 
+
+ Command 
+
+ Package Management 
+
+ Editor & IO Redirect 
+
+ Networking 
+
+ Domain Name Service 
+
+ Remote Administration 
+
+ User Managament 
+
+ File Permision 
+
+ Process 
+
+ Partition & Quota 
+
+ LVM & RAID 
+
+ Shell script 
+
+ Samba 
+
+ File Servers 
+
+ Security 
+
+ Network Authentication 
+
+ Monitoring 
+
+ Tham khảo: Kiểm tra giữa kỳ , 
+ Thi kết thúc học phần

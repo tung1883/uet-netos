@@ -1,0 +1,5213 @@
+[
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Ai là người khởi xướng và phát triển phiên bản đầu tiên của nhân Linux vào năm 1991?",
+  "options": [
+   "Bill Gates",
+   "Steve Jobs",
+   "Linus Torvalds",
+   "Richard Stallman"
+  ],
+  "correctIndex": 2,
+  "explanation": "Dựa trên lịch sử phát triển mã nguồn mở, Linus Torvalds là sinh viên người Phần Lan đã viết và công bố nhân Linux đầu tiên. Kết luận Lý giải Linus Torvalds"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Trong cấu trúc cây thư mục của Linux, thư mục nào chứa các tệp cấu hình hệ thống quan trọng?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/home",
+   "/usr"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo tiêu chuẩn phân cấp hệ thống tệp (FHS), thư mục /etc là nơi lưu trữ các tệp cấu hình cho hệ thống và các ứng dụng cài đặt. Kết luận Lý giải /etc"
+ },
+ {
+  "sourceSets": [
+   1,
+   7
+  ],
+  "text": "Lệnh nào được sử dụng để hiển thị đường dẫn của thư mục hiện hành mà người dùng đang đứng?",
+  "options": [
+   "ls",
+   "cd",
+   "dir",
+   "pwd"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'pwd' viết tắt của 'print working directory' dùng để in ra đường dẫn tuyệt đối của thư mục làm việc hiện tại. Kết luận Lý giải pwd"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Để thay đổi quyền truy cập (permission) của một tệp tin hoặc thư mục, người dùng sử dụng lệnh nào?",
+  "options": [
+   "chown",
+   "chmod",
+   "chgrp",
+   "assign"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chmod' được sử dụng để thay đổi chế độ truy cập (đọc, ghi, thực thi) của tệp hoặc thư mục cho các đối tượng người dùng. Kết luận Lý giải chmod"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Mã định danh (UID) của người dùng tối cao (root) trong hệ thống Linux mặc định là bao nhiêu?",
+  "options": [
+   "1000",
+   "1",
+   "0",
+   "500"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong hầu hết các bản phân phối Linux, tài khoản quản trị viên hệ thống (root) luôn có mã định danh người dùng là 0. Kết luận Lý giải 0"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Ký hiệu nào sau đây được sử dụng để chuyển hướng đầu ra của một lệnh và ghi đè vào một tệp tin mới?",
+  "options": [
+   "Ký hiệu 'dấu lớn hơn' (>)",
+   "Ký hiệu 'hai dấu lớn hơn' (>>)",
+   "Ký hiệu 'dấu nhỏ hơn' (<)",
+   "Ký hiệu 'dấu gạch đứng' (|)"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong Shell Linux, toán tử '>' dùng để chuyển hướng đầu ra tiêu chuẩn vào một tệp và sẽ xóa nội dung cũ nếu tệp đã tồn tại. Kết luận Lý giải Ký hiệu 'dấu lớn hơn' (>)"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Quyền truy cập tệp '644' trong Linux tương ứng với chuỗi ký tự nào sau đây?",
+  "options": [
+   "rwx------",
+   "rwxr-xr-x",
+   "rw-r--r--",
+   "rw-rw-rw-"
+  ],
+  "correctIndex": 2,
+  "explanation": "Số 6 tương ứng với 'read và write' (rw-), còn số 4 tương ứng với 'read-only' (r--), tạo nên chuỗi quyền rw-r--r--. Kết luận Lý giải rw-r--r--"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Lệnh nào dùng để liệt kê danh sách các tệp và thư mục bên trong thư mục hiện hành?",
+  "options": [
+   "list",
+   "ls",
+   "show",
+   "dir -s"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'ls' là lệnh tiêu chuẩn dùng để liệt kê nội dung của một thư mục trong giao diện dòng lệnh Linux. Kết luận Lý giải ls"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Thành phần nào của hệ điều hành Linux chịu trách nhiệm quản lý trực tiếp tài nguyên phần cứng và cung cấp dịch vụ cho các ứng dụng?",
+  "options": [
+   "Shell",
+   "Desktop Environment",
+   "Terminal",
+   "Kernel"
+  ],
+  "correctIndex": 3,
+  "explanation": "Kernel (Nhân) là thành phần cốt lõi của hệ điều hành thực hiện việc giao tiếp giữa phần cứng và phần mềm. Kết luận Lý giải Kernel"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Thư mục nào thường chứa các tệp thiết bị đại diện cho phần cứng như ổ đĩa, chuột, bàn phím?",
+  "options": [
+   "/etc",
+   "/dev",
+   "/mnt",
+   "/proc"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục /dev (viết tắt của devices) chứa các tệp đặc biệt dùng để giao tiếp với các thiết bị phần cứng của hệ thống. Kết luận Lý giải /dev"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Để tìm kiếm một chuỗi ký tự cụ thể bên trong một tệp văn bản, bạn nên sử dụng lệnh nào?",
+  "options": [
+   "find",
+   "locate",
+   "grep",
+   "search"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'grep' (Global Regular Expression Print) là công cụ mạnh mẽ dùng để tìm kiếm các dòng văn bản khớp với một mẫu cụ thể. Kết luận Lý giải grep"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Tín hiệu (Signal) nào yêu cầu một tiến trình dừng lại ngay lập tức mà không thể bị bỏ qua hoặc bắt giữ?",
+  "options": [
+   "SIGTERM (15)",
+   "SIGINT (2)",
+   "SIGKILL (9)",
+   "SIGHUP (1)"
+  ],
+  "correctIndex": 2,
+  "explanation": "SIGKILL với mã số 9 là tín hiệu cưỡng bức chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình thực hiện các thao tác dọn dẹp. Kết luận Lý giải SIGKILL (9)"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Lệnh nào dùng để tạo một thư mục mới trong Linux?",
+  "options": [
+   "newdir",
+   "mkdir",
+   "create",
+   "md"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'mkdir' (make directory) được s�� dụng để tạo một hoặc nhiều thư mục mới trên hệ thống tệp. Kết luận Lý giải mkdir"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Để đọc hướng dẫn chi tiết về cách sử dụng một lệnh cụ thể trong Linux, bạn nên sử dụng lệnh nào?",
+  "options": [
+   "help",
+   "info",
+   "guide",
+   "man"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'man' (manual) mở trang hướng dẫn sử dụng chi tiết cho các lệnh, hàm và tệp cấu hình trong Linux. Kết luận Lý giải man"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Thư mục nào thường chứa các tệp thực thi (lệnh) cơ bản mà cả người dùng thường và quản trị viên đều có thể sử dụng?",
+  "options": [
+   "/bin",
+   "/sbin",
+   "/root",
+   "/lib"
+  ],
+  "correctIndex": 0,
+  "explanation": "Thư mục /bin chứa các lệnh thực thi cơ bản cần thiết cho tất cả người dùng hệ thống trong chế độ đơn người dùng hoặc đa người dùng. Kết luận Lý giải /bin"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Trong hệ điều hành Linux, các tệp tin bắt đầu bằng dấu chấm (ví dụ: .bashrc) được hiểu là loại tệp gì?",
+  "options": [
+   "Tệp hệ thống",
+   "Tệp tạm thời",
+   "Tệp ẩn",
+   "Tệp thực thi"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo quy ước của Linux và các hệ điều hành tương tự Unix, bất kỳ tệp hoặc thư mục nào bắt đầu bằng dấu chấm sẽ được coi là ẩn. Kết luận Lý giải Tệp ẩn"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Lệnh nào được sử dụng để di chuyển một tệp từ thư mục này sang thư mục khác hoặc để đổi tên tệp?",
+  "options": [
+   "cp",
+   "mv",
+   "rm",
+   "move"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'mv' (move) có chức năng di chuyển vị trí tệp tin hoặc đổi tên tệp tin nếu đích đến nằm trong cùng một thư mục. Kết luận Lý giải mv"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Ký hiệu nào cho phép kết hợp nhiều lệnh lại với nhau bằng cách lấy đầu ra của lệnh trước làm đầu vào cho lệnh sau?",
+  "options": [
+   "Dấu phẩy (,)",
+   "Dấu gạch đứng (|)",
+   "Dấu và (&)",
+   "Dấu chấm phẩy (;)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cơ chế đường ống (Pipe) sử dụng ký hiệu '|' để truyền luồng dữ liệu giữa các tiến trình khác nhau. Kết luận Lý giải Dấu gạch đứng (|)"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Lệnh nào dùng để thay đổi mật khẩu của người dùng hiện tại hoặc người dùng khác (nếu có quyền root)?",
+  "options": [
+   "password",
+   "passwd",
+   "userpass",
+   "setpass"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'passwd' là công cụ chuẩn để cập nhật mật khẩu cho các tài khoản người dùng trên hệ thống Linux. Kết luận Lý giải passwd"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Trong trình soạn thảo văn bản Vi, để chuyển từ chế độ lệnh (Command mode) sang chế độ chèn (Insert mode), bạn nhấn phím nào?",
+  "options": [
+   "Phím i",
+   "Phím Esc",
+   "Phím :",
+   "Phím x"
+  ],
+  "correctIndex": 0,
+  "explanation": "Nhấn phím 'i' trong trình soạn thảo Vi cho phép người dùng bắt đầu chèn văn bản tại vị trí con trỏ hiện tại. Kết luận Lý giải Phím i"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Lệnh 'df' (disk free) thường được người quản trị sử dụng để làm gì?",
+  "options": [
+   "Xóa các tệp tin thừa",
+   "Kiểm tra dung lượng sử dụng và còn trống của các hệ thống tệp",
+   "Định dạng lại ổ đĩa cứng",
+   "Hiển thị danh sách các ổ đĩa đang kết nối"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' hiển thị lượng không gian đĩa đã sử dụng và còn trống trên các hệ thống tệp đã được gắn (mounted) vào hệ thống. Kết luận Lý giải Kiểm tra dung lượng sử dụng và còn trống của các hệ thống tệp"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Thư mục nào trong Linux thường lưu trữ các dữ liệu có tính chất thay đổi liên tục như nhật ký hệ thống (log files) và hàng đợi in ấn?",
+  "options": [
+   "/home",
+   "/var",
+   "/tmp",
+   "/opt"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục /var (viết tắt của variable) được thiết kế để chứa các tệp dữ liệu mà kích thước và nội dung thay đổi thường xuyên trong quá trình vận hành. Kết luận Lý giải /var"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Lệnh nào dùng để thay đổi chủ sở hữu (owner) của một tệp tin?",
+  "options": [
+   "chmod",
+   "chown",
+   "chgrp",
+   "usermod"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) cho phép thay đổi người dùng và/hoặc nhóm sở hữu một tệp hoặc thư mục cụ thể. Kết luận Lý giải chown"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Khi muốn chấm dứt một tiến trình đang chạy dựa trên mã định danh tiến trình (PID), bạn sử dụng lệnh nào?",
+  "options": [
+   "stop",
+   "end",
+   "kill",
+   "halt"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'kill' gửi một tín hiệu đến tiến trình (mặc định là SIGTERM) để yêu cầu tiến trình đó dừng hoạt động. Kết luận Lý giải kill"
+ },
+ {
+  "sourceSets": [
+   1
+  ],
+  "text": "Trong Linux, thư mục nào đóng vai trò là thư mục gốc cao nhất của toàn bộ hệ thống tệp?",
+  "options": [
+   "/root",
+   "/home",
+   "/",
+   "/boot"
+  ],
+  "correctIndex": 2,
+  "explanation": "Dấu gạch chéo '/' đại diện cho thư mục gốc (root directory), là điểm bắt đầu của mọi đường dẫn trong cấu trúc cây thư mục Linux. Kết luận Lý giải /"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Trong Linux, khi thiết lập 'umask' là 022, quyền hạn mặc định cho một tập tin mới được tạo ra (không phải thư mục) sẽ là gì?",
+  "options": [
+   "644",
+   "755",
+   "666",
+   "640"
+  ],
+  "correctIndex": 0,
+  "explanation": "Theo cơ chế tính toán quyền hạn của Linux, quyền mặc định của tập tin là 666 trừ đi giá trị umask 022 sẽ tạo ra quyền hạn thực tế là 644. Kết luận Lý giải 644"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Sự khác biệt cơ bản nhất giữa Link cứng (Hard link) và Link mềm (Symbolic link) khi tập tin nguồn bị xóa là gì?",
+  "options": [
+   "Link mềm vẫn truy cập được nội dung dữ liệu còn Link cứng thì không.",
+   "Cả hai loại Link đều không thể truy cập được dữ liệu.",
+   "Hệ thống sẽ tự động khôi phục tập tin nguồn từ Link cứng.",
+   "Link cứng vẫn truy cập được nội dung dữ liệu bình thường còn Link mềm sẽ bị hỏng."
+  ],
+  "correctIndex": 3,
+  "explanation": "Vì Link cứng trỏ trực tiếp đến số hiệu Inode của dữ liệu trên đĩa nên nó vẫn tồn tại độc lập khi tập tin nguồn bị xóa, trong khi Link mềm chỉ trỏ đến đường dẫn tên tập tin. Kết luận Lý giải Link cứng vẫn truy cập được nội dung dữ liệu bình thường còn Link mềm sẽ bị hỏng."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Tín hiệu (Signal) nào sau đây được gửi khi thực hiện lệnh 'kill -9 [PID]' để buộc một tiến trình dừng ngay lập tức?",
+  "options": [
+   "SIGTERM",
+   "SIGKILL",
+   "SIGINT",
+   "SIGSTOP"
+  ],
+  "correctIndex": 1,
+  "explanation": "Mã tín hiệu số 9 tương ứng với SIGKILL, một lệnh cưỡng ép tiến trình kết thúc mà không cho phép nó thực hiện các thao tác dọn dẹp hay từ chối. Kết luận Lý giải SIGKILL"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Cú pháp nào sau đây cho phép chuyển hướng cả đầu ra tiêu chuẩn (stdout) và đầu ra lỗi tiêu chuẩn (stderr) vào cùng một tập tin 'output.txt'?",
+  "options": [
+   "command 'dấu lớn hơn' output.txt 2>'dấu và'1",
+   "command 2'dấu lớn hơn' output.txt",
+   "command 'dấu lớn hơn' output.txt 'dấu lớn hơn'2",
+   "command 'dấu lớn hơn' output.txt 1'dấu lớn hơn'2"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong shell Linux, cú pháp '2>&1' chỉ thị cho hệ thống chuyển hướng bộ mô tả file số 2 (stderr) vào cùng địa chỉ với bộ mô tả file số 1 (stdout). Kết luận Lý giải command 'dấu lớn hơn' output.txt 2>'dấu và'1"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Sau khi thay đổi nội dung của một tệp tin cấu hình dịch vụ Systemd (ví dụ: .service file), lệnh nào cần được chạy để Systemd nhận diện thay đổi đó?",
+  "options": [
+   "systemctl restart",
+   "systemctl daemon-reload",
+   "systemctl reload-all",
+   "service update-config"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'systemctl daemon-reload' buộc trình quản lý hệ thống tải lại tất cả các tệp đơn vị và xây dựng lại cây phụ thuộc để áp dụng các thay đổi cấu hình mới. Kết luận Lý giải systemctl daemon-reload"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Trong trình soạn thảo Vi/Vim, để lưu các thay đổi và thoát khỏi tập tin, người dùng nên sử dụng lệnh nào sau đây ở chế độ cuối dòng (Command-line mode)?",
+  "options": [
+   ":q!",
+   ":s",
+   ":wq",
+   ":exit"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh ':wq' là sự kết hợp của 'write' (lưu) và 'quit' (thoát), cho phép cập nhật nội dung tập tin trước khi đóng trình soạn thảo. Kết luận Lý giải :wq"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Lệnh nào được sử dụng để tìm kiếm các tập tin có dung lượng lớn hơn 100MB trong thư mục '/var'?",
+  "options": [
+   "find /var -size +100M",
+   "ls -lh /var | grep 100M",
+   "search /var -big 100",
+   "du -sh /var | limit 100M"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh 'find' với tham số '-size' kèm dấu cộng '+' cho phép lọc các đối tượng có kích thước vượt quá giá trị được chỉ định. Kết luận Lý giải find /var -size +100M"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Trường nào trong file '/etc/passwd' chứa thông tin về đường dẫn đến thư mục cá nhân (Home directory) của người dùng?",
+  "options": [
+   "Trường thứ 3",
+   "Trường thứ 5",
+   "Trường thứ 6",
+   "Trường thứ 7"
+  ],
+  "correctIndex": 2,
+  "explanation": "Dựa trên cấu trúc chuẩn của file /etc/passwd, các trường được phân tách bằng dấu hai chấm và trường thứ 6 xác định vị trí thư mục chính của tài khoản. Kết luận Lý giải Trường thứ 6"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Quyền hạn '755' trên một thư mục có ý nghĩa cụ thể như thế nào đối với các nhóm người dùng?",
+  "options": [
+   "Chủ sở hữu có toàn quyền; nhóm và người khác chỉ có quyền đọc và thực thi.",
+   "Chủ sở hữu có quyền đọc và ghi; nhóm và người khác có toàn quyền.",
+   "Mọi người dùng trên hệ thống đều có toàn quyền đối với thư mục.",
+   "Chủ sở hữu và nhóm có toàn quyền; người khác không có quyền gì."
+  ],
+  "correctIndex": 0,
+  "explanation": "Mã bát phân 755 tương đương với 'rwxr-xr-x', cho phép chủ sở hữu thực hiện mọi thao tác trong khi những người khác không thể ghi hoặc xóa dữ liệu. Kết luận Lý giải Chủ sở hữu có toàn quyền; nhóm và người khác chỉ có quyền đọc và thực thi."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Tiến trình 'Zombie' trong hệ thống Linux được định nghĩa chính xác là gì?",
+  "options": [
+   "Một tiến trình chạy ngầm chiếm dụng quá nhiều CPU.",
+   "Một tiến trình không bao giờ kết thúc.",
+   "Một tiến trình đã hoàn thành thực thi nhưng vẫn còn tên trong bảng tiến trình vì cha nó chưa nhận mã thoát.",
+   "Một tiến trình bị treo do lỗi bộ nhớ hệ thống."
+  ],
+  "correctIndex": 2,
+  "explanation": "Tiến trình Zombie (hoặc defunct) tồn tại khi tiến trình con đã chết nhưng tiến trình cha chưa gọi hàm 'wait()' để giải phóng cấu trúc dữ liệu của nó khỏi kernel. Kết luận Lý giải Một tiến trình đã hoàn thành thực thi nhưng vẫn còn tên trong bảng tiến trình vì cha nó chưa nhận mã thoát."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Để liệt kê tất cả các tiến trình đang chạy theo thời gian thực và theo dõi mức tiêu thụ tài nguyên CPU/RAM, công cụ nào sau đây là phổ biến nhất?",
+  "options": [
+   "ps -ef",
+   "top",
+   "uptime",
+   "free"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'top' cung cấp giao diện tương tác hiển thị danh sách các tiến trình được cập nhật liên tục dựa trên mức độ sử dụng tài nguyên. Kết luận Lý giải top"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Tệp tin nào lưu trữ danh sách các máy chủ DNS mà hệ thống sẽ sử dụng để phân giải tên miền thành địa chỉ IP?",
+  "options": [
+   "/etc/hosts",
+   "/etc/networks",
+   "/etc/resolv.conf",
+   "/etc/hostname"
+  ],
+  "correctIndex": 2,
+  "explanation": "File '/etc/resolv.conf' là nơi cấu hình các tham số trình phân giải, bao gồm địa chỉ của các nameservers mà hệ thống truy vấn. Kết luận Lý giải /etc/resolv.conf"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Khi sử dụng lệnh 'tar' để nén một thư mục thành định dạng '.tar.gz', tùy chọn nào sau đây được dùng để chỉ định thuật toán nén gzip?",
+  "options": [
+   "-j",
+   "-z",
+   "-x",
+   "-v"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong lệnh tar, tùy chọn '-z' kích hoạt bộ lọc nén gzip, trong khi '-j' dành cho bzip2. Kết luận Lý giải -z"
+ },
+ {
+  "sourceSets": [
+   2,
+   5
+  ],
+  "text": "Mục đích chính của phân vùng 'Swap' trong hệ điều hành Linux là gì?",
+  "options": [
+   "Dùng để lưu trữ các tệp tin tạm thời của người dùng.",
+   "Dùng làm không gian bộ nhớ ảo khi bộ nhớ RAM vật lý bị đầy.",
+   "Dùng để sao lưu dự phòng nhân hệ điều hành (Kernel).",
+   "Dùng để tăng tốc độ truy cập đĩa cứng."
+  ],
+  "correctIndex": 1,
+  "explanation": "Swap hoạt động như một vùng đệm trên ổ cứng, giúp hệ thống tiếp tục vận hành các ứng dụng khi dung lượng RAM vật lý không còn đủ đáp ứng. Kết luận Lý giải Dùng làm không gian bộ nhớ ảo khi bộ nhớ RAM vật lý bị đầy."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Trong hệ thống sử dụng Systemd, lệnh nào được dùng để kiểm tra các bản ghi nhật ký (logs) của hệ thống từ lúc khởi động?",
+  "options": [
+   "cat /var/log/syslog",
+   "tail -f /var/log/messages",
+   "journalctl -b",
+   "dmesg | grep boot"
+  ],
+  "correctIndex": 2,
+  "explanation": "Công cụ 'journalctl' với tham số '-b' cho phép truy xuất dữ liệu nhật ký tập trung được quản lý bởi systemd-journald tính từ lần khởi động gần nhất. Kết luận Lý giải journalctl -b"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Để thay đổi chủ sở hữu của một tệp tin từ người dùng 'user1' sang 'user2', bạn sử dụng lệnh nào?",
+  "options": [
+   "chmod user2 file.txt",
+   "chown user2 file.txt",
+   "chgrp user2 file.txt",
+   "usermod -o user2 file.txt"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) được thiết kế chuyên biệt để thay đổi quyền sở hữu tài khoản và/hoặc nhóm đối với các đối tượng trên hệ thống tệp. Kết luận Lý giải chown user2 file.txt"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Ký tự nào được sử dụng trong dòng lệnh Linux để kết nối đầu ra của lệnh này thành đầu vào của lệnh kia (Piping)?",
+  "options": [
+   "Dấu và (&)",
+   "Dấu gạch đứng (|)",
+   "Dấu phẩy (;)",
+   "Dấu lớn hơn (>)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dấu gạch đứng '|' tạo ra một đường ống truyền dữ liệu trực tiếp giữa các tiến trình mà không cần thông qua tệp tin trung gian. Kết luận Lý giải Dấu gạch đứng (|)"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Lệnh nào sau đây cung cấp thông tin chi tiết về các thiết bị phần cứng đang kết nối qua cổng USB của máy tính?",
+  "options": [
+   "lsusb",
+   "lspci",
+   "lshw",
+   "lsdev"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh 'lsusb' liệt kê cấu trúc cây và thông tin định danh của các thiết bị ngoại vi đang kết nối qua trình điều khiển bus USB. Kết luận Lý giải lsusb"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Trong cấu hình Crontab, giá trị nào tại cột thứ 5 xác định thời điểm thực thi công việc?",
+  "options": [
+   "Giờ",
+   "Ngày trong tháng",
+   "Ngày trong tuần",
+   "Tháng"
+  ],
+  "correctIndex": 2,
+  "explanation": "Cấu trúc một dòng crontab bao gồm 5 trường thời gian theo thứ tự: Phút, Giờ, Ngày trong tháng, Tháng và cuối cùng là Ngày trong tuần. Kết luận Lý giải Ngày trong tuần"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Biến môi trường 'PATH' trong Linux có chức năng chính là gì?",
+  "options": [
+   "Lưu đường dẫn đến thư mục chứa các tệp cấu hình hệ thống.",
+   "Xác định các thư mục mà Shell sẽ tìm kiếm tệp thực thi khi người dùng nhập lệnh.",
+   "Chứa đường dẫn đến tệp tin nhân hệ điều hành.",
+   "Lưu trữ lịch sử các lệnh đã gõ của người dùng."
+  ],
+  "correctIndex": 1,
+  "explanation": "Khi một lệnh được gọi mà không có đường dẫn tuyệt đối, Shell sẽ quét lần lượt qua các thư mục được liệt kê trong biến PATH để tìm file thực thi tương ứng. Kết luận Lý giải Xác định các thư mục mà Shell sẽ tìm kiếm tệp thực thi khi người dùng nhập lệnh."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Đâu là sự khác biệt chính giữa lệnh 'apt upgrade' và 'apt dist-upgrade' trên các hệ thống dựa trên Debian/Ubuntu?",
+  "options": [
+   "'dist-upgrade' nhanh hơn vì không kiểm tra lỗi.",
+   "'dist-upgrade' có thể cài đặt thêm hoặc gỡ bỏ các gói để giải quyết sự phụ thuộc phức tạp, trong khi 'upgrade' thì không.",
+   "'upgrade' sẽ nâng cấp cả nhân hệ điều hành còn 'dist-upgrade' thì không.",
+   "Không có sự khác biệt, chúng là hai bí danh (aliases) của cùng một lệnh."
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'dist-upgrade' (hoặc 'full-upgrade') có cơ chế thông minh để xử lý sự thay đổi phụ thuộc giữa các phiên bản phần mềm, bao gồm cả việc gỡ bỏ gói cũ gây xung đột. Kết luận Lý giải 'dist-upgrade' có thể cài đặt thêm hoặc gỡ bỏ các gói để giải quyết sự phụ thuộc phức tạp, trong khi 'upgrade' thì không."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Tệp tin '/etc/shadow' trong Linux được sử dụng để lưu trữ thông tin gì quan trọng?",
+  "options": [
+   "Danh sách tất cả các nhóm người dùng trên hệ thống.",
+   "Thông tin mật khẩu đã được mã hóa và các chính sách hết hạn mật khẩu.",
+   "Cấu hình phân quyền truy cập sudo của người dùng.",
+   "Lịch sử đăng nhập thành công và thất bại của hệ thống."
+  ],
+  "correctIndex": 1,
+  "explanation": "Để bảo mật, mật khẩu thực tế không được lưu trong /etc/passwd (có quyền đọc rộng rãi) mà được lưu trong /etc/shadow chỉ dành cho root truy cập. Kết luận Lý giải Thông tin mật khẩu đã được mã hóa và các chính sách hết hạn mật khẩu."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Để xem 20 dòng cuối cùng của một tệp tin nhật ký đang liên tục cập nhật, bạn nên sử dụng lệnh nào?",
+  "options": [
+   "head -n 20 file.log",
+   "tail -f -n 20 file.log",
+   "cat -n 20 file.log",
+   "more -20 file.log"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sự kết hợp giữa tùy chọn '-n 20' để giới hạn số dòng và '-f' để theo dõi dữ liệu mới thêm vào giúp quản trị viên giám sát tệp tin hiệu quả. Kết luận Lý giải tail -f -n 20 file.log"
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Trong hệ thống tệp Linux, 'Inode' không lưu trữ loại thông tin nào sau đây?",
+  "options": [
+   "Tên của tệp tin.",
+   "Kích thước của tệp tin.",
+   "Thời gian truy cập và sửa đổi lần cuối.",
+   "Vị trí vật lý của các khối dữ liệu trên đĩa."
+  ],
+  "correctIndex": 0,
+  "explanation": "Inode chứa hầu hết các siêu dữ liệu (metadata) của tệp tin, nhưng tên tệp tin thực tế được lưu trữ trong các mục nhập của thư mục (directory entries). Kết luận Lý giải Tên của tệp tin."
+ },
+ {
+  "sourceSets": [
+   2
+  ],
+  "text": "Lệnh nào sau đây được sử dụng để kiểm tra các cổng mạng đang lắng nghe (listening) và các kết nối mạng hiện có trên hệ thống?",
+  "options": [
+   "ifconfig -a",
+   "ss -tunlp",
+   "ping -c 4 localhost",
+   "traceroute 8.8.8.8"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'ss' (hoặc 'netstat' cũ) với các tùy chọn phù hợp cho phép liệt kê chi tiết trạng thái của các socket mạng và các tiến trình đang sử dụng chúng. Kết luận Lý giải ss -tunlp"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Thành phần nào của hệ điều hành Linux chịu trách nhiệm trực tiếp trong việc quản lý tài nguyên phần cứng và cung cấp dịch vụ cho các ứng dụng?",
+  "options": [
+   "Kernel",
+   "Shell",
+   "Terminal",
+   "Desktop Environment"
+  ],
+  "correctIndex": 0,
+  "explanation": "Theo kiến trúc hệ điều hành Linux, Kernel là nhân lõi thực hiện điều phối CPU, bộ nhớ và các thiết bị ngoại vi cho phần mềm sử dụng. Kết luận Lý giải Kernel"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Trong hệ thống Linux, thư mục nào chứa các tập tin cấu hình quan trọng của toàn bộ hệ thống và các ứng dụng đã cài đặt?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/var",
+   "/usr"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dựa trên tiêu chuẩn phân cấp tập tin (FHS), thư mục /etc là nơi lưu trữ các tập tin cấu hình hệ thống dành cho quản trị viên. Kết luận Lý giải /etc"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tập tin hoặc thư mục trong Linux?",
+  "options": [
+   "chown",
+   "chmod",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh chmod (change mode) cho phép người dùng thay đổi các quyền đọc, ghi và thực thi cho chủ sở hữu, nhóm và người dùng khác. Kết luận Lý giải chmod"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Khi sử dụng lệnh 'chmod 755 filename', quyền hạn dành cho nhóm (Group) và những người khác (Others) được thiết lập như thế nào?",
+  "options": [
+   "Chỉ có quyền đọc",
+   "Quyền đọc và thực thi",
+   "Quyền đọc và ghi",
+   "Toàn quyền đọc, ghi, thực thi"
+  ],
+  "correctIndex": 1,
+  "explanation": "Chữ số 5 trong mã octal tương đương với quyền đọc (4) và thực thi (1), được áp dụng cho vị trí thứ hai (Group) và thứ ba (Others). Kết luận Lý giải Quyền đọc và thực thi"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Ký hiệu nào được sử dụng trong dòng lệnh Linux để chuyển kết quả đầu ra của lệnh này thành đầu vào cho lệnh kia?",
+  "options": [
+   "Dấu ngoặc nhọn { }",
+   "Dấu gạch đứng |",
+   "Dấu lớn hơn >",
+   "Dấu và &"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dấu gạch đứng (pipe) là một cơ chế mạnh mẽ trong Shell cho phép kết nối dòng dữ liệu giữa các tiến trình khác nhau. Kết luận Lý giải Dấu gạch đứng |"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào cho phép người dùng thông thường thực thi một lệnh với đặc quyền của người dùng quản trị (root)?",
+  "options": [
+   "sudo",
+   "runas",
+   "admin",
+   "su -l"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh sudo (superuser do) được thiết kế để cấp quyền tạm thời cho người dùng thực hiện các tác vụ quản trị hệ thống một cách an toàn. Kết luận Lý giải sudo"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Để liệt kê tất cả các tập tin, bao gồm cả các tập tin ẩn (bắt đầu bằng dấu chấm), bạn sử dụng lệnh ls với tùy chọn nào?",
+  "options": [
+   "ls -l",
+   "ls -a",
+   "ls -h",
+   "ls -r"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-a' (all) trong lệnh ls hướng dẫn hệ thống hiển thị mọi mục trong thư mục kể cả các tập tin ẩn. Kết luận Lý giải ls -a"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào được sử dụng để tìm kiếm một chuỗi ký tự cụ thể bên trong một hoặc nhiều tập tin văn bản?",
+  "options": [
+   "find",
+   "grep",
+   "locate",
+   "search"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh grep (Global Regular Expression Print) là công cụ chuyên dụng để lọc và tìm kiếm các dòng chứa mẫu ký tự trong văn bản. Kết luận Lý giải grep"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Trong trình soạn thảo văn bản vi hoặc vim, phím nào được sử dụng để chuyển từ chế độ lệnh (Command mode) sang chế độ chèn (Insert mode)?",
+  "options": [
+   "Phím Esc",
+   "Phím i",
+   "Phím x",
+   "Phím w"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong trình soạn thảo vim, nhấn phím 'i' sẽ kích hoạt chế độ Insert tại vị trí con trỏ hiện tại để bắt đầu nhập liệu. Kết luận Lý giải Phím i"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào hiển thị thông tin về dung lượng đĩa cứng đã sử dụng và còn trống trên các phân vùng hệ thống?",
+  "options": [
+   "du",
+   "df",
+   "free",
+   "top"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh df (disk free) báo cáo tóm tắt về tình trạng sử dụng không gian đĩa trên toàn bộ các hệ thống tập tin đã gắn kết. Kết luận Lý giải df"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Thư mục nhà (home directory) mặc định của người dùng root trong hệ điều hành Linux nằm tại đâu?",
+  "options": [
+   "/home/root",
+   "/root",
+   "/bin/root",
+   "/etc/root"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khác với người dùng thông thường nằm trong /home, người dùng quản trị root có thư mục riêng biệt tại /root để đảm bảo an toàn khi khởi động. Kết luận Lý giải /root"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Để nén và đóng gói nhiều tập tin thành một tập tin duy nhất có đuôi .tar.gz, bạn thường sử dụng tổ hợp lệnh tar với các tham số nào?",
+  "options": [
+   "tar -xvf",
+   "tar -czvf",
+   "tar -tvf",
+   "tar -rvf"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong lệnh tar, '-c' để tạo mới, '-z' để nén bằng gzip, '-v' để hiển thị quá trình và '-f' để chỉ định tên tập tin. Kết luận Lý giải tar -czvf"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào được sử dụng để xem hướng dẫn sử dụng chi tiết (manual pages) của một lệnh bất kỳ trong Linux?",
+  "options": [
+   "help",
+   "man",
+   "info",
+   "whatis"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh man cung cấp giao diện tra cứu tài liệu hướng dẫn chuẩn cho hầu hết các lệnh và tập tin cấu hình trong hệ thống. Kết luận Lý giải man"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Tín hiệu (Signal) nào được gửi bởi lệnh 'kill -9' để buộc một tiến trình phải dừng lại ngay lập tức mà không thể bỏ qua?",
+  "options": [
+   "SIGTERM",
+   "SIGKILL",
+   "SIGINT",
+   "SIGHUP"
+  ],
+  "correctIndex": 1,
+  "explanation": "Số 9 đại diện cho tín hiệu SIGKILL, một lệnh cưỡng bức mức hạt nhân khiến tiến trình kết thúc mà không được dọn dẹp tài nguyên. Kết luận Lý giải SIGKILL"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Trên các hệ điều hành dựa trên Debian hoặc Ubuntu, lệnh nào được sử dụng phổ biến nhất để cài đặt một gói phần mềm mới từ kho lưu trữ trực tuyến?",
+  "options": [
+   "yum install",
+   "apt-get install",
+   "rpm -i",
+   "dnf install"
+  ],
+  "correctIndex": 1,
+  "explanation": "Công cụ Advanced Package Tool (APT) với lệnh apt-get hoặc apt là trình quản lý gói tiêu chuẩn cho các hệ thống Debian và các bản phân phối dẫn xuất. Kết luận Lý giải apt-get install"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào dùng để tạo một tập tin văn bản rỗng hoặc cập nhật thời gian truy cập của một tập tin đã tồn tại?",
+  "options": [
+   "new",
+   "touch",
+   "create",
+   "make"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh touch được sử dụng chủ yếu để thay đổi mốc thời gian của tập tin hoặc tạo nhanh một tập tin mới nếu nó chưa tồn tại. Kết luận Lý giải touch"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Để biết đường dẫn tuyệt đối của thư mục làm việc hiện hành, bạn sử dụng lệnh nào?",
+  "options": [
+   "dir",
+   "pwd",
+   "whereami",
+   "path"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh pwd (print working directory) trả về đường dẫn đầy đủ từ thư mục gốc đến thư mục mà người dùng đang thao tác. Kết luận Lý giải pwd"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Để ghi thêm kết quả của một lệnh vào cuối một tập tin văn bản mà không xóa đi nội dung cũ, bạn sử dụng toán tử nào?",
+  "options": [
+   ">",
+   ">>",
+   "|",
+   "<"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong khi '>' ghi đè nội dung thì toán tử '>>' sẽ thực hiện nối thêm dữ liệu vào cuối tập tin hiện có. Kết luận Lý giải >>"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào được sử dụng để tạo một liên kết mềm (Symbolic Link) giữa hai tập tin hoặc thư mục?",
+  "options": [
+   "link -s",
+   "ln -s",
+   "sln",
+   "cp -l"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh ln với tùy chọn '-s' tạo ra một lối tắt (symbolic link) trỏ đến một vị trí tập tin hoặc thư mục khác trong hệ thống. Kết luận Lý giải ln -s"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Thư mục nào trong Linux chứa các chương trình thực thi cần thiết để hệ thống có thể khởi động và hoạt động ở chế độ người dùng đơn (Single-user mode)?",
+  "options": [
+   "/usr/bin",
+   "/bin",
+   "/opt",
+   "/home"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục /bin chứa các lệnh nhị phân cơ bản nhất như ls, cp, mv mà mọi người dùng và hệ thống đều cần sử dụng. Kết luận Lý giải /bin"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào được sử dụng để xem nội dung của một tập tin văn bản ngay trên màn hình terminal mà không cần mở trình soạn thảo?",
+  "options": [
+   "view",
+   "cat",
+   "show",
+   "open"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh cat (concatenate) thường được dùng để nối các tập tin hoặc đơn giản là in toàn bộ nội dung tập tin ra thiết bị đầu ra chuẩn. Kết luận Lý giải cat"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Tham số nào đi kèm với lệnh tail giúp theo dõi nội dung của một tập tin log theo thời gian thực khi dữ liệu mới được ghi vào?",
+  "options": [
+   "-n",
+   "-f",
+   "-r",
+   "-s"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-f' (follow) khiến lệnh tail không kết thúc mà tiếp tục chờ và hiển thị các dòng văn bản mới khi chúng xuất hiện trong tập tin. Kết luận Lý giải -f"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Để đổi tên một tập tin từ 'oldname.txt' thành 'newname.txt', bạn sử dụng lệnh nào?",
+  "options": [
+   "rename oldname.txt newname.txt",
+   "mv oldname.txt newname.txt",
+   "cp oldname.txt newname.txt",
+   "name oldname.txt newname.txt"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh mv (move) trong Linux được sử dụng cho cả việc di chuyển tập tin sang thư mục khác và việc đổi tên tập tin. Kết luận Lý giải mv oldname.txt newname.txt"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Lệnh nào sẽ xóa một thư mục và toàn bộ các tập tin, thư mục con bên trong nó mà không yêu cầu xác nhận từ người dùng?",
+  "options": [
+   "rm -d",
+   "rm -rf",
+   "rmdir",
+   "del -a"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sự kết hợp giữa '-r' (đệ quy) và '-f' (cưỡng bức) cho phép xóa sạch cấu trúc thư mục một cách nhanh chóng và nguy hiểm. Kết luận Lý giải rm -rf"
+ },
+ {
+  "sourceSets": [
+   3
+  ],
+  "text": "Công cụ nào cung cấp giao diện tương tác theo dõi các tiến trình đang chạy và việc sử dụng tài nguyên hệ thống (CPU, RAM) theo thời gian thực?",
+  "options": [
+   "ps -ef",
+   "top",
+   "free -m",
+   "uptime"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh top hiển thị danh sách các tiến trình đang hoạt động và cập nhật liên tục các thông số hiệu năng của hệ thống. Kết luận Lý giải top"
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Trong hệ điều hành Linux, tín hiệu (signal) nào được gửi mặc định khi sử dụng lệnh 'kill' để yêu cầu một tiến trình kết thúc một cách an toàn?",
+  "options": [
+   "SIGKILL (9)",
+   "SIGSTOP (19)",
+   "SIGTERM (15)",
+   "SIGINT (2)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo tiêu chuẩn POSIX, tín hiệu SIGTERM (15) là tín hiệu mặc định của lệnh 'kill' giúp tiến trình có cơ hội dọn dẹp tài nguyên và đóng các tệp tin trước khi dừng lại. Kết luận Lý giải SIGTERM (15)."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Thư mục nào trong cấu trúc phân cấp hệ thống tệp tin Linux chứa các tệp tin cấu hình cho toàn bộ hệ thống?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/var",
+   "/usr"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục '/etc' được thiết kế để lưu trữ tất cả các tệp tin cấu hình hệ thống và các kịch bản khởi động của các dịch vụ. Kết luận Lý giải /etc."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Quyền truy cập tệp tin được biểu diễn dưới dạng bát phân là '755' tương ứng với những quyền nào sau đây?",
+  "options": [
+   "rwxr-xr-x",
+   "rwx-r--r--",
+   "rwxrwxrwx",
+   "rw-r--r--"
+  ],
+  "correctIndex": 0,
+  "explanation": "Giá trị '755' tương ứng với quyền 'rwx' (7) cho chủ sở hữu, 'r-x' (5) cho nhóm và 'r-x' (5) cho những người dùng khác. Kết luận Lý giải rwxr-xr-x."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Tùy chọn nào của lệnh 'grep' cho phép tìm kiếm một chuỗi ký tự mà không phân biệt chữ hoa và chữ thường?",
+  "options": [
+   "-v",
+   "-l",
+   "-n",
+   "-i"
+  ],
+  "correctIndex": 3,
+  "explanation": "Tùy chọn '-i' (ignore case) trong lệnh 'grep' được sử dụng để bỏ qua sự khác biệt giữa chữ hoa và chữ thường trong quá trình tìm kiếm. Kết luận Lý giải -i."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Để ghi thêm nội dung vào cuối một tệp tin hiện có mà không làm mất dữ liệu cũ, bạn nên sử dụng ký hiệu chuyển hướng nào?",
+  "options": [
+   ">",
+   ">>",
+   "2>",
+   "<"
+  ],
+  "correctIndex": 1,
+  "explanation": "Ký hiệu '>>' trong Linux thực hiện việc chuyển hướng đầu ra tiêu chuẩn vào cuối một tệp tin thay vì ghi đè hoàn toàn nội dung cũ như ký hiệu '>'. Kết luận Lý giải >>."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Lệnh nào sau đây được sử dụng trong các bản phân phối dựa trên Debian để cập nhật danh sách gói phần mềm từ các kho lưu trữ?",
+  "options": [
+   "apt upgrade",
+   "apt install",
+   "apt update",
+   "apt remove"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'apt update' có nhiệm vụ tải xuống thông tin gói mới nhất từ kho lưu trữ để hệ thống biết các phiên bản phần mềm nào hiện có sẵn. Kết luận Lý giải apt update."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Tệp tin nào lưu trữ thông tin mật khẩu đã được mã hóa của người dùng trong hệ thống Linux?",
+  "options": [
+   "/etc/passwd",
+   "/etc/shadow",
+   "/etc/group",
+   "/etc/gshadow"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong các hệ thống Linux hiện đại, tệp '/etc/shadow' được sử dụng để lưu trữ mật khẩu đã mã hóa nhằm tăng cường bảo mật so với việc lưu trực tiếp trong '/etc/passwd'. Kết luận Lý giải /etc/shadow."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Trong Shell Bash, lệnh nào được sử dụng để biến một biến cục bộ thành biến môi trường có thể truy cập bởi các tiến trình con?",
+  "options": [
+   "set",
+   "alias",
+   "export",
+   "env"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'export' dùng để đánh dấu một biến sao cho nó được truyền vào môi trường của bất kỳ tiến trình con nào được khởi tạo từ shell hiện tại. Kết luận Lý giải export."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Thư mục chuẩn nào trong Linux thường chứa các tệp tin nhật ký (log files) của hệ thống và các ứng dụng?",
+  "options": [
+   "/var/log",
+   "/usr/log",
+   "/etc/log",
+   "/home/log"
+  ],
+  "correctIndex": 0,
+  "explanation": "Hầu hết các tệp tin nhật ký ghi lại hoạt động của hệ thống và dịch vụ đều được lưu trữ tập trung tại thư mục '/var/log'. Kết luận Lý giải /var/log."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Để thiết lập một dịch vụ tự động khởi động cùng hệ thống bằng 'systemd', bạn cần sử dụng lệnh nào?",
+  "options": [
+   "systemctl start",
+   "systemctl enable",
+   "systemctl reload",
+   "systemctl status"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'systemctl enable' tạo các liên kết tượng trưng cần thiết để hệ thống 'systemd' biết rằng dịch vụ đó phải được khởi động ở bước boot tiếp theo. Kết luận Lý giải systemctl enable."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Lệnh nào được sử dụng để xem dung lượng đĩa được sử dụng bởi một thư mục cụ thể theo định dạng dễ đọc cho con người (human-readable)?",
+  "options": [
+   "df -h",
+   "du -sh",
+   "ls -l",
+   "free -m"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'du -sh' (disk usage) tính toán tổng dung lượng của thư mục và hiển thị kết quả rút gọn dưới các đơn vị như KB, MB hoặc GB. Kết luận Lý giải du -sh."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Thành phần nào trong hệ thống tệp tin Linux chứa các siêu dữ liệu (metadata) của tệp tin như quyền truy cập, kích thước và thời gian sửa đổi nhưng không chứa tên tệp?",
+  "options": [
+   "Superblock",
+   "Data block",
+   "Inode",
+   "Hard link"
+  ],
+  "correctIndex": 2,
+  "explanation": "Mỗi tệp tin trong hệ thống tệp tin Linux được đại diện bởi một 'Inode' (index node) chứa tất cả thông tin về tệp ngoại trừ tên tệp và nội dung dữ liệu thực tế. Kết luận Lý giải Inode."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Cổng dịch vụ mặc định được sử dụng cho giao thức truyền tải tệp tin an toàn (SSH) là cổng nào?",
+  "options": [
+   "21",
+   "22",
+   "23",
+   "80"
+  ],
+  "correctIndex": 1,
+  "explanation": "Giao thức SSH (Secure Shell) theo tiêu chuẩn sử dụng cổng TCP số 22 để thiết lập các kết nối điều khiển từ xa được mã hóa. Kết luận Lý giải 22."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Vùng không gian trên đĩa cứng được sử dụng để mở rộng bộ nhớ RAM vật lý khi hệ thống bị thiếu hụt bộ nhớ được gọi là gì?",
+  "options": [
+   "Cache memory",
+   "Buffer memory",
+   "Swap space",
+   "Virtual drive"
+  ],
+  "correctIndex": 2,
+  "explanation": "Không gian 'Swap' (vùng hoán đổi) cho phép hệ điều hành di chuyển các trang bộ nhớ ít sử dụng từ RAM ra đĩa cứng để giải phóng dung lượng RAM cho các tác vụ khác. Kết luận Lý giải Swap space."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Lệnh nào cho phép bạn xem lại danh sách các câu lệnh mà bạn đã thực hiện trong phiên làm việc hiện tại?",
+  "options": [
+   "last",
+   "history",
+   "logs",
+   "echo"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'history' truy xuất tệp lịch sử của shell để hiển thị danh sách các câu lệnh người dùng đã nhập trước đó. Kết luận Lý giải history."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Để liệt kê tất cả các tiến trình đang chạy trên hệ thống bao gồm cả các tiến trình của người dùng khác, bạn thường sử dụng lệnh 'ps' với tùy chọn nào?",
+  "options": [
+   "ps -a",
+   "ps -x",
+   "ps -ef",
+   "ps -u"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn '-ef' (hoặc 'aux') của lệnh 'ps' cung cấp danh sách đầy đủ tất cả các tiến trình đang hoạt động của mọi người dùng trên toàn hệ thống. Kết luận Lý giải ps -ef."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Biến môi trường nào chứa đường dẫn đến trình bao (shell) mặc định đang được sử dụng bởi người dùng?",
+  "options": [
+   "$HOME",
+   "$PATH",
+   "$USER",
+   "$SHELL"
+  ],
+  "correctIndex": 3,
+  "explanation": "Biến '$SHELL' lưu trữ đường dẫn tuyệt đối đến tệp thực thi của trình bao mà người dùng đang sử dụng, chẳng hạn như '/bin/bash'. Kết luận Lý giải $SHELL."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Câu lệnh nào được sử dụng để giải nén một tệp tin có định dạng '.tar.gz'?",
+  "options": [
+   "tar -czvf tệp_tin.tar.gz",
+   "tar -xzvf tệp_tin.tar.gz",
+   "tar -tvf tệp_tin.tar.gz",
+   "tar -rzvf tệp_tin.tar.gz"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong lệnh 'tar', tùy chọn '-x' dùng để giải nén, '-z' dùng cho định dạng gzip, '-v' để hiển thị quá trình và '-f' để chỉ định tệp tin. Kết luận Lý giải tar -xzvf tệp_tin.tar.gz."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Trong trình soạn thảo văn bản Vi/Vim, tổ hợp phím nào được dùng để lưu các thay đổi và thoát khỏi chương trình?",
+  "options": [
+   ":q!",
+   ":w",
+   ":wq",
+   ":x!"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong chế độ dòng lệnh của Vim, lệnh ':wq' (write and quit) thực hiện đồng thời việc ghi dữ liệu vào đĩa và đóng trình soạn thảo. Kết luận Lý giải :wq."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Lệnh nào dùng để kiểm tra thông tin về các phân vùng đĩa cứng và dung lượng còn trống của chúng trên hệ thống Linux?",
+  "options": [
+   "free -h",
+   "df -h",
+   "du -sh",
+   "mount"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df -h' (disk free) báo cáo dung lượng đĩa đã sử dụng và còn trống trên các hệ thống tệp tin đã gắn (mounted) dưới dạng dễ đọc. Kết luận Lý giải df -h."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Lệnh nào được sử dụng để thay đổi chủ sở hữu của một tệp tin hoặc thư mục trong Linux?",
+  "options": [
+   "chmod",
+   "chown",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) cho phép người quản trị thay đổi người dùng sở hữu và nhóm sở hữu của tệp tin hoặc thư mục. Kết luận Lý giải chown."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Để tìm kiếm các tệp tin có tên kết thúc bằng đuôi '.log' trong thư mục hiện tại và các thư mục con, bạn sử dụng lệnh nào?",
+  "options": [
+   "ls *.log",
+   "find . -name '*.log'",
+   "search . -name *.log",
+   "locate *.log"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'find' với tham số '.' để chỉ thư mục hiện tại và '-name' để chỉ định mẫu tên tệp tin cần tìm kiếm. Kết luận Lý giải find . -name '*.log'."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Giá trị 'umask' mặc định nào sẽ khiến các tệp tin mới tạo có quyền truy cập là '666' (đọc và ghi cho tất cả mọi người)?",
+  "options": [
+   "022",
+   "077",
+   "000",
+   "002"
+  ],
+  "correctIndex": 2,
+  "explanation": "Giá trị 'umask' đóng vai trò là mặt nạ loại bỏ quyền, do đó '000' sẽ không loại bỏ quyền nào, giữ nguyên quyền mặc định của hệ thống cho tệp mới là '666'. Kết luận Lý giải 000."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Trong cấu trúc cây thư mục Linux, thư mục nào thường chứa dữ liệu cá nhân và các tệp cấu hình của người dùng thông thường?",
+  "options": [
+   "/root",
+   "/home",
+   "/usr",
+   "/var"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục '/home' là vị trí mặc định nơi hệ thống tạo các thư mục con riêng biệt cho từng người dùng để lưu trữ dữ liệu cá nhân. Kết luận Lý giải /home."
+ },
+ {
+  "sourceSets": [
+   4
+  ],
+  "text": "Ký tự 'shebang' nào thường xuất hiện ở dòng đầu tiên của một kịch bản shell để chỉ định trình thông dịch sẽ thực thi kịch bản đó?",
+  "options": [
+   "!!/bin/bash",
+   "##/bin/bash",
+   "#!/bin/bash",
+   "$!/bin/bash"
+  ],
+  "correctIndex": 2,
+  "explanation": "Chuỗi '#!' (đọc là shebang) theo sau là đường dẫn trình thông dịch thông báo cho nhân hệ điều hành biết chương trình nào cần dùng để chạy tệp kịch bản. Kết luận Lý giải #!/bin/bash."
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Trong hệ điều hành Linux, thành phần nào đóng vai trò là 'lõi' điều khiển mọi hoạt động của hệ thống và quản lý tài nguyên phần cứng?",
+  "options": [
+   "Shell",
+   "Kernel",
+   "Terminal",
+   "Desktop Environment"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo kiến trúc hệ thống, Kernel là thành phần trung tâm thực hiện việc quản lý phần cứng và cung cấp dịch vụ cho các ứng dụng. Kết luận Lý giải: Kernel"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Tiến trình đầu tiên được khởi động bởi Kernel trong các hệ thống Linux hiện đại (như Ubuntu, CentOS 7+) thường có tên là gì và PID bằng bao nhiêu?",
+  "options": [
+   "bash với PID 0",
+   "systemd với PID 1",
+   "init với PID 0",
+   "kernel_task với PID 1"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong các bản phân phối Linux hiện đại, systemd là tiến trình cha của mọi tiến trình khác và luôn sở hữu PID 1. Kết luận Lý giải: systemd với PID 1"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Lệnh nào được sử dụng để thay đổi quyền sở hữu (owner) của một tập tin hoặc thư mục trong Linux?",
+  "options": [
+   "chmod",
+   "chown",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) được thiết kế để thay đổi người sở hữu và nhóm sở hữu của các đối tượng trong hệ thống tập tin. Kết luận Lý giải: chown"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Khi sử dụng lệnh 'chmod 754 file.txt', quyền hạn cụ thể của nhóm sở hữu (group) đối với tập tin này là gì?",
+  "options": [
+   "Đọc và Thực thi",
+   "Đọc, Ghi và Thực thi",
+   "Chỉ Đọc",
+   "Ghi và Thực thi"
+  ],
+  "correctIndex": 0,
+  "explanation": "Số 5 trong mã bát phân tương ứng với quyền Đọc (4) và Thực thi (1) dành cho nhóm sở hữu. Kết luận Lý giải: Đọc và Thực thi"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Ký hiệu nào được dùng để chuyển hướng đầu ra lỗi tiêu chuẩn (Standard Error) vào một tập tin trong dòng lệnh Linux?",
+  "options": [
+   "1>",
+   "2>",
+   ">>",
+   "<"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong Linux, file descriptor số 2 đại diện cho Standard Error, do đó '2>' được dùng để chuyển hướng luồng này. Kết luận Lý giải: 2>"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Lệnh 'kill -9 [PID]' gửi tín hiệu (signal) nào đến tiến trình để buộc nó kết thúc ngay lập tức mà không thể bị bỏ qua?",
+  "options": [
+   "SIGTERM",
+   "SIGKILL",
+   "SIGSTOP",
+   "SIGINT"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tín hiệu SIGKILL (tương ứng với số 9) yêu cầu hệ điều hành chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó dọn dẹp hay chặn tín hiệu. Kết luận Lý giải: SIGKILL"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Trong hệ thống tập tin Linux, 'Hard Link' (Liên kết cứng) có đặc điểm quan trọng nào sau đây?",
+  "options": [
+   "Có thể trỏ đến một thư mục",
+   "Chia sẻ cùng một số Inode với tập tin gốc",
+   "Có thể tạo liên kết giữa các phân vùng đĩa khác nhau",
+   "Sẽ bị hỏng nếu tập tin gốc bị xóa"
+  ],
+  "correctIndex": 1,
+  "explanation": "Hard link thực chất là một tên gọi khác trỏ đến cùng một chỉ mục dữ liệu (Inode) trên cùng một hệ thống tập tin. Kết luận Lý giải: Chia sẻ cùng một số Inode với tập tin gốc"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Tập tin nào lưu trữ thông tin về mật khẩu đã được mã hóa (hash) của người dùng trong Linux để đảm bảo an toàn?",
+  "options": [
+   "/etc/passwd",
+   "/etc/shadow",
+   "/etc/group",
+   "/var/log/auth.log"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tập tin '/etc/shadow' được bảo mật nghiêm ngặt và chỉ chứa các bản băm mật khẩu cùng thông tin về thời hạn mật khẩu của người dùng. Kết luận Lý giải: /etc/shadow"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Để kiểm tra dung lượng còn trống của các phân vùng đĩa cứng trên hệ thống dưới dạng dễ đọc (GB, MB), bạn nên sử dụng lệnh nào?",
+  "options": [
+   "du -sh",
+   "df -h",
+   "free -m",
+   "ls -lh"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' (disk free) với tham số '-h' (human-readable) hiển thị thông tin về không gian đĩa của các hệ thống tập tin đã gắn. Kết luận Lý giải: df -h"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Lệnh 'grep -i 'linux' file.txt' thực hiện chức năng gì khi tìm kiếm chuỗi văn bản?",
+  "options": [
+   "Tìm kiếm các dòng không chứa từ 'linux'",
+   "Tìm kiếm từ 'linux' nhưng bỏ qua sự phân biệt chữ hoa và chữ thường",
+   "Đếm số lần xuất hiện của từ 'linux'",
+   "Chỉ tìm kiếm từ 'linux' viết thường chính xác"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tham số '-i' (ignore case) trong lệnh grep cho phép tìm kiếm mẫu mà không phân biệt định dạng chữ hoa hay chữ thường. Kết luận Lý giải: Tìm kiếm từ 'linux' nhưng bỏ qua sự phân biệt chữ hoa và chữ thường"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Để thiết lập quyền truy cập SSH không cần mật khẩu bằng Public Key, khóa công khai của máy khách phải được lưu vào tập tin nào trên máy chủ?",
+  "options": [
+   "~/.ssh/id_rsa",
+   "~/.ssh/authorized_keys",
+   "/etc/ssh/sshd_config",
+   "~/.ssh/known_hosts"
+  ],
+  "correctIndex": 1,
+  "explanation": "Máy chủ SSH kiểm tra tập tin 'authorized_keys' trong thư mục của người dùng để xác thực các khóa công khai được phép truy cập. Kết luận Lý giải: ~/.ssh/authorized_keys"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Một tác vụ định kỳ trong Crontab có định dạng '0 5 * * 1 command' sẽ thực thi vào thời điểm nào?",
+  "options": [
+   "giờ sáng hàng ngày",
+   "giờ sáng mỗi thứ Hai hàng tuần",
+   "giờ sáng ngày 5 hàng tháng",
+   "giờ chiều mỗi thứ Hai hàng tuần"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo cú pháp crontab, các trường lần lượt là phút (0), giờ (5), ngày, tháng, và thứ (1 là thứ Hai). Kết luận Lý giải: 5 giờ sáng mỗi thứ Hai hàng tuần"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Tham số nào của lệnh 'tar' được sử dụng để nén tập tin bằng thuật toán gzip trong quá trình tạo kho lưu trữ?",
+  "options": [
+   "-j",
+   "-z",
+   "-x",
+   "-v"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong lệnh tar, tùy chọn '-z' kích hoạt bộ lọc gzip để nén hoặc giải nén dữ liệu. Kết luận Lý giải: -z"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Biến môi trường nào trong Linux chứa danh sách các đường dẫn thư mục mà Shell sẽ tìm kiếm các tệp thực thi khi người dùng nhập lệnh?",
+  "options": [
+   "HOME",
+   "PATH",
+   "PWD",
+   "SHELL"
+  ],
+  "correctIndex": 1,
+  "explanation": "Biến PATH định nghĩa các thư mục tìm kiếm cho các lệnh thực thi, giúp người dùng không cần nhập đường dẫn đầy đủ của chương trình. Kết luận Lý giải: PATH"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Nếu giá trị umask hiện tại là 0022, quyền mặc định của một tập tin mới được tạo (không phải thư mục) sẽ là gì?",
+  "options": [
+   "755",
+   "644",
+   "666",
+   "777"
+  ],
+  "correctIndex": 1,
+  "explanation": "Quyền mặc định tối đa của tập tin là 666, sau khi trừ đi umask 022 sẽ còn lại quyền 644 (rw-r--r--). Kết luận Lý giải: 644"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Lệnh nào cho biết trạng thái hiện tại của các tiến trình đang chạy và tiêu tốn nhiều tài nguyên CPU/RAM nhất theo thời gian thực?",
+  "options": [
+   "ps -aux",
+   "top",
+   "uptime",
+   "vmstat"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'top' cung cấp một cái nhìn động và liên tục về các tiến trình hệ thống đang hoạt động và việc sử dụng tài nguyên của chúng. Kết luận Lý giải: top"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Tập tin cấu hình nào kiểm soát việc tự động gắn (mount) các phân vùng ổ đĩa khi hệ thống Linux khởi động?",
+  "options": [
+   "/etc/mtab",
+   "/etc/fstab",
+   "/etc/exports",
+   "/boot/grub/grub.cfg"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tập tin '/etc/fstab' (file system table) chứa danh sách các thiết bị lưu trữ và điểm gắn kết tương ứng để hệ thống tự động nhận diện lúc boot. Kết luận Lý giải: /etc/fstab"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Sự khác biệt ch��nh giữa lệnh 'systemctl start service' và 'systemctl enable service' là gì?",
+  "options": [
+   "'start' để khởi động dịch vụ ngay lập tức, 'enable' để dịch vụ tự chạy khi khởi động máy",
+   "'enable' để khởi động dịch vụ ngay lập tức, 'start' để dịch vụ tự chạy khi khởi động máy",
+   "'start' chỉ dùng cho người dùng root, 'enable' dùng cho mọi người dùng",
+   "Cả hai lệnh đều có chức năng giống hệt nhau"
+  ],
+  "correctIndex": 0,
+  "explanation": "'start' kích hoạt dịch vụ trong phiên làm việc hiện tại, còn 'enable' tạo các liên kết tượng trưng để dịch vụ được nạp cùng hệ thống. Kết luận Lý giải: 'start' để khởi động dịch vụ ngay lập tức, 'enable' để dịch vụ tự chạy khi khởi động máy"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Trong lập trình Bash script, biến đặc biệt '$?' lưu trữ giá trị gì sau khi một lệnh được thực thi?",
+  "options": [
+   "Mã định danh (PID) của lệnh vừa chạy",
+   "Mã trạng thái thoát (exit status) của lệnh vừa thực hiện",
+   "Tên của lệnh vừa thực thi",
+   "Thời gian lệnh đó chạy hết bao lâu"
+  ],
+  "correctIndex": 1,
+  "explanation": "Biến '$?' trả về kết quả thực hiện lệnh gần nhất, với giá trị 0 thường nghĩa là thành công và khác 0 là có lỗi. Kết luận Lý giải: Mã trạng thái thoát (exit status) của lệnh vừa thực hiện"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Khái niệm 'Inode' trong hệ thống tập tin Linux không lưu trữ thông tin nào sau đây?",
+  "options": [
+   "Quyền truy cập và chủ sở hữu",
+   "Tên của tập tin",
+   "Kích thước tập tin",
+   "Thời gian thay đổi dữ liệu cuối cùng"
+  ],
+  "correctIndex": 1,
+  "explanation": "Inode lưu trữ các thuộc tính và vị trí dữ liệu của tập tin, nhưng tên tập tin được lưu trữ trong cấu trúc thư mục (directory entry) thay vì trong Inode. Kết luận Lý giải: Tên của tập tin"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Thiết bị đặc biệt '/dev/null' trong Linux thường được sử dụng với mục đích gì?",
+  "options": [
+   "Lưu trữ tạm thời các tập tin rác",
+   "Làm nơi tiêu hủy mọi dữ liệu được ghi vào đó",
+   "Tạo ra một chuỗi các ký tự trống không giới hạn",
+   "Lưu trữ log của hệ thống khi ổ đĩa bị đầy"
+  ],
+  "correctIndex": 1,
+  "explanation": "Mọi dữ liệu chuyển hướng vào '/dev/null' sẽ bị hệ điều hành loại bỏ hoàn toàn và ngay lập tức. Kết luận Lý giải: Làm nơi tiêu hủy mọi dữ liệu được ghi vào đó"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Lệnh nào được sử dụng để tìm kiếm và thay thế một chuỗi văn bản trong tập tin một cách tự động mà không cần mở trình soạn thảo?",
+  "options": [
+   "grep",
+   "sed",
+   "awk",
+   "cat"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'sed' (stream editor) thường được dùng để thực hiện các phép biến đổi văn bản, đặc biệt là tìm kiếm và thay thế theo mẫu. Kết luận Lý giải: sed"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Giá trị 'Nice' của một tiến trình trong Linux ảnh hưởng đến điều gì?",
+  "options": [
+   "Độ ưu tiên chiếm dụng CPU của tiến trình đó",
+   "Dung lượng RAM mà tiến trình được phép sử dụng",
+   "Thời gian tồn tại tối đa của tiến trình",
+   "Quyền truy cập mạng của tiến trình"
+  ],
+  "correctIndex": 0,
+  "explanation": "Chỉ số Nice (từ -20 đến 19) giúp bộ điều phối của Kernel xác định mức độ ưu tiên xử lý của tiến trình so với các tiến trình khác. Kết luận Lý giải: Độ ưu tiên chiếm dụng CPU của tiến trình đó"
+ },
+ {
+  "sourceSets": [
+   5
+  ],
+  "text": "Tập tin nào chứa danh sách thông tin cơ bản về người dùng như tên đăng nhập, thư mục nhà (home) và shell mặc định?",
+  "options": [
+   "/etc/shadow",
+   "/etc/passwd",
+   "/etc/group",
+   "/etc/shells"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tập tin '/etc/passwd' là cơ sở dữ liệu văn bản chứa các thông tin cấu hình cơ bản cho mọi tài khoản người dùng trên hệ thống. Kết luận Lý giải: /etc/passwd"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Quyền truy cập tệp tin 'rwxr-x---' tương ứng với giá trị bát phân (octal) nào trong hệ điều hành Linux?",
+  "options": [
+   "755",
+   "750",
+   "640",
+   "710"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo quy ước phân quyền, giá trị r=4, w=2, x=1 nên cụm rwx là 7, r-x là 5 và --- là 0. Kết luận Lý giải: 750"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Lệnh nào được sử dụng để tìm kiếm các tệp tin có đuôi '.log' trong thư mục '/var/log' bao gồm cả các thư mục con?",
+  "options": [
+   "ls /var/log/*.log",
+   "search /var/log -name '*.log'",
+   "find /var/log -name '*.log'",
+   "locate /var/log/*.log"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'find' là công cụ mạnh mẽ dùng để tìm kiếm tệp tin dựa trên tên, kích thước hoặc thuộc tính trong toàn bộ cấu trúc cây thư mục. Kết luận Lý giải: find /var/log -name '*.log'"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Tín hiệu (signal) mặc định được gửi đến một tiến trình khi người dùng thực hiện lệnh 'kill [PID]' mà không kèm tham số là gì?",
+  "options": [
+   "SIGKILL",
+   "SIGSTOP",
+   "SIGTERM",
+   "SIGINT"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'kill' mặc định gửi tín hiệu SIGTERM (số hiệu 15) để yêu cầu tiến trình kết thúc một cách an toàn và có kiểm soát. Kết luận Lý giải: SIGTERM"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Để đếm tổng số dòng có chứa từ 'error' trong tệp 'syslog' mà không phân biệt chữ hoa hay chữ thường, bạn sử dụng lệnh nào?",
+  "options": [
+   "grep -ic 'error' syslog",
+   "grep -n 'error' syslog",
+   "count 'error' syslog",
+   "grep -v 'error' syslog"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong lệnh 'grep', tùy chọn '-i' dùng để bỏ qua phân biệt chữ hoa chữ thường và '-c' dùng để đếm số dòng khớp với mẫu. Kết luận Lý giải: grep -ic 'error' syslog"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Thành phần nào trong hệ thống tệp Linux lưu trữ siêu dữ liệu (metadata) của tệp tin như kích thước, chủ sở hữu và quyền hạn?",
+  "options": [
+   "Superblock",
+   "Inode",
+   "Data block",
+   "Directory entry"
+  ],
+  "correctIndex": 1,
+  "explanation": "Inode là một cấu trúc dữ liệu trên hệ thống tệp chứa thông tin chi tiết về tệp tin ngoại trừ tên tệp và nội dung dữ liệu thực tế. Kết luận Lý giải: Inode"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Điểm khác biệt cơ bản nhất giữa Hard Link và Symbolic Link (Soft Link) trong Linux là gì?",
+  "options": [
+   "Hard Link có thể trỏ đến thư mục còn Symbolic Link thì không",
+   "Hard Link trỏ đến cùng một số hiệu Inode của tệp gốc trong khi Symbolic Link tạo Inode mới",
+   "Symbolic Link không thể hoạt động nếu tệp gốc bị di chuyển sang phân vùng khác",
+   "Hard Link tốn nhiều dung lượng đĩa cứng hơn so với Symbolic Link"
+  ],
+  "correctIndex": 1,
+  "explanation": "Hard Link liên kết trực tiếp với Inode của tệp nguồn trên cùng một phân vùng, trong khi Symbolic Link chỉ chứa đường dẫn văn bản đến tệp đó. Kết luận Lý giải: Hard Link trỏ đến cùng một số hiệu Inode của tệp gốc trong khi Symbolic Link tạo Inode mới"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Biến môi trường nào quy định danh sách các đường dẫn thư mục mà hệ thống sẽ tìm kiếm khi người dùng thực thi một lệnh?",
+  "options": [
+   "HOME",
+   "SHELL",
+   "PATH",
+   "PWD"
+  ],
+  "correctIndex": 2,
+  "explanation": "Biến 'PATH' chứa danh sách các thư mục được phân cách bởi dấu hai chấm để shell tìm kiếm các tệp thực thi tương ứng với lệnh được nhập. Kết luận Lý giải: PATH"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Trong hệ thống Linux, tệp tin nào lưu trữ các mật khẩu đã được mã hóa của người dùng để tăng cường tính bảo mật?",
+  "options": [
+   "/etc/passwd",
+   "/etc/shadow",
+   "/etc/group",
+   "/etc/gshadow"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tệp '/etc/shadow' được thiết kế để lưu trữ mật khẩu mã hóa và các thông tin liên quan đến hết hạn mật khẩu, chỉ có quyền root mới có thể đọc. Kết luận Lý giải: /etc/shadow"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Toán tử nào được sử dụng trong dòng lệnh để ghi thêm (append) kết quả của một lệnh vào cuối một tệp tin hiện có?",
+  "options": [
+   ">",
+   "|",
+   ">>",
+   "<"
+  ],
+  "correctIndex": 2,
+  "explanation": "Toán tử '>>' thực hiện chuyển hướng đầu ra tiêu chuẩn vào một tệp tin bằng cách ghi nối tiếp vào cuối nội dung cũ thay vì ghi đè. Kết luận Lý giải: >>"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa cứng đã sử dụng và còn tr��ng trên các hệ thống tệp đang được gắn (mounted)?",
+  "options": [
+   "du",
+   "df",
+   "free",
+   "lsblk"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' (disk free) hiển thị báo cáo chi tiết về không gian đĩa của các hệ thống tệp đang hoạt động trên máy tính. Kết luận Lý giải: df"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Trên các bản phân phối dựa trên Debian như Ubuntu, lệnh nào dùng để đồng bộ hóa danh sách gói phần mềm từ máy chủ về máy cục bộ?",
+  "options": [
+   "sudo apt install",
+   "sudo apt upgrade",
+   "sudo apt update",
+   "sudo apt dist-upgrade"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'apt update' dùng để cập nhật chỉ mục các gói phần mềm từ kho lưu trữ để hệ thống biết về các phiên bản mới có sẵn. Kết luận Lý giải: sudo apt update"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Thư mục nào trong cấu trúc hệ thống tệp Linux (FHS) chứa các tệp cấu hình quan trọng của toàn bộ hệ thống?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/var",
+   "/usr"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục '/etc' là nơi lưu trữ các tệp cấu hình tĩnh cho hệ điều hành và các ứng dụng dịch vụ được cài đặt trên hệ thống. Kết luận Lý giải: /etc"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Ký hiệu đường ống '|' (pipe) trong Linux có chức năng chính là gì?",
+  "options": [
+   "Chạy hai lệnh cùng một lúc một cách song song",
+   "Ghi kết quả của lệnh vào một tệp tin",
+   "Chuyển đầu ra của lệnh đứng trước làm đầu vào cho lệnh đứng sau",
+   "Dừng thực hiện lệnh nếu có lỗi xảy ra"
+  ],
+  "correctIndex": 2,
+  "explanation": "Đường ống pipe cho phép kết nối các lệnh lại với nhau bằng cách lấy kết quả từ stdout của lệnh này làm stdin cho lệnh kia. Kết luận Lý giải: Chuyển đầu ra của lệnh đứng trước làm đầu vào cho lệnh đứng sau"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Để chạy một chương trình hoặc một tập lệnh trong nền (background) ngay từ khi bắt đầu, bạn cần thêm ký tự nào vào cuối câu lệnh?",
+  "options": [
+   "%",
+   "!",
+   "&",
+   "@"
+  ],
+  "correctIndex": 2,
+  "explanation": "Việc thêm ký tự '&' vào cuối câu lệnh sẽ yêu cầu shell thực thi tiến trình đó ở chế độ nền, giúp người dùng tiếp tục nhập lệnh khác. Kết luận Lý giải: &"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Thuộc tính 'Sticky Bit' khi được thiết lập trên một thư mục dùng chung (như /tmp) có tác dụng gì?",
+  "options": [
+   "Ngăn chặn mọi người dùng ghi dữ liệu vào thư mục đó",
+   "Chỉ cho phép chủ sở hữu của tệp tin mới có quyền xóa tệp đó trong thư mục",
+   "Tự động sao lưu tất cả tệp tin khi chúng được tạo ra",
+   "Cho phép mọi người dùng có quyền thực thi bất kỳ tệp nào trong thư mục"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sticky Bit bảo vệ các tệp trong thư mục công cộng bằng cách hạn chế quyền xóa tệp chỉ dành cho chủ sở hữu của tệp hoặc người dùng root. Kết luận Lý giải: Chỉ cho phép chủ sở hữu của tệp tin mới có quyền xóa tệp đó trong thư mục"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Lệnh nào được dùng để xem thông tin về thời gian hệ thống đã chạy, số người dùng đang đăng nhập và tải trung bình của CPU?",
+  "options": [
+   "top",
+   "uptime",
+   "who",
+   "stat"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'uptime' cung cấp một dòng thông báo tóm tắt về trạng thái hoạt động và mức độ bận rộn của hệ thống. Kết luận Lý giải: uptime"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Lệnh 'sudo' trong Linux được sử dụng với mục đích chính là gì?",
+  "options": [
+   "Đổi mật khẩu cho người dùng hiện tại",
+   "Tạo một tài khoản người dùng mới trên hệ thống",
+   "Thực thi lệnh với quyền hạn của người dùng quản trị (root)",
+   "Liệt kê tất cả các tiến trình đang chạy"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'sudo' (superuser do) cho phép người dùng bình thường thực hiện các tác vụ quản trị sau khi xác thực mật khẩu cá nhân. Kết luận Lý giải: Thực thi lệnh với quyền h���n của người dùng quản trị (root)"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Để kiểm tra địa chỉ IP hiện tại của các giao diện mạng trên hệ thống Linux hiện đại, lệnh nào sau đây được khuyến nghị sử dụng?",
+  "options": [
+   "ifconfig",
+   "netstat -rn",
+   "ip addr",
+   "ping localhost"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong các bản phân phối Linux mới, lệnh 'ip addr' từ gói iproute2 đã thay thế cho lệnh 'ifconfig' vốn đã lỗi thời. Kết luận Lý giải: ip addr"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Trình nạp khởi động (bootloader) phổ biến nhất được sử dụng để quản lý quá trình khởi động của các bản phân phối Linux hiện nay là gì?",
+  "options": [
+   "LILO",
+   "GRUB",
+   "BOOTMGR",
+   "Syslinux"
+  ],
+  "correctIndex": 1,
+  "explanation": "GRUB (Grand Unified Bootloader) là trình nạp khởi động tiêu chuẩn có khả năng tải nhiều hệ điều hành và cung cấp menu tùy chọn khi khởi động. Kết luận Lý giải: GRUB"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Để giải nén một tệp tin có định dạng '.tar.gz' bằng lệnh 'tar', bạn sử dụng tổ hợp các tùy chọn nào?",
+  "options": [
+   "-cvf",
+   "-tvf",
+   "-xzf",
+   "-rvf"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn 'x' để giải nén, 'z' để xử lý định dạng nén gzip và 'f' để chỉ định tệp tin cần xử lý. Kết luận Lý giải: -xzf"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Tệp cấu hình nào trong thư mục cá nhân của người dùng (~/) được shell thực thi mỗi khi một phiên làm việc Bash mới được bắt đầu?",
+  "options": [
+   ".bash_history",
+   ".bashrc",
+   "/etc/profile",
+   ".bash_logout"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tệp '.bashrc' chứa các thiết lập môi trường cá nhân, các hàm và bí danh lệnh (alias) được tải cho mỗi shell tương tác. Kết luận Lý giải: .bashrc"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Lệnh nào cho phép bạn theo dõi nội dung của một tệp nhật ký (log) theo thời gian thực khi dữ liệu mới được thêm vào?",
+  "options": [
+   "cat -n",
+   "head -10",
+   "tail -f",
+   "less +G"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn '-f' của lệnh 'tail' giữ cho tệp luôn mở và hiển thị ngay lập tức các dòng mới được ghi vào cuối tệp. Kết luận Lý giải: tail -f"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Lệnh 'free' trong Linux cung cấp thông tin về thành phần nào của hệ thống?",
+  "options": [
+   "Tốc độ xử lý của CPU",
+   "Bộ nhớ vật lý (RAM) và bộ nhớ hoán đổi (Swap)",
+   "Dung lượng trống trên các ổ đĩa cứng",
+   "Băng thông mạng đang sử dụng"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'free' hiển thị tổng lượng bộ nhớ thực và bộ nhớ ảo của hệ thống cùng với trạng thái sử dụng của chúng. Kết luận Lý giải: Bộ nhớ vật lý (RAM) và bộ nhớ hoán đổi (Swap)"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Tệp tin '/etc/fstab' đóng vai trò gì trong quá trình vận hành hệ điều hành Linux?",
+  "options": [
+   "Lưu trữ lịch sử các lệnh đã thực hiện của người dùng root",
+   "Cấu hình danh sách các tiến trình khởi động cùng hệ thống",
+   "Chứa thông tin cấu hình để tự động gắn kết các phân vùng ổ đĩa",
+   "Định nghĩa danh sách các địa chỉ IP bị chặn truy cập"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tệp '/etc/fstab' được hệ thống đọc khi khởi động để xác định cách thức và vị trí gắn các hệ thống tệp vào cây thư mục gốc. Kết luận Lý giải: Chứa thông tin cấu hình ��ể tự động gắn kết các phân vùng ổ đĩa"
+ },
+ {
+  "sourceSets": [
+   6
+  ],
+  "text": "Trong trình soạn thảo văn bản Vim, bạn cần nhập lệnh nào để lưu tất cả thay đổi và thoát ra ngoài terminal?",
+  "options": [
+   ":q!",
+   ":w",
+   ":wq",
+   ":x!"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tổ hợp ':wq' là lệnh kết hợp giữa 'write' (ghi) và 'quit' (thoát) để hoàn tất việc chỉnh sửa văn bản trong Vim. Kết luận Lý giải: :wq"
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Trong hệ điều hành Linux, lệnh nào được sử dụng để thay đổi quyền truy cập (permissions) của một tệp tin hoặc thư mục?",
+  "options": [
+   "chown",
+   "chmod",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chmod' viết tắt của 'change mode' là công cụ chuẩn để thiết lập các quyền đọc, ghi và thực thi cho người dùng, nhóm và các đối tượng khác. Kết luận Lý giải chmod."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Thư mục nào trong cấu trúc cây thư mục Linux chứa các tệp tin cấu hình hệ thống quan trọng?",
+  "options": [
+   "/bin",
+   "/home",
+   "/etc",
+   "/var"
+  ],
+  "correctIndex": 2,
+  "explanation": "Thư mục '/etc' là nơi lưu trữ tất cả các tệp cấu hình hệ thống và các kịch bản khởi động cần thiết để điều hành máy tính. Kết luận Lý giải /etc."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Để kết thúc (kill) một tiến trình đang chạy dựa trên ID của nó (PID), bạn nên sử dụng lệnh nào?",
+  "options": [
+   "stop",
+   "terminate",
+   "exit",
+   "kill"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'kill' gửi các tín hiệu (mặc định là SIGTERM) đến một tiến trình cụ thể thông qua mã định danh PID để yêu cầu dừng hoạt động. Kết luận Lý giải kill."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Ký hiệu nào đại diện cho thư mục gốc cao nhất trong hệ thống tệp tin Linux?",
+  "options": [
+   "~ (Dấu ngã)",
+   "/ (Dấu gạch chéo)",
+   "\\ (Dấu gạch chéo ngược)",
+   ". (Dấu chấm)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong cấu trúc phân cấp của Linux, dấu gạch chéo '/' là điểm bắt đầu của mọi đường dẫn và được gọi là thư mục Root. Kết luận Lý giải / (Dấu gạch chéo)."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Trong trình quản lý gói của các bản phân phối dựa trên Debian như Ubuntu, lệnh nào dùng để cài đặt một phần mới từ kho lưu trữ trực tuyến?",
+  "options": [
+   "yum install",
+   "pacman -S",
+   "rpm -i",
+   "apt-get install"
+  ],
+  "correctIndex": 3,
+  "explanation": "Hệ thống quản lý gói APT sử dụng lệnh 'apt-get install' hoặc 'apt install' để tải xuống và cài đặt các phần mềm từ máy chủ chính thức. Kết luận Lý giải apt-get install."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Để xem nội dung của một tệp văn bản ngay trên terminal mà không cần mở trình soạn thảo, lệnh phổ biến nhất là gì?",
+  "options": [
+   "cat",
+   "open",
+   "view",
+   "read"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh 'cat' thường được sử dụng để nối các tệp tin và in nội dung của chúng ra đầu ra chuẩn (màn hình). Kết luận Lý giải cat."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Quyền truy cập tệp tin có giá trị số là '644' có nghĩa là gì?",
+  "options": [
+   "Chủ sở hữu có quyền đọc và ghi, nhóm và người khác chỉ có quyền đọc.",
+   "Tất cả mọi người đều có quyền đọc, ghi và thực thi.",
+   "Chủ sở hữu có toàn quyền, nhóm có quyền đọc, người khác không có quyền.",
+   "Chủ sở hữu chỉ có quyền đọc, nhóm và người khác có quyền ghi."
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong hệ thập phân, số 6 tương ứng với quyền đọc và ghi (4+2), số 4 tương ứng với quyền chỉ đọc. Kết luận Lý giải Chủ sở hữu có quyền đọc và ghi, nhóm và người khác chỉ có quyền đọc."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Tệp tin nào trong hệ thống Linux thường lưu trữ thông tin về các tài khoản người dùng (ngoại trừ mật khẩu mã hóa)?",
+  "options": [
+   "/etc/shadow",
+   "/etc/group",
+   "/etc/passwd",
+   "/etc/config"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tệp '/etc/passwd' chứa các thông tin định danh cơ bản của người dùng như tên đăng nhập, UID, GID và thư mục cá nhân. Kết luận Lý giải /etc/passwd."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh 'grep' trong Linux có chức năng chính là gì?",
+  "options": [
+   "Sắp xếp nội dung tệp tin theo thứ tự bảng chữ cái.",
+   "Tìm kiếm các dòng văn bản khớp với một mẫu hoặc chuỗi cho trước.",
+   "Sao chép tệp tin từ thư mục này sang thư mục khác.",
+   "Nén tệp tin thành định dạng .gz."
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'grep' là một công cụ mạnh mẽ dùng để tìm kiếm các dòng chứa chuỗi ký tự hoặc biểu thức chính quy trong các tệp văn bản. Kết luận Lý giải Tìm kiếm các dòng văn bản khớp với một mẫu hoặc chuỗi cho trước."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh nào được sử dụng để thay đổi chủ sở hữu của một tệp tin hoặc thư mục?",
+  "options": [
+   "chmod",
+   "chown",
+   "useradd",
+   "usermod"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) cho phép người quản trị thay đổi quyền sở hữu tệp tin cho một người dùng hoặc nhóm nhất định. Kết luận Lý giải chown."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Ký hiệu '>>' trong dòng lệnh Linux có ý nghĩa gì khi thực hiện chuyển hướng đầu ra?",
+  "options": [
+   "Ghi đè nội dung tệp tin bằng kết quả của lệnh.",
+   "Sử dụng nội dung tệp tin làm đầu vào cho lệnh.",
+   "Ghi thêm kết quả của lệnh vào cuối nội dung hiện có của tệp tin.",
+   "Chuyển hướng thông báo lỗi ra màn hình."
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong khi dấu '>' ghi đè lên tệp cũ, dấu '>>' sẽ thực hiện thao tác nối thêm dữ liệu vào phía sau nội dung cũ của tệp. Kết luận Lý giải Ghi thêm kết quả của lệnh vào cuối nội dung hiện có của tệp tin."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Trong trình soạn thảo văn bản Vi/Vim, phím nào được dùng để chuyển từ chế độ lệnh sang chế độ chèn (Insert mode)?",
+  "options": [
+   "Esc",
+   "x",
+   "i",
+   ":q"
+  ],
+  "correctIndex": 2,
+  "explanation": "Phím 'i' được sử dụng phổ biến nhất để bắt đầu nhập văn bản tại vị trí con trỏ hiện tại trong trình soạn thảo Vim. Kết luận Lý giải i."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh nào dùng để hiển thị danh sách các tiến trình đang hoạt động của hệ thống theo thời gian thực?",
+  "options": [
+   "ps -ef",
+   "top",
+   "ls",
+   "df"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'top' cung cấp một cái nhìn động về các tiến trình đang chiếm dụng tài nguyên CPU và RAM nhiều nhất trên hệ thống. Kết luận Lý giải top."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Dòng đầu tiên của một tệp Script Bash (Shebang) thường có nội dung như thế nào?",
+  "options": [
+   "start /bin/bash",
+   "#/bin/bash",
+   "#!/bin/bash",
+   "!/bin/bash"
+  ],
+  "correctIndex": 2,
+  "explanation": "Chuỗi '#!' (Shebang) ở đầu tệp cho hệ điều hành biết trình thông dịch nào cần được dùng để thực thi mã nguồn bên dưới. Kết luận Lý giải #!/bin/bash."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Để liệt kê tất cả các tệp tin trong thư mục, bao gồm cả các tệp ẩn (bắt đầu bằng dấu chấm), bạn sử dụng lệnh nào?",
+  "options": [
+   "ls -l",
+   "ls -a",
+   "ls -h",
+   "ls -d"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-a' (all) trong lệnh 'ls' cho phép hiển thị mọi tệp tin, kể cả các tệp ẩn mà thông thường sẽ bị bỏ qua. Kết luận Lý giải ls -a."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh 'sudo' được sử dụng nhằm mục đích gì trong Linux?",
+  "options": [
+   "Tạo một người dùng mới vào hệ thống.",
+   "Xóa hoàn toàn một thư mục rỗng.",
+   "Khởi động lại máy tính ngay lập tức.",
+   "Thực thi lệnh với đặc quyền của người dùng quản trị (root)."
+  ],
+  "correctIndex": 3,
+  "explanation": "Sudo (superuser do) cho phép người dùng thông thường thực hiện các tác vụ quản trị hệ thống một cách an toàn thông qua xác thực mật khẩu cá nhân. Kết luận Lý giải Thực thi lệnh với đặc quyền của người dùng quản trị (root)."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh nào dùng để kiểm tra dung lượng còn trống của các phân vùng ổ đĩa trên hệ thống?",
+  "options": [
+   "du",
+   "df -h",
+   "free",
+   "mem"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' (disk free) kèm tham số '-h' giúp hiển thị không gian đĩa của các hệ thống tệp tin dưới dạng dễ đọc cho con người. Kết luận Lý giải df -h."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Trong Linux, để tạo một thư mục mới, người dùng sử dụng lệnh nào?",
+  "options": [
+   "newdir",
+   "touch",
+   "mkdir",
+   "create"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'mkdir' (make directory) là lệnh tiêu chuẩn để tạo một hoặc nhiều thư mục mới trong hệ thống tệp tin. Kết luận Lý giải mkdir."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Để nén một thư mục thành một tệp tin nén có định dạng .tar.gz, cú pháp lệnh nào sau đây là đúng?",
+  "options": [
+   "tar -cvzf archive.tar.gz folder_name",
+   "zip archive.tar.gz folder_name",
+   "tar -xvf archive.tar.gz folder_name",
+   "gzip -d folder_name archive.tar.gz"
+  ],
+  "correctIndex": 0,
+  "explanation": "Sử dụng lệnh 'tar' với các tham số 'c' (create), 'v' (verbose), 'z' (gzip) và 'f' (file) để tạo một tệp nén từ thư mục chỉ định. Kết luận Lý giải tar -cvzf archive.tar.gz folder_name."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh nào dùng để xóa một tệp tin trong hệ điều hành Linux?",
+  "options": [
+   "del",
+   "remove",
+   "rm",
+   "erase"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'rm' (remove) được sử dụng để xóa các tệp tin hoặc thư mục (nếu dùng thêm tùy chọn -r). Kết luận Lý giải rm."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Trong giao diện dòng lệnh, ký hiệu đường ống '|' (Pipe) có tác dụng gì?",
+  "options": [
+   "Dừng thực thi lệnh đang chạy.",
+   "Lấy đầu ra của lệnh trước làm đầu vào cho lệnh sau.",
+   "Chạy lệnh ở chế độ nền (background).",
+   "Lưu kết quả của lệnh vào một biến môi trường."
+  ],
+  "correctIndex": 1,
+  "explanation": "Ký hiệu Pipe cho phép liên kết các lệnh với nhau bằng cách chuyển dữ liệu đầu ra từ lệnh phía bên trái sang lệnh phía bên phải. Kết luận Lý giải Lấy đầu ra của lệnh trước làm đầu vào cho lệnh sau."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Để đổi tên một tệp tin từ 'cu.txt' thành 'moi.txt', bạn sử dụng lệnh nào?",
+  "options": [
+   "rn cu.txt moi.txt",
+   "cp cu.txt moi.txt",
+   "name cu.txt moi.txt",
+   "mv cu.txt moi.txt"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'mv' (move) được sử dụng để di chuyển tệp tin hoặc đổi tên tệp tin khi vị trí đích nằm trong cùng một thư mục. Kết luận Lý giải mv cu.txt moi.txt."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Thành phần cốt lõi (Core) của hệ điều hành Linux, chịu trách nhiệm quản lý phần cứng và tài nguyên, được gọi là gì?",
+  "options": [
+   "Shell",
+   "Kernel",
+   "GUI",
+   "Distro"
+  ],
+  "correctIndex": 1,
+  "explanation": "Kernel là phần trung tâm của hệ điều hành đóng vai trò cầu nối giữa phần mềm ứng dụng và phần cứng của máy tính. Kết luận Lý giải Kernel."
+ },
+ {
+  "sourceSets": [
+   7
+  ],
+  "text": "Lệnh nào giúp người dùng xem tài liệu hướng dẫn (manual) của một lệnh cụ thể trên hệ thống?",
+  "options": [
+   "doc",
+   "help",
+   "info",
+   "man"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'man' cung cấp các trang hướng dẫn chi tiết về cú pháp, tham số và cách sử dụng của hầu hết các lệnh trong Linux. Kết luận Lý giải man."
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Trong hệ điều hành Linux, lệnh nào được sử dụng để thay đổi quyền truy cập (read, write, execute) của một tệp tin hoặc thư mục?",
+  "options": [
+   "chown",
+   "chmod",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo tiêu chuẩn quản trị hệ thống Linux, lệnh 'chmod' (change mode) là công cụ duy nhất dùng để thiết lập hoặc sửa đổi các quyền truy cập cho người dùng đối với tệp và thư mục. Kết luận Lý giải chmod"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Khi sử dụng lệnh 'kill', tín hiệu (signal) nào thường được dùng để buộc một tiến trình phải dừng lại ngay lập tức mà không thể bỏ qua?",
+  "options": [
+   "SIGTERM (15)",
+   "SIGINT (2)",
+   "SIGKILL (9)",
+   "SIGHUP (1)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong quản lý tiến trình Linux, tín hiệu 'SIGKILL' (mã số 9) gửi yêu cầu trực tiếp đến nhân hệ điều hành để chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó thực hiện các thao tác dọn dẹp. Kết luận Lý giải SIGKILL (9)"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Thư mục nào trong cấu trúc phân cấp tệp tin của Linux (FHS) là nơi lưu trữ các tệp cấu hình hệ thống toàn cục?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/var",
+   "/usr"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dựa trên Tiêu chuẩn Phân cấp Tệp tin (FHS), thư mục '/etc' là vị trí chuyên dụng để lưu trữ các tệp cấu hình cần thiết cho việc vận hành hệ thống và các ứng dụng đã cài đặt. Kết luận Lý giải /etc"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Công cụ dòng lệnh nào mạnh mẽ nhất để tìm kiếm các dòng văn bản khớp với một biểu thức chính quy (regular expression) trong một tệp?",
+  "options": [
+   "locate",
+   "find",
+   "grep",
+   "echo"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo phân tích kỹ thuật, lệnh 'grep' (global regular expression print) được thiết kế đặc biệt để lọc và hiển thị các dòng văn bản chứa mẫu ký tự mong muốn từ đầu vào dữ liệu. Kết luận Lý giải grep"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Ký hiệu nào được dùng trong trình bao (shell) để chuyển hướng đầu ra (output) và ghi thêm nội dung vào cuối một tệp tin hiện có thay vì ghi đè?",
+  "options": [
+   ">",
+   "<<",
+   "|",
+   ">>"
+  ],
+  "correctIndex": 3,
+  "explanation": "Trong Linux shell, ký hiệu '>>' thực hiện chức năng chuyển hướng đầu ra theo cơ chế 'append', giúp bảo toàn nội dung cũ và thêm dữ liệu mới vào cuối tệp. Kết luận Lý giải >>"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Biến môi trường nào quy định danh sách các thư mục mà hệ điều hành sẽ tìm kiếm khi người dùng nhập một lệnh thực thi?",
+  "options": [
+   "$HOME",
+   "$PATH",
+   "$USER",
+   "$SHELL"
+  ],
+  "correctIndex": 1,
+  "explanation": "Biến môi trường '$PATH' chứa một danh sách các đường dẫn thư mục được phân cách bằng dấu hai chấm, giúp hệ thống xác định vị trí của các tệp thực thi khi lệnh được gọi mà không có đường dẫn đầy đủ. Kết luận Lý giải $PATH"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Trên các bản phân phối dựa trên Debian như Ubuntu, lệnh nào được dùng để cài đặt một tệp tin gói có đuôi '.deb' trực tiếp từ dòng lệnh?",
+  "options": [
+   "apt update",
+   "yum install",
+   "dpkg -i",
+   "rpm -ivh"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'dpkg -i' (Debian Package) là công cụ cấp thấp dùng để cài đặt trực tiếp các gói phần mềm định dạng '.deb' có sẵn trên ổ đĩa cục bộ. Kết luận Lý giải dpkg -i"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Để tạo một 'liên kết mềm' (symbolic link) từ một tệp tin nguồn đến một tên tệp mới, bạn sử dụng lệnh nào sau đây?",
+  "options": [
+   "ln -s",
+   "link",
+   "ln -h",
+   "cp -l"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong hệ thống tệp Linux, lệnh 'ln' với tham số '-s' (symbolic) được sử dụng để tạo một liên kết trỏ đến đường dẫn của tệp nguồn thay vì tạo một bản sao vật lý. Kết luận Lý giải ln -s"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Trong lệnh 'tar', tùy chọn nào được sử dụng để nén các tệp tin bằng thuật toán gzip trong quá trình tạo tệp lưu trữ?",
+  "options": [
+   "-j",
+   "-z",
+   "-x",
+   "-v"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khi sử dụng tiện ích 'tar' để đóng gói, tham số '-z' hướng dẫn chương trình gọi bộ nén 'gzip' để giảm dung lượng của tệp lưu trữ được tạo ra. Kết luận Lý giải -z"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Tệp tin nào trong hệ thống Linux lưu trữ mật khẩu đã được băm (hashed passwords) của người dùng để đảm bảo tính bảo mật cao hơn?",
+  "options": [
+   "/etc/passwd",
+   "/etc/group",
+   "/etc/shadow",
+   "/etc/gshadow"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo cơ chế bảo mật tiêu chuẩn của Linux, tệp '/etc/shadow' chỉ có quyền truy cập bởi người dùng root và chứa các thông tin nhạy cảm như mật khẩu đã mã hóa và thời hạn hết hạn. Kết luận Lý giải /etc/shadow"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Dòng mã '#!/bin/bash' thường xuất hiện ở đầu các kịch bản trình bao (shell script) được gọi là gì?",
+  "options": [
+   "Header",
+   "Comment",
+   "Shebang",
+   "Directive"
+  ],
+  "correctIndex": 2,
+  "explanation": "Thuật ngữ 'Shebang' (hoặc Hashbang) ám chỉ chuỗi ký tự '#!' ở đầu tệp tin dùng để chỉ định trình thông dịch nào sẽ thực thi mã nguồn bên dưới. Kết luận Lý giải Shebang"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa cứng đã sử dụng và còn trống trên các hệ thống tệp (filesystem) đang được gắn (mount)?",
+  "options": [
+   "du",
+   "df",
+   "free",
+   "lsblk"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' (disk free) báo cáo tóm tắt về dung lượng lưu trữ trên các phân vùng hệ thống tệp, bao gồm tổng dung lượng, phần đã dùng và phần còn khả dụng. Kết luận Lý giải df"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Khi cần tìm kiếm một tệp tin dựa trên tên, kích thước hoặc ngày sửa đổi trong một cây thư mục, lệnh nào là phù hợp nhất?",
+  "options": [
+   "whereis",
+   "which",
+   "find",
+   "locate"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'find' là một công cụ tìm kiếm mạnh mẽ cho phép quét đĩa cứng theo thời gian thực dựa trên các tiêu chí lọc đa dạng như tên, thuộc tính và quyền hạn. Kết luận Lý giải find"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Công cụ nào cho phép người dùng giám sát các tiến trình đang hoạt động, mức sử dụng CPU và bộ nhớ RAM theo thời gian thực?",
+  "options": [
+   "ps",
+   "top",
+   "kill",
+   "uptime"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'top' cung cấp một giao diện động hiển thị danh sách các tiến trình tiêu tốn tài nguyên nhất và các chỉ số hiệu năng tổng quát của hệ thống Linux. Kết luận Lý giải top"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Để xem các dòng mới nhất của một tệp nhật ký (log file) và tiếp tục theo dõi khi có dữ liệu mới được thêm vào, bạn sử dụng lệnh nào?",
+  "options": [
+   "head -n 20",
+   "cat",
+   "less",
+   "tail -f"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'tail' với tùy chọn '-f' (follow) cho phép người dùng xem phần cuối của tệp và giữ kết nối để hiển thị ngay lập tức các dòng văn bản mới khi chúng được ghi vào tệp. Kết luận Lý giải tail -f"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Lệnh nào được sử dụng để thực thi một lệnh khác với đặc quyền của người dùng siêu cấp (root) hoặc một người dùng khác?",
+  "options": [
+   "sudo",
+   "su",
+   "runas",
+   "passwd"
+  ],
+  "correctIndex": 0,
+  "explanation": "Tiện ích 'sudo' (superuser do) cho phép người dùng được ủy quyền thực thi các lệnh quản trị hệ thống mà không cần đăng nhập trực tiếp bằng tài khoản root. Kết luận Lý giải sudo"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Để kiểm tra ước tính tổng dung lượng đĩa mà một thư mục cụ thể và các thư mục con của nó đang chiếm giữ, lệnh nào là chính xác nhất?",
+  "options": [
+   "ls -l",
+   "df -h",
+   "du -sh",
+   "stat"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'du' (disk usage) với các tham số '-s' (summary) và '-h' (human-readable) được dùng để tổng kết kích thước của các tệp và thư mục trên ổ đĩa. Kết luận Lý giải du -sh"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Lệnh nào dùng để xóa một thư mục không trống cùng toàn bộ tệp tin và thư mục con bên trong nó một cách đệ quy?",
+  "options": [
+   "rmdir",
+   "rm -rf",
+   "del /s",
+   "erase"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'rm' kết hợp với cờ '-r' (recursive) và '-f' (force) cho phép xóa sạch một cây thư mục mà không yêu cầu xác nhận cho từng tệp tin. Kết luận Lý giải rm -rf"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Câu lệnh nào hiển thị các thông tin cơ bản về hệ thống như tên nhân (kernel), tên máy (hostname) và kiến trúc bộ vi xử lý?",
+  "options": [
+   "uname -a",
+   "lsinfo",
+   "sysconf",
+   "version"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh 'uname' với tùy chọn '-a' (all) trích xuất và hiển thị tất cả các thông tin hệ thống quan trọng có sẵn trong nhân Linux. Kết luận Lý giải uname -a"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Trong mạng máy tính Linux, lệnh 'ping' với tham số '-c 4' có ý nghĩa gì?",
+  "options": [
+   "Kiểm tra kết nối trên cổng 4",
+   "Gửi đúng 4 gói tin ICMP rồi dừng lại",
+   "Tăng kích thước gói tin lên 4 lần",
+   "Chờ 4 giây trước khi bắt đầu"
+  ],
+  "correctIndex": 1,
+  "explanation": "Mặc định trên Linux lệnh 'ping' sẽ chạy vô hạn, nên tham số '-c' (count) được dùng để giới hạn chính xác số lượng gói tin kiểm tra kết nối được gửi đi. Kết luận Lý giải Gửi đúng 4 gói tin ICMP rồi dừng lại"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Để gán quyền thực thi cho chủ sở hữu (user) trên một tệp tin script có tên 'run.sh', cú pháp lệnh nào sau đây là đúng?",
+  "options": [
+   "chmod o+x run.sh",
+   "chmod g+x run.sh",
+   "chmod u+x run.sh",
+   "chmod a-x run.sh"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong ký hiệu tượng trưng của lệnh 'chmod', 'u' đại diện cho người sở hữu (user) và '+x' là thao tác thêm quyền thực thi (execute). Kết luận Lý giải chmod u+x run.sh"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Lệnh 'mv' trong hệ điều hành Linux được sử dụng cho hai mục đích chính nào?",
+  "options": [
+   "Sao chép và Xóa tệp",
+   "Di chuyển và Đổi tên tệp",
+   "Nén và Giải nén tệp",
+   "Mở và Đóng tệp"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'mv' (move) được thiết kế để thay đổi vị trí của tệp tin trong cấu trúc thư mục hoặc thay đổi tên của nó nếu đích đến nằm trong cùng một thư mục. Kết luận Lý giải Di chuyển và Đổi tên tệp"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Tệp tin ảo nào chứa thông tin chi tiết về bộ vi xử lý (CPU) của hệ thống đang chạy?",
+  "options": [
+   "/etc/cpuinfo",
+   "/proc/cpuinfo",
+   "/dev/cpu",
+   "/var/run/cpu"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục '/proc' là một hệ thống tệp ảo cung cấp giao diện cho các cấu trúc dữ liệu của nhân, trong đó tệp 'cpuinfo' lưu trữ các thông số kỹ thuật của CPU. Kết luận Lý giải /proc/cpuinfo"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Khi muốn tra cứu tài liệu hướng dẫn sử dụng chi tiết của một lệnh bất kỳ trong Linux, bạn nên sử dụng lệnh nào?",
+  "options": [
+   "help",
+   "info",
+   "man",
+   "show"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'man' (manual) là công cụ chuẩn để truy cập các trang tài liệu hướng dẫn tích hợp sẵn cho hầu hết các câu lệnh và tệp cấu hình trên Linux. Kết luận Lý giải man"
+ },
+ {
+  "sourceSets": [
+   8
+  ],
+  "text": "Chức năng chính của ký hiệu đường ống '|' (pipe) trong dòng lệnh Linux là gì?",
+  "options": [
+   "Chạy hai lệnh đồng thời một cách độc lập",
+   "Ghi đầu ra của lệnh vào một tệp tin mới",
+   "Chuyển kết quả đầu ra của lệnh này làm đầu vào cho lệnh kia",
+   "Xóa toàn bộ kết quả của lệnh trước đó"
+  ],
+  "correctIndex": 2,
+  "explanation": "Kỹ thuật 'piping' sử dụng ký hiệu '|' để kết nối đầu ra tiêu chuẩn của một chương trình trực tiếp vào đầu vào tiêu chuẩn của chương trình tiếp theo trong một chuỗi lệnh. Kết luận Lý giải Chuyển kết quả đầu ra của lệnh này làm đầu vào cho lệnh kia"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Trong hệ điều hành Linux, thành phần nào chịu trách nhiệm quản lý tài nguyên phần cứng và cung cấp các dịch vụ cơ bản cho các ứng dụng?",
+  "options": [
+   "Shell",
+   "Kernel",
+   "Desktop Environment",
+   "Package Manager"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo kiến trúc chuẩn của Linux, Kernel (nhân) là thành phần cốt lõi trung gian điều phối giao tiếp giữa phần cứng và phần mềm ứng dụng. Kết luận Lý giải Kernel"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tệp tin sao cho chủ sở hữu có toàn quyền, nhóm có quyền đọc và thực thi, và người khác chỉ có quyền đọc?",
+  "options": [
+   "chmod 754",
+   "chmod 764",
+   "chmod 644",
+   "chmod 777"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong hệ thống quyền số, số 7 tương ứng 'rwx' cho chủ sở hữu, số 5 tương ứng 'r-x' cho nhóm và số 4 tương ứng 'r--' cho người khác. Kết luận Lý giải chmod 754"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Để tìm kiếm tất cả các dòng KHÔNG chứa từ khóa 'error' trong một tệp tin nhật ký, bạn nên sử dụng tùy chọn nào với lệnh 'grep'?",
+  "options": [
+   "grep -i 'error' file.log",
+   "grep -v 'error' file.log",
+   "grep -l 'error' file.log",
+   "grep -n 'error' file.log"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-v' (invert-match) trong lệnh 'grep' được thiết kế để đảo ngược kết quả tìm kiếm, chỉ hiển thị những dòng không khớp với mẫu. Kết luận Lý giải grep -v 'error' file.log"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Tệp tin nào lưu giữ thông tin mã hóa mật khẩu của người dùng trong các bản phân phối Linux hiện đại để đảm bảo an toàn?",
+  "options": [
+   "/etc/passwd",
+   "/etc/group",
+   "/etc/shadow",
+   "/etc/gshadow"
+  ],
+  "correctIndex": 2,
+  "explanation": "Để bảo mật, Linux lưu mật khẩu đã băm trong tệp '/etc/shadow' với quyền truy cập cực kỳ hạn chế thay vì để trong '/etc/passwd'. Kết luận Lý giải /etc/shadow"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Sự khác biệt chính giữa Symbolic Link (Soft Link) và Hard Link trong Linux là gì?",
+  "options": [
+   "Hard Link có thể trỏ đến thư mục, còn Symbolic Link thì không.",
+   "Symbolic Link có thể trỏ đến tệp tin trên các phân vùng đĩa khác nhau, còn Hard Link thì không.",
+   "Khi xóa tệp gốc, Hard Link sẽ bị hỏng và không thể truy cập nội dung.",
+   "Symbolic Link chia sẻ cùng số Inode với tệp tin gốc."
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo đặc tính hệ thống tệp, Hard Link bị giới hạn trong cùng một phân vùng đĩa do dùng chung Inode, trong khi Symbolic Link là một tệp riêng biệt chứa đường dẫn. Kết luận Lý giải Symbolic Link có thể trỏ đến tệp tin trên các phân vùng đĩa khác nhau, còn Hard Link thì không."
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Trong hệ thống sử dụng 'systemd', mục tiêu (target) nào tương đương với 'runlevel 3' (chế độ đa người dùng với giao diện dòng lệnh)?",
+  "options": [
+   "graphical.target",
+   "multi-user.target",
+   "rescue.target",
+   "reboot.target"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong cấu trúc của 'systemd', 'multi-user.target' được định nghĩa là trạng thái hệ thống hỗ trợ nhiều người dùng nhưng không khởi động giao diện đồ họa. Kết luận Lý giải multi-user.target"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh nào được sử dụng để gửi tín hiệu buộc một tiến trình phải dừng ngay lập tức mà không cho phép nó thực hiện các thủ tục dọn dẹp?",
+  "options": [
+   "kill -15 PID",
+   "kill -2 PID",
+   "kill -1 PID",
+   "kill -9 PID"
+  ],
+  "correctIndex": 3,
+  "explanation": "Tín hiệu SIGKILL (tương ứng số 9) gửi đến tiến trình sẽ buộc Kernel chấm dứt nó ngay lập tức mà không thể bị bỏ qua hoặc chặn lại. Kết luận Lý giải kill -9 PID"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh 'tar' nào sau đây được sử dụng để tạo một tệp nén mới có định dạng '.tar.gz' từ một thư mục?",
+  "options": [
+   "tar -xvf archive.tar.gz folder/",
+   "tar -zcvf archive.tar.gz folder/",
+   "tar -jcvf archive.tar.gz folder/",
+   "tar -tvf archive.tar.gz"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong lệnh 'tar', tùy chọn '-c' dùng để tạo mới và '-z' dùng để lọc qua trình nén gzip để tạo định dạng '.gz'. Kết luận Lý giải tar -zcvf archive.tar.gz folder/"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Một tác vụ định kỳ trong 'crontab' có cấu hình '0 2 * * 1 command' sẽ thực hiện vào thời điểm nào?",
+  "options": [
+   "Vào lúc 2 giờ sáng mỗi ngày.",
+   "Vào lúc 2 giờ sáng thứ Hai hàng tuần.",
+   "Vào lúc 1 giờ sáng ngày 2 hàng tháng.",
+   "Cứ mỗi 2 tiếng vào ngày đầu tiên của tháng."
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo cú pháp crontab (phút, giờ, ngày, tháng, thứ), giá trị '0 2 * * 1' xác định thời điểm phút 0, giờ 2 và ngày thứ 1 trong tuần (thứ Hai). Kết luận Lý giải Vào lúc 2 giờ sáng thứ Hai hàng tuần."
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa còn trống trên các hệ thống tệp đã được gắn (mounted) dưới dạng dễ đọc cho con người (GB, MB)?",
+  "options": [
+   "du -sh",
+   "df -h",
+   "fdisk -l",
+   "ls -lh"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' (disk free) với tùy chọn '-h' (human-readable) hiển thị báo cáo về không gian đĩa của toàn bộ các hệ thống tệp đang hoạt động. Kết luận Lý giải df -h"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Trong tệp cấu hình '/etc/sudoers', ký hiệu nào cho phép một người dùng thực hiện tất cả các lệnh với quyền của bất kỳ người dùng nào trên bất kỳ máy chủ nào?",
+  "options": [
+   "ALL=(ALL) ALL",
+   "root=(ALL) ALL",
+   "ALL=(root) /bin/bash",
+   "USER=(ALL) NOPASSWD"
+  ],
+  "correctIndex": 0,
+  "explanation": "Cú pháp 'ALL=(ALL:ALL) ALL' trong sudoers là đặc quyền cao nhất, cho phép chạy mọi lệnh từ mọi nơi dưới danh nghĩa mọi người dùng/nhóm. Kết luận Lý giải ALL=(ALL) ALL"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Quyền đặc biệt 'Sticky Bit' khi được thiết lập trên một thư mục (ví dụ /tmp) có tác dụng gì?",
+  "options": [
+   "Cho phép tất cả người dùng thực thi tệp tin trong đó.",
+   "Chỉ chủ sở hữu của tệp tin hoặc root mới có quyền xóa tệp tin đó trong thư mục.",
+   "Khiến tệp tin mới tạo trong thư mục thuộc về nhóm của thư mục đó.",
+   "Ngăn chặn người dùng đọc nội dung các tệp tin của người khác."
+  ],
+  "correctIndex": 1,
+  "explanation": "Sticky Bit (chmod +t) bảo vệ các tệp trong thư mục dùng chung bằng cách chỉ cho phép chủ sở hữu tệp hoặc root xóa hoặc đổi tên chúng. Kết luận Lý giải Chỉ chủ sở hữu của tệp tin hoặc root mới có quyền xóa tệp tin đó trong thư mục."
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Ký hiệu nào được sử dụng trong dòng lệnh Linux để chuyển hướng đầu ra tiêu chuẩn (stdout) của lệnh này làm đầu vào tiêu chuẩn (stdin) cho lệnh kia?",
+  "options": [
+   "Dấu lớn hơn ( > )",
+   "Dấu và ( & )",
+   "Dấu gạch đứng ( | )",
+   "Dấu phẩy ( , )"
+  ],
+  "correctIndex": 2,
+  "explanation": "Cơ chế 'Pipe' (đường ống) sử dụng ký tự gạch đứng để kết nối các tiến trình bằng cách truyền luồng dữ liệu giữa chúng. Kết luận Lý giải Dấu gạch đứng ( | )"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Biến môi trường nào lưu trữ danh sách các đường dẫn thư mục mà Shell sẽ tìm kiếm các tệp thực thi khi người dùng nhập một lệnh?",
+  "options": [
+   "$HOME",
+   "$PWD",
+   "$USER",
+   "$PATH"
+  ],
+  "correctIndex": 3,
+  "explanation": "Biến '$PATH' chứa các đường dẫn được phân tách bằng dấu hai chấm, nơi hệ thống quét tìm các chương trình tương ứng với lệnh được gõ. Kết luận Lý giải $PATH"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Trong hệ điều hành Linux, tài khoản người dùng siêu cấp (root) luôn có mã định danh người dùng (UID) là bao nhiêu?",
+  "options": [
+   "1000",
+   "1",
+   "0",
+   "500"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo tiêu chuẩn POSIX và thiết kế của Linux, người dùng root luôn được gán UID cố định là 0 để hệ thống nhận diện quyền quản trị cao nhất. Kết luận Lý giải 0"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Nếu giá trị 'umask' của hệ thống là 027, thì quyền mặc định của một tệp tin mới được tạo (không tính thư mục) sẽ là gì?",
+  "options": [
+   "(rw-r-----)",
+   "(rwxr-x---)",
+   "(rw-r--r--)",
+   "(rwxrwxrwx)"
+  ],
+  "correctIndex": 0,
+  "explanation": "Quyền tối đa cho tệp là 666, khi áp dụng umask 027 (666 - 027), kết quả nhận được là quyền 640. Kết luận Lý giải 640 (rw-r-----)"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh nào dùng để tìm kiếm các tệp tin có tên kết thúc bằng '.conf' trong thư mục '/etc' đã được sửa đổi trong vòng 7 ngày qua?",
+  "options": [
+   "find /etc -name '*.conf' -mtime -7",
+   "find /etc -name '*.conf' -atime +7",
+   "ls /etc/*.conf -days 7",
+   "search /etc -name '*.conf' -mod 7"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh 'find' sử dụng '-name' để khớp mẫu tên và '-mtime -7' để lọc các tệp được sửa đổi trong khoảng thời gian ít hơn 7 ngày. Kết luận Lý giải find /etc -name '*.conf' -mtime -7"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Trong kiến trúc Quản lý khối logic (LVM), thành phần nào đóng vai trò là các phân vùng đĩa vật lý hoặc toàn bộ đĩa cứng đã được khởi tạo để sử dụng bởi LVM?",
+  "options": [
+   "Logical Volume (LV)",
+   "Volume Group (VG)",
+   "Physical Volume (PV)",
+   "Physical Extent (PE)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Physical Volume (PV) là lớp thấp nhất trong LVM, đại diện cho các thiết bị lưu trữ vật lý thực tế sau khi được lệnh 'pvcreate' chuẩn bị. Kết luận Lý giải Physical Volume (PV)"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Sự khác biệt cơ bản giữa lệnh 'apt update' và 'apt upgrade' trên các hệ thống dựa trên Debian là gì?",
+  "options": [
+   "'update' cài đặt các bản vá bảo mật, 'upgrade' cài đặt các tính năng mới.",
+   "'update' cập nhật danh sách gói từ kho lưu trữ, 'upgrade' cài đặt các phiên bản mới của các gói đã cài.",
+   "'update' nâng cấp nhân hệ điều hành, 'upgrade' cập nhật các phần mềm ứng dụng.",
+   "Hai lệnh này có chức năng hoàn toàn giống nhau."
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo quy trình quản lý gói, 'update' chỉ làm mới thông tin về các gói có sẵn, trong khi 'upgrade' mới thực hiện tải và cài đặt các phiên bản mới. Kết luận Lý giải 'update' cập nhật danh sách gói từ kho lưu trữ, 'upgrade' cài đặt các phiên bản mới của các gói đã cài."
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Trong trình soạn thảo văn bản Vi/Vim, bạn đang ở 'Command mode', phím nào được nhấn để chuyển sang 'Insert mode' tại vị trí con trỏ hiện tại?",
+  "options": [
+   "Phím Esc",
+   "Phím :",
+   "Phím i",
+   "Phím x"
+  ],
+  "correctIndex": 2,
+  "explanation": "Phím 'i' (insert) là phím chuẩn trong Vi/Vim để chuyển đổi từ chế độ lệnh sang chế độ nhập liệu văn bản. Kết luận Lý giải Phím i"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh nào được sử dụng để hiển thị các cổng mạng (ports) đang mở và các kết nối mạng đang hoạt động trên hệ thống Linux?",
+  "options": [
+   "ip link show",
+   "netstat -tuln",
+   "ping -c 4 localhost",
+   "ifconfig -a"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'netstat' với các tùy chọn '-t' (TCP), '-u' (UDP), '-l' (listening) và '-n' (numeric) thường được dùng để kiểm tra trạng thái các cổng dịch vụ. Kết luận Lý giải netstat -tuln"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Tệp tin nào chứa tên của máy tính (hostname) trên các hệ thống Linux hiện đại?",
+  "options": [
+   "/etc/hosts",
+   "/etc/hostname",
+   "/etc/resolv.conf",
+   "/etc/networks"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong cấu trúc phân cấp tệp tin, '/etc/hostname' là tệp văn bản đơn giản chỉ chứa tên định danh duy nhất của máy tính trong mạng. Kết luận Lý giải /etc/hostname"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Chế độ chạy (Runlevel) nào trong hệ thống Linux truyền thống được sử dụng để khởi động lại máy tính?",
+  "options": [
+   "Runlevel 0",
+   "Runlevel 1",
+   "Runlevel 5",
+   "Runlevel 6"
+  ],
+  "correctIndex": 3,
+  "explanation": "Theo quy ước SysVinit truyền thống, Runlevel 6 được định nghĩa là trạng thái dẫn đến việc khởi động lại hệ thống (reboot). Kết luận Lý giải Runlevel 6"
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Khái niệm 'Inode' trong hệ thống tệp tin Linux lưu trữ thông tin gì về một tệp tin?",
+  "options": [
+   "Tên tệp tin và dữ liệu thực tế của tệp tin đó.",
+   "Siêu dữ liệu (metadata) như quyền hạn, chủ sở hữu, kích thước và vị trí dữ liệu trên đĩa.",
+   "Lịch sử tất cả các lần thay đổi nội dung của tệp tin.",
+   "Địa chỉ IP của máy chủ lưu trữ tệp tin đó."
+  ],
+  "correctIndex": 1,
+  "explanation": "Inode là một cấu trúc dữ liệu lưu trữ mọi thuộc tính của tệp trừ tên tệp và dữ liệu nội dung thực tế. Kết luận Lý giải Siêu dữ liệu (metadata) như quyền hạn, chủ sở hữu, kích thước và vị trí dữ liệu trên đĩa."
+ },
+ {
+  "sourceSets": [
+   9
+  ],
+  "text": "Lệnh 'sed' nào sau đây sẽ thay thế TẤT CẢ các lần xuất hiện của từ 'apple' thành 'orange' trong mỗi dòng của tệp tin 'fruit.txt'?",
+  "options": [
+   "sed 's/apple/orange/' fruit.txt",
+   "sed 'r/apple/orange/g' fruit.txt",
+   "sed 's/apple/orange/g' fruit.txt",
+   "sed 'change apple to orange' fruit.txt"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong lệnh 'sed', cờ 'g' (global) đặt sau lệnh thay thế 's' đảm bảo mọi khớp nối trong một dòng đều bị tác động thay vì chỉ cái đầu tiên. Kết luận Lý giải sed 's/apple/orange/g' fruit.txt"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Ai là người đã viết những dòng mã đầu tiên và công bố nhân (kernel) Linux vào năm 1991?",
+  "options": [
+   "Bill Gates",
+   "Steve Jobs",
+   "Linus Torvalds",
+   "Richard Stallman"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo lịch sử phát triển của hệ điều hành mã nguồn mở, Linus Torvalds là người sáng tạo ra nhân Linux và duy trì sự phát triển của nó cho đến ngày nay. Kết luận Lý giải: Linus Torvalds"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Thư mục nào trong hệ thống tệp tin Linux chứa các tệp tin cấu hình của hệ thống?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/home",
+   "/root"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo quy chuẩn phân cấp hệ thống tệp tin (FHS), thư mục '/etc' là nơi lưu trữ tất cả các tệp tin cấu hình cụ thể cho máy chủ đó. Kết luận Lý giải: /etc"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Trong hệ thống Linux, người quản trị cao nhất (root) thường có mã định danh người dùng (UID) là bao nhiêu?",
+  "options": [
+   "1000",
+   "1",
+   "100",
+   "0"
+  ],
+  "correctIndex": 3,
+  "explanation": "Theo quy ước của nhân Linux và các hệ điều hành tương tự Unix, tài khoản siêu người dùng 'root' luôn có mã UID bằng 0. Kết luận Lý giải: 0"
+ },
+ {
+  "sourceSets": [
+   10,
+   13
+  ],
+  "text": "Lệnh nào được sử dụng để thay đổi quyền truy cập của một tệp tin hoặc thư mục?",
+  "options": [
+   "chown",
+   "chmod",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chmod' (change mode) được sử dụng để thay đổi các bit quyền như đọc, ghi và thực thi cho người dùng, nhóm và những người khác. Kết luận Lý giải: chmod"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Ký hiệu nào sau đây được dùng để chuyển hướng kết quả của một lệnh làm đầu vào cho một lệnh khác (piping)?",
+  "options": [
+   ">",
+   "&",
+   "|",
+   "<"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong môi trường dòng lệnh Linux, ký hiệu đường ống '|' cho phép gửi đầu ra tiêu chuẩn của một tiến trình sang đầu vào tiêu chuẩn của tiến trình khác. Kết luận Lý giải: |"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh nào dùng để liệt kê tất cả các tệp tin trong thư mục, bao gồm cả các tệp tin ẩn (bắt đầu bằng dấu chấm)?",
+  "options": [
+   "ls -l",
+   "ls -a",
+   "ls -h",
+   "ls -d"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-a' (all) trong lệnh 'ls' cho phép hiển thị mọi mục trong thư mục kể cả những tệp tin bị ẩn bởi dấu chấm ở đầu tên. Kết luận Lý giải: ls -a"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Trong Linux, tiến trình đầu tiên được khởi chạy bởi nhân hệ điều hành và có PID (Process ID) bằng 1 là gì?",
+  "options": [
+   "bash",
+   "kthreadd",
+   "init hoặc systemd",
+   "login"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tiến trình 'init' (hoặc 'systemd' trên các bản phân phối hiện đại) là cha của tất cả các tiến trình khác và luôn nhận PID là 1 khi hệ thống khởi động. Kết luận Lý giải: init hoặc systemd"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh nào được sử dụng để kiểm tra dung lượng còn trống trên các phân vùng đĩa cứng?",
+  "options": [
+   "du",
+   "free",
+   "df",
+   "top"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'df' (disk free) hiển thị thông tin về dung lượng đã dùng và còn lại của hệ thống tệp tin trên toàn bộ các thiết bị lưu trữ đã gắn kết. Kết luận Lý giải: df"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Để tìm kiếm một chuỗi văn bản cụ thể bên trong một tệp tin, bạn nên sử dụng lệnh nào?",
+  "options": [
+   "locate",
+   "grep",
+   "find",
+   "echo"
+  ],
+  "correctIndex": 1,
+  "explanation": "Công cụ 'grep' là một tiện ích dòng lệnh mạnh mẽ dùng để lọc và tìm kiếm các dòng chứa một mẫu cụ thể trong tệp tin hoặc đầu ra của lệnh. Kết luận Lý giải: grep"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Hệ quản trị gói phần mềm mặc định trên các bản phân phối Linux như Ubuntu và Debian là gì?",
+  "options": [
+   "yum",
+   "pacman",
+   "dnf",
+   "apt"
+  ],
+  "correctIndex": 3,
+  "explanation": "Các dòng Linux dựa trên Debian như Ubuntu sử dụng công cụ 'apt' (Advanced Package Tool) để cài đặt, cập nhật và gỡ bỏ các gói phần mềm. Kết luận Lý giải: apt"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh nào dùng để thay đổi chủ sở hữu (owner) của một tệp tin trong hệ thống Linux?",
+  "options": [
+   "chmod",
+   "chown",
+   "usermod",
+   "passwd"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) được thiết kế đặc biệt để thay đổi quyền sở hữu tệp tin hoặc thư mục cho một người dùng hoặc nhóm người dùng mới. Kết luận Lý giải: chown"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh 'pwd' trong dòng lệnh Linux có chức năng gì?",
+  "options": [
+   "Thay đổi mật khẩu người dùng",
+   "Xóa tệp tin hiện tại",
+   "Hiển thị đường dẫn đầy đủ của thư mục hiện hành",
+   "Tạo một thư mục mới"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'pwd' (print working directory) trả về đường dẫn tuyệt đối từ thư mục gốc đến thư mục mà người dùng đang làm việc. Kết luận Lý giải: Hiển thị đường dẫn đầy đủ của thư mục hiện hành"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Để dừng một tiến trình đang chạy ngay lập tức bằng tín hiệu 'SIGKILL', bạn sử dụng lệnh nào?",
+  "options": [
+   "kill -15",
+   "kill -1",
+   "kill -9",
+   "kill -stop"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tín hiệu số 9 (SIGKILL) buộc hạt nhân Linux phải chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó thực hiện các bước dọn dẹp cuối cùng. Kết luận Lý giải: kill -9"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Biến môi trường nào quy định danh sách các thư mục mà hệ vỏ (shell) sẽ tìm kiếm các tệp tin thực thi?",
+  "options": [
+   "$HOME",
+   "$USER",
+   "$SHELL",
+   "$PATH"
+  ],
+  "correctIndex": 3,
+  "explanation": "Biến '$PATH' chứa một danh sách các đường dẫn ngăn cách bởi dấu hai chấm, nơi hệ thống sẽ tìm lệnh khi bạn nhập vào terminal. Kết luận Lý giải: $PATH"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Hệ vỏ (shell) mặc định phổ biến nhất trên hầu hết các bản phân phối Linux hiện nay là gì?",
+  "options": [
+   "Csh",
+   "Bash",
+   "Zsh",
+   "Ksh"
+  ],
+  "correctIndex": 1,
+  "explanation": "Bash (Bourne Again SHell) là hệ vỏ tiêu chuẩn và được cài đặt sẵn làm mặc định cho người dùng trên phần lớn các hệ điều hành Linux. Kết luận Lý giải: Bash"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Để lập lịch chạy tự động một tác vụ vào một thời điểm cụ thể định kỳ, bạn sử dụng công cụ nào?",
+  "options": [
+   "systemd-analyze",
+   "cron",
+   "at",
+   "batch"
+  ],
+  "correctIndex": 1,
+  "explanation": "Dịch vụ 'cron' cho phép người dùng cấu hình các tệp tin 'crontab' để tự động thực hiện các câu lệnh hoặc kịch bản theo chu kỳ thời gian định sẵn. Kết luận Lý giải: cron"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh 'cat' thường được sử dụng phổ biến nhất để làm gì trong Linux?",
+  "options": [
+   "Xóa nội dung tệp tin",
+   "Sao chép tệp tin sang vị trí khác",
+   "Hiển thị nội dung của một hoặc nhiều tệp tin ra màn hình",
+   "Nén tệp tin thành định dạng .zip"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'cat' (concatenate) dùng để nối các tệp tin và in kết quả ra đầu ra tiêu chuẩn, thường được dùng để xem nhanh nội dung văn bản. Kết luận Lý giải: Hiển thị nội dung của một hoặc nhiều tệp tin ra màn hình"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh nào được sử dụng để tạo một liên kết mềm (symbolic link) cho một tệp tin?",
+  "options": [
+   "link -s",
+   "ln -s",
+   "cp -l",
+   "mv -s"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'ln' với tùy chọn '-s' (symbolic) được sử dụng để tạo một lối tắt trỏ tới đường dẫn của một tệp tin hoặc thư mục khác. Kết luận Lý giải: ln -s"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Phần vùng 'Swap' trong Linux đóng vai trò gì cho hệ thống?",
+  "options": [
+   "Lưu trữ các tệp tin tạm thời của người dùng",
+   "Làm bộ nhớ đệm cho CPU",
+   "Mở rộng bộ nhớ RAM vật lý bằng cách sử dụng không gian đĩa cứng",
+   "Lưu trữ mã nguồn của nhân Linux"
+  ],
+  "correctIndex": 2,
+  "explanation": "Không gian 'Swap' được hệ điều hành sử dụng làm bộ nhớ ảo khi bộ nhớ RAM vật lý bị lấp đầy, giúp hệ thống tiếp tục hoạt động mà không bị treo. Kết luận Lý giải: Mở rộng bộ nhớ RAM vật lý bằng cách sử dụng không gian đĩa cứng"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Lệnh nào cung cấp thông tin chi tiết về phiên bản nhân (kernel) và kiến trúc hệ thống đang sử dụng?",
+  "options": [
+   "os-release",
+   "ver",
+   "sysinfo",
+   "uname -a"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh 'uname' với tham số '-a' (all) sẽ hiển thị tên nhân, phiên bản, ngày biên dịch và kiến trúc phần cứng của máy tính. Kết luận Lý giải: uname -a"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Trong trình soạn thảo văn bản 'vi' hoặc 'vim', tổ hợp phím nào dùng để thoát mà không lưu các thay đổi?",
+  "options": [
+   ":wq",
+   ":x",
+   ":q!",
+   ":exit"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh ':q!' trong chế độ dòng lệnh của 'vi' cho phép đóng trình soạn thảo ngay cả khi dữ liệu đã bị sửa đổi mà không ghi lại vào đĩa. Kết luận Lý giải: :q!"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Công cụ dòng lệnh nào cho phép theo dõi các tiến trình đang chạy và tài nguyên hệ thống theo thời gian thực?",
+  "options": [
+   "ps -ef",
+   "top",
+   "lsblk",
+   "uptime"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tiện ích 'top' cung cấp một giao diện động hiển thị các tiến trình đang hoạt động, mức sử dụng CPU, RAM và các thông số hệ thống quan trọng khác. Kết luận Lý giải: top"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Mục đích chính của lệnh 'sudo' là gì?",
+  "options": [
+   "Tăng tốc độ xử lý của lệnh",
+   "Chạy lệnh với đặc quyền của người dùng root hoặc người dùng khác",
+   "Mã hóa tệp tin trước khi thực thi",
+   "Chuyển sang giao diện đồ họa"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'sudo' (superuser do) cho phép người dùng thông thường thực thi các câu lệnh có đặc quyền quản trị mà không cần đăng nhập trực tiếp vào tài khoản root. Kết luận Lý giải: Chạy lệnh với đặc quyền của người dùng root hoặc người dùng khác"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Giá trị quyền truy cập '755' áp dụng cho một tệp tin tương ứng với các ký hiệu chữ cái nào?",
+  "options": [
+   "rwx------",
+   "rwxr-xr-x",
+   "rw-rw-rw-",
+   "rwxrwxrwx"
+  ],
+  "correctIndex": 1,
+  "explanation": "Số 7 tương ứng với 'rwx' (đọc, ghi, thực thi), trong khi số 5 tương ứng với 'r-x' (đọc, thực thi) cho nhóm và người dùng khác. Kết luận Lý giải: rwxr-xr-x"
+ },
+ {
+  "sourceSets": [
+   10
+  ],
+  "text": "Thư mục nào được sử dụng để lưu trữ các tệp tin tạm thời và dữ liệu này thường bị xóa khi khởi động lại máy?",
+  "options": [
+   "/var",
+   "/tmp",
+   "/mnt",
+   "/opt"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo tiêu chuẩn hệ thống, '/tmp' là thư mục dùng chung để các ứng dụng lưu trữ dữ liệu tạm thời trong phiên làm việc hiện tại. Kết luận Lý giải: /tmp"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Trong kiến trúc hệ điều hành Linux, thành phần nào chịu trách nhiệm trực tiếp quản lý tài nguyên phần cứng và điều phối hoạt động giữa phần cứng và ứng dụng?",
+  "options": [
+   "Shell",
+   "Kernel",
+   "Desktop Environment",
+   "GNU Utilities"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo cấu trúc phân lớp của Linux, Kernel là lõi của hệ điều hành đóng vai trò trung gian điều phối và quản lý mọi tài nguyên phần cứng cho các tiến trình phần mềm. Kết luận Lý giải Kernel"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Thư mục nào trong hệ thống tệp tin Linux (FHS) thường chứa các tệp tin cấu hình của hệ thống và các dịch vụ?",
+  "options": [
+   "/bin",
+   "/var",
+   "/etc",
+   "/home"
+  ],
+  "correctIndex": 2,
+  "explanation": "Thư mục /etc được quy định theo tiêu chuẩn FHS là nơi lưu trữ các tệp tin cấu hình tĩnh phục vụ cho hoạt động của hệ điều hành và các ứng dụng cài đặt. Kết luận Lý giải /etc"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Để thay đổi quyền truy cập của một tệp tin sao cho chủ sở hữu có toàn quyền, nhóm và người dùng khác chỉ có quyền đọc và thực thi, bạn sử dụng lệnh nào?",
+  "options": [
+   "chmod 755 [tên_tệp]",
+   "chmod 644 [tên_tệp]",
+   "chmod 777 [tên_tệp]",
+   "chmod 711 [tên_tệp]"
+  ],
+  "correctIndex": 0,
+  "explanation": "Giá trị 755 tương ứng với chủ sở hữu có quyền 7 (rwx), nhóm và những người khác có quyền 5 (r-x). Kết luận Lý giải chmod 755 [tên_tệp]"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Lệnh nào được sử dụng để tìm kiếm các tệp tin trong một cây thư mục dựa trên các tiêu chí như tên, kích thước hoặc thời gian sửa đổi?",
+  "options": [
+   "locate",
+   "grep",
+   "find",
+   "whereis"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh find thực hiện tìm kiếm trực tiếp trên cấu trúc cây thư mục với nhiều bộ lọc thuộc tính chi tiết hơn so với lệnh locate vốn chỉ tìm trong cơ sở dữ liệu có sẵn. Kết luận Lý giải find"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Điểm khác biệt cơ bản nhất giữa Soft Link (Symbolic Link) và Hard Link trong Linux là gì?",
+  "options": [
+   "Hard Link có thể trỏ tới một thư mục, còn Soft Link thì không",
+   "Soft Link có thể liên kết giữa các hệ thống tệp (filesystems) khác nhau, còn Hard Link thì không",
+   "Soft Link chia sẻ cùng chỉ số inode với tệp gốc",
+   "Khi xóa tệp gốc, Hard Link sẽ bị hỏng và không truy cập được dữ liệu"
+  ],
+  "correctIndex": 1,
+  "explanation": "Soft Link là một tệp riêng biệt chứa đường dẫn đến tệp khác nên có thể hoạt động xuyên suốt các phân vùng đĩa khác nhau, trong khi Hard Link bị giới hạn trong cùng một filesystem do ràng buộc về inode. Kết luận Lý giải Soft Link có thể liên kết giữa các hệ thống tệp (filesystems) khác nhau, còn Hard Link thì không"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Trong Bash Shell, ký hiệu nào được sử dụng để chuyển hướng kết quả đầu ra của một lệnh và ghi nối tiếp vào cuối một tệp tin hiện có?",
+  "options": [
+   ">",
+   "|",
+   ">>",
+   "2>"
+  ],
+  "correctIndex": 2,
+  "explanation": "Ký hiệu hai dấu ngoặc nhọn đóng (>>) thực hiện chuyển hướng đầu ra tiêu chuẩn vào tệp tin mà không xóa nội dung cũ, thay vào đó là ghi thêm vào cuối tệp. Kết luận Lý giải >>"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Để khởi động lại một dịch vụ hệ thống (ví dụ: nginx) trên các bản phân phối Linux sử dụng systemd, lệnh nào sau đây là đúng?",
+  "options": [
+   "service nginx reload",
+   "systemctl restart nginx",
+   "systemctl start nginx",
+   "stop nginx && start nginx"
+  ],
+  "correctIndex": 1,
+  "explanation": "Công cụ systemctl là giao diện chuẩn để quản lý các đơn vị dịch vụ trong systemd và tham số restart được dùng để tắt và bật lại dịch vụ ngay lập tức. Kết luận Lý giải systemctl restart nginx"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Lệnh grep nào sau đây giúp tìm kiếm một chuỗi ký tự trong tệp tin mà không phân biệt chữ hoa và chữ thường?",
+  "options": [
+   "grep -v [chuỗi] [tệp]",
+   "grep -l [chuỗi] [tệp]",
+   "grep -i [chuỗi] [tệp]",
+   "grep -n [chuỗi] [tệp]"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn -i (ignore-case) trong lệnh grep cho phép trình tìm kiếm bỏ qua sự khác biệt giữa ký tự hoa và thường trong mẫu truy vấn. Kết luận Lý giải grep -i [chuỗi] [tệp]"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Khi sử dụng lệnh top, thông số 'Load Average' hiển thị ba giá trị đại diện cho trung bình tải của hệ thống trong các khoảng thời gian nào?",
+  "options": [
+   "phút, 5 phút và 15 phút",
+   "giây, 5 giây và 15 giây",
+   "giờ, 5 giờ và 15 giờ",
+   "phút, 10 phút và 30 phút"
+  ],
+  "correctIndex": 0,
+  "explanation": "Theo thiết kế của nhân Linux, Load Average cung cấp cái nhìn về xu hướng tải của CPU và I/O thông qua trung bình số tiến trình đợi trong 1, 5 và 15 phút gần nhất. Kết luận Lý giải 1 phút, 5 phút và 15 phút"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Biến môi trường nào lưu trữ đường dẫn đến thư mục cá nhân của người dùng đang đăng nhập?",
+  "options": [
+   "$PATH",
+   "$USER",
+   "$HOME",
+   "$PWD"
+  ],
+  "correctIndex": 2,
+  "explanation": "Biến $HOME là biến môi trường tiêu chuẩn trong hệ thống Unix-like dùng để xác định vị trí thư mục gốc của người dùng hiện tại. Kết luận Lý giải $HOME"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Để thay đổi chủ sở hữu của một thư mục và toàn bộ nội dung bên trong nó (tất cả tệp và thư mục con), bạn cần sử dụng tùy chọn nào với lệnh chown?",
+  "options": [
+   "-f",
+   "-R",
+   "-v",
+   "-a"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn -R (Recursive) cho phép lệnh chown áp dụng thay đổi quyền sở hữu đệ quy cho mọi đối tượng nằm bên trong thư mục chỉ định. Kết luận Lý giải -R"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa cứng đã sử dụng và còn trống trên các phân vùng đã được gắn (mounted) của hệ thống?",
+  "options": [
+   "du -sh",
+   "free -m",
+   "df -h",
+   "lsblk"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh df (disk free) với tùy chọn -h hiển thị báo cáo về không gian đĩa của hệ thống tệp dưới định dạng dễ đọc cho con người. Kết luận Lý giải df -h"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Tín hiệu (signal) nào sau đây được gửi bởi lệnh 'kill -9' để buộc một tiến trình phải dừng ngay lập tức mà không thể bị bỏ qua hoặc trì hoãn?",
+  "options": [
+   "SIGTERM",
+   "SIGINT",
+   "SIGKILL",
+   "SIGHUP"
+  ],
+  "correctIndex": 2,
+  "explanation": "SIGKILL (mã 9) là tín hiệu dừng cưỡng bức do hạt nhân thực hiện, không cho phép tiến trình thực hiện các thao tác dọn dẹp hay chặn tín hiệu. Kết luận Lý giải SIGKILL"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Tệp tin nào được sử dụng để cấu hình danh sách người dùng hoặc nhóm có quyền thực thi lệnh dưới danh nghĩa người dùng tối cao (root)?",
+  "options": [
+   "/etc/passwd",
+   "/etc/shadow",
+   "/etc/sudoers",
+   "/etc/group"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tệp /etc/sudoers chứa các quy tắc phân quyền cho phép chương trình sudo xác định xem một người dùng có quyền quản trị hay không. Kết luận Lý giải /etc/sudoers"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Trong quá trình làm việc với SSH, lệnh nào được sử dụng để tạo ra cặp khóa công khai (public key) và khóa bí mật (private key) phục vụ xác thực không dùng mật khẩu?",
+  "options": [
+   "ssh-agent",
+   "ssh-add",
+   "ssh-keygen",
+   "ssh-copy-id"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tiện ích ssh-keygen là công cụ tiêu chuẩn trong bộ OpenSSH dùng để khởi tạo cặp khóa xác thực cho giao thức SSH. Kết luận Lý giải ssh-keygen"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Để nén nhiều tệp tin thành một tệp lưu trữ duy nhất có định dạng '.tar.gz', bạn nên sử dụng tổ hợp tham số nào với lệnh tar?",
+  "options": [
+   "-xvf",
+   "-cvf",
+   "-czvf",
+   "-tvf"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong lệnh tar, tham số 'c' để tạo mới, 'z' để nén bằng gzip, 'v' để hiển thị quá trình và 'f' để chỉ định tên tệp đầu ra. Kết luận Lý giải -czvf"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Nếu một người dùng thiết lập giá trị umask là 022, thì quyền truy cập mặc định cho các thư mục mới được tạo ra bởi người dùng đó sẽ là gì?",
+  "options": [
+   "777",
+   "755",
+   "644",
+   "700"
+  ],
+  "correctIndex": 1,
+  "explanation": "Quyền mặc định của thư mục được tính bằng cách lấy giá trị gốc 777 trừ đi giá trị umask (777 - 022 = 755). Kết luận Lý giải 755"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Lệnh nào cho phép người dùng sửa đổi danh sách các tác vụ định kỳ (cron jobs) được lập lịch cho chính họ?",
+  "options": [
+   "crontab -l",
+   "crontab -r",
+   "crontab -e",
+   "cron -s"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tham số -e (edit) trong lệnh crontab mở trình soạn thảo văn bản mặc định để người dùng thay đổi tệp lập lịch cá nhân. Kết luận Lý giải crontab -e"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Trong trình soạn thảo Vi/Vim, để lưu các thay đổi đã thực hiện và thoát khỏi chương trình, bạn gõ lệnh nào ở chế độ Command mode?",
+  "options": [
+   ":q!",
+   ":w",
+   ":wq",
+   "Esc"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong chế độ dòng lệnh của Vi/Vim, tổ hợp ':w' (write) và 'q' (quit) thực hiện ghi dữ liệu xuống đĩa và đóng trình soạn thảo. Kết luận Lý giải :wq"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Trong hệ thống Linux truyền thống, Runlevel 0 đại diện cho trạng thái nào của máy tính?",
+  "options": [
+   "Chế độ một người dùng (Single-user mode)",
+   "Chế độ đa người dùng có mạng",
+   "Tắt máy (Halt/Shutdown)",
+   "Khởi động lại (Reboot)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo quy ước chuẩn của hệ thống khởi động SysVinit, Runlevel 0 là mức chạy được dành riêng cho việc dừng hoàn toàn hoạt động của hệ thống. Kết luận Lý giải Tắt máy (Halt/Shutdown)"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Lệnh sed nào sau đây thực hiện thay thế tất cả các lần xuất hiện của từ 'apple' thành 'orange' trong toàn bộ tệp tin 'fruit.txt'?",
+  "options": [
+   "sed 's/apple/orange/' fruit.txt",
+   "sed 'r/apple/orange/g' fruit.txt",
+   "sed 's/apple/orange/g' fruit.txt",
+   "sed 'g/apple/orange/s' fruit.txt"
+  ],
+  "correctIndex": 2,
+  "explanation": "Cấu trúc 's/mẫu/thay_thế/g' của sed thực hiện thay thế chuỗi (s - substitute) trên phạm vi toàn cục (g - global) của mỗi dòng lệnh. Kết luận Lý giải sed 's/apple/orange/g' fruit.txt"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Để liệt kê tất cả các tệp tin trong thư mục, bao gồm cả các tệp ẩn (bắt đầu bằng dấu chấm), bạn sử dụng tùy chọn nào với lệnh ls?",
+  "options": [
+   "-l",
+   "-h",
+   "-a",
+   "-t"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn -a (all) yêu cầu lệnh ls hiển thị mọi đối tượng trong thư mục mà không bỏ qua các tệp ẩn theo quy ước của Linux. Kết luận Lý giải -a"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Dịch vụ Web (HTTP) mặc định lắng nghe kết nối trên cổng (port) số mấy?",
+  "options": [
+   "21",
+   "22",
+   "80",
+   "443"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo quy định của IANA, cổng 80 là cổng tiêu chuẩn dành cho giao thức truyền tải siêu văn bản (HTTP) không mã hóa. Kết luận Lý giải 80"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Vùng không gian Swap trên đĩa cứng trong Linux được sử dụng chủ yếu để làm gì?",
+  "options": [
+   "Lưu trữ các tệp tin sao lưu của hệ thống",
+   "Làm bộ nhớ đệm cho các tệp tin tải về từ internet",
+   "Mở rộng bộ nhớ RAM vật lý khi hệ thống bị thiếu hụt bộ nhớ",
+   "Chứa mã nguồn của nhân Linux (Kernel)"
+  ],
+  "correctIndex": 2,
+  "explanation": "Swap đóng vai trò là bộ nhớ ảo, cho phép hệ điều hành di chuyển các trang nhớ ít sử dụng từ RAM sang đĩa cứng để giải phóng tài nguyên cho các ứng dụng khác. Kết luận Lý giải Mở rộng bộ nhớ RAM vật lý khi hệ thống bị thiếu hụt bộ nhớ"
+ },
+ {
+  "sourceSets": [
+   11
+  ],
+  "text": "Lệnh nào được s�� dụng để tạo một tài khoản người dùng mới trong hệ thống Linux?",
+  "options": [
+   "userdel",
+   "usermod",
+   "useradd",
+   "groupadd"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh useradd (hoặc adduser trên một số hệ thống) là công cụ dòng lệnh cấp thấp để khởi tạo các thông tin cơ bản cho một người dùng mới. Kết luận Lý giải useradd"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Trong hệ điều hành Linux, thành phần nào đóng vai trò là cầu nối trực tiếp giữa phần cứng máy tính và các ứng dụng người dùng?",
+  "options": [
+   "Kernel (Nhân)",
+   "Shell (Vỏ)",
+   "Compiler (Trình biên dịch)",
+   "Desktop Environment (Môi trường máy tính để bàn)"
+  ],
+  "correctIndex": 0,
+  "explanation": "Theo kiến trúc hệ điều hành, Kernel là thành phần cốt lõi quản lý tài nguyên hệ thống và điều phối giao tiếp giữa phần cứng và phần mềm. Kết luận Lý giải: Kernel (Nhân)"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh nào sau đây được sử dụng để thay đổi quyền truy cập của một tệp tin trong Linux?",
+  "options": [
+   "chown",
+   "chmod",
+   "chgrp",
+   "umask"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chmod' (change mode) được sử dụng rộng rãi để thiết lập hoặc thay đổi các quyền đọc, ghi và thực thi cho chủ sở hữu, nhóm và người dùng khác. Kết luận Lý giải: chmod"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Thư mục nào trong hệ thống tệp Linux thường chứa các tệp cấu hình của hệ thống?",
+  "options": [
+   "/bin",
+   "/home",
+   "/etc",
+   "/var"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo Tiêu chuẩn phân cấp hệ thống tệp (FHS), thư mục '/etc' là nơi lưu trữ tập trung các tệp cấu hình dành cho hệ điều hành và các ứng dụng cài đặt. Kết luận Lý giải: /etc"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Để tìm kiếm một chuỗi ký tự cụ thể bên trong một tệp văn bản, bạn sử dụng lệnh nào?",
+  "options": [
+   "find",
+   "locate",
+   "grep",
+   "cat"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'grep' (Global Regular Expression Print) là công cụ mạnh mẽ dùng để tìm kiếm các dòng chứa một mẫu văn bản xác định trong tệp. Kết luận Lý giải: grep"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Trong Linux, ký hiệu nào đại diện cho thư mục hiện tại của người dùng đang đăng nhập?",
+  "options": [
+   "..",
+   "~",
+   "/",
+   "."
+  ],
+  "correctIndex": 3,
+  "explanation": "Trong quy ước đường dẫn của Linux, một dấu chấm đơn đại diện cho thư mục hiện tại, trong khi hai dấu chấm đại diện cho thư mục cha. Kết luận Lý giải: ."
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh 'tar -czvf backup.tar.gz /home/user' thực hiện hành động gì?",
+  "options": [
+   "Giải nén tệp tin backup.tar.gz vào thư mục /home/user",
+   "Xóa thư mục /home/user sau khi nén thành tệp backup.tar.gz",
+   "Nén thư mục /home/user thành tệp lưu trữ tar và nén bằng gzip",
+   "Chỉ liệt kê nội dung của thư mục /home/user mà không nén"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn '-c' dùng để tạo mới, '-z' dùng để nén bằng gzip, '-v' hiển thị quá trình và '-f' xác định tên tệp lưu trữ. Kết luận Lý giải: Nén thư mục /home/user thành tệp lưu trữ tar và nén bằng gzip"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Để xem các tiến trình đang chạy và mức tiêu thụ tài nguyên hệ thống theo thời gian thực, lệnh nào là phù hợp nhất?",
+  "options": [
+   "ps -ef",
+   "free -m",
+   "top",
+   "df -h"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'top' cung cấp một cái nhìn động và cập nhật liên tục về hoạt động của CPU, bộ nhớ và các tiến trình đang thực thi. Kết luận Lý giải: top"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Tệp tin '/etc/shadow' trong Linux được sử dụng để lưu trữ thông tin gì?",
+  "options": [
+   "Danh sách tất cả các nhóm người dùng",
+   "Mật khẩu đã được mã hóa của người dùng",
+   "Lịch sử đăng nhập của người dùng",
+   "Các biến môi trường toàn cục"
+  ],
+  "correctIndex": 1,
+  "explanation": "Vì lý do bảo mật, tệp '/etc/shadow' chỉ cho phép người dùng root truy cập để lưu giữ thông tin mật khẩu đã băm (hashed). Kết luận Lý giải: Mật khẩu đã được mã hóa của người dùng"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh nào được sử dụng để hiển thị dung lượng đĩa còn trống trên các phân vùng hệ thống tệp đã gắn?",
+  "options": [
+   "du",
+   "df",
+   "lsblk",
+   "fdisk"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'df' (disk free) báo cáo lượng không gian đĩa đã sử dụng và còn trống trên các hệ thống tệp được gắn vào máy máy. Kết luận Lý giải: df"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Khi sử dụng lệnh 'chmod 755 file.sh', quyền hạn của 'nhóm' (group) đối với tệp tin này là gì?",
+  "options": [
+   "Chỉ có quyền đọc",
+   "Quyền đọc và thực thi",
+   "Quyền đọc và ghi",
+   "Toàn quyền đọc, ghi và thực thi"
+  ],
+  "correctIndex": 1,
+  "explanation": "Số 5 trong mã octal (nhị phân 101) tương ứng với quyền đọc (4) và quyền thực thi (1), không có quyền ghi (2). Kết luận Lý giải: Quyền đọc và thực thi"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh nào cho phép người dùng thực thi một lệnh với đặc quyền của người dùng siêu cấp (root)?",
+  "options": [
+   "su",
+   "runas",
+   "sudo",
+   "admin"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'sudo' (superuser do) cho phép người dùng chạy các chương trình với các quyền bảo mật của một người dùng khác, thông thường là root. Kết luận Lý giải: sudo"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Tín hiệu mặc định được gửi khi sử dụng lệnh 'kill [PID]' mà không có tham số đi kèm là gì?",
+  "options": [
+   "SIGKILL (9)",
+   "SIGTERM (15)",
+   "SIGSTOP (19)",
+   "SIGHUP (1)"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'kill' mặc định gửi tín hiệu SIGTERM (số 15), yêu cầu tiến trình kết thúc một cách an toàn và dọn dẹp tài nguyên. Kết luận Lý giải: SIGTERM (15)"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Trong Shell Scripting, biến đặc biệt '$1' đại diện cho điều gì?",
+  "options": [
+   "Tên của tập lệnh đang thực thi",
+   "Tổng số lượng đối số được truyền vào",
+   "Đối số đầu tiên được truyền vào tập lệnh",
+   "Mã thoát của lệnh thực thi gần nhất"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong Bash, các biến từ $1 đến $n được sử dụng để truy cập các tham số dòng lệnh tương ứng được truyền vào script. Kết luận Lý giải: Đối số đầu tiên được truyền vào tập lệnh"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh nào dùng để thay đổi chủ sở hữu của một tệp tin hoặc thư mục?",
+  "options": [
+   "chmod",
+   "chown",
+   "passwd",
+   "usermod"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'chown' (change owner) được sử dụng để thay đổi người dùng sở hữu và/hoặc nhóm sở hữu của tệp hoặc thư mục. Kết luận Lý giải: chown"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Ký hiệu '>>' trong dòng lệnh Linux có ý nghĩa gì?",
+  "options": [
+   "Ghi đè nội dung đầu ra vào một tệp tin",
+   "Lấy nội dung của tệp tin làm đầu vào cho lệnh",
+   "Nối thêm nội dung đầu ra vào cuối một tệp tin",
+   "Chuyển hướng lỗi tiêu chuẩn sang một tệp tin"
+  ],
+  "correctIndex": 2,
+  "explanation": "Toán tử '>>' thực hiện chuyển hướng đầu ra tiêu chuẩn bằng cách thêm dữ liệu mới vào cuối tệp hiện có mà không làm mất dữ liệu cũ. Kết luận Lý giải: Nối thêm nội dung đầu ra vào cuối một tệp tin"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Thư mục nào chứa các tệp thiết bị đặc biệt đại diện cho phần cứng trong Linux?",
+  "options": [
+   "/sys",
+   "/proc",
+   "/dev",
+   "/mnt"
+  ],
+  "correctIndex": 2,
+  "explanation": "Thư mục '/dev' chứa các tệp thiết bị (device files) cho phép người dùng và ứng dụng tương tác với trình điều khiển phần cứng. Kết luận Lý giải: /dev"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh 'mkdir -p project/src/main' thực hiện việc gì?",
+  "options": [
+   "Chỉ tạo thư mục main nếu project/src đã tồn tại",
+   "Tạo cấu trúc thư mục phân cấp, bao gồm cả các thư mục cha nếu chúng chưa tồn tại",
+   "Tạo một thư mục có tên là 'project/src/main' (bao gồm cả dấu gạch chéo)",
+   "Tạo thư mục project và src, sau đó báo lỗi nếu main đã tồn tại"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-p' (parents) trong lệnh mkdir cho phép tạo toàn bộ đường dẫn thư mục cần thiết mà không báo lỗi nếu thư mục đã hiện hữu. Kết luận Lý giải: Tạo cấu trúc thư mục phân cấp, bao gồm cả các thư mục cha nếu chúng chưa tồn tại"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Trong trình soạn thảo 'vi' hoặc 'vim', lệnh nào được dùng để lưu tệp và thoát?",
+  "options": [
+   ":q!",
+   ":w",
+   ":wq",
+   ":exit"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong chế độ dòng lệnh của vim, lệnh ':wq' kết hợp ghi dữ liệu vào đĩa (write) và thoát khỏi chương trình (quit). Kết luận Lý giải: :wq"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh nào được sử dụng để kiểm tra địa chỉ IP của các giao diện mạng trên hệ thống Linux hiện đại (thay thế cho ifconfig)?",
+  "options": [
+   "netstat",
+   "ip addr",
+   "networkctl",
+   "route -n"
+  ],
+  "correctIndex": 1,
+  "explanation": "Công cụ 'ip' từ gói iproute2 là giải pháp hiện đại được khuyến khích sử dụng thay thế cho các lệnh mạng cũ như ifconfig. Kết luận Lý giải: ip addr"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Hệ thống quản lý dịch vụ và khởi tạo (init system) phổ biến nhất trên các bản phân phối Linux hiện nay là gì?",
+  "options": [
+   "SysVinit",
+   "Upstart",
+   "systemd",
+   "OpenRC"
+  ],
+  "correctIndex": 2,
+  "explanation": "Hầu hết các bản phân phối chính như Ubuntu, Fedora, và Debian đã chuyển sang sử dụng 'systemd' làm hệ thống khởi tạo mặc định. Kết luận Lý giải: systemd"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh 'tail -f /var/log/syslog' có tác dụng gì?",
+  "options": [
+   "Hiển thị 10 dòng đầu tiên của tệp syslog",
+   "Hiển thị nội dung tệp syslog và cập nhật liên tục khi có dữ liệu mới",
+   "Tìm kiếm các lỗi trong tệp syslog",
+   "Xóa toàn bộ nội dung của tệp syslog"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-f' (follow) cho phép lệnh tail giữ tệp mở và in ra các dòng mới ngay khi chúng được thêm vào cuối tệp. Kết luận Lý giải: Hiển thị nội dung tệp syslog và cập nhật liên tục khi có dữ liệu mới"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Để thay đổi giá trị ưu tiên (priority) của một tiến trình đang chạy, bạn sử dụng lệnh nào?",
+  "options": [
+   "nice",
+   "renice",
+   "priority",
+   "setpriority"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong khi 'nice' dùng để đặt độ ưu tiên khi bắt đầu tiến trình, 'renice' được dùng để thay đổi độ ưu tiên của một tiến trình đã tồn tại. Kết luận Lý giải: renice"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Liên kết cứng (Hard Link) trong Linux có đặc điểm nào sau đây?",
+  "options": [
+   "Có thể trỏ đến một thư mục",
+   "Có cùng chỉ số inode với tệp gốc",
+   "Sẽ bị hỏng nếu tệp gốc bị xóa",
+   "Có thể liên kết giữa các hệ thống tệp khác nhau"
+  ],
+  "correctIndex": 1,
+  "explanation": "Liên kết cứng là một mục nhập thư mục trỏ trực tiếp đến cùng một inode (cấu trúc dữ liệu tệp) trên đĩa như tệp gốc. Kết luận Lý giải: Có cùng chỉ số inode với tệp gốc"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Lệnh nào dùng để liệt kê danh sách các tệp đang được mở bởi các tiến trình trong hệ thống?",
+  "options": [
+   "ls",
+   "lsof",
+   "ps",
+   "netstat"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'lsof' (list open files) cung cấp thông tin chi tiết về mọi tệp tin đang được sử dụng bởi bất kỳ tiến trình nào trên hệ thống. Kết luận Lý giải: lsof"
+ },
+ {
+  "sourceSets": [
+   12
+  ],
+  "text": "Trong biểu thức quyền hạn 'drwxr-xr--', ký tự đầu tiên 'd' có ý nghĩa gì?",
+  "options": [
+   "Đây là một tệp dữ liệu (data)",
+   "Đây là một thiết bị (device)",
+   "Đây là một thư mục (directory)",
+   "Quyền thực thi cho chủ sở hữu"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong đầu ra của lệnh 'ls -l', ký tự đầu tiên chỉ định loại tệp, trong đó 'd' đại diện cho thư mục và '-' đại diện cho tệp thông thường. Kết luận Lý giải: Đây là một thư mục (directory)"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Thành phần nào được coi là nhân của hệ điều hành Linux, chịu trách nhiệm quản lý tài nguyên phần cứng và giao tiếp giữa phần mềm và phần cứng?",
+  "options": [
+   "Shell",
+   "Kernel",
+   "Desktop Environment",
+   "Application Suite"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo kiến trúc hệ thống Linux, Kernel là thành phần cốt lõi quản lý CPU, bộ nhớ và các thiết bị ngoại vi, đóng vai trò trung gian giữa ứng dụng và phần cứng. Kết luận Lý giải Kernel"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Trong Linux, thư mục nào thường chứa các tệp cấu hình hệ thống toàn cục?",
+  "options": [
+   "/bin",
+   "/home",
+   "/etc",
+   "/usr"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo tiêu chuẩn phân cấp hệ thống tập tin (FHS), thư mục /etc là nơi lưu trữ các tệp cấu hình tĩnh của hệ thống và các dịch vụ. Kết luận Lý giải /etc"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào hiển thị đường dẫn đầy đủ của thư mục làm việc hiện tại?",
+  "options": [
+   "dir",
+   "ls",
+   "path",
+   "pwd"
+  ],
+  "correctIndex": 3,
+  "explanation": "Lệnh pwd (print working directory) trả về đường dẫn tuyệt đối từ thư mục gốc đến thư mục mà người dùng đang thao tác. Kết luận Lý giải pwd"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Ký hiệu nào được sử dụng để chuyển hướng đầu ra của một lệnh và ghi đè vào một tệp tin?",
+  "options": [
+   ">",
+   ">>",
+   "<",
+   "|"
+  ],
+  "correctIndex": 0,
+  "explanation": "Trong Shell Linux, toán tử > được dùng để chuyển hướng kết quả đầu ra chuẩn vào một tệp, nếu tệp đã tồn tại nó sẽ bị ghi đè nội dung. Kết luận Lý giải >"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Để tìm kiếm một chuỗi ký tự cụ thể trong một tệp tin, người dùng thường sử dụng lệnh nào?",
+  "options": [
+   "find",
+   "search",
+   "grep",
+   "locate"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh grep (Global Regular Expression Print) là công cụ mạnh mẽ dùng để lọc và tìm kiếm các dòng văn bản khớp với một mẫu định sẵn. Kết luận Lý giải grep"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Người dùng có quyền cao nhất trong hệ thống Linux, có UID bằng 0, được gọi là gì?",
+  "options": [
+   "Administrator",
+   "Supervisor",
+   "Manager",
+   "root"
+  ],
+  "correctIndex": 3,
+  "explanation": "Trong Linux, tài khoản root là tài khoản quản trị hệ thống có toàn quyền thao tác trên mọi tệp tin và tiến trình. Kết luận Lý giải root"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào được sử dụng để xem danh sách các tiến trình đang chạy trong hệ thống theo thời gian thực?",
+  "options": [
+   "ps",
+   "top",
+   "kill",
+   "list"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh top cung cấp một cái nhìn động và liên tục về các tiến trình hệ thống, bao gồm mức sử dụng CPU và bộ nhớ của từng tiến trình. Kết luận Lý giải top"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Trong lệnh 'ls -l', cột đầu tiên hiển thị thông tin gì?",
+  "options": [
+   "Kích thước tệp",
+   "Ngày sửa đổi cuối cùng",
+   "Quyền truy cập tệp",
+   "Tên chủ sở hữu"
+  ],
+  "correctIndex": 2,
+  "explanation": "Khi thực hiện lệnh ls với tùy chọn -l, cột đầu tiên mô tả loại tệp và các quyền đọc, ghi, thực thi của các đối tượng người dùng. Kết luận Lý giải Quyền truy cập tệp"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Để tạo một thư mục mới trong Linux, bạn sử dụng lệnh nào?",
+  "options": [
+   "newdir",
+   "touch",
+   "mkdir",
+   "createdir"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh mkdir (make directory) cho phép người dùng tạo ra một hoặc nhiều thư mục mới tại đường dẫn được chỉ định. Kết luận Lý giải mkdir"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào được dùng để di chuyển hoặc đổi tên tệp tin/thư mục?",
+  "options": [
+   "cp",
+   "mv",
+   "rn",
+   "move"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh mv (move) thực hiện việc di chuyển tệp từ vị trí này sang vị trí khác hoặc đổi tên tệp nếu nguồn và đích nằm trong cùng một thư mục. Kết luận Lý giải mv"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Trong Linux, tệp tin bắt đầu bằng dấu chấm (.) được hiểu là gì?",
+  "options": [
+   "Tệp tin hệ thống",
+   "Tệp tin ẩn",
+   "Tệp tin thực thi",
+   "Tệp tin nén"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo quy ước của các trình quản lý tệp và Shell Linux, các tệp hoặc thư mục có tên bắt đầu bằng dấu chấm sẽ không hiển thị khi dùng lệnh ls thông thường. Kết luận Lý giải Tệp tin ẩn"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào dùng để xóa một thư mục rỗng?",
+  "options": [
+   "rm",
+   "rmdir",
+   "del",
+   "erase"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh rmdir (remove directory) chỉ có thể xóa các thư mục không chứa bất kỳ tệp tin hay thư mục con nào bên trong. Kết luận Lý giải rmdir"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Tùy chọn nào của lệnh 'ls' dùng để hiển thị tất cả các tệp, bao gồm cả tệp ẩn?",
+  "options": [
+   "-h",
+   "-l",
+   "-a",
+   "-all"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tùy chọn -a (all) yêu cầu lệnh ls liệt kê mọi thực thể trong thư mục, kể cả các tệp bắt đầu bằng dấu chấm. Kết luận Lý giải -a"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Để kết thúc một tiến trình đang chạy bằng ID của nó (PID), bạn sử dụng lệnh nào?",
+  "options": [
+   "stop",
+   "end",
+   "kill",
+   "exit"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh kill gửi một tín hiệu (mặc định là SIGTERM) đến một tiến trình cụ thể thông qua mã PID để yêu cầu tiến trình đó dừng lại. Kết luận Lý giải kill"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào dùng để hiển thị dung lượng đĩa còn trống của hệ thống tập tin?",
+  "options": [
+   "du",
+   "df",
+   "free",
+   "disk"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh df (disk free) báo cáo lượng không gian đĩa đã sử dụng và còn trống trên các hệ thống tập tin được gắn kết. Kết luận Lý giải df"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Trong trình soạn thảo Vi/Vim, để chuyển sang chế độ chèn (insert mode), bạn nhấn phím nào?",
+  "options": [
+   "a",
+   "i",
+   "o",
+   "s"
+  ],
+  "correctIndex": 1,
+  "explanation": "Khi đang ở chế độ lệnh (command mode), phím i được sử dụng để bắt đầu nhập văn bản tại vị trí con trỏ hiện tại. Kết luận Lý giải i"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Ký hiệu nào được dùng để nối đầu ra của lệnh này thành đầu vào của lệnh kia?",
+  "options": [
+   ";",
+   "&",
+   "| (Pipe)",
+   ">"
+  ],
+  "correctIndex": 2,
+  "explanation": "Toán tử đường ống (pipe) cho phép chuyển hướng luồng dữ liệu chuẩn từ đầu ra của lệnh đứng trước sang đầu vào chuẩn của lệnh đứng sau. Kết luận Lý giải | (Pipe)"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào cho phép xem nội dung của một tệp văn bản mà không cần mở trình soạn thảo?",
+  "options": [
+   "cat",
+   "view",
+   "read",
+   "show"
+  ],
+  "correctIndex": 0,
+  "explanation": "Lệnh cat (concatenate) thường được dùng để hiển thị toàn bộ nội dung của một hoặc nhiều tệp văn bản ra màn hình terminal. Kết luận Lý giải cat"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Để thay đổi mật khẩu của người dùng hiện tại, lệnh nào được sử dụng?",
+  "options": [
+   "password",
+   "chpass",
+   "passwd",
+   "setpass"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh passwd cho phép người dùng thay đổi mật khẩu đăng nhập của chính họ hoặc cho phép root thay đổi mật khẩu của người dùng khác. Kết luận Lý giải passwd"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào dùng để hiển thị 10 dòng cuối cùng của một tệp tin?",
+  "options": [
+   "last",
+   "head",
+   "end",
+   "tail"
+  ],
+  "correctIndex": 3,
+  "explanation": "Mặc định, lệnh tail sẽ trích xuất và hiển thị một phần cuối của tệp tin, giúp theo dõi các tệp nhật ký (log) dễ dàng hơn. Kết luận Lý giải tail"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Quyền truy cập tệp '755' trong Linux có nghĩa là gì?",
+  "options": [
+   "Chủ sở hữu có toàn quyền, nhóm và người khác chỉ có quyền đọc và thực thi",
+   "Chủ sở hữu có quyền đọc, nhóm có quyền ghi, người khác có quyền thực thi",
+   "Mọi người đều có toàn quyền trên tệp tin",
+   "Chủ sở hữu có quyền đọc và ghi, nhóm và người khác không có quyền gì"
+  ],
+  "correctIndex": 0,
+  "explanation": "Số 7 tương ứng với rwx, số 5 tương ứng với r-x, do đó 755 cấp toàn quyền cho chủ sở hữu và quyền đọc/thực thi cho các đối tượng còn lại. Kết luận Lý giải Chủ sở hữu có toàn quyền, nhóm và người khác chỉ có quyền đọc và thực thi"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào dùng để nén hoặc giải nén các tệp tin có định dạng .tar?",
+  "options": [
+   "zip",
+   "gzip",
+   "tar",
+   "compress"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh tar (tape archive) được sử dụng để gộp nhiều tệp thành một tệp lưu trữ duy nhất và có khả năng kết hợp với các công cụ nén. Kết luận Lý giải tar"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Thư mục nào trong Linux chứa các tệp thiết bị (device files) như ổ đĩa, bàn phím?",
+  "options": [
+   "/mnt",
+   "/dev",
+   "/media",
+   "/proc"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo triết lý 'mọi thứ đều là tệp' của Linux, các thiết bị phần cứng được đại diện bởi các tệp đặc biệt nằm trong thư mục /dev. Kết luận Lý giải /dev"
+ },
+ {
+  "sourceSets": [
+   13
+  ],
+  "text": "Lệnh nào dùng để thay đổi chủ sở hữu của một tệp tin?",
+  "options": [
+   "chmod",
+   "chroot",
+   "chown",
+   "usermod"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh chown (change owner) cho phép người dùng có đặc quyền thay đổi tài khoản sở hữu và nhóm sở hữu của tệp tin hoặc thư mục. Kết luận Lý giải chown"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Ai là người đã viết phiên bản đầu tiên của nhân (kernel) Linux vào năm 1991?",
+  "options": [
+   "Bill Gates",
+   "Steve Jobs",
+   "Linus Torvalds",
+   "Richard Stallman"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo lịch sử phát triển phần mềm mã nguồn mở, Linus Torvalds là người đã khởi xướng và viết phiên bản đầu tiên của nhân Linux. Kết luận Lý giải: Linus Torvalds"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Trong hệ điều hành Linux, thư mục nào thường chứa các tập tin cấu hình của hệ thống?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/dev",
+   "/root"
+  ],
+  "correctIndex": 1,
+  "explanation": "Thư mục /etc trong cấu trúc cây thư mục Linux là nơi lưu trữ tất cả các tập tin cấu hình hệ thống và dịch vụ. Kết luận Lý giải: /etc"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào được sử dụng để tìm kiếm một chuỗi ký tự cụ thể bên trong một tập tin văn bản?",
+  "options": [
+   "grep",
+   "find",
+   "locate",
+   "search"
+  ],
+  "correctIndex": 0,
+  "explanation": "Công cụ grep (Global Regular Expression Print) là lệnh phổ biến nhất được sử dụng để lọc và tìm kiếm văn bản theo mẫu trong Linux. Kết luận Lý giải: grep"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Quyền truy cập tập tin 'chmod 755' có nghĩa là gì?",
+  "options": [
+   "Chủ sở hữu có quyền đọc và viết, nhóm và người khác không có quyền gì",
+   "Chủ sở hữu có toàn quyền, nhóm và người khác có quyền đọc và thực thi",
+   "Mọi người dùng trên hệ thống đều có toàn quyền",
+   "Chủ sở hữu có quyền đọc, nhóm có quyền viết, người khác có quyền thực thi"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong hệ thống bát phân, số 7 tương ��ng với rwx (toàn quyền) và số 5 tương ứng với r-x (đọc và thực thi). Kết luận Lý giải: Chủ sở hữu có toàn quyền, nhóm và người khác có quyền đọc và thực thi"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào cho phép xem các tiến trình đang chạy trong hệ thống theo thời gian thực?",
+  "options": [
+   "ps -ef",
+   "list",
+   "top",
+   "show proc"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh top cung cấp một cái nhìn động và cập nhật liên tục về các tiến trình đang hoạt động cũng như việc sử dụng tài nguyên hệ thống. Kết luận Lý giải: top"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Để thay đổi chủ sở hữu của một tập tin hoặc thư mục, bạn sử dụng lệnh nào?",
+  "options": [
+   "chmod",
+   "chown",
+   "attrib",
+   "owner"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh chown (change owner) được sử dụng để thay đổi quyền sở hữu tập tin hoặc thư mục cho một người dùng hoặc nhóm cụ thể. Kết luận Lý giải: chown"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Trên các bản phân phối dựa trên Debian như Ubuntu, lệnh nào được dùng để cập nhật danh sách gói phần mềm từ kho lưu trữ?",
+  "options": [
+   "apt upgrade",
+   "apt install",
+   "apt-get update",
+   "apt search"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh apt-get update hoặc apt update dùng để đồng bộ hóa các chỉ mục gói từ các nguồn được cấu hình trong hệ thống. Kết luận Lý giải: apt-get update"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Trong trình soạn thảo văn bản Vi/Vim, tổ hợp phím nào dùng để lưu tập tin và thoát khỏi trình soạn thảo?",
+  "options": [
+   ":q!",
+   ":s",
+   ":wq",
+   ":exit"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh :wq trong chế độ dòng lệnh của Vi/Vim thực hiện ghi (write) nội dung vào đĩa và sau đó thoát (quit). Kết luận Lý giải: :wq"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Ký hiệu nào được dùng để chuyển hướng đầu ra của một lệnh và ghi đè vào một tập tin?",
+  "options": [
+   ">>",
+   "|",
+   ">",
+   "<"
+  ],
+  "correctIndex": 2,
+  "explanation": "Toán tử '>' được dùng để chuyển hướng đầu ra tiêu chuẩn vào tập tin và sẽ ghi đè nếu tập tin đó đã tồn tại. Kết luận Lý giải: >"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Điểm khác biệt cơ bản nhất giữa Hard link và Soft link (Symbolic link) trong Linux là gì?",
+  "options": [
+   "Hard link có thể liên kết giữa các phân vùng khác nhau",
+   "Soft link chia sẻ cùng số Inode với tập tin gốc",
+   "Hard link chia sẻ cùng số Inode với tập tin gốc, trong khi Soft link thì không",
+   "Khi xóa tập tin gốc, Hard link sẽ bị hỏng"
+  ],
+  "correctIndex": 2,
+  "explanation": "Hard link thực chất là một cái tên khác trỏ đến cùng một Inode vật lý trên đĩa, trong khi Soft link chỉ là một tập tin chứa đường dẫn đến tập tin khác. Kết luận Lý giải: Hard link chia sẻ cùng số Inode với tập tin gốc, trong khi Soft link thì không"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Tiến trình đầu tiên được nhân Linux khởi chạy (có PID bằng 1) trong các hệ thống truyền thống là gì?",
+  "options": [
+   "bash",
+   "systemd hoặc init",
+   "kernel",
+   "kswapd"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sau khi nhân được tải, nó sẽ khởi chạy tiến trình init (hoặc systemd trên các hệ thống hiện đại) làm cha của tất cả các tiến trình khác. Kết luận Lý giải: systemd hoặc init"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào dùng để kiểm tra dung lượng còn trống của các phân vùng đĩa cứng dưới dạng dễ đọc (ví dụ: GB, MB)?",
+  "options": [
+   "du -sh",
+   "free -m",
+   "df -h",
+   "ls -l"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh df (disk free) với tùy chọn -h (human-readable) hiển thị thông tin về không gian đĩa của các hệ thống tập tin. Kết luận Lý giải: df -h"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào được dùng để hiển thị 20 dòng cuối cùng của một tập tin văn bản?",
+  "options": [
+   "head -n 20",
+   "last 20",
+   "tail -n 20",
+   "show -20"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh tail mặc định hiển thị phần cuối của tập tin, và tùy chọn -n cho phép chỉ định chính xác số dòng cần xem. Kết luận Lý giải: tail -n 20"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Tập tin nào trong hệ thống Linux lưu trữ thông tin mật khẩu đã được mã hóa của người dùng?",
+  "options": [
+   "/etc/passwd",
+   "/etc/shadow",
+   "/etc/group",
+   "/etc/config"
+  ],
+  "correctIndex": 1,
+  "explanation": "Để bảo mật, các bản phân phối Linux hiện đại lưu trữ mã băm mật khẩu trong /etc/shadow, nơi chỉ người dùng root mới có quyền đọc. Kết luận Lý giải: /etc/shadow"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào dùng để giải nén một tập tin có định dạng '.tar.gz'?",
+  "options": [
+   "tar -cvf filename.tar.gz",
+   "zip -d filename.tar.gz",
+   "tar -xzvf filename.tar.gz",
+   "extract filename.tar.gz"
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong lệnh tar, tùy chọn -x dùng để giải nén, -z để xử lý định dạng gzip, -v để hiển thị quá trình và -f để chỉ định tên tập tin. Kết luận Lý giải: tar -xzvf filename.tar.gz"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Để buộc dừng ngay lập tức một tiến trình đang bị treo bằng mã định danh (PID), bạn sử dụng lệnh nào?",
+  "options": [
+   "kill -1 PID",
+   "stop PID",
+   "kill -9 PID",
+   "terminate PID"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tín hiệu số 9 (SIGKILL) gửi thông điệp yêu cầu nhân Linux chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó dọn dẹp tài nguyên. Kết luận Lý giải: kill -9 PID"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Dòng đầu tiên của một tệp lệnh Bash script (Shebang) thường bắt đầu bằng ký tự nào?",
+  "options": [
+   "!! /bin/bash",
+   "// bin/bash",
+   "#! /bin/bash",
+   "$$ /bin/bash"
+  ],
+  "correctIndex": 2,
+  "explanation": "Chuỗi '#!' được gọi là Shebang, dùng để chỉ định chương trình thông dịch sẽ thực thi các dòng lệnh bên dưới nó. Kết luận Lý giải: #! /bin/bash"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Thành phần nào của hệ thống Linux được dùng làm bộ nhớ ảo khi bộ nhớ RAM vật lý đã đầy?",
+  "options": [
+   "Cache",
+   "Buffer",
+   "Swap",
+   "Virtual RAM"
+  ],
+  "correctIndex": 2,
+  "explanation": "Swap là không gian trên đĩa cứng được hệ điều hành sử dụng để tạm thời lưu trữ dữ liệu từ RAM khi dung lượng RAM vật lý không còn đủ. Kết luận Lý giải: Swap"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào được dùng để lập lịch thực hiện các công việc định kỳ trong Linux?",
+  "options": [
+   "at",
+   "schedule",
+   "crontab",
+   "timer"
+  ],
+  "correctIndex": 2,
+  "explanation": "Dịch vụ cron sử dụng bảng crontab để quản lý các lệnh cần chạy tự động theo các khoảng thời gian xác định. Kết luận Lý giải: crontab"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Ký hiệu đường ống (pipe) '|' trong Linux có chức năng gì?",
+  "options": [
+   "Lưu kết quả của lệnh vào một tập tin",
+   "Nối hai tập tin văn bản lại với nhau",
+   "Lấy đầu ra của lệnh phía trước làm đầu vào cho lệnh phía sau",
+   "Chạy hai lệnh cùng một lúc một cách độc lập"
+  ],
+  "correctIndex": 2,
+  "explanation": "Đường ống cho phép kết hợp các lệnh đơn giản lại với nhau bằng cách chuyển dữ liệu từ đầu ra tiêu chuẩn của lệnh này sang đầu vào tiêu chuẩn của lệnh kia. Kết luận Lý giải: Lấy đầu ra của lệnh phía trước làm đầu vào cho lệnh phía sau"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Thư mục nào trong Linux chứa các tập tin nhật ký (log files) ghi lại hoạt động của hệ thống?",
+  "options": [
+   "/etc/logs",
+   "/home/logs",
+   "/var/log",
+   "/usr/log"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo tiêu chuẩn phân cấp hệ thống tập tin (FHS), thư mục /var/log là nơi lưu trữ các bản ghi nhật ký của hệ thống và các ứng dụng. Kết luận Lý giải: /var/log"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào dùng để xem hướng dẫn sử dụng chi tiết của một lệnh khác trong Linux?",
+  "options": [
+   "help",
+   "info",
+   "man",
+   "guide"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh man (manual) hiển thị các trang tài liệu hướng dẫn về các câu lệnh, định dạng tệp và thư viện hệ thống. Kết luận Lý giải: man"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Phần lõi của hệ điều hành Linux, chịu trách nhiệm quản lý tài nguyên phần cứng và giao tiếp với ứng dụng, được gọi là gì?",
+  "options": [
+   "Shell",
+   "GUI",
+   "Kernel",
+   "Compiler"
+  ],
+  "correctIndex": 2,
+  "explanation": "Kernel là tầng thấp nhất của hệ điều hành, đóng vai trò cầu nối trung gian giữa phần cứng máy tính và các tiến trình ứng dụng. Kết luận Lý giải: Kernel"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Để tìm kiếm tất cả các tập tin có tên kết thúc bằng '.log' trong thư mục hiện tại và các thư mục con, bạn dùng lệnh nào?",
+  "options": [
+   "search . -name '*.log'",
+   "ls -R *.log",
+   "find . -name '*.log'",
+   "grep -r '*.log' ."
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh find với tùy chọn -name và ký tự đại diện '*' là cách hiệu quả nhất để tìm tập tin theo tên một cách đệ quy. Kết luận Lý giải: find . -name '*.log'"
+ },
+ {
+  "sourceSets": [
+   14
+  ],
+  "text": "Lệnh nào dùng để đếm số dòng trong một tập tin văn bản?",
+  "options": [
+   "count -l",
+   "lines",
+   "wc -l",
+   "total -l"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh wc (word count) với tham số -l (lines) trả về tổng số dòng có trong tập tin được chỉ định. Kết luận Lý giải: wc -l"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Trong hệ điều hành Linux, lệnh 'chmod 755' thiết lập quyền hạn cho tập tin như thế nào?",
+  "options": [
+   "Chủ sở hữu có quyền đọc, ghi, thực thi; nhóm và người dùng khác có quyền đọc và thực thi.",
+   "Mọi người dùng trên hệ thống đều có toàn quyền đọc, ghi và thực thi tập tin.",
+   "Chủ sở hữu có quyền đọc và ghi; nhóm và người dùng khác chỉ có quyền đọc tập tin.",
+   "Chỉ chủ sở hữu mới có quyền thực thi, các đối tượng khác không có bất kỳ quyền gì."
+  ],
+  "correctIndex": 0,
+  "explanation": "Theo quy tắc phân quyền Linux, giá trị 7 tương ứng với rwx (đọc, ghi, thực thi) và giá trị 5 tương ứng với r-x (đọc, thực thi). Kết luận Lý giải: Chủ sở hữu có quyền đọc, ghi, thực thi; nhóm và người dùng khác có quyền đọc và thực thi."
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Thư mục nào trong cấu trúc hệ thống tập tin Linux thường chứa các tập tin cấu hình của hệ thống?",
+  "options": [
+   "/bin",
+   "/etc",
+   "/dev",
+   "/tmp"
+  ],
+  "correctIndex": 1,
+  "explanation": "Theo tiêu chuẩn phân cấp hệ thống tập tin (FHS), thư mục '/etc' là nơi lưu trữ các tập tin cấu hình tĩnh phục vụ cho việc vận hành hệ thống. Kết luận Lý giải: /etc"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để chuyển hướng kết quả của một lệnh và ghi nối tiếp vào cuối một tập tin hiện có, bạn sử dụng ký hiệu nào?",
+  "options": [
+   ">",
+   ">>",
+   "|",
+   "<"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trong môi trường Shell Linux, ký hiệu '>>' được dùng để chuyển hướng đầu ra tiêu chuẩn và nối thêm dữ liệu vào cuối tập tin mà không xóa nội dung cũ. Kết luận Lý giải: >>"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh nào sau đây được sử dụng để cưỡng ép dừng một tiến trình đang treo trong Linux một cách tức thì?",
+  "options": [
+   "kill -1",
+   "kill -9",
+   "kill -15",
+   "kill -stop"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tín hiệu SIGKILL (tương ứng với số 9) gửi yêu cầu cho nhân hệ điều hành chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình dọn dẹp. Kết luận Lý giải: kill -9"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh 'ls -l' trong Linux hiển thị thông tin gì về các tập tin và thư mục?",
+  "options": [
+   "Hiển thị danh sách các tập tin ẩn bắt đầu bằng dấu chấm.",
+   "Hiển thị danh sách tập tin theo định dạng chi tiết bao gồm quyền hạn, chủ sở hữu và kích thước.",
+   "Chỉ hiển thị tên các thư mục hiện có trong thư mục hiện hành.",
+   "Hiển thị danh sách tập tin được sắp xếp theo thời gian truy cập gần nhất."
+  ],
+  "correctIndex": 1,
+  "explanation": "Tùy chọn '-l' (long format) trong lệnh ls cung cấp thông tin chi tiết về quyền truy cập, số liên kết, chủ sở hữu, nhóm, kích thước và thời gian sửa đổi. Kết luận Lý giải: Hiển thị danh sách tập tin theo định dạng chi tiết bao gồm quyền hạn, chủ sở hữu và kích thước."
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Ký hiệu nào đại diện cho thư mục gốc (root directory) trong hệ điều hành Linux?",
+  "options": [
+   "~",
+   ".",
+   "/",
+   ".."
+  ],
+  "correctIndex": 2,
+  "explanation": "Trong cấu trúc cây thư mục của Linux, dấu gạch chéo ngược '/' là điểm khởi đầu cao nhất của toàn bộ hệ thống tập tin. Kết luận Lý giải: /"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để kiểm tra đường dẫn đầy đủ của thư mục hiện hành mà bạn đang đứng, bạn sử dụng lệnh nào?",
+  "options": [
+   "path",
+   "whereami",
+   "pwd",
+   "dir"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'pwd' viết tắt của 'print working directory' trả về đường dẫn tuyệt đối từ gốc đến thư mục hiện tại. Kết luận Lý giải: pwd"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh nào sau đây dùng để hiển thị nội dung của một tập tin văn bản ra màn hình Terminal?",
+  "options": [
+   "echo",
+   "read",
+   "cat",
+   "write"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'cat' thường được sử dụng để đọc và nối nội dung của một hoặc nhiều tập tin văn bản ra đầu ra tiêu chuẩn. Kết luận Lý giải: cat"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để thực thi một lệnh với đặc quyền của quản trị viên (root), người dùng thông dụng thường sử dụng tiền tố nào?",
+  "options": [
+   "runas",
+   "admin",
+   "sudo",
+   "super"
+  ],
+  "correctIndex": 2,
+  "explanation": "Công cụ 'sudo' (superuser do) cho phép người dùng chạy các chương trình với quyền bảo mật của người dùng khác, thường là root. Kết luận Lý giải: sudo"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Trong Linux, làm thế nào để xem tài liệu hướng dẫn (manual pages) của một lệnh cụ thể, ví dụ như lệnh 'mkdir'?",
+  "options": [
+   "help mkdir",
+   "man mkdir",
+   "info mkdir",
+   "doc mkdir"
+  ],
+  "correctIndex": 1,
+  "explanation": "Hệ thống 'man' cung cấp các trang hướng dẫn chi tiết về cách sử dụng, các tham số và cú pháp của hầu hết các lệnh trên Linux. Kết luận Lý giải: man mkdir"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để nén và đóng gói nhiều tập tin thành một tập tin lưu trữ duy nhất có định dạng '.tar', bạn sử dụng lệnh nào?",
+  "options": [
+   "zip -c",
+   "tar -cvf",
+   "pack -f",
+   "archive -n"
+  ],
+  "correctIndex": 1,
+  "explanation": "Tham số '-c' (create) và '-v' (verbose) cùng '-f' (file) trong lệnh tar được dùng để tạo mới một tập tin lưu trữ. Kết luận Lý giải: tar -cvf"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Sự khác biệt chính giữa Hard link và Soft link (Symbolic link) trong Linux là gì?",
+  "options": [
+   "Hard link có thể liên kết qua các phân vùng ổ đĩa khác nhau còn Soft link thì không.",
+   "Hard link trỏ đến cùng một số hiệu inode của tập tin gốc, trong khi Soft link là một tập tin riêng biệt chứa đường dẫn.",
+   "Khi xóa tập tin gốc, Hard link sẽ bị hỏng (broken) còn Soft link vẫn truy cập được dữ liệu.",
+   "Soft link chỉ có thể tạo cho thư mục, còn Hard link chỉ có thể tạo cho tập tin văn bản."
+  ],
+  "correctIndex": 1,
+  "explanation": "Hard link chia sẻ cùng một inode vật lý trên đĩa với tập tin gốc, trong khi Symbolic link chỉ là một con trỏ đường dẫn đến tên tập tin khác. Kết luận Lý giải: Hard link trỏ đến cùng một số hiệu inode của tập tin gốc, trong khi Soft link là một tập tin riêng biệt chứa đường dẫn."
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh nào được dùng để liệt kê danh sách các tiến trình đang chạy trong phiên làm việc hiện tại?",
+  "options": [
+   "list",
+   "task",
+   "ps",
+   "proc"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'ps' (process status) cung cấp ảnh chụp nhanh về các tiến trình hiện tại đang hoạt động trên hệ thống. Kết luận Lý giải: ps"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Thư mục nào sau đây là nơi lưu trữ mặc định các thư mục cá nhân của người dùng thông thường trong Linux?",
+  "options": [
+   "/root",
+   "/var",
+   "/home",
+   "/usr"
+  ],
+  "correctIndex": 2,
+  "explanation": "Theo quy chuẩn chung, các thư mục cá nhân của người dùng (trừ người dùng root) đều nằm dưới thư mục mẹ '/home'. Kết luận Lý giải: /home"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh 'mv file1.txt file2.txt' thực hiện chức năng gì nếu 'file2.txt' chưa tồn tại?",
+  "options": [
+   "Tạo một bản sao của file1.txt với tên mới là file2.txt.",
+   "Đổi tên tập tin file1.txt thành file2.txt.",
+   "Di chuyển tập tin file1.txt vào bên trong thư mục file2.txt.",
+   "Xóa tập tin file1.txt và tạo một tập tin rỗng tên file2.txt."
+  ],
+  "correctIndex": 1,
+  "explanation": "Lệnh 'mv' (move) được sử dụng để di chuyển tập tin hoặc đổi tên tập tin nếu đích đến là một tên tập tin mới trong cùng thư mục. Kết luận Lý giải: Đổi tên tập tin file1.txt thành file2.txt."
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để thay đổi quyền sở hữu (owner) của một tập tin, bạn sử dụng lệnh nào?",
+  "options": [
+   "chmod",
+   "attrib",
+   "chown",
+   "chgrp"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'chown' (change owner) cho phép quản trị viên thay đổi người dùng sở hữu và/hoặc nhóm sở hữu của tập tin hoặc thư mục. Kết luận Lý giải: chown"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để kiểm tra dung lượng còn trống của các phân vùng đĩa cứng theo định dạng dễ đọc (GB, MB), lệnh nào là phù hợp nhất?",
+  "options": [
+   "df -a",
+   "du -s",
+   "df -h",
+   "free -m"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'df' dùng để báo cáo mức sử dụng không gian đĩa, và tùy chọn '-h' (human-readable) giúp hiển thị đơn vị GB, MB thay vì số byte. Kết luận Lý giải: df -h"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Câu lệnh nào sau đây dùng để kiểm tra địa chỉ IP của các giao diện mạng trên hầu hết các bản phân phối Linux hiện đại?",
+  "options": [
+   "config-network",
+   "netstat -r",
+   "ip addr",
+   "show ip"
+  ],
+  "correctIndex": 2,
+  "explanation": "Mặc dù 'ifconfig' vẫn còn phổ biến, nhưng bộ công cụ 'iproute2' với lệnh 'ip addr' là tiêu chuẩn hiện đại để quản lý giao diện mạng. Kết luận Lý giải: ip addr"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Công cụ nào được sử dụng để tìm kiếm các dòng văn bản khớp với một mẫu (pattern) nhất định trong tập tin?",
+  "options": [
+   "find",
+   "locate",
+   "grep",
+   "search"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'grep' (global regular expression print) là công cụ mạnh mẽ để lọc và tìm kiếm văn bản dựa trên các biểu thức chính quy. Kết luận Lý giải: grep"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Trong trình soạn thảo văn bản Vi/Vim, bạn cần nhấn phím nào để chuyển từ chế độ chèn (Insert mode) về chế độ lệnh (Command mode)?",
+  "options": [
+   "Enter",
+   "Ctrl + C",
+   "Esc",
+   "Tab"
+  ],
+  "correctIndex": 2,
+  "explanation": "Phím 'Esc' là phím chức năng mặc định để thoát khỏi chế độ nhập liệu và quay lại chế độ điều khiển trong trình soạn thảo Vi. Kết luận Lý giải: Esc"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh nào dùng để kiểm tra khả năng kết nối mạng đến một máy chủ từ xa bằng cách gửi các gói tin ICMP Echo Request?",
+  "options": [
+   "trace",
+   "connect",
+   "ping",
+   "netstat"
+  ],
+  "correctIndex": 2,
+  "explanation": "Công cụ 'ping' đo lường thời gian khứ hồi và kiểm tra xem một máy chủ có phản hồi trên mạng hay không. Kết luận Lý giải: ping"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Thư mục cá nhân của người dùng quản trị cao nhất (root) nằm ở đâu trong hệ thống Linux?",
+  "options": [
+   "/home/root",
+   "/etc/root",
+   "/root",
+   "/bin/root"
+  ],
+  "correctIndex": 2,
+  "explanation": "Khác với người dùng thông thường, thư mục nhà của root được đặt trực tiếp tại thư mục gốc để đảm bảo khả năng truy cập khi các phân vùng khác chưa được gắn (mounted). Kết luận Lý giải: /root"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Để theo dõi tình trạng tài nguyên hệ thống (CPU, RAM) và các tiến trình đang hoạt động theo thời gian thực, bạn sử dụng lệnh nào?",
+  "options": [
+   "status",
+   "monitor",
+   "top",
+   "syslog"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'top' cung cấp một cái nhìn động và liên tục về hoạt động của các tiến trình và mức tiêu thụ tài nguyên trên hệ thống. Kết luận Lý giải: top"
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Tập tin ẩn '.bashrc' trong thư mục nhà của người dùng thường được sử dụng để làm gì?",
+  "options": [
+   "Lưu trữ mật khẩu đã mã hóa của người dùng.",
+   "Chứa các cấu hình cá nhân hóa cho Shell Bash như bí danh (alias) và biến môi trường.",
+   "Lưu lại lịch sử tất cả các lệnh mà người dùng đã gõ từ trước đến nay.",
+   "Là nơi chứa mã nguồn của nhân hệ điều hành đang chạy."
+  ],
+  "correctIndex": 1,
+  "explanation": "Tập tin '.bashrc' là một shell script được thực thi mỗi khi một shell tương tác mới được khởi tạo để thiết lập môi trường cho người dùng. Kết luận Lý giải: Chứa các cấu hình cá nhân hóa cho Shell Bash như bí danh (alias) và biến môi trường."
+ },
+ {
+  "sourceSets": [
+   15
+  ],
+  "text": "Lệnh nào sau đây chỉ hiển thị 5 dòng đầu tiên của một tập tin văn bản?",
+  "options": [
+   "start -n 5",
+   "first 5",
+   "head -n 5",
+   "tail -n 5"
+  ],
+  "correctIndex": 2,
+  "explanation": "Lệnh 'head' mặc định hiển thị phần đầu của tập tin, và tham số '-n' cho phép chỉ định số lượng dòng cụ thể. Kết luận Lý giải: head -n 5"
+ }
+]

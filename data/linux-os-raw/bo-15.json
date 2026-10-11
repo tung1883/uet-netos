@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 15 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong hệ điều hành Linux, lệnh 'chmod 755' thiết lập quyền hạn cho tập tin như thế nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chủ sở hữu có quyền đọc, ghi, thực thi; nhóm và người dùng khác có quyền đọc và thực thi."
+          },
+          {
+            "id": "B",
+            "content": "Mọi người dùng trên hệ thống đều có toàn quyền đọc, ghi và thực thi tập tin."
+          },
+          {
+            "id": "C",
+            "content": "Chủ sở hữu có quyền đọc và ghi; nhóm và người dùng khác chỉ có quyền đọc tập tin."
+          },
+          {
+            "id": "D",
+            "content": "Chỉ chủ sở hữu mới có quyền thực thi, các đối tượng khác không có bất kỳ quyền gì."
+          }
+        ],
+        "explanation": "Theo quy tắc phân quyền Linux, giá trị 7 tương ứng với rwx (đọc, ghi, thực thi) và giá trị 5 tương ứng với r-x (đọc, thực thi). Kết luận Lý giải: Chủ sở hữu có quyền đọc, ghi, thực thi; nhóm và người dùng khác có quyền đọc và thực thi."
+      },
+      {
+        "id": "q2",
+        "text": "Thư mục nào trong cấu trúc hệ thống tập tin Linux thường chứa các tập tin cấu hình của hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/dev"
+          },
+          {
+            "id": "D",
+            "content": "/tmp"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn phân cấp hệ thống tập tin (FHS), thư mục '/etc' là nơi lưu trữ các tập tin cấu hình tĩnh phục vụ cho việc vận hành hệ thống. Kết luận Lý giải: /etc"
+      },
+      {
+        "id": "q3",
+        "text": "Để chuyển hướng kết quả của một lệnh và ghi nối tiếp vào cuối một tập tin hiện có, bạn sử dụng ký hiệu nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": ">>"
+          },
+          {
+            "id": "C",
+            "content": "|"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Trong môi trường Shell Linux, ký hiệu '>>' được dùng để chuyển hướng đầu ra tiêu chuẩn và nối thêm dữ liệu vào cuối tập tin mà không xóa nội dung cũ. Kết luận Lý giải: >>"
+      },
+      {
+        "id": "q4",
+        "text": "Lệnh nào sau đây được sử dụng để cưỡng ép dừng một tiến trình đang treo trong Linux một cách tức thì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "kill -1"
+          },
+          {
+            "id": "B",
+            "content": "kill -9"
+          },
+          {
+            "id": "C",
+            "content": "kill -15"
+          },
+          {
+            "id": "D",
+            "content": "kill -stop"
+          }
+        ],
+        "explanation": "Tín hiệu SIGKILL (tương ứng với số 9) gửi yêu cầu cho nhân hệ điều hành chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình dọn dẹp. Kết luận Lý giải: kill -9"
+      },
+      {
+        "id": "q5",
+        "text": "Lệnh 'ls -l' trong Linux hiển thị thông tin gì về các tập tin và thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hiển thị danh sách các tập tin ẩn bắt đầu bằng dấu chấm."
+          },
+          {
+            "id": "B",
+            "content": "Hiển thị danh sách tập tin theo định dạng chi tiết bao gồm quyền hạn, chủ sở hữu và kích thước."
+          },
+          {
+            "id": "C",
+            "content": "Chỉ hiển thị tên các thư mục hiện có trong thư mục hiện hành."
+          },
+          {
+            "id": "D",
+            "content": "Hiển thị danh sách tập tin được sắp xếp theo thời gian truy cập gần nhất."
+          }
+        ],
+        "explanation": "Tùy chọn '-l' (long format) trong lệnh ls cung cấp thông tin chi tiết về quyền truy cập, số liên kết, chủ sở hữu, nhóm, kích thước và thời gian sửa đổi. Kết luận Lý giải: Hiển thị danh sách tập tin theo định dạng chi tiết bao gồm quyền hạn, chủ sở hữu và kích thước."
+      },
+      {
+        "id": "q6",
+        "text": "Ký hiệu nào đại diện cho thư mục gốc (root directory) trong hệ điều hành Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "~"
+          },
+          {
+            "id": "B",
+            "content": "."
+          },
+          {
+            "id": "C",
+            "content": "/"
+          },
+          {
+            "id": "D",
+            "content": ".."
+          }
+        ],
+        "explanation": "Trong cấu trúc cây thư mục của Linux, dấu gạch chéo ngược '/' là điểm khởi đầu cao nhất của toàn bộ hệ thống tập tin. Kết luận Lý giải: /"
+      },
+      {
+        "id": "q7",
+        "text": "Để kiểm tra đường dẫn đầy đủ của thư mục hiện hành mà bạn đang đứng, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "path"
+          },
+          {
+            "id": "B",
+            "content": "whereami"
+          },
+          {
+            "id": "C",
+            "content": "pwd"
+          },
+          {
+            "id": "D",
+            "content": "dir"
+          }
+        ],
+        "explanation": "Lệnh 'pwd' viết tắt của 'print working directory' trả về đường dẫn tuyệt đối từ gốc đến thư mục hiện tại. Kết luận Lý giải: pwd"
+      },
+      {
+        "id": "q8",
+        "text": "Lệnh nào sau đây dùng để hiển thị nội dung của một tập tin văn bản ra màn hình Terminal?",
+        "options": [
+          {
+            "id": "A",
+            "content": "echo"
+          },
+          {
+            "id": "B",
+            "content": "read"
+          },
+          {
+            "id": "C",
+            "content": "cat"
+          },
+          {
+            "id": "D",
+            "content": "write"
+          }
+        ],
+        "explanation": "Lệnh 'cat' thường được sử dụng để đọc và nối nội dung của một hoặc nhiều tập tin văn bản ra đầu ra tiêu chuẩn. Kết luận Lý giải: cat"
+      },
+      {
+        "id": "q9",
+        "text": "Để thực thi một lệnh với đặc quyền của quản trị viên (root), người dùng thông dụng thường sử dụng tiền tố nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "runas"
+          },
+          {
+            "id": "B",
+            "content": "admin"
+          },
+          {
+            "id": "C",
+            "content": "sudo"
+          },
+          {
+            "id": "D",
+            "content": "super"
+          }
+        ],
+        "explanation": "Công cụ 'sudo' (superuser do) cho phép người dùng chạy các chương trình với quyền bảo mật của người dùng khác, thường là root. Kết luận Lý giải: sudo"
+      },
+      {
+        "id": "q10",
+        "text": "Trong Linux, làm thế nào để xem tài liệu hướng dẫn (manual pages) của một lệnh cụ thể, ví dụ như lệnh 'mkdir'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "help mkdir"
+          },
+          {
+            "id": "B",
+            "content": "man mkdir"
+          },
+          {
+            "id": "C",
+            "content": "info mkdir"
+          },
+          {
+            "id": "D",
+            "content": "doc mkdir"
+          }
+        ],
+        "explanation": "Hệ thống 'man' cung cấp các trang hướng dẫn chi tiết về cách sử dụng, các tham số và cú pháp của hầu hết các lệnh trên Linux. Kết luận Lý giải: man mkdir"
+      },
+      {
+        "id": "q11",
+        "text": "Để nén và đóng gói nhiều tập tin thành một tập tin lưu trữ duy nhất có định dạng '.tar', bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "zip -c"
+          },
+          {
+            "id": "B",
+            "content": "tar -cvf"
+          },
+          {
+            "id": "C",
+            "content": "pack -f"
+          },
+          {
+            "id": "D",
+            "content": "archive -n"
+          }
+        ],
+        "explanation": "Tham số '-c' (create) và '-v' (verbose) cùng '-f' (file) trong lệnh tar được dùng để tạo mới một tập tin lưu trữ. Kết luận Lý giải: tar -cvf"
+      },
+      {
+        "id": "q12",
+        "text": "Sự khác biệt chính giữa Hard link và Soft link (Symbolic link) trong Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Hard link có thể liên kết qua các phân vùng ổ đĩa khác nhau còn Soft link thì không."
+          },
+          {
+            "id": "B",
+            "content": "Hard link trỏ đến cùng một số hiệu inode của tập tin gốc, trong khi Soft link là một tập tin riêng biệt chứa đường dẫn."
+          },
+          {
+            "id": "C",
+            "content": "Khi xóa tập tin gốc, Hard link sẽ bị hỏng (broken) còn Soft link vẫn truy cập được dữ liệu."
+          },
+          {
+            "id": "D",
+            "content": "Soft link chỉ có thể tạo cho thư mục, còn Hard link chỉ có thể tạo cho tập tin văn bản."
+          }
+        ],
+        "explanation": "Hard link chia sẻ cùng một inode vật lý trên đĩa với tập tin gốc, trong khi Symbolic link chỉ là một con trỏ đường dẫn đến tên tập tin khác. Kết luận Lý giải: Hard link trỏ đến cùng một số hiệu inode của tập tin gốc, trong khi Soft link là một tập tin riêng biệt chứa đường dẫn."
+      },
+      {
+        "id": "q13",
+        "text": "Lệnh nào được dùng để liệt kê danh sách các tiến trình đang chạy trong phiên làm việc hiện tại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "list"
+          },
+          {
+            "id": "B",
+            "content": "task"
+          },
+          {
+            "id": "C",
+            "content": "ps"
+          },
+          {
+            "id": "D",
+            "content": "proc"
+          }
+        ],
+        "explanation": "Lệnh 'ps' (process status) cung cấp ảnh chụp nhanh về các tiến trình hiện tại đang hoạt động trên hệ thống. Kết luận Lý giải: ps"
+      },
+      {
+        "id": "q14",
+        "text": "Thư mục nào sau đây là nơi lưu trữ mặc định các thư mục cá nhân của người dùng thông thường trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/root"
+          },
+          {
+            "id": "B",
+            "content": "/var"
+          },
+          {
+            "id": "C",
+            "content": "/home"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Theo quy chuẩn chung, các thư mục cá nhân của người dùng (trừ người dùng root) đều nằm dưới thư mục mẹ '/home'. Kết luận Lý giải: /home"
+      },
+      {
+        "id": "q15",
+        "text": "Lệnh 'mv file1.txt file2.txt' thực hiện chức năng gì nếu 'file2.txt' chưa tồn tại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tạo một bản sao của file1.txt với tên mới là file2.txt."
+          },
+          {
+            "id": "B",
+            "content": "Đổi tên tập tin file1.txt thành file2.txt."
+          },
+          {
+            "id": "C",
+            "content": "Di chuyển tập tin file1.txt vào bên trong thư mục file2.txt."
+          },
+          {
+            "id": "D",
+            "content": "Xóa tập tin file1.txt và tạo một tập tin rỗng tên file2.txt."
+          }
+        ],
+        "explanation": "Lệnh 'mv' (move) được sử dụng để di chuyển tập tin hoặc đổi tên tập tin nếu đích đến là một tên tập tin mới trong cùng thư mục. Kết luận Lý giải: Đổi tên tập tin file1.txt thành file2.txt."
+      },
+      {
+        "id": "q16",
+        "text": "Để thay đổi quyền sở hữu (owner) của một tập tin, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "attrib"
+          },
+          {
+            "id": "C",
+            "content": "chown"
+          },
+          {
+            "id": "D",
+            "content": "chgrp"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) cho phép quản trị viên thay đổi người dùng sở hữu và/hoặc nhóm sở hữu của tập tin hoặc thư mục. Kết luận Lý giải: chown"
+      },
+      {
+        "id": "q17",
+        "text": "Để kiểm tra dung lượng còn trống của các phân vùng đĩa cứng theo định dạng dễ đọc (GB, MB), lệnh nào là phù hợp nhất?",
+        "options": [
+          {
+            "id": "A",
+            "content": "df -a"
+          },
+          {
+            "id": "B",
+            "content": "du -s"
+          },
+          {
+            "id": "C",
+            "content": "df -h"
+          },
+          {
+            "id": "D",
+            "content": "free -m"
+          }
+        ],
+        "explanation": "Lệnh 'df' dùng để báo cáo mức sử dụng không gian đĩa, và tùy chọn '-h' (human-readable) giúp hiển thị đơn vị GB, MB thay vì số byte. Kết luận Lý giải: df -h"
+      },
+      {
+        "id": "q18",
+        "text": "Câu lệnh nào sau đây dùng để kiểm tra địa chỉ IP của các giao diện mạng trên hầu hết các bản phân phối Linux hiện đại?",
+        "options": [
+          {
+            "id": "A",
+            "content": "config-network"
+          },
+          {
+            "id": "B",
+            "content": "netstat -r"
+          },
+          {
+            "id": "C",
+            "content": "ip addr"
+          },
+          {
+            "id": "D",
+            "content": "show ip"
+          }
+        ],
+        "explanation": "Mặc dù 'ifconfig' vẫn còn phổ biến, nhưng bộ công cụ 'iproute2' với lệnh 'ip addr' là tiêu chuẩn hiện đại để quản lý giao diện mạng. Kết luận Lý giải: ip addr"
+      },
+      {
+        "id": "q19",
+        "text": "Công cụ nào được sử dụng để tìm kiếm các dòng văn bản khớp với một mẫu (pattern) nhất định trong tập tin?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find"
+          },
+          {
+            "id": "B",
+            "content": "locate"
+          },
+          {
+            "id": "C",
+            "content": "grep"
+          },
+          {
+            "id": "D",
+            "content": "search"
+          }
+        ],
+        "explanation": "Lệnh 'grep' (global regular expression print) là công cụ mạnh mẽ để lọc và tìm kiếm văn bản dựa trên các biểu thức chính quy. Kết luận Lý giải: grep"
+      },
+      {
+        "id": "q20",
+        "text": "Trong trình soạn thảo văn bản Vi/Vim, bạn cần nhấn phím nào để chuyển từ chế độ chèn (Insert mode) về chế độ lệnh (Command mode)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Enter"
+          },
+          {
+            "id": "B",
+            "content": "Ctrl + C"
+          },
+          {
+            "id": "C",
+            "content": "Esc"
+          },
+          {
+            "id": "D",
+            "content": "Tab"
+          }
+        ],
+        "explanation": "Phím 'Esc' là phím chức năng mặc định để thoát khỏi chế độ nhập liệu và quay lại chế độ điều khiển trong trình soạn thảo Vi. Kết luận Lý giải: Esc"
+      },
+      {
+        "id": "q21",
+        "text": "Lệnh nào dùng để kiểm tra khả năng kết nối mạng đến một máy chủ từ xa bằng cách gửi các gói tin ICMP Echo Request?",
+        "options": [
+          {
+            "id": "A",
+            "content": "trace"
+          },
+          {
+            "id": "B",
+            "content": "connect"
+          },
+          {
+            "id": "C",
+            "content": "ping"
+          },
+          {
+            "id": "D",
+            "content": "netstat"
+          }
+        ],
+        "explanation": "Công cụ 'ping' đo lường thời gian khứ hồi và kiểm tra xem một máy chủ có phản hồi trên mạng hay không. Kết luận Lý giải: ping"
+      },
+      {
+        "id": "q22",
+        "text": "Thư mục cá nhân của người dùng quản trị cao nhất (root) nằm ở đâu trong hệ thống Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/home/root"
+          },
+          {
+            "id": "B",
+            "content": "/etc/root"
+          },
+          {
+            "id": "C",
+            "content": "/root"
+          },
+          {
+            "id": "D",
+            "content": "/bin/root"
+          }
+        ],
+        "explanation": "Khác với người dùng thông thường, thư mục nhà của root được đặt trực tiếp tại thư mục gốc để đảm bảo khả năng truy cập khi các phân vùng khác chưa được gắn (mounted). Kết luận Lý giải: /root"
+      },
+      {
+        "id": "q23",
+        "text": "Để theo dõi tình trạng tài nguyên hệ thống (CPU, RAM) và các tiến trình đang hoạt động theo thời gian thực, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "status"
+          },
+          {
+            "id": "B",
+            "content": "monitor"
+          },
+          {
+            "id": "C",
+            "content": "top"
+          },
+          {
+            "id": "D",
+            "content": "syslog"
+          }
+        ],
+        "explanation": "Lệnh 'top' cung cấp một cái nhìn động và liên tục về hoạt động của các tiến trình và mức tiêu thụ tài nguyên trên hệ thống. Kết luận Lý giải: top"
+      },
+      {
+        "id": "q24",
+        "text": "Tập tin ẩn '.bashrc' trong thư mục nhà của người dùng thường được sử dụng để làm gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu trữ mật khẩu đã mã hóa của người dùng."
+          },
+          {
+            "id": "B",
+            "content": "Chứa các cấu hình cá nhân hóa cho Shell Bash như bí danh (alias) và biến môi trường."
+          },
+          {
+            "id": "C",
+            "content": "Lưu lại lịch sử tất cả các lệnh mà người dùng đã gõ từ trước đến nay."
+          },
+          {
+            "id": "D",
+            "content": "Là nơi chứa mã nguồn của nhân hệ điều hành đang chạy."
+          }
+        ],
+        "explanation": "Tập tin '.bashrc' là một shell script được thực thi mỗi khi một shell tương tác mới được khởi tạo để thiết lập môi trường cho người dùng. Kết luận Lý giải: Chứa các cấu hình cá nhân hóa cho Shell Bash như bí danh (alias) và biến môi trường."
+      },
+      {
+        "id": "q25",
+        "text": "Lệnh nào sau đây chỉ hiển thị 5 dòng đầu tiên của một tập tin văn bản?",
+        "options": [
+          {
+            "id": "A",
+            "content": "start -n 5"
+          },
+          {
+            "id": "B",
+            "content": "first 5"
+          },
+          {
+            "id": "C",
+            "content": "head -n 5"
+          },
+          {
+            "id": "D",
+            "content": "tail -n 5"
+          }
+        ],
+        "explanation": "Lệnh 'head' mặc định hiển thị phần đầu của tập tin, và tham số '-n' cho phép chỉ định số lượng dòng cụ thể. Kết luận Lý giải: head -n 5"
+      }
+    ],
+    "logic_map": {
+      "q1": "A",
+      "q2": "B",
+      "q3": "B",
+      "q4": "B",
+      "q5": "B",
+      "q6": "C",
+      "q7": "C",
+      "q8": "C",
+      "q9": "C",
+      "q10": "B",
+      "q11": "B",
+      "q12": "B",
+      "q13": "C",
+      "q14": "C",
+      "q15": "B",
+      "q16": "C",
+      "q17": "C",
+      "q18": "C",
+      "q19": "C",
+      "q20": "C",
+      "q21": "C",
+      "q22": "C",
+      "q23": "C",
+      "q24": "B",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

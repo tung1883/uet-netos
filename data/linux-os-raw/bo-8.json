@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 8 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong hệ điều hành Linux, lệnh nào được sử dụng để thay đổi quyền truy cập (read, write, execute) của một tệp tin hoặc thư mục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chown"
+          },
+          {
+            "id": "B",
+            "content": "chmod"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Theo tiêu chuẩn quản trị hệ thống Linux, lệnh 'chmod' (change mode) là công cụ duy nhất dùng để thiết lập hoặc sửa đổi các quyền truy cập cho người dùng đối với tệp và thư mục. Kết luận Lý giải chmod"
+      },
+      {
+        "id": "q2",
+        "text": "Khi sử dụng lệnh 'kill', tín hiệu (signal) nào thường được dùng để buộc một tiến trình phải dừng lại ngay lập tức mà không thể bỏ qua?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGTERM (15)"
+          },
+          {
+            "id": "B",
+            "content": "SIGINT (2)"
+          },
+          {
+            "id": "C",
+            "content": "SIGKILL (9)"
+          },
+          {
+            "id": "D",
+            "content": "SIGHUP (1)"
+          }
+        ],
+        "explanation": "Trong quản lý tiến trình Linux, tín hiệu 'SIGKILL' (mã số 9) gửi yêu cầu trực tiếp đến nhân hệ điều hành để chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó thực hiện các thao tác dọn dẹp. Kết luận Lý giải SIGKILL (9)"
+      },
+      {
+        "id": "q3",
+        "text": "Thư mục nào trong cấu trúc phân cấp tệp tin của Linux (FHS) là nơi lưu trữ các tệp cấu hình hệ thống toàn cục?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/bin"
+          },
+          {
+            "id": "B",
+            "content": "/etc"
+          },
+          {
+            "id": "C",
+            "content": "/var"
+          },
+          {
+            "id": "D",
+            "content": "/usr"
+          }
+        ],
+        "explanation": "Dựa trên Tiêu chuẩn Phân cấp Tệp tin (FHS), thư mục '/etc' là vị trí chuyên dụng để lưu trữ các tệp cấu hình cần thiết cho việc vận hành hệ thống và các ứng dụng đã cài đặt. Kết luận Lý giải /etc"
+      },
+      {
+        "id": "q4",
+        "text": "Công cụ dòng lệnh nào mạnh mẽ nhất để tìm kiếm các dòng văn bản khớp với một biểu thức chính quy (regular expression) trong một tệp?",
+        "options": [
+          {
+            "id": "A",
+            "content": "locate"
+          },
+          {
+            "id": "B",
+            "content": "find"
+          },
+          {
+            "id": "C",
+            "content": "grep"
+          },
+          {
+            "id": "D",
+            "content": "echo"
+          }
+        ],
+        "explanation": "Theo phân tích kỹ thuật, lệnh 'grep' (global regular expression print) được thiết kế đặc biệt để lọc và hiển thị các dòng văn bản chứa mẫu ký tự mong muốn từ đầu vào dữ liệu. Kết luận Lý giải grep"
+      },
+      {
+        "id": "q5",
+        "text": "Ký hiệu nào được dùng trong trình bao (shell) để chuyển hướng đầu ra (output) và ghi thêm nội dung vào cuối một tệp tin hiện có thay vì ghi đè?",
+        "options": [
+          {
+            "id": "A",
+            "content": ">"
+          },
+          {
+            "id": "B",
+            "content": "<<"
+          },
+          {
+            "id": "C",
+            "content": "|"
+          },
+          {
+            "id": "D",
+            "content": ">>"
+          }
+        ],
+        "explanation": "Trong Linux shell, ký hiệu '>>' thực hiện chức năng chuyển hướng đầu ra theo cơ chế 'append', giúp bảo toàn nội dung cũ và thêm dữ liệu mới vào cuối tệp. Kết luận Lý giải >>"
+      },
+      {
+        "id": "q6",
+        "text": "Biến môi trường nào quy định danh sách các thư mục mà hệ điều hành sẽ tìm kiếm khi người dùng nhập một lệnh thực thi?",
+        "options": [
+          {
+            "id": "A",
+            "content": "$HOME"
+          },
+          {
+            "id": "B",
+            "content": "$PATH"
+          },
+          {
+            "id": "C",
+            "content": "$USER"
+          },
+          {
+            "id": "D",
+            "content": "$SHELL"
+          }
+        ],
+        "explanation": "Biến môi trường '$PATH' chứa một danh sách các đường dẫn thư mục được phân cách bằng dấu hai chấm, giúp hệ thống xác định vị trí của các tệp thực thi khi lệnh được gọi mà không có đường dẫn đầy đủ. Kết luận Lý giải $PATH"
+      },
+      {
+        "id": "q7",
+        "text": "Trên các bản phân phối dựa trên Debian như Ubuntu, lệnh nào được dùng để cài đặt một tệp tin gói có đuôi '.deb' trực tiếp từ dòng lệnh?",
+        "options": [
+          {
+            "id": "A",
+            "content": "apt update"
+          },
+          {
+            "id": "B",
+            "content": "yum install"
+          },
+          {
+            "id": "C",
+            "content": "dpkg -i"
+          },
+          {
+            "id": "D",
+            "content": "rpm -ivh"
+          }
+        ],
+        "explanation": "Lệnh 'dpkg -i' (Debian Package) là công cụ cấp thấp dùng để cài đặt trực tiếp các gói phần mềm định dạng '.deb' có sẵn trên ổ đĩa cục bộ. Kết luận Lý giải dpkg -i"
+      },
+      {
+        "id": "q8",
+        "text": "Để tạo một 'liên kết mềm' (symbolic link) từ một tệp tin nguồn đến một tên tệp mới, bạn sử dụng lệnh nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ln -s"
+          },
+          {
+            "id": "B",
+            "content": "link"
+          },
+          {
+            "id": "C",
+            "content": "ln -h"
+          },
+          {
+            "id": "D",
+            "content": "cp -l"
+          }
+        ],
+        "explanation": "Trong hệ thống tệp Linux, lệnh 'ln' với tham số '-s' (symbolic) được sử dụng để tạo một liên kết trỏ đến đường dẫn của tệp nguồn thay vì tạo một bản sao vật lý. Kết luận Lý giải ln -s"
+      },
+      {
+        "id": "q9",
+        "text": "Trong lệnh 'tar', tùy chọn nào được sử dụng để nén các tệp tin bằng thuật toán gzip trong quá trình tạo tệp lưu trữ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-j"
+          },
+          {
+            "id": "B",
+            "content": "-z"
+          },
+          {
+            "id": "C",
+            "content": "-x"
+          },
+          {
+            "id": "D",
+            "content": "-v"
+          }
+        ],
+        "explanation": "Khi sử dụng tiện ích 'tar' để đóng gói, tham số '-z' hướng dẫn chương trình gọi bộ nén 'gzip' để giảm dung lượng của tệp lưu trữ được tạo ra. Kết luận Lý giải -z"
+      },
+      {
+        "id": "q10",
+        "text": "Tệp tin nào trong hệ thống Linux lưu trữ mật khẩu đã được băm (hashed passwords) của người dùng để đảm bảo tính bảo mật cao hơn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/group"
+          },
+          {
+            "id": "C",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "D",
+            "content": "/etc/gshadow"
+          }
+        ],
+        "explanation": "Theo cơ chế bảo mật tiêu chuẩn của Linux, tệp '/etc/shadow' chỉ có quyền truy cập bởi người dùng root và chứa các thông tin nhạy cảm như mật khẩu đã mã hóa và thời hạn hết hạn. Kết luận Lý giải /etc/shadow"
+      },
+      {
+        "id": "q11",
+        "text": "Dòng mã '#!/bin/bash' thường xuất hiện ở đầu các kịch bản trình bao (shell script) được gọi là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Header"
+          },
+          {
+            "id": "B",
+            "content": "Comment"
+          },
+          {
+            "id": "C",
+            "content": "Shebang"
+          },
+          {
+            "id": "D",
+            "content": "Directive"
+          }
+        ],
+        "explanation": "Thuật ngữ 'Shebang' (hoặc Hashbang) ám chỉ chuỗi ký tự '#!' ở đầu tệp tin dùng để chỉ định trình thông dịch nào sẽ thực thi mã nguồn bên dưới. Kết luận Lý giải Shebang"
+      },
+      {
+        "id": "q12",
+        "text": "Lệnh nào cung cấp thông tin về dung lượng đĩa cứng đã sử dụng và còn trống trên các hệ thống tệp (filesystem) đang được gắn (mount)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du"
+          },
+          {
+            "id": "B",
+            "content": "df"
+          },
+          {
+            "id": "C",
+            "content": "free"
+          },
+          {
+            "id": "D",
+            "content": "lsblk"
+          }
+        ],
+        "explanation": "Lệnh 'df' (disk free) báo cáo tóm tắt về dung lượng lưu trữ trên các phân vùng hệ thống tệp, bao gồm tổng dung lượng, phần đã dùng và phần còn khả dụng. Kết luận Lý giải df"
+      },
+      {
+        "id": "q13",
+        "text": "Khi cần tìm kiếm một tệp tin dựa trên tên, kích thước hoặc ngày sửa đổi trong một cây thư mục, lệnh nào là phù hợp nhất?",
+        "options": [
+          {
+            "id": "A",
+            "content": "whereis"
+          },
+          {
+            "id": "B",
+            "content": "which"
+          },
+          {
+            "id": "C",
+            "content": "find"
+          },
+          {
+            "id": "D",
+            "content": "locate"
+          }
+        ],
+        "explanation": "Lệnh 'find' là một công cụ tìm kiếm mạnh mẽ cho phép quét đĩa cứng theo thời gian thực dựa trên các tiêu chí lọc đa dạng như tên, thuộc tính và quyền hạn. Kết luận Lý giải find"
+      },
+      {
+        "id": "q14",
+        "text": "Công cụ nào cho phép người dùng giám sát các tiến trình đang hoạt động, mức sử dụng CPU và bộ nhớ RAM theo thời gian thực?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps"
+          },
+          {
+            "id": "B",
+            "content": "top"
+          },
+          {
+            "id": "C",
+            "content": "kill"
+          },
+          {
+            "id": "D",
+            "content": "uptime"
+          }
+        ],
+        "explanation": "Lệnh 'top' cung cấp một giao diện động hiển thị danh sách các tiến trình tiêu tốn tài nguyên nhất và các chỉ số hiệu năng tổng quát của hệ thống Linux. Kết luận Lý giải top"
+      },
+      {
+        "id": "q15",
+        "text": "Để xem các dòng mới nhất của một tệp nhật ký (log file) và tiếp tục theo dõi khi có dữ liệu mới được thêm vào, bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "head -n 20"
+          },
+          {
+            "id": "B",
+            "content": "cat"
+          },
+          {
+            "id": "C",
+            "content": "less"
+          },
+          {
+            "id": "D",
+            "content": "tail -f"
+          }
+        ],
+        "explanation": "Lệnh 'tail' với tùy chọn '-f' (follow) cho phép người dùng xem phần cuối của tệp và giữ kết nối để hiển thị ngay lập tức các dòng văn bản mới khi chúng được ghi vào tệp. Kết luận Lý giải tail -f"
+      },
+      {
+        "id": "q16",
+        "text": "Lệnh nào được sử dụng để thực thi một lệnh khác với đặc quyền của người dùng siêu cấp (root) hoặc một người dùng khác?",
+        "options": [
+          {
+            "id": "A",
+            "content": "sudo"
+          },
+          {
+            "id": "B",
+            "content": "su"
+          },
+          {
+            "id": "C",
+            "content": "runas"
+          },
+          {
+            "id": "D",
+            "content": "passwd"
+          }
+        ],
+        "explanation": "Tiện ích 'sudo' (superuser do) cho phép người dùng được ủy quyền thực thi các lệnh quản trị hệ thống mà không cần đăng nhập trực tiếp bằng tài khoản root. Kết luận Lý giải sudo"
+      },
+      {
+        "id": "q17",
+        "text": "Để kiểm tra ước tính tổng dung lượng đĩa mà một thư mục cụ thể và các thư mục con của nó đang chiếm giữ, lệnh nào là chính xác nhất?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ls -l"
+          },
+          {
+            "id": "B",
+            "content": "df -h"
+          },
+          {
+            "id": "C",
+            "content": "du -sh"
+          },
+          {
+            "id": "D",
+            "content": "stat"
+          }
+        ],
+        "explanation": "Lệnh 'du' (disk usage) với các tham số '-s' (summary) và '-h' (human-readable) được dùng để tổng kết kích thước của các tệp và thư mục trên ổ đĩa. Kết luận Lý giải du -sh"
+      },
+      {
+        "id": "q18",
+        "text": "Lệnh nào dùng để xóa một thư mục không trống cùng toàn bộ tệp tin và thư mục con bên trong nó một cách đệ quy?",
+        "options": [
+          {
+            "id": "A",
+            "content": "rmdir"
+          },
+          {
+            "id": "B",
+            "content": "rm -rf"
+          },
+          {
+            "id": "C",
+            "content": "del /s"
+          },
+          {
+            "id": "D",
+            "content": "erase"
+          }
+        ],
+        "explanation": "Lệnh 'rm' kết hợp với cờ '-r' (recursive) và '-f' (force) cho phép xóa sạch một cây thư mục mà không yêu cầu xác nhận cho từng tệp tin. Kết luận Lý giải rm -rf"
+      },
+      {
+        "id": "q19",
+        "text": "Câu lệnh nào hiển thị các thông tin cơ bản về hệ thống như tên nhân (kernel), tên máy (hostname) và kiến trúc bộ vi xử lý?",
+        "options": [
+          {
+            "id": "A",
+            "content": "uname -a"
+          },
+          {
+            "id": "B",
+            "content": "lsinfo"
+          },
+          {
+            "id": "C",
+            "content": "sysconf"
+          },
+          {
+            "id": "D",
+            "content": "version"
+          }
+        ],
+        "explanation": "Lệnh 'uname' với tùy chọn '-a' (all) trích xuất và hiển thị tất cả các thông tin hệ thống quan trọng có sẵn trong nhân Linux. Kết luận Lý giải uname -a"
+      },
+      {
+        "id": "q20",
+        "text": "Trong mạng máy tính Linux, lệnh 'ping' với tham số '-c 4' có ý nghĩa gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Kiểm tra kết nối trên cổng 4"
+          },
+          {
+            "id": "B",
+            "content": "Gửi đúng 4 gói tin ICMP rồi dừng lại"
+          },
+          {
+            "id": "C",
+            "content": "Tăng kích thước gói tin lên 4 lần"
+          },
+          {
+            "id": "D",
+            "content": "Chờ 4 giây trước khi bắt đầu"
+          }
+        ],
+        "explanation": "Mặc định trên Linux lệnh 'ping' sẽ chạy vô hạn, nên tham số '-c' (count) được dùng để giới hạn chính xác số lượng gói tin kiểm tra kết nối được gửi đi. Kết luận Lý giải Gửi đúng 4 gói tin ICMP rồi dừng lại"
+      },
+      {
+        "id": "q21",
+        "text": "Để gán quyền thực thi cho chủ sở hữu (user) trên một tệp tin script có tên 'run.sh', cú pháp lệnh nào sau đây là đúng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod o+x run.sh"
+          },
+          {
+            "id": "B",
+            "content": "chmod g+x run.sh"
+          },
+          {
+            "id": "C",
+            "content": "chmod u+x run.sh"
+          },
+          {
+            "id": "D",
+            "content": "chmod a-x run.sh"
+          }
+        ],
+        "explanation": "Trong ký hiệu tượng trưng của lệnh 'chmod', 'u' đại diện cho người sở hữu (user) và '+x' là thao tác thêm quyền thực thi (execute). Kết luận Lý giải chmod u+x run.sh"
+      },
+      {
+        "id": "q22",
+        "text": "Lệnh 'mv' trong hệ điều hành Linux được sử dụng cho hai mục đích chính nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Sao chép và Xóa tệp"
+          },
+          {
+            "id": "B",
+            "content": "Di chuyển và Đổi tên tệp"
+          },
+          {
+            "id": "C",
+            "content": "Nén và Giải nén tệp"
+          },
+          {
+            "id": "D",
+            "content": "Mở và Đóng tệp"
+          }
+        ],
+        "explanation": "Lệnh 'mv' (move) được thiết kế để thay đổi vị trí của tệp tin trong cấu trúc thư mục hoặc thay đổi tên của nó nếu đích đến nằm trong cùng một thư mục. Kết luận Lý giải Di chuyển và Đổi tên tệp"
+      },
+      {
+        "id": "q23",
+        "text": "Tệp tin ảo nào chứa thông tin chi tiết về bộ vi xử lý (CPU) của hệ thống đang chạy?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/cpuinfo"
+          },
+          {
+            "id": "B",
+            "content": "/proc/cpuinfo"
+          },
+          {
+            "id": "C",
+            "content": "/dev/cpu"
+          },
+          {
+            "id": "D",
+            "content": "/var/run/cpu"
+          }
+        ],
+        "explanation": "Thư mục '/proc' là một hệ thống tệp ảo cung cấp giao diện cho các cấu trúc dữ liệu của nhân, trong đó tệp 'cpuinfo' lưu trữ các thông số kỹ thuật của CPU. Kết luận Lý giải /proc/cpuinfo"
+      },
+      {
+        "id": "q24",
+        "text": "Khi muốn tra cứu tài liệu hướng dẫn sử dụng chi tiết của một lệnh bất kỳ trong Linux, bạn nên sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "help"
+          },
+          {
+            "id": "B",
+            "content": "info"
+          },
+          {
+            "id": "C",
+            "content": "man"
+          },
+          {
+            "id": "D",
+            "content": "show"
+          }
+        ],
+        "explanation": "Lệnh 'man' (manual) là công cụ chuẩn để truy cập các trang tài liệu hướng dẫn tích hợp sẵn cho hầu hết các câu lệnh và tệp cấu hình trên Linux. Kết luận Lý giải man"
+      },
+      {
+        "id": "q25",
+        "text": "Chức năng chính của ký hiệu đường ống '|' (pipe) trong dòng lệnh Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chạy hai lệnh đồng thời một cách độc lập"
+          },
+          {
+            "id": "B",
+            "content": "Ghi đầu ra của lệnh vào một tệp tin mới"
+          },
+          {
+            "id": "C",
+            "content": "Chuyển kết quả đầu ra của lệnh này làm đầu vào cho lệnh kia"
+          },
+          {
+            "id": "D",
+            "content": "Xóa toàn bộ kết quả của lệnh trước đó"
+          }
+        ],
+        "explanation": "Kỹ thuật 'piping' sử dụng ký hiệu '|' để kết nối đầu ra tiêu chuẩn của một chương trình trực tiếp vào đầu vào tiêu chuẩn của chương trình tiếp theo trong một chuỗi lệnh. Kết luận Lý giải Chuyển kết quả đầu ra của lệnh này làm đầu vào cho lệnh kia"
+      }
+    ],
+    "logic_map": {
+      "q1": "B",
+      "q2": "C",
+      "q3": "B",
+      "q4": "C",
+      "q5": "D",
+      "q6": "B",
+      "q7": "C",
+      "q8": "A",
+      "q9": "B",
+      "q10": "C",
+      "q11": "C",
+      "q12": "B",
+      "q13": "C",
+      "q14": "B",
+      "q15": "D",
+      "q16": "A",
+      "q17": "C",
+      "q18": "B",
+      "q19": "A",
+      "q20": "B",
+      "q21": "C",
+      "q22": "B",
+      "q23": "B",
+      "q24": "C",
+      "q25": "C"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+const WEEKS = require('../weeks');
+module.exports = [
+  {
+    text: 'When is the default gateway used?',
+    options: ['When sending data to a network outside the subnet', 'When resolving a domain name', 'When saving a file on the local machine', 'When accessing a machine in the same subnet'],
+    correctIndex: 0,
+    explanation: 'The default gateway (default router) is used when the destination is outside the local subnet and doesn\'t match any other specific route.',
+  },
+  {
+    text: 'What is the advantage of netplan try when configuring networking remotely?',
+    options: ['It immediately deletes the old network config', 'It automatically rolls back if the config isn\'t confirmed', 'It automatically creates an admin account', 'It automatically installs SSH'],
+    correctIndex: 1,
+    explanation: 'netplan try temporarily applies the new config and auto-rolls-back if the user doesn\'t confirm within a time limit — safe for remote SSH sessions.',
+  },
+  {
+    text: 'How many usable host addresses does a /24 (255.255.255.0) subnet mask allow at most in that network?',
+    options: ['256', '254', '255', '128'],
+    correctIndex: 1,
+    explanation: 'A /24 has 256 addresses; subtracting 2 (the network address and broadcast address) leaves 254 usable hosts.',
+  },
+  {
+    text: 'What is a DNS A record used for?',
+    options: ['Mapping a domain name to an IPv4 address', 'Mapping a domain name to an IPv6 address', 'Specifying a mail server', 'Specifying a name server'],
+    correctIndex: 0,
+    explanation: 'An A (Address) record maps a domain name to its corresponding IPv4 address.',
+  },
+  {
+    text: 'What is a DNS AAAA record used for?',
+    options: ['Mapping a domain name to an IPv4 address', 'Mapping a domain name to an IPv6 address', 'Specifying an alias for a domain name', 'Specifying a mail server'],
+    correctIndex: 1,
+    explanation: 'The AAAA record is similar to the A record but is used for IPv6 addresses.',
+  },
+  {
+    text: 'What is a DNS CNAME record used for?',
+    options: [
+      'Creating an alias name pointing to another canonical domain name',
+      'Specifying a domain\'s mail server',
+      'Mapping directly to an IPv4 address',
+      'Specifying the authoritative name server',
+    ],
+    correctIndex: 0,
+    explanation: 'CNAME (Canonical Name) creates an alias, pointing one domain name to another canonical domain name for further resolution.',
+  },
+  {
+    text: 'What is a DNS MX record used for?',
+    options: ['Specifying the server that handles a domain\'s email', 'Mapping a domain name to an IP', 'Specifying a name server', 'Creating an alias for a domain name'],
+    correctIndex: 0,
+    explanation: 'An MX (Mail Exchange) record declares which mail server will receive mail sent to the domain, along with a priority.',
+  },
+  {
+    text: 'What is a DNS PTR record used for?',
+    options: ['Forward resolution from a domain name to an IP', 'Reverse resolution from an IP address to a domain name', 'Specifying a mail server', 'Specifying a TTL'],
+    correctIndex: 1,
+    explanation: 'PTR (Pointer) is used for reverse DNS, mapping an IP address back to a domain name.',
+  },
+  {
+    text: 'What is a DNS NS record used for?',
+    options: ['Specifying the authoritative name server managing a zone', 'Mapping a domain name to an IPv6 address', 'Specifying a mail server', 'Creating an alias for a domain'],
+    correctIndex: 0,
+    explanation: 'An NS record declares the name servers responsible for answering DNS queries for a zone.',
+  },
+  {
+    text: 'What info does DHCP grant a client by default?',
+    options: [
+      'Only an IP address',
+      'An IP address, subnet mask, default gateway, and usually a DNS server too',
+      'Only a MAC address',
+      'Only a Wi-Fi password',
+    ],
+    correctIndex: 1,
+    explanation: 'A DHCP server dynamically grants an IP address along with related network parameters: gateway, subnet mask, DNS.',
+  },
+  {
+    text: 'What is the 4-step process of requesting an IP address via DHCP called?',
+    options: ['SYN-ACK-FIN-RST', 'DISCOVER-OFFER-REQUEST-ACK (DORA)', 'GET-POST-PUT-DELETE', 'OPEN-READ-WRITE-CLOSE'],
+    correctIndex: 1,
+    explanation: 'The DHCP process has 4 steps: Discover (client looks for a server), Offer (server proposes an IP), Request (client asks for it), Acknowledge (server confirms).',
+  },
+  {
+    text: 'What happens when a DHCP lease expires?',
+    options: [
+      'The client permanently loses connectivity',
+      'The client must request a new lease or renew the IP address',
+      'The server automatically deletes its entire configuration',
+      'Nothing happens',
+    ],
+    correctIndex: 1,
+    explanation: 'When the lease time expires, the client needs to send a renewal request or request a new address from the DHCP server.',
+  },
+  {
+    text: 'How does a reverse proxy differ from a forward proxy?',
+    options: [
+      'A reverse proxy represents the client, a forward proxy represents the server',
+      'A reverse proxy represents the server (receiving requests from outside clients and forwarding them to an internal server), a forward proxy represents the client (forwarding the client\'s requests out)',
+      'There is no difference',
+      'A reverse proxy only works with FTP',
+    ],
+    correctIndex: 1,
+    explanation: 'A forward proxy sits between the client and the Internet, hiding the client; a reverse proxy sits in front of a server, hiding the real server and distributing load.',
+    week: WEEKS.W6_LT4,
+  },
+  {
+    text: 'What is the main difference between HTTPS and HTTP?',
+    options: [
+      'HTTPS is twice as fast as HTTP',
+      'HTTPS encrypts transmitted data via TLS/SSL, HTTP transmits data in plaintext',
+      'HTTPS can only be used for images',
+      'There is no real difference',
+    ],
+    correctIndex: 1,
+    explanation: 'HTTPS = HTTP + TLS/SSL, encrypting all data exchanged between client and server, protecting against eavesdropping/tampering.',
+    week: WEEKS.W6_LT4,
+  },
+  {
+    text: 'What is the SMTP protocol used for in a mail system?',
+    options: ['Receiving mail onto the client', 'Sending/relaying email between mail servers and from client to server', 'Encrypting the disk', 'Resolving domain names'],
+    correctIndex: 1,
+    explanation: 'SMTP (Simple Mail Transfer Protocol) is the standard protocol for sending and relaying email.',
+    week: WEEKS.W6_LT4,
+  },
+  {
+    text: 'What is the difference between POP3 and IMAP when receiving mail?',
+    options: [
+      'POP3 usually downloads mail and deletes it from the server, IMAP syncs and keeps mail on the server, accessible from multiple devices',
+      'IMAP doesn\'t support encryption while POP3 does',
+      'POP3 is faster because it doesn\'t need a network connection',
+      'There is no difference',
+    ],
+    correctIndex: 0,
+    explanation: 'POP3 follows a download-and-delete model (single device); IMAP keeps mail synced on the server, suited for multi-device access.',
+    week: WEEKS.W6_LT4,
+  },
+];

@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 2 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.327Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong Linux, khi thiết lập 'umask' là 022, quyền hạn mặc định cho một tập tin mới được tạo ra (không phải thư mục) sẽ là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "644"
+          },
+          {
+            "id": "B",
+            "content": "755"
+          },
+          {
+            "id": "C",
+            "content": "666"
+          },
+          {
+            "id": "D",
+            "content": "640"
+          }
+        ],
+        "explanation": "Theo cơ chế tính toán quyền hạn của Linux, quyền mặc định của tập tin là 666 trừ đi giá trị umask 022 sẽ tạo ra quyền hạn thực tế là 644. Kết luận Lý giải 644"
+      },
+      {
+        "id": "q2",
+        "text": "Sự khác biệt cơ bản nhất giữa Link cứng (Hard link) và Link mềm (Symbolic link) khi tập tin nguồn bị xóa là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Link mềm vẫn truy cập được nội dung dữ liệu còn Link cứng thì không."
+          },
+          {
+            "id": "B",
+            "content": "Cả hai loại Link đều không thể truy cập được dữ liệu."
+          },
+          {
+            "id": "C",
+            "content": "Hệ thống sẽ tự động khôi phục tập tin nguồn từ Link cứng."
+          },
+          {
+            "id": "D",
+            "content": "Link cứng vẫn truy cập được nội dung dữ liệu bình thường còn Link mềm sẽ bị hỏng."
+          }
+        ],
+        "explanation": "Vì Link cứng trỏ trực tiếp đến số hiệu Inode của dữ liệu trên đĩa nên nó vẫn tồn tại độc lập khi tập tin nguồn bị xóa, trong khi Link mềm chỉ trỏ đến đường dẫn tên tập tin. Kết luận Lý giải Link cứng vẫn truy cập được nội dung dữ liệu bình thường còn Link mềm sẽ bị hỏng."
+      },
+      {
+        "id": "q3",
+        "text": "Tín hiệu (Signal) nào sau đây được gửi khi thực hiện lệnh 'kill -9 [PID]' để buộc một tiến trình dừng ngay lập tức?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGTERM"
+          },
+          {
+            "id": "B",
+            "content": "SIGKILL"
+          },
+          {
+            "id": "C",
+            "content": "SIGINT"
+          },
+          {
+            "id": "D",
+            "content": "SIGSTOP"
+          }
+        ],
+        "explanation": "Mã tín hiệu số 9 tương ứng với SIGKILL, một lệnh cưỡng ép tiến trình kết thúc mà không cho phép nó thực hiện các thao tác dọn dẹp hay từ chối. Kết luận Lý giải SIGKILL"
+      },
+      {
+        "id": "q4",
+        "text": "Cú pháp nào sau đây cho phép chuyển hướng cả đầu ra tiêu chuẩn (stdout) và đầu ra lỗi tiêu chuẩn (stderr) vào cùng một tập tin 'output.txt'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "command 'dấu lớn hơn' output.txt 2>'dấu và'1"
+          },
+          {
+            "id": "B",
+            "content": "command 2'dấu lớn hơn' output.txt"
+          },
+          {
+            "id": "C",
+            "content": "command 'dấu lớn hơn' output.txt 'dấu lớn hơn'2"
+          },
+          {
+            "id": "D",
+            "content": "command 'dấu lớn hơn' output.txt 1'dấu lớn hơn'2"
+          }
+        ],
+        "explanation": "Trong shell Linux, cú pháp '2>&1' chỉ thị cho hệ thống chuyển hướng bộ mô tả file số 2 (stderr) vào cùng địa chỉ với bộ mô tả file số 1 (stdout). Kết luận Lý giải command 'dấu lớn hơn' output.txt 2>'dấu và'1"
+      },
+      {
+        "id": "q5",
+        "text": "Sau khi thay đổi nội dung của một tệp tin cấu hình dịch vụ Systemd (ví dụ: .service file), lệnh nào cần được chạy để Systemd nhận diện thay đổi đó?",
+        "options": [
+          {
+            "id": "A",
+            "content": "systemctl restart"
+          },
+          {
+            "id": "B",
+            "content": "systemctl daemon-reload"
+          },
+          {
+            "id": "C",
+            "content": "systemctl reload-all"
+          },
+          {
+            "id": "D",
+            "content": "service update-config"
+          }
+        ],
+        "explanation": "Lệnh 'systemctl daemon-reload' buộc trình quản lý hệ thống tải lại tất cả các tệp đơn vị và xây dựng lại cây phụ thuộc để áp dụng các thay đổi cấu hình mới. Kết luận Lý giải systemctl daemon-reload"
+      },
+      {
+        "id": "q6",
+        "text": "Trong trình soạn thảo Vi/Vim, để lưu các thay đổi và thoát khỏi tập tin, người dùng nên sử dụng lệnh nào sau đây ở chế độ cuối dòng (Command-line mode)?",
+        "options": [
+          {
+            "id": "A",
+            "content": ":q!"
+          },
+          {
+            "id": "B",
+            "content": ":s"
+          },
+          {
+            "id": "C",
+            "content": ":wq"
+          },
+          {
+            "id": "D",
+            "content": ":exit"
+          }
+        ],
+        "explanation": "Lệnh ':wq' là sự kết hợp của 'write' (lưu) và 'quit' (thoát), cho phép cập nhật nội dung tập tin trước khi đóng trình soạn thảo. Kết luận Lý giải :wq"
+      },
+      {
+        "id": "q7",
+        "text": "Lệnh nào được sử dụng để tìm kiếm các tập tin có dung lượng lớn hơn 100MB trong thư mục '/var'?",
+        "options": [
+          {
+            "id": "A",
+            "content": "find /var -size +100M"
+          },
+          {
+            "id": "B",
+            "content": "ls -lh /var | grep 100M"
+          },
+          {
+            "id": "C",
+            "content": "search /var -big 100"
+          },
+          {
+            "id": "D",
+            "content": "du -sh /var | limit 100M"
+          }
+        ],
+        "explanation": "Lệnh 'find' với tham số '-size' kèm dấu cộng '+' cho phép lọc các đối tượng có kích thước vượt quá giá trị được chỉ định. Kết luận Lý giải find /var -size +100M"
+      },
+      {
+        "id": "q8",
+        "text": "Trường nào trong file '/etc/passwd' chứa thông tin về đường dẫn đến thư mục cá nhân (Home directory) của người dùng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Trường thứ 3"
+          },
+          {
+            "id": "B",
+            "content": "Trường thứ 5"
+          },
+          {
+            "id": "C",
+            "content": "Trường thứ 6"
+          },
+          {
+            "id": "D",
+            "content": "Trường thứ 7"
+          }
+        ],
+        "explanation": "Dựa trên cấu trúc chuẩn của file /etc/passwd, các trường được phân tách bằng dấu hai chấm và trường thứ 6 xác định vị trí thư mục chính của tài khoản. Kết luận Lý giải Trường thứ 6"
+      },
+      {
+        "id": "q9",
+        "text": "Quyền hạn '755' trên một thư mục có ý nghĩa cụ thể như thế nào đối với các nhóm người dùng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Chủ sở hữu có toàn quyền; nhóm và người khác chỉ có quyền đọc và thực thi."
+          },
+          {
+            "id": "B",
+            "content": "Chủ sở hữu có quyền đọc và ghi; nhóm và người khác có toàn quyền."
+          },
+          {
+            "id": "C",
+            "content": "Mọi người dùng trên hệ thống đều có toàn quyền đối với thư mục."
+          },
+          {
+            "id": "D",
+            "content": "Chủ sở hữu và nhóm có toàn quyền; người khác không có quyền gì."
+          }
+        ],
+        "explanation": "Mã bát phân 755 tương đương với 'rwxr-xr-x', cho phép chủ sở hữu thực hiện mọi thao tác trong khi những người khác không thể ghi hoặc xóa dữ liệu. Kết luận Lý giải Chủ sở hữu có toàn quyền; nhóm và người khác chỉ có quyền đọc và thực thi."
+      },
+      {
+        "id": "q10",
+        "text": "Tiến trình 'Zombie' trong hệ thống Linux được định nghĩa chính xác là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Một tiến trình chạy ngầm chiếm dụng quá nhiều CPU."
+          },
+          {
+            "id": "B",
+            "content": "Một tiến trình không bao giờ kết thúc."
+          },
+          {
+            "id": "C",
+            "content": "Một tiến trình đã hoàn thành thực thi nhưng vẫn còn tên trong bảng tiến trình vì cha nó chưa nhận mã thoát."
+          },
+          {
+            "id": "D",
+            "content": "Một tiến trình bị treo do lỗi bộ nhớ hệ thống."
+          }
+        ],
+        "explanation": "Tiến trình Zombie (hoặc defunct) tồn tại khi tiến trình con đã chết nhưng tiến trình cha chưa gọi hàm 'wait()' để giải phóng cấu trúc dữ liệu của nó khỏi kernel. Kết luận Lý giải Một tiến trình đã hoàn thành thực thi nhưng vẫn còn tên trong bảng tiến trình vì cha nó chưa nhận mã thoát."
+      },
+      {
+        "id": "q11",
+        "text": "Để liệt kê tất cả các tiến trình đang chạy theo thời gian thực và theo dõi mức tiêu thụ tài nguyên CPU/RAM, công cụ nào sau đây là phổ biến nhất?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -ef"
+          },
+          {
+            "id": "B",
+            "content": "top"
+          },
+          {
+            "id": "C",
+            "content": "uptime"
+          },
+          {
+            "id": "D",
+            "content": "free"
+          }
+        ],
+        "explanation": "Lệnh 'top' cung cấp giao diện tương tác hiển thị danh sách các tiến trình được cập nhật liên tục dựa trên mức độ sử dụng tài nguyên. Kết luận Lý giải top"
+      },
+      {
+        "id": "q12",
+        "text": "Tệp tin nào lưu trữ danh sách các máy chủ DNS mà hệ thống sẽ sử dụng để phân giải tên miền thành địa chỉ IP?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/hosts"
+          },
+          {
+            "id": "B",
+            "content": "/etc/networks"
+          },
+          {
+            "id": "C",
+            "content": "/etc/resolv.conf"
+          },
+          {
+            "id": "D",
+            "content": "/etc/hostname"
+          }
+        ],
+        "explanation": "File '/etc/resolv.conf' là nơi cấu hình các tham số trình phân giải, bao gồm địa chỉ của các nameservers mà hệ thống truy vấn. Kết luận Lý giải /etc/resolv.conf"
+      },
+      {
+        "id": "q13",
+        "text": "Khi sử dụng lệnh 'tar' để nén một thư mục thành định dạng '.tar.gz', tùy chọn nào sau đây được dùng để chỉ định thuật toán nén gzip?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-j"
+          },
+          {
+            "id": "B",
+            "content": "-z"
+          },
+          {
+            "id": "C",
+            "content": "-x"
+          },
+          {
+            "id": "D",
+            "content": "-v"
+          }
+        ],
+        "explanation": "Trong lệnh tar, tùy chọn '-z' kích hoạt bộ lọc nén gzip, trong khi '-j' dành cho bzip2. Kết luận Lý giải -z"
+      },
+      {
+        "id": "q14",
+        "text": "Mục đích chính của phân vùng 'Swap' trong hệ điều hành Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Dùng để lưu trữ các tệp tin tạm thời của người dùng."
+          },
+          {
+            "id": "B",
+            "content": "Dùng làm không gian bộ nhớ ảo khi bộ nhớ RAM vật lý bị đầy."
+          },
+          {
+            "id": "C",
+            "content": "Dùng để sao lưu dự phòng nhân hệ điều hành (Kernel)."
+          },
+          {
+            "id": "D",
+            "content": "Dùng để tăng tốc độ truy cập đĩa cứng."
+          }
+        ],
+        "explanation": "Swap hoạt động như một vùng đệm trên ổ cứng, giúp hệ thống tiếp tục vận hành các ứng dụng khi dung lượng RAM vật lý không còn đủ đáp ứng. Kết luận Lý giải Dùng làm không gian bộ nhớ ảo khi bộ nhớ RAM vật lý bị đầy."
+      },
+      {
+        "id": "q15",
+        "text": "Trong hệ thống sử dụng Systemd, lệnh nào được dùng để kiểm tra các bản ghi nhật ký (logs) của hệ thống từ lúc khởi động?",
+        "options": [
+          {
+            "id": "A",
+            "content": "cat /var/log/syslog"
+          },
+          {
+            "id": "B",
+            "content": "tail -f /var/log/messages"
+          },
+          {
+            "id": "C",
+            "content": "journalctl -b"
+          },
+          {
+            "id": "D",
+            "content": "dmesg | grep boot"
+          }
+        ],
+        "explanation": "Công cụ 'journalctl' với tham số '-b' cho phép truy xuất dữ liệu nhật ký tập trung được quản lý bởi systemd-journald tính từ lần khởi động gần nhất. Kết luận Lý giải journalctl -b"
+      },
+      {
+        "id": "q16",
+        "text": "Để thay đổi chủ sở hữu của một tệp tin từ người dùng 'user1' sang 'user2', bạn sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod user2 file.txt"
+          },
+          {
+            "id": "B",
+            "content": "chown user2 file.txt"
+          },
+          {
+            "id": "C",
+            "content": "chgrp user2 file.txt"
+          },
+          {
+            "id": "D",
+            "content": "usermod -o user2 file.txt"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) được thiết kế chuyên biệt để thay đổi quyền sở hữu tài khoản và/hoặc nhóm đối với các đối tượng trên hệ thống tệp. Kết luận Lý giải chown user2 file.txt"
+      },
+      {
+        "id": "q17",
+        "text": "Ký tự nào được sử dụng trong dòng lệnh Linux để kết nối đầu ra của lệnh này thành đầu vào của lệnh kia (Piping)?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Dấu và (&)"
+          },
+          {
+            "id": "B",
+            "content": "Dấu gạch đứng (|)"
+          },
+          {
+            "id": "C",
+            "content": "Dấu phẩy (;)"
+          },
+          {
+            "id": "D",
+            "content": "Dấu lớn hơn (>)"
+          }
+        ],
+        "explanation": "Dấu gạch đứng '|' tạo ra một đường ống truyền dữ liệu trực tiếp giữa các tiến trình mà không cần thông qua tệp tin trung gian. Kết luận Lý giải Dấu gạch đứng (|)"
+      },
+      {
+        "id": "q18",
+        "text": "Lệnh nào sau đây cung cấp thông tin chi tiết về các thiết bị phần cứng đang kết nối qua cổng USB của máy tính?",
+        "options": [
+          {
+            "id": "A",
+            "content": "lsusb"
+          },
+          {
+            "id": "B",
+            "content": "lspci"
+          },
+          {
+            "id": "C",
+            "content": "lshw"
+          },
+          {
+            "id": "D",
+            "content": "lsdev"
+          }
+        ],
+        "explanation": "Lệnh 'lsusb' liệt kê cấu trúc cây và thông tin định danh của các thiết bị ngoại vi đang kết nối qua trình điều khiển bus USB. Kết luận Lý giải lsusb"
+      },
+      {
+        "id": "q19",
+        "text": "Trong cấu hình Crontab, giá trị nào tại cột thứ 5 xác định thời điểm thực thi công việc?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Giờ"
+          },
+          {
+            "id": "B",
+            "content": "Ngày trong tháng"
+          },
+          {
+            "id": "C",
+            "content": "Ngày trong tuần"
+          },
+          {
+            "id": "D",
+            "content": "Tháng"
+          }
+        ],
+        "explanation": "Cấu trúc một dòng crontab bao gồm 5 trường thời gian theo thứ tự: Phút, Giờ, Ngày trong tháng, Tháng và cuối cùng là Ngày trong tuần. Kết luận Lý giải Ngày trong tuần"
+      },
+      {
+        "id": "q20",
+        "text": "Biến môi trường 'PATH' trong Linux có chức năng chính là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu đường dẫn đến thư mục chứa các tệp cấu hình hệ thống."
+          },
+          {
+            "id": "B",
+            "content": "Xác định các thư mục mà Shell sẽ tìm kiếm tệp thực thi khi người dùng nhập lệnh."
+          },
+          {
+            "id": "C",
+            "content": "Chứa đường dẫn đến tệp tin nhân hệ điều hành."
+          },
+          {
+            "id": "D",
+            "content": "Lưu trữ lịch sử các lệnh đã gõ của người dùng."
+          }
+        ],
+        "explanation": "Khi một lệnh được gọi mà không có đường dẫn tuyệt đối, Shell sẽ quét lần lượt qua các thư mục được liệt kê trong biến PATH để tìm file thực thi tương ứng. Kết luận Lý giải Xác định các thư mục mà Shell sẽ tìm kiếm tệp thực thi khi người dùng nhập lệnh."
+      },
+      {
+        "id": "q21",
+        "text": "Đâu là sự khác biệt chính giữa lệnh 'apt upgrade' và 'apt dist-upgrade' trên các hệ thống dựa trên Debian/Ubuntu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "'dist-upgrade' nhanh hơn vì không kiểm tra lỗi."
+          },
+          {
+            "id": "B",
+            "content": "'dist-upgrade' có thể cài đặt thêm hoặc gỡ bỏ các gói để giải quyết sự phụ thuộc phức tạp, trong khi 'upgrade' thì không."
+          },
+          {
+            "id": "C",
+            "content": "'upgrade' sẽ nâng cấp cả nhân hệ điều hành còn 'dist-upgrade' thì không."
+          },
+          {
+            "id": "D",
+            "content": "Không có sự khác biệt, chúng là hai bí danh (aliases) của cùng một lệnh."
+          }
+        ],
+        "explanation": "Lệnh 'dist-upgrade' (hoặc 'full-upgrade') có cơ chế thông minh để xử lý sự thay đổi phụ thuộc giữa các phiên bản phần mềm, bao gồm cả việc gỡ bỏ gói cũ gây xung đột. Kết luận Lý giải 'dist-upgrade' có thể cài đặt thêm hoặc gỡ bỏ các gói để giải quyết sự phụ thuộc phức tạp, trong khi 'upgrade' thì không."
+      },
+      {
+        "id": "q22",
+        "text": "Tệp tin '/etc/shadow' trong Linux được sử dụng để lưu trữ thông tin gì quan trọng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Danh sách tất cả các nhóm người dùng trên hệ thống."
+          },
+          {
+            "id": "B",
+            "content": "Thông tin mật khẩu đã được mã hóa và các chính sách hết hạn mật khẩu."
+          },
+          {
+            "id": "C",
+            "content": "Cấu hình phân quyền truy cập sudo của người dùng."
+          },
+          {
+            "id": "D",
+            "content": "Lịch sử đăng nhập thành công và thất bại của hệ thống."
+          }
+        ],
+        "explanation": "Để bảo mật, mật khẩu thực tế không được lưu trong /etc/passwd (có quyền đọc rộng rãi) mà được lưu trong /etc/shadow chỉ dành cho root truy cập. Kết luận Lý giải Thông tin mật khẩu đã được mã hóa và các chính sách hết hạn mật khẩu."
+      },
+      {
+        "id": "q23",
+        "text": "Để xem 20 dòng cuối cùng của một tệp tin nhật ký đang liên tục cập nhật, bạn nên sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "head -n 20 file.log"
+          },
+          {
+            "id": "B",
+            "content": "tail -f -n 20 file.log"
+          },
+          {
+            "id": "C",
+            "content": "cat -n 20 file.log"
+          },
+          {
+            "id": "D",
+            "content": "more -20 file.log"
+          }
+        ],
+        "explanation": "Sự kết hợp giữa tùy chọn '-n 20' để giới hạn số dòng và '-f' để theo dõi dữ liệu mới thêm vào giúp quản trị viên giám sát tệp tin hiệu quả. Kết luận Lý giải tail -f -n 20 file.log"
+      },
+      {
+        "id": "q24",
+        "text": "Trong hệ thống tệp Linux, 'Inode' không lưu trữ loại thông tin nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tên của tệp tin."
+          },
+          {
+            "id": "B",
+            "content": "Kích thước của tệp tin."
+          },
+          {
+            "id": "C",
+            "content": "Thời gian truy cập và sửa đổi lần cuối."
+          },
+          {
+            "id": "D",
+            "content": "Vị trí vật lý của các khối dữ liệu trên đĩa."
+          }
+        ],
+        "explanation": "Inode chứa hầu hết các siêu dữ liệu (metadata) của tệp tin, nhưng tên tệp tin thực tế được lưu trữ trong các mục nhập của thư mục (directory entries). Kết luận Lý giải Tên của tệp tin."
+      },
+      {
+        "id": "q25",
+        "text": "Lệnh nào sau đây được sử dụng để kiểm tra các cổng mạng đang lắng nghe (listening) và các kết nối mạng hiện có trên hệ thống?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ifconfig -a"
+          },
+          {
+            "id": "B",
+            "content": "ss -tunlp"
+          },
+          {
+            "id": "C",
+            "content": "ping -c 4 localhost"
+          },
+          {
+            "id": "D",
+            "content": "traceroute 8.8.8.8"
+          }
+        ],
+        "explanation": "Lệnh 'ss' (hoặc 'netstat' cũ) với các tùy chọn phù hợp cho phép liệt kê chi tiết trạng thái của các socket mạng và các tiến trình đang sử dụng chúng. Kết luận Lý giải ss -tunlp"
+      }
+    ],
+    "logic_map": {
+      "q1": "A",
+      "q2": "D",
+      "q3": "B",
+      "q4": "A",
+      "q5": "B",
+      "q6": "C",
+      "q7": "A",
+      "q8": "C",
+      "q9": "A",
+      "q10": "C",
+      "q11": "B",
+      "q12": "C",
+      "q13": "B",
+      "q14": "B",
+      "q15": "C",
+      "q16": "B",
+      "q17": "B",
+      "q18": "A",
+      "q19": "C",
+      "q20": "B",
+      "q21": "B",
+      "q22": "B",
+      "q23": "B",
+      "q24": "A",
+      "q25": "B"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

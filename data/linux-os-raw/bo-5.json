@@ -1,0 +1,635 @@
+{
+  "quiz_set_01": {
+    "metadata": {
+      "title": "Bộ 1",
+      "topic": "Bộ 5 - Trắc nghiệm Hệ điều hành linux online có đáp án",
+      "set_tag": "Bộ 1",
+      "total_questions": 25,
+      "created_at": "2026-02-23T16:30:31.328Z"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Trong hệ điều hành Linux, thành phần nào đóng vai trò là 'lõi' điều khiển mọi hoạt động của hệ thống và quản lý tài nguyên phần cứng?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Shell"
+          },
+          {
+            "id": "B",
+            "content": "Kernel"
+          },
+          {
+            "id": "C",
+            "content": "Terminal"
+          },
+          {
+            "id": "D",
+            "content": "Desktop Environment"
+          }
+        ],
+        "explanation": "Theo kiến trúc hệ thống, Kernel là thành phần trung tâm thực hiện việc quản lý phần cứng và cung cấp dịch vụ cho các ứng dụng. Kết luận Lý giải: Kernel"
+      },
+      {
+        "id": "q2",
+        "text": "Tiến trình đầu tiên được khởi động bởi Kernel trong các hệ thống Linux hiện đại (như Ubuntu, CentOS 7+) thường có tên là gì và PID bằng bao nhiêu?",
+        "options": [
+          {
+            "id": "A",
+            "content": "bash với PID 0"
+          },
+          {
+            "id": "B",
+            "content": "systemd với PID 1"
+          },
+          {
+            "id": "C",
+            "content": "init với PID 0"
+          },
+          {
+            "id": "D",
+            "content": "kernel_task với PID 1"
+          }
+        ],
+        "explanation": "Trong các bản phân phối Linux hiện đại, systemd là tiến trình cha của mọi tiến trình khác và luôn sở hữu PID 1. Kết luận Lý giải: systemd với PID 1"
+      },
+      {
+        "id": "q3",
+        "text": "Lệnh nào được sử dụng để thay đổi quyền sở hữu (owner) của một tập tin hoặc thư mục trong Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "chmod"
+          },
+          {
+            "id": "B",
+            "content": "chown"
+          },
+          {
+            "id": "C",
+            "content": "chgrp"
+          },
+          {
+            "id": "D",
+            "content": "umask"
+          }
+        ],
+        "explanation": "Lệnh 'chown' (change owner) được thiết kế để thay đổi người sở hữu và nhóm sở hữu của các đối tượng trong hệ thống tập tin. Kết luận Lý giải: chown"
+      },
+      {
+        "id": "q4",
+        "text": "Khi sử dụng lệnh 'chmod 754 file.txt', quyền hạn cụ thể của nhóm sở hữu (group) đối với tập tin này là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Đọc và Thực thi"
+          },
+          {
+            "id": "B",
+            "content": "Đọc, Ghi và Thực thi"
+          },
+          {
+            "id": "C",
+            "content": "Chỉ Đọc"
+          },
+          {
+            "id": "D",
+            "content": "Ghi và Thực thi"
+          }
+        ],
+        "explanation": "Số 5 trong mã bát phân tương ứng với quyền Đọc (4) và Thực thi (1) dành cho nhóm sở hữu. Kết luận Lý giải: Đọc và Thực thi"
+      },
+      {
+        "id": "q5",
+        "text": "Ký hiệu nào được dùng để chuyển hướng đầu ra lỗi tiêu chuẩn (Standard Error) vào một tập tin trong dòng lệnh Linux?",
+        "options": [
+          {
+            "id": "A",
+            "content": "1>"
+          },
+          {
+            "id": "B",
+            "content": "2>"
+          },
+          {
+            "id": "C",
+            "content": ">>"
+          },
+          {
+            "id": "D",
+            "content": "<"
+          }
+        ],
+        "explanation": "Trong Linux, file descriptor số 2 đại diện cho Standard Error, do đó '2>' được dùng để chuyển hướng luồng này. Kết luận Lý giải: 2>"
+      },
+      {
+        "id": "q6",
+        "text": "Lệnh 'kill -9 [PID]' gửi tín hiệu (signal) nào đến tiến trình để buộc nó kết thúc ngay lập tức mà không thể bị bỏ qua?",
+        "options": [
+          {
+            "id": "A",
+            "content": "SIGTERM"
+          },
+          {
+            "id": "B",
+            "content": "SIGKILL"
+          },
+          {
+            "id": "C",
+            "content": "SIGSTOP"
+          },
+          {
+            "id": "D",
+            "content": "SIGINT"
+          }
+        ],
+        "explanation": "Tín hiệu SIGKILL (tương ứng với số 9) yêu cầu hệ điều hành chấm dứt tiến trình ngay lập tức mà không cho phép tiến trình đó dọn dẹp hay chặn tín hiệu. Kết luận Lý giải: SIGKILL"
+      },
+      {
+        "id": "q7",
+        "text": "Trong hệ thống tập tin Linux, 'Hard Link' (Liên kết cứng) có đặc điểm quan trọng nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Có thể trỏ đến một thư mục"
+          },
+          {
+            "id": "B",
+            "content": "Chia sẻ cùng một số Inode với tập tin gốc"
+          },
+          {
+            "id": "C",
+            "content": "Có thể tạo liên kết giữa các phân vùng đĩa khác nhau"
+          },
+          {
+            "id": "D",
+            "content": "Sẽ bị hỏng nếu tập tin gốc bị xóa"
+          }
+        ],
+        "explanation": "Hard link thực chất là một tên gọi khác trỏ đến cùng một chỉ mục dữ liệu (Inode) trên cùng một hệ thống tập tin. Kết luận Lý giải: Chia sẻ cùng một số Inode với tập tin gốc"
+      },
+      {
+        "id": "q8",
+        "text": "Tập tin nào lưu trữ thông tin về mật khẩu đã được mã hóa (hash) của người dùng trong Linux để đảm bảo an toàn?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "B",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "C",
+            "content": "/etc/group"
+          },
+          {
+            "id": "D",
+            "content": "/var/log/auth.log"
+          }
+        ],
+        "explanation": "Tập tin '/etc/shadow' được bảo mật nghiêm ngặt và chỉ chứa các bản băm mật khẩu cùng thông tin về thời hạn mật khẩu của người dùng. Kết luận Lý giải: /etc/shadow"
+      },
+      {
+        "id": "q9",
+        "text": "Để kiểm tra dung lượng còn trống của các phân vùng đĩa cứng trên hệ thống dưới dạng dễ đọc (GB, MB), bạn nên sử dụng lệnh nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "du -sh"
+          },
+          {
+            "id": "B",
+            "content": "df -h"
+          },
+          {
+            "id": "C",
+            "content": "free -m"
+          },
+          {
+            "id": "D",
+            "content": "ls -lh"
+          }
+        ],
+        "explanation": "Lệnh 'df' (disk free) với tham số '-h' (human-readable) hiển thị thông tin về không gian đĩa của các hệ thống tập tin đã gắn. Kết luận Lý giải: df -h"
+      },
+      {
+        "id": "q10",
+        "text": "Lệnh 'grep -i 'linux' file.txt' thực hiện chức năng gì khi tìm kiếm chuỗi văn bản?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Tìm kiếm các dòng không chứa từ 'linux'"
+          },
+          {
+            "id": "B",
+            "content": "Tìm kiếm từ 'linux' nhưng bỏ qua sự phân biệt chữ hoa và chữ thường"
+          },
+          {
+            "id": "C",
+            "content": "Đếm số lần xuất hiện của từ 'linux'"
+          },
+          {
+            "id": "D",
+            "content": "Chỉ tìm kiếm từ 'linux' viết thường chính xác"
+          }
+        ],
+        "explanation": "Tham số '-i' (ignore case) trong lệnh grep cho phép tìm kiếm mẫu mà không phân biệt định dạng chữ hoa hay chữ thường. Kết luận Lý giải: Tìm kiếm từ 'linux' nhưng bỏ qua sự phân biệt chữ hoa và chữ thường"
+      },
+      {
+        "id": "q11",
+        "text": "Để thiết lập quyền truy cập SSH không cần mật khẩu bằng Public Key, khóa công khai của máy khách phải được lưu vào tập tin nào trên máy chủ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "~/.ssh/id_rsa"
+          },
+          {
+            "id": "B",
+            "content": "~/.ssh/authorized_keys"
+          },
+          {
+            "id": "C",
+            "content": "/etc/ssh/sshd_config"
+          },
+          {
+            "id": "D",
+            "content": "~/.ssh/known_hosts"
+          }
+        ],
+        "explanation": "Máy chủ SSH kiểm tra tập tin 'authorized_keys' trong thư mục của người dùng để xác thực các khóa công khai được phép truy cập. Kết luận Lý giải: ~/.ssh/authorized_keys"
+      },
+      {
+        "id": "q12",
+        "text": "Một tác vụ định kỳ trong Crontab có định dạng '0 5 * * 1 command' sẽ thực thi vào thời điểm nào?",
+        "options": [
+          {
+            "id": "A",
+            "content": "giờ sáng hàng ngày"
+          },
+          {
+            "id": "B",
+            "content": "giờ sáng mỗi thứ Hai hàng tuần"
+          },
+          {
+            "id": "C",
+            "content": "giờ sáng ngày 5 hàng tháng"
+          },
+          {
+            "id": "D",
+            "content": "giờ chiều mỗi thứ Hai hàng tuần"
+          }
+        ],
+        "explanation": "Theo cú pháp crontab, các trường lần lượt là phút (0), giờ (5), ngày, tháng, và thứ (1 là thứ Hai). Kết luận Lý giải: 5 giờ sáng mỗi thứ Hai hàng tuần"
+      },
+      {
+        "id": "q13",
+        "text": "Tham số nào của lệnh 'tar' được sử dụng để nén tập tin bằng thuật toán gzip trong quá trình tạo kho lưu trữ?",
+        "options": [
+          {
+            "id": "A",
+            "content": "-j"
+          },
+          {
+            "id": "B",
+            "content": "-z"
+          },
+          {
+            "id": "C",
+            "content": "-x"
+          },
+          {
+            "id": "D",
+            "content": "-v"
+          }
+        ],
+        "explanation": "Trong lệnh tar, tùy chọn '-z' kích hoạt bộ lọc gzip để nén hoặc giải nén dữ liệu. Kết luận Lý giải: -z"
+      },
+      {
+        "id": "q14",
+        "text": "Biến môi trường nào trong Linux chứa danh sách các đường dẫn thư mục mà Shell sẽ tìm kiếm các tệp thực thi khi người dùng nhập lệnh?",
+        "options": [
+          {
+            "id": "A",
+            "content": "HOME"
+          },
+          {
+            "id": "B",
+            "content": "PATH"
+          },
+          {
+            "id": "C",
+            "content": "PWD"
+          },
+          {
+            "id": "D",
+            "content": "SHELL"
+          }
+        ],
+        "explanation": "Biến PATH định nghĩa các thư mục tìm kiếm cho các lệnh thực thi, giúp người dùng không cần nhập đường dẫn đầy đủ của chương trình. Kết luận Lý giải: PATH"
+      },
+      {
+        "id": "q15",
+        "text": "Nếu giá trị umask hiện tại là 0022, quyền mặc định của một tập tin mới được tạo (không phải thư mục) sẽ là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "755"
+          },
+          {
+            "id": "B",
+            "content": "644"
+          },
+          {
+            "id": "C",
+            "content": "666"
+          },
+          {
+            "id": "D",
+            "content": "777"
+          }
+        ],
+        "explanation": "Quyền mặc định tối đa của tập tin là 666, sau khi trừ đi umask 022 sẽ còn lại quyền 644 (rw-r--r--). Kết luận Lý giải: 644"
+      },
+      {
+        "id": "q16",
+        "text": "Mục đích chính của phân vùng 'Swap' trong hệ điều hành Linux là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu trữ dữ liệu phục hồi hệ thống"
+          },
+          {
+            "id": "B",
+            "content": "Làm bộ nhớ đệm mở rộng khi bộ nhớ RAM vật lý bị đầy"
+          },
+          {
+            "id": "C",
+            "content": "Tăng tốc độ truy xuất dữ liệu từ ổ cứng"
+          },
+          {
+            "id": "D",
+            "content": "Lưu trữ các tập tin cấu hình của Kernel"
+          }
+        ],
+        "explanation": "Swap hoạt động như một bộ nhớ ảo trên đĩa cứng để hỗ trợ RAM khi hệ thống cần thêm không gian cho các tiến trình. Kết luận Lý giải: Làm bộ nhớ đệm mở rộng khi bộ nhớ RAM vật lý bị đầy"
+      },
+      {
+        "id": "q17",
+        "text": "Lệnh nào cho biết trạng thái hiện tại của các tiến trình đang chạy và tiêu tốn nhiều tài nguyên CPU/RAM nhất theo thời gian thực?",
+        "options": [
+          {
+            "id": "A",
+            "content": "ps -aux"
+          },
+          {
+            "id": "B",
+            "content": "top"
+          },
+          {
+            "id": "C",
+            "content": "uptime"
+          },
+          {
+            "id": "D",
+            "content": "vmstat"
+          }
+        ],
+        "explanation": "Lệnh 'top' cung cấp một cái nhìn động và liên tục về các tiến trình hệ thống đang hoạt động và việc sử dụng tài nguyên của chúng. Kết luận Lý giải: top"
+      },
+      {
+        "id": "q18",
+        "text": "Tập tin cấu hình nào kiểm soát việc tự động gắn (mount) các phân vùng ổ đĩa khi hệ thống Linux khởi động?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/mtab"
+          },
+          {
+            "id": "B",
+            "content": "/etc/fstab"
+          },
+          {
+            "id": "C",
+            "content": "/etc/exports"
+          },
+          {
+            "id": "D",
+            "content": "/boot/grub/grub.cfg"
+          }
+        ],
+        "explanation": "Tập tin '/etc/fstab' (file system table) chứa danh sách các thiết bị lưu trữ và điểm gắn kết tương ứng để hệ thống tự động nhận diện lúc boot. Kết luận Lý giải: /etc/fstab"
+      },
+      {
+        "id": "q19",
+        "text": "Sự khác biệt ch��nh giữa lệnh 'systemctl start service' và 'systemctl enable service' là gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "'start' để khởi động dịch vụ ngay lập tức, 'enable' để dịch vụ tự chạy khi khởi động máy"
+          },
+          {
+            "id": "B",
+            "content": "'enable' để khởi động dịch vụ ngay lập tức, 'start' để dịch vụ tự chạy khi khởi động máy"
+          },
+          {
+            "id": "C",
+            "content": "'start' chỉ dùng cho người dùng root, 'enable' dùng cho mọi người dùng"
+          },
+          {
+            "id": "D",
+            "content": "Cả hai lệnh đều có chức năng giống hệt nhau"
+          }
+        ],
+        "explanation": "'start' kích hoạt dịch vụ trong phiên làm việc hiện tại, còn 'enable' tạo các liên kết tượng trưng để dịch vụ được nạp cùng hệ thống. Kết luận Lý giải: 'start' để khởi động dịch vụ ngay lập tức, 'enable' để dịch vụ tự chạy khi khởi động máy"
+      },
+      {
+        "id": "q20",
+        "text": "Trong lập trình Bash script, biến đặc biệt '$?' lưu trữ giá trị gì sau khi một lệnh được thực thi?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Mã định danh (PID) của lệnh vừa chạy"
+          },
+          {
+            "id": "B",
+            "content": "Mã trạng thái thoát (exit status) của lệnh vừa thực hiện"
+          },
+          {
+            "id": "C",
+            "content": "Tên của lệnh vừa thực thi"
+          },
+          {
+            "id": "D",
+            "content": "Thời gian lệnh đó chạy hết bao lâu"
+          }
+        ],
+        "explanation": "Biến '$?' trả về kết quả thực hiện lệnh gần nhất, với giá trị 0 thường nghĩa là thành công và khác 0 là có lỗi. Kết luận Lý giải: Mã trạng thái thoát (exit status) của lệnh vừa thực hiện"
+      },
+      {
+        "id": "q21",
+        "text": "Khái niệm 'Inode' trong hệ thống tập tin Linux không lưu trữ thông tin nào sau đây?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Quyền truy cập và chủ sở hữu"
+          },
+          {
+            "id": "B",
+            "content": "Tên của tập tin"
+          },
+          {
+            "id": "C",
+            "content": "Kích thước tập tin"
+          },
+          {
+            "id": "D",
+            "content": "Thời gian thay đổi dữ liệu cuối cùng"
+          }
+        ],
+        "explanation": "Inode lưu trữ các thuộc tính và vị trí dữ liệu của tập tin, nhưng tên tập tin được lưu trữ trong cấu trúc thư mục (directory entry) thay vì trong Inode. Kết luận Lý giải: Tên của tập tin"
+      },
+      {
+        "id": "q22",
+        "text": "Thiết bị đặc biệt '/dev/null' trong Linux thường được sử dụng với mục đích gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Lưu trữ tạm thời các tập tin rác"
+          },
+          {
+            "id": "B",
+            "content": "Làm nơi tiêu hủy mọi dữ liệu được ghi vào đó"
+          },
+          {
+            "id": "C",
+            "content": "Tạo ra một chuỗi các ký tự trống không giới hạn"
+          },
+          {
+            "id": "D",
+            "content": "Lưu trữ log của hệ thống khi ổ đĩa bị đầy"
+          }
+        ],
+        "explanation": "Mọi dữ liệu chuyển hướng vào '/dev/null' sẽ bị hệ điều hành loại bỏ hoàn toàn và ngay lập tức. Kết luận Lý giải: Làm nơi tiêu hủy mọi dữ liệu được ghi vào đó"
+      },
+      {
+        "id": "q23",
+        "text": "Lệnh nào được sử dụng để tìm kiếm và thay thế một chuỗi văn bản trong tập tin một cách tự động mà không cần mở trình soạn thảo?",
+        "options": [
+          {
+            "id": "A",
+            "content": "grep"
+          },
+          {
+            "id": "B",
+            "content": "sed"
+          },
+          {
+            "id": "C",
+            "content": "awk"
+          },
+          {
+            "id": "D",
+            "content": "cat"
+          }
+        ],
+        "explanation": "Lệnh 'sed' (stream editor) thường được dùng để thực hiện các phép biến đổi văn bản, đặc biệt là tìm kiếm và thay thế theo mẫu. Kết luận Lý giải: sed"
+      },
+      {
+        "id": "q24",
+        "text": "Giá trị 'Nice' của một tiến trình trong Linux ảnh hưởng đến điều gì?",
+        "options": [
+          {
+            "id": "A",
+            "content": "Độ ưu tiên chiếm dụng CPU của tiến trình đó"
+          },
+          {
+            "id": "B",
+            "content": "Dung lượng RAM mà tiến trình được phép sử dụng"
+          },
+          {
+            "id": "C",
+            "content": "Thời gian tồn tại tối đa của tiến trình"
+          },
+          {
+            "id": "D",
+            "content": "Quyền truy cập mạng của tiến trình"
+          }
+        ],
+        "explanation": "Chỉ số Nice (từ -20 đến 19) giúp bộ điều phối của Kernel xác định mức độ ưu tiên xử lý của tiến trình so với các tiến trình khác. Kết luận Lý giải: Độ ưu tiên chiếm dụng CPU của tiến trình đó"
+      },
+      {
+        "id": "q25",
+        "text": "Tập tin nào chứa danh sách thông tin cơ bản về người dùng như tên đăng nhập, thư mục nhà (home) và shell mặc định?",
+        "options": [
+          {
+            "id": "A",
+            "content": "/etc/shadow"
+          },
+          {
+            "id": "B",
+            "content": "/etc/passwd"
+          },
+          {
+            "id": "C",
+            "content": "/etc/group"
+          },
+          {
+            "id": "D",
+            "content": "/etc/shells"
+          }
+        ],
+        "explanation": "Tập tin '/etc/passwd' là cơ sở dữ liệu văn bản chứa các thông tin cấu hình cơ bản cho mọi tài khoản người dùng trên hệ thống. Kết luận Lý giải: /etc/passwd"
+      }
+    ],
+    "logic_map": {
+      "q1": "B",
+      "q2": "B",
+      "q3": "B",
+      "q4": "A",
+      "q5": "B",
+      "q6": "B",
+      "q7": "B",
+      "q8": "B",
+      "q9": "B",
+      "q10": "B",
+      "q11": "B",
+      "q12": "B",
+      "q13": "B",
+      "q14": "B",
+      "q15": "B",
+      "q16": "B",
+      "q17": "B",
+      "q18": "B",
+      "q19": "A",
+      "q20": "B",
+      "q21": "B",
+      "q22": "B",
+      "q23": "B",
+      "q24": "A",
+      "q25": "B"
+    },
+    "scoring_rules": [
+      {
+        "min": 0,
+        "max": 13,
+        "title": "Cần cố gắng nhiều hơn",
+        "message": "Bạn cần ôn tập kỹ hơn về kiến thức nền tảng."
+      },
+      {
+        "min": 14,
+        "max": 20,
+        "title": "Khá tốt!",
+        "message": "Bạn đã nắm vững phần lớn kiến thức, hãy tiếp tục phát huy."
+      },
+      {
+        "min": 21,
+        "max": 25,
+        "title": "Xuất sắc!",
+        "message": "Chúc mừng! Bạn đã hoàn thành bài thi một cách hoàn hảo."
+      }
+    ]
+  }
+}

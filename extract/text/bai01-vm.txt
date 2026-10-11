@@ -1,0 +1,111 @@
+thanh 
+ Normal 
+ thanh 
+ 3 
+ 212 
+ 2017-02-06T04:11:00Z 
+ 2017-02-06T04:13:00Z 
+ 2 
+ 238 
+ 1360 
+ Microsoft 
+ en-US 
+ 11 
+ 3 
+ 1595 
+ 12.00 
+
+ 12.0000 
+ Microsoft 
+ 0 
+ 0 
+ 0 
+ 0 
+ 0 
+
+ false 
+ false 
+ false 
+ 
+ EN-US 
+
+ BÀI
+1. CẤU HÌNH MÁY THỰC HÀNH 
+
+ I. Ubuntu Server 
+
+ ·        
+ Ubuntu Server ( https://ubuntu.com/server )
+là hệ điều hành máy chủ nguồn mở được sử dụng rộng rãi nhất. 
+
+ o   
+ http://thecloudmarket.com/stats 
+
+ o   
+ https://w3techs.com/technologies/details/os-linux/all/all 
+
+ II. Cài
+đặt máy ảo Ubuntu Server trong VirtualBox 
+
+ ·        
+ VirtualBox ( https://www.virtualbox.org/ )
+là Type-2 hypervisor nguồn mở, được sử dụng rộng rãi. Phân biệt Type-1 và
+Type-2 hypervisor tại http://www.golinuxhub.com/2014/07/comparison-type-1-vs-type-2-hypervisor.html 
+
+ ·        
+ Download và cài đặt VirtualBox 
+
+ ·        
+ Download và cài đặt VirtualBox
+Extension 
+
+ ·        
+ Tạo máy ảo 
+
+ ·        
+ Cấu hình máy ảo 
+
+ ·        
+ Quản lý ổ đĩa ảo 
+
+ ·        
+ Xuất, nhập và di chuyển máy ảo 
+
+ ·        
+ Cài đặt Guest Additions cho máy ảo 
+
+ ·        
+ Cấu hình thiết bị cho máy ảo 
+
+ ·        
+ Thay đổi hiển thị máy ảo 
+
+ ·        
+ Tạo và sử dụng bản khôi phục (snapshot)
+máy ảo 
+
+ ·        
+ Thiết lập mạng (chế độ NAT) cho máy ảo 
+
+ III. Thực hành 
+
+ Tự tạo ra máy ảo sau đó thực hiện các thao tác sau: 
+
+ + Bật
+máy ảo, chuyển đổi FOCUS giữa máy ảo và máy thật 
+
+ + Vào
+BIOS của máy ảo, thiết lập cố định thứ tự khởi động của thiết bị là: HDD,
+CD/DVD, Network sau đó khởi động nóng lại máy ảo bằng bàn phím 
+
+ + Chọn
+boot menu sau đó khởi động từ CD 
+
+ + Tắt
+máy ảo sau đó tạo một Full Clone từ máy ảo đang mở 
+
+ + Sử
+dụng “Snapshot Manager” để tạo ra 3 lớp snapshot của máy ảo 
+
+ + Xóa tất cả các Clone
+và Snapshot mới tạo trên ổ cứng

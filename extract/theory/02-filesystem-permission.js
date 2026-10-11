@@ -1,0 +1,115 @@
+const WEEKS = require('../weeks');
+module.exports = [
+  {
+    text: 'Khi chạy lệnh ls -li, số xuất hiện ở cột đầu tiên là gì?',
+    options: ['Số inode', 'Mã người dùng (UID)', 'Số tiến trình (PID)', 'Kích thước tệp'],
+    correctIndex: 0,
+    explanation: 'Tùy chọn -i của ls hiển thị số inode của tệp/thư mục ở cột đầu tiên.',
+  },
+  {
+    text: 'Phát biểu nào đúng về hard link?',
+    options: ['Chỉ hoạt động khi tệp gốc còn tồn tại', 'Cùng tham chiếu đến inode của tệp gốc', 'Có thể trỏ sang một hệ thống tệp khác', 'Luôn có inode khác tệp gốc'],
+    correctIndex: 1,
+    explanation: 'Hard link là một tên khác trỏ tới cùng inode với tệp gốc, nên cùng chia sẻ dữ liệu và thuộc tính.',
+  },
+  {
+    text: 'Trong quyền truy cập -rwxr-xr--, nhóm sở hữu tệp có quyền gì?',
+    options: ['Đọc, ghi và thực thi', 'Đọc và thực thi', 'Ghi và thực thi', 'Chỉ đọc'],
+    correctIndex: 1,
+    explanation: 'Phần thứ hai "r-x" ứng với nhóm sở hữu: có quyền đọc và thực thi, không có quyền ghi.',
+  },
+  {
+    text: 'Symbolic link (liên kết mềm) khác hard link ở điểm nào?',
+    options: [
+      'Symbolic link là một tệp riêng chứa đường dẫn trỏ tới tệp đích, có inode riêng',
+      'Symbolic link luôn cùng inode với tệp gốc',
+      'Symbolic link không thể bị xóa',
+      'Symbolic link chỉ dùng được cho thư mục',
+    ],
+    correctIndex: 0,
+    explanation: 'Symlink là một tệp đặc biệt chứa đường dẫn, có inode riêng biệt, và sẽ "gãy" nếu tệp đích bị xóa hoặc di chuyển.',
+  },
+  {
+    text: 'Điều gì xảy ra với hard link khi tệp gốc bị xóa?',
+    options: ['Hard link cũng mất dữ liệu theo', 'Hard link vẫn truy cập được dữ liệu bình thường vì cùng trỏ tới inode', 'Hệ thống báo lỗi ngay lập tức', 'Hard link tự chuyển thành symlink'],
+    correctIndex: 1,
+    explanation: 'Dữ liệu chỉ thực sự bị xóa khi không còn hard link nào trỏ tới inode đó (link count về 0).',
+  },
+  {
+    text: 'Giá trị octal 750 khi gán quyền cho tệp tương ứng với chuỗi quyền nào?',
+    options: ['rwxr-x---', 'rwxrwx---', 'rw-r-x---', 'rwxr-xr-x'],
+    correctIndex: 0,
+    explanation: '7=rwx (chủ sở hữu), 5=r-x (nhóm), 0=--- (người khác) → rwxr-x---.',
+  },
+  {
+    text: 'SetUID (SUID) trên một tệp thực thi có tác dụng gì?',
+    options: [
+      'Chương trình chạy với quyền của người dùng thực thi nó',
+      'Chương trình chạy với quyền của chủ sở hữu tệp bất kể ai thực thi',
+      'Ngăn không cho ai thực thi tệp',
+      'Tự động nén tệp khi chạy',
+    ],
+    correctIndex: 1,
+    explanation: 'SUID khiến chương trình thực thi với quyền của chủ sở hữu tệp (thường dùng để cấp quyền tạm thời, vd: passwd).',
+  },
+  {
+    text: 'Sticky bit trên một thư mục dùng chung có tác dụng gì?',
+    options: [
+      'Chỉ chủ sở hữu tệp (hoặc root) mới được xóa/đổi tên tệp trong thư mục đó',
+      'Khóa thư mục không cho ghi thêm tệp',
+      'Tự động nén tất cả tệp trong thư mục',
+      'Cho phép mọi người xóa tệp của nhau',
+    ],
+    correctIndex: 0,
+    explanation: 'Sticky bit (vd: thư mục /tmp) ngăn người dùng xóa/đổi tên tệp của người khác dù họ có quyền ghi vào thư mục.',
+  },
+  {
+    text: 'Umask mặc định 022 ảnh hưởng thế nào tới tệp mới tạo?',
+    options: [
+      'Tệp mới có quyền mặc định 666 bị trừ đi 022, còn 644',
+      'Tệp mới luôn có quyền 777',
+      'Umask không ảnh hưởng tới tệp, chỉ ảnh hưởng thư mục',
+      'Tệp mới sẽ không có quyền đọc cho ai',
+    ],
+    correctIndex: 0,
+    explanation: 'Umask trừ đi từ quyền mặc định (666 cho tệp, 777 cho thư mục): 666 - 022 = 644.',
+  },
+  {
+    text: 'Regular expression ^# trong grep dùng để khớp điều gì?',
+    options: ['Dòng kết thúc bằng #', 'Dòng bắt đầu bằng ký tự #', 'Dòng chứa ký tự # ở bất kỳ đâu', 'Dòng không chứa #'],
+    correctIndex: 1,
+    explanation: 'Ký hiệu ^ trong regex đại diện cho vị trí đầu dòng, nên ^# khớp các dòng bắt đầu bằng #.',
+    week: WEEKS.W2_TH2,
+  },
+  {
+    text: 'Trong redirection, ký hiệu nào dùng để nối thêm (append) đầu ra vào cuối tệp thay vì ghi đè?',
+    options: ['>', '>>', '<', '|'],
+    correctIndex: 1,
+    explanation: '>> nối thêm dữ liệu vào cuối tệp, giữ nguyên nội dung cũ; > sẽ ghi đè toàn bộ tệp.',
+    week: WEEKS.W2_TH2,
+  },
+  {
+    text: 'Ký hiệu 2>&1 trong shell có ý nghĩa gì?',
+    options: [
+      'Chuyển hướng stderr (lỗi) vào cùng nơi với stdout',
+      'Chuyển hướng stdout vào tệp log2',
+      'Chạy lệnh 2 lần',
+      'Tắt toàn bộ output',
+    ],
+    correctIndex: 0,
+    explanation: '2>&1 gộp luồng lỗi chuẩn (file descriptor 2) vào cùng đích với luồng ra chuẩn (file descriptor 1).',
+    week: WEEKS.W2_TH2,
+  },
+  {
+    text: 'Pipe (|) trong shell dùng để làm gì?',
+    options: [
+      'Lưu đầu ra vào tệp',
+      'Lấy đầu ra của lệnh trước làm đầu vào cho lệnh sau',
+      'Chạy hai lệnh song song độc lập',
+      'So sánh hai tệp',
+    ],
+    correctIndex: 1,
+    explanation: 'Pipe truyền luồng dữ liệu (stdout) của lệnh bên trái thành đầu vào chuẩn (stdin) cho lệnh bên phải.',
+    week: WEEKS.W2_TH2,
+  },
+];

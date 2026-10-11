@@ -1,0 +1,287 @@
+thanh 
+ Normal 
+ thanh 
+ 2 
+ 106 
+ 2017-02-15T03:22:00Z 
+ 2017-02-15T03:22:00Z 
+ 5 
+ 863 
+ 4924 
+ Hudevelop 
+ 41 
+ 11 
+ 5776 
+ 12.00 
+
+ false 
+ false 
+ false 
+ 
+ EN-US 
+ X-NONE 
+ X-NONE 
+
+ Bài 3. Quản lý gói
+
+ Ubuntu cung cấp hệ thống quản lý gói toàn diện cho
+cài đặt, nâng cấp, cấu hình, và gỡ bỏ các gói phần mềm. Ngoài khả năng truy cập
+đến các phần mềm, hệ thống quản lý gói còn có thể phân giải phụ thuộc và kiểm
+tra cập nhật tự động. 
+
+ Các hệ thống quản lý gói cho Ubuntu được kế thừa từ
+các hệ thống cho Debian GNU/Linux. Các tệp gói Debian thường có tên mở rộng là
+‘.deb’, có dạng nhị phân, do vậy quá trình cài đặt diễn ra nhanh chóng. 
+
+ Nhiều gói phần mềm phức tạp sử dụng các thư viện
+hoặc gói phần mềm khác, gọi là các phụ thuộc. Hệ thống quản lý gói có khả năng
+tự động phân giải các phụ thuộc. 
+
+ Nhiều công cụ quản lý gói có cho Ubuntu, từ công cụ
+cửa sổ dòng lệnh đến giao diện đò họa. 
+
+ ·         
+ dpkg 
+
+ ·         
+ apt 
+
+ ·         
+ aptitude 
+
+ ·         
+ Cập nhật tự động 
+
+ ·         
+ Cấu hình 
+
+ dpkg
+
+ dpkg là công cụ quản ly gói cho các hệ thống dựa
+trên Debian. Nó có thể cài đặt, gỡ bỏ, dịch  
+ gói, nhưng không thể tự động download và cài đặt các gói hoặc các phục
+thuộc. Sử dụng dpkg để cài đặt các gói với bộ cài đặt có ở trên máy cục bộ. 
+
+ Để xem danh sách các gói phần mềm đã được cài đặt,
+từ Terminla, chạy lệnh: 
+
+     dpkg -l 
+
+ Có thể tìm trong danh sách xem một gói nào đó đã
+được cài đặt hay chưa bằng cách nối đầu ra cho công cụ tìm kiếm, ví dụ: 
+
+     dpkg -l
+| grep apache2 
+
+ Để xem danh sách các tệp được cài đặt bởi một gói,
+ví dụ ufw, chạy lệnh: 
+
+     dpkg -L
+ufw 
+
+ Để biết gói nào đã cài đặt một tệp, ví dụ /etc/host.conf,
+chạy lệnh: 
+
+     dpkg -S
+/etc/host.conf 
+
+ Để cài đặt gói mới từ bộ cài đặt, ví dụ   zip_3.0-4_i386.deb, chạy lệnh: 
+
+     sudo
+dpkg -i zip_3.0-4_i386.deb 
+
+ Để gỡ bỏ một gói, ví dụ zip, chạy lệnh: 
+
+     sudo
+dpkg -r zip 
+
+ Tuy nhiên, không nên sử dụng dpkg để gỡ bỏ các gói
+vì các phụ thuộc không được gỡ theo có thể dẫn đến dư thừa. 
+
+ apt
+
+ apt là công cụ quản lý gói mạnh mẽ với giao diện dòng
+lệnh. Nó được phát triển từ dự Advanced Packaging Tool (APT) của Ubuntu. 
+
+ Là công cụ dòng lệnh đơn giản, apt có nhiều điểm mạnh
+hơn so với những công cụ quản lý gói khác cho Ubuntu. 
+
+ Một số ví dụ sử dụng   apt: 
+
+ Để cài đặt một gói, ví dụ nmap, chạy lệnh: 
+
+     sudo apt
+install nmap 
+
+ Để gỡ bỏ một gói, ví dụ nmap, chạy lệnh: 
+
+     sudo apt
+remove nmap 
+
+ Có thể cài đặt hay gỡ bỏ nhiều gói bằng cách xác định
+các gói bằng danh sách phân cách nhau bởi dấu trắng, ví dụ 
+
+   sudo apt install
+nmap ssh apache2 
+
+ Ngoài ra, có thể sử dụng tùy chọn –purge   với lệnh apt remove để xóa cả các tệp cấu hình. 
+
+ Chỉ mục gói của APT là cơ sở dữ liệu về các gói có
+trên repositories, được lưu trong tệp   /etc/apt/sources.list và thư mục   /etc/apt/sources.list.d. 
+
+ Để cập nhật chỉ mục cục bộ với thay đổi trên
+repositories, chạy lệnh: 
+
+     sudo apt
+update 
+
+ Để nâng cấp hệ thống, cập nhật chỉ mục như trên rồi
+chạy lệnh: 
+
+     sudo apt
+upgrade 
+
+ Các lệnh apt được ghi nhật ký tại tệp
+/var/log/dpkg.log. 
+
+ aptitude
+
+ Aptitude là front end đến hệ thống APT. Chạy
+aptitude từ dòng lệnh và không có tùy chọn sẽ nhìn thấy thực đơn dạng text. 
+
+ sudo aptitude 
+
+ Khi aptitude đã chạy, hẹ thống thực đơn được hiển
+thị, chia thành các mục như New Packages, Not Installed Packages, Installed
+Packages.   Chọn mục, chọn gói trong mục rồi
+chọn chức năng (cài đặt, gỡ bỏ, nâng cấp, …) để thực hiện. 
+
+   Cũng có thể
+sử dụng aptitude dưới dạng dòng lệnh tương tự như sử dụng apt. Ví dụ 
+
+ sudo aptitude install
+nmap 
+
+ sudo aptitude remove
+nmap 
+
+ Cập nhật tự động
+
+ Có thể sử dụng gói unattended-upgrades để cập nhật tự động. Trước hết, cài đặt gói này
+bằng chạy lệnh sau: 
+
+ sudo apt install
+unattended-upgrades 
+
+ Để cấu hình unattended-upgrades, sửa đổi tệp
+/etc/apt/apt.conf.d/50unattended-upgrades như ví dụ sau: 
+
+ Unattended-Upgrade::Allowed-Origins { 
+
+ "Ubuntu xenial-security"; 
+
+ //      
+ "Ubuntu xenial-updates"; 
+
+ }; 
+
+ Chỉ định các gói không được cập nhật tự động: 
+
+ Unattended-Upgrade::Package-Blacklist { 
+
+ //      
+ "vim"; 
+
+ //      
+ "libc6"; 
+
+ //      
+ "libc6-dev"; 
+
+ //      
+ "libc6-i686"; 
+
+ }; 
+
+ // là chú thích, văn bản sau // không có giá trị 
+
+ Để cho phép cập nhật tự động, sửa đổi tệp /etc/apt/apt.conf.d/10periodic
+   và đăth các tùy chọn cho apt như ví dụ
+sau: 
+
+ APT::Periodic::Update-Package-Lists
+"1"; 
+
+ APT::Periodic::Download-Upgradeable-Packages
+"1"; 
+
+ APT::Periodic::AutocleanInterval
+"7"; 
+
+ APT::Periodic::Unattended-Upgrade
+"1"; 
+
+ Cấu hịnh trên cập nhật danh sách gói và cài đặt gói
+được nâng cấp hàng ngày. Bản tải về được xóa sau   một tuần. 
+
+ Các cập nhật tự động được ghi nhật ký vào tệp
+/var/log/unattended-upgrades. 
+
+ Cấu hình Unattended-Upgrade::Mail trong
+/etc/apt/apt.conf.d/50unattended-upgrades để   unattended-upgrades gửi email đến quản trị viên
+khi nó thực hiện cập nhật tự động. 
+
+ Một gói khác cũng hữu ích cho cập nhật tự động là apticron.
+apticron sẽ gửi email thông báo cho quản trị viên biết các gói có bản cập nhật,
+cũng như những thay đổi trong mỗi gói. 
+
+ Để cài đặt apticron, chạy lệnh 
+
+ sudo apt install
+apticron 
+
+ Tiếp đó, sử dụng tệp cấu hình /etc/apticron/apticron.conf,
+thiết lập địa chỉ email và các tùy chọn khác: 
+
+ EMAIL="root@example.com" 
+
+ Cấu hình
+
+ Cấu hình của các repositories của Advanced
+Packaging Tool (APT) được lưu trong tệp /etc/apt/sources.list và thư mục
+/etc/apt/sources.list.d. Có thể thêm hoặc bớt các tham chiếu đến các
+repositories từ tệp này. 
+
+ Ví dụ nội dung cấu hình như sau. 
+
+ # no more prompting for CD-ROM please 
+
+ # deb cdrom:[Ubuntu 16.04 _Xenial Xerus_ - Release
+i386 (20111013.1)]/ xenial main restricted 
+
+ deb http://archive.ubuntu.com/ubuntu xenial
+universe multiverse 
+
+ deb-src http://archive.ubuntu.com/ubuntu xenial
+universe multiverse 
+
+ deb http://us.archive.ubuntu.com/ubuntu/ xenial
+universe 
+
+ deb-src http://us.archive.ubuntu.com/ubuntu/
+xenial universe 
+
+ deb http://us.archive.ubuntu.com/ubuntu/
+xenial-updates universe 
+
+ deb-src http://us.archive.ubuntu.com/ubuntu/
+xenial-updates universe 
+
+ deb http://us.archive.ubuntu.com/ubuntu/ xenial
+multiverse 
+
+ deb-src http://us.archive.ubuntu.com/ubuntu/
+xenial multiverse 
+
+ deb http://us.archive.ubuntu.com/ubuntu/
+xenial-updates multiverse

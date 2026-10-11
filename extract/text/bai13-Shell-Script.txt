@@ -1,0 +1,130 @@
+thanh 
+ Normal 
+ thanh 
+ 2 
+ 2 
+ 2017-02-16T04:54:00Z 
+ 2017-02-16T04:54:00Z 
+ 2 
+ 368 
+ 2102 
+ Hudevelop 
+ 17 
+ 4 
+ 2466 
+ 12.00 
+
+ false 
+
+ Normal 
+ 0 pt 
+ 0 pt 
+ 0 
+ 0 
+
+ false 
+ false 
+ false 
+ 
+ EN-US 
+ X-NONE 
+ X-NONE 
+ 0 pt 
+ 0 pt 
+
+ MicrosoftInternetExplorer4 
+
+ Bài
+13. Lập trình shell 
+
+ Bài giảng 
+
+ http://www.tldp.org/LDP/Bash-Beginners-Guide/html/index.html 
+
+ http://www.tldp.org/LDP/abs/html/index.html 
+
+ Bài
+1: echo 
+
+ Tạo file lab01.sh có
+thể chạy được và khi chạy hiển thị dòng chữ “Hello world!”. Nghĩa là khi chạy 
+
+ sh lab01.sh 
+
+ Kết quả ra màn hình là 
+
+ Hello world! 
+
+ Bài
+2: Tham số và IF 
+
+ Tạo file lab02.sh có
+ba tham số dạng A B o trong đó hai tham số đầu tiên, A và B là các toán
+hạng, tham số thứ ba, o, là toán tử hai ngôi (+ - * / % **). In ra màn hình khi
+chạy file này sẽ có dạng A o B = S với S là kết quả của phép toán o đối với hai
+toán hạng A và B. Lưu ý có kiểm tra phép toán chia và số chia = 0. 
+
+ Ví dụ chạy 
+
+ sh lab02.sh 20 30 + 
+
+ Kết quả ra màn hình sẽ là 
+
+ 20 + 30   = 50 
+
+ Bài
+3: test 
+
+ Tạo file lab03.sh có
+2 tham số, tham số đầu là đường dẫn đến 1 file, tham số thứ hai là dòng cần hiển
+thị trên màn hình. Kiểm tra sự tồn tại của file, số dòng của file có >= dòng
+cần hiển thị không? Nếu đúng hiện ra dòng cần hiển thị. 
+
+ Bài
+4: FOR 
+
+ Tạo file lab04.sh có
+chức năng sau: Nhập một số nguyên trong khoảng 1000 đến 50000. Kiểm tra tính
+đúng đắn của dữ liệu nhập, nếu đúng in ra kết quả số nhập vào là số nguyên tố
+hay hợp số. 
+
+ Bài
+5: WHILE 
+
+ Tạo file lab05.sh có
+chức năng sau: Nhập một số nguyên dương trong khoảng 1000 đến 5000. Kiểm tra
+tính đúng dắn của dữ liệu nhập, nếu đúng in ra số Fibonacci lớn nhất nhưng nhỏ
+hơn số mới nhập. 
+
+ Bài
+6: Xử lý xâu, ký tự 
+
+ Tạo file lab06.sh có
+chức năng sau: Nhập một xâu ký tự từ bàn phím, đếm và in ra màn hình số ký tự
+hoa, số ký tự thường trong xâu. 
+
+ Bài
+7: Đệ quy 
+
+ Tạo file lab07.sh có
+một tham số là đường dẫn đến 1 thư mục. Output khi chạy file sẽ là số thư mục
+con (tính tất cả các thư mục con trong cả cây) trong thư mục đã nhập vào. 
+
+ Bài
+8: Số thực 
+
+ Tạo file lab08.sh có
+chức năng sau: Nhập ba số thực a, b, c từ bàn phím, giải và biện luận phương
+trình bậc hai ax 2 + bx + c = 0 
+
+ Bài
+9: Ngày giờ 
+
+ Tạo file lab09.sh có
+một tham số từ dòng lệnh là một số nguyên dương. Thiết lập lại ngày của hệ thống
+thành ngày hiện tại + tham số nhập vào. Ví dụ nếu ngày hiện tại là 20/10/2012
+11:20:33 và tham số nhập vào là 20 thì ngày mới được thiết lập là 09/11/2012
+11:20:33. Sau khi thiết lập, in ra màn hình ngày/giờ mới của hệ thống theo định
+dạng sau: 
+
+ YYYY-MM-DD HH:mm:ss (ví dụ 2012-11-09 11:20:33)
