@@ -181,6 +181,7 @@
   let currentCourse = null;
   let currentPool = []; // normalized full dataset for the chosen course
   let currentReferenceModules = []; // raw REFERENCE_DATA(_EN) when course.isReference
+  let currentNavState = null; // mirrors history.state, drives applyNavState()
   let questions = [];
   let userAnswers = {};
   let submitted = false;
@@ -253,7 +254,9 @@
     els.results.classList.remove('show');
     els.questions.innerHTML = '';
     renderSectionTabs();
-    selectCourse(prevCourseId);
+    // Switching language re-renders the current course's list view in place;
+    // don't grow the back-history stack for what's really the same screen.
+    navReplace({ course: prevCourseId, view: 'list' });
   }
 
   els.langViBtn.addEventListener('click', () => setLang('vi'));
@@ -269,25 +272,44 @@
     });
     els.sectionTabs.innerHTML = html;
     els.sectionTabs.querySelectorAll('.tab-btn').forEach((btn) => {
-      btn.addEventListener('click', () => selectCourse(btn.dataset.course));
+      btn.addEventListener('click', () => navPush({ course: btn.dataset.course, view: 'list' }));
     });
   }
 
-  function selectCourse(courseId) {
-    const course = COURSES.find((c) => c.id === courseId) || COURSES[0];
-    if (!course) return;
-    const raw = course.getData();
+  // --- History / routing ---
+  // Every screen change goes through navPush/navReplace so Back/Forward moves
+  // between in-app screens instead of leaving the site on the first press.
+
+  function navPush(state) {
+    currentNavState = state;
+    history.pushState(state, '', location.href);
+    applyNavState(state);
+  }
+
+  function navReplace(state, opts) {
+    currentNavState = state;
+    history.replaceState(state, '', location.href);
+    if (!opts || !opts.silent) applyNavState(state);
+  }
+
+  function applyNavState(state) {
+    const course = COURSES.find((c) => c.id === state.course) || COURSES[0];
     currentCourse = course;
     renderSectionTabs();
+    if (timerHandle) {
+      clearInterval(timerHandle);
+      timerHandle = null;
+    }
 
-    els.subtitle.textContent = `${course.title} - ${course.desc}`;
-    els.setupHeading.textContent = course.setupHeading;
+    const raw = course.getData();
     els.results.classList.remove('show');
     els.topbar.classList.add('hidden');
     els.progressBar.classList.add('hidden');
     els.controls.classList.add('hidden');
     els.questions.innerHTML = '';
     els.referenceView.classList.add('hidden');
+    els.setup.classList.add('hidden');
+    els.subtitle.textContent = `${course.title} - ${course.desc}`;
 
     if (!raw.length) {
       els.setup.classList.remove('hidden');
@@ -297,27 +319,59 @@
       return;
     }
 
-    if (course.isReference) {
-      currentReferenceModules = raw;
-      els.allSetsBtn.classList.add('hidden');
-      els.setup.classList.remove('hidden');
-      renderReferenceModulePicker();
-      return;
-    }
-
     if (course.isSlides) {
-      els.setup.classList.add('hidden');
       els.referenceView.classList.remove('hidden');
       els.backToReferenceList.classList.add('hidden');
       renderSlidesList(raw);
       return;
     }
 
-    els.allSetsBtn.classList.remove('hidden');
+    if (course.isReference) {
+      currentReferenceModules = raw;
+      els.setupHeading.textContent = course.setupHeading;
+      if (state.view === 'module' && state.group !== undefined) {
+        const mod = currentReferenceModules[parseInt(state.group, 10)];
+        if (mod) {
+          els.referenceView.classList.remove('hidden');
+          els.backToReferenceList.classList.remove('hidden');
+          renderReferenceModule(mod);
+          return;
+        }
+      }
+      els.allSetsBtn.classList.add('hidden');
+      els.setup.classList.remove('hidden');
+      renderReferenceModulePicker();
+      return;
+    }
+
+    // netos quiz course
+    els.setupHeading.textContent = course.setupHeading;
     currentPool = raw.map((q) => (q.type ? q : Object.assign({ type: 'mcq' }, q)));
+
+    if (state.view === 'quiz' && state.group !== undefined) {
+      const pool =
+        state.group === '__all__'
+          ? currentPool
+          : currentPool.filter((q) => currentCourse.groupsOf(q).includes(state.group));
+      const picked = shuffle(pool).slice(0, Math.min(MAX_PER_TOPIC_PICK, pool.length));
+      const label =
+        state.group === '__all__'
+          ? `${t('allLabel')} (${currentPool.length} ${t('questionsCountSuffix')})`
+          : state.group;
+      runQuiz(picked, label);
+      return;
+    }
+
+    els.allSetsBtn.classList.remove('hidden');
     els.setup.classList.remove('hidden');
     renderSetPicker();
   }
+
+  window.addEventListener('popstate', (e) => {
+    const state = e.state || { course: 'netos', view: 'list' };
+    currentNavState = state;
+    applyNavState(state);
+  });
 
   function groupCounts() {
     const map = new Map();
@@ -353,14 +407,11 @@
     els.setGrid.innerHTML = html;
     els.setGrid.querySelectorAll('.set-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const label = btn.dataset.group;
-        const pool = currentPool.filter((q) => currentCourse.groupsOf(q).includes(label));
-        const picked = shuffle(pool).slice(0, Math.min(MAX_PER_TOPIC_PICK, pool.length));
-        startQuiz(picked, label);
+        navPush({ course: currentCourse.id, view: 'quiz', group: btn.dataset.group });
       });
     });
     els.allSetsBtn.onclick = () => {
-      startQuiz(currentPool, `${t('allLabel')} (${currentPool.length} ${t('questionsCountSuffix')})`);
+      navPush({ course: currentCourse.id, view: 'quiz', group: '__all__' });
     };
   }
 
@@ -375,11 +426,7 @@
     els.setGrid.innerHTML = html;
     els.setGrid.querySelectorAll('.set-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
-        const mod = currentReferenceModules[parseInt(btn.dataset.mod, 10)];
-        renderReferenceModule(mod);
-        els.setup.classList.add('hidden');
-        els.referenceView.classList.remove('hidden');
-        els.backToReferenceList.classList.remove('hidden');
+        navPush({ course: currentCourse.id, view: 'module', group: btn.dataset.mod });
       });
     });
   }
@@ -446,13 +493,12 @@
   }
 
   els.backToReferenceList.addEventListener('click', () => {
-    els.referenceView.classList.add('hidden');
-    els.setup.classList.remove('hidden');
+    navPush({ course: currentCourse.id, view: 'list' });
   });
 
   // --- Quiz flow ---
 
-  function startQuiz(pool, label) {
+  function runQuiz(pool, label) {
     questions = shuffle(pool);
     userAnswers = {};
     submitted = false;
@@ -617,6 +663,9 @@
     });
 
     showResults(good, bad, unanswered);
+    // Results stay on screen, but Back from here should land on the topic
+    // list (re-entering a finished/mid-abandoned quiz view makes no sense).
+    navReplace({ course: currentCourse.id, view: 'list' }, { silent: true });
   }
 
   function showResults(good, bad, unanswered) {
@@ -634,17 +683,17 @@
   }
 
   els.restartBtn.addEventListener('click', () => {
-    els.results.classList.remove('show');
-    els.setup.classList.remove('hidden');
-    els.questions.innerHTML = '';
+    navPush({ course: currentCourse.id, view: 'list' });
   });
 
   els.submitBtn.addEventListener('click', submitQuiz);
 
   function init() {
     applyStaticStrings();
-    renderSectionTabs();
-    selectCourse('netos');
+    const initial = { course: 'netos', view: 'list' };
+    currentNavState = initial;
+    history.replaceState(initial, '', location.href);
+    applyNavState(initial);
   }
 
   init();
