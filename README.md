@@ -15,6 +15,10 @@ Dành cho sinh viên đang học hoặc ôn thi giữa kỳ/cuối kỳ môn Th�
 - **Tài liệu tham khảo - 648 mục, 27 chủ đề** - không phải trắc nghiệm, mà trang đọc nhanh: khái niệm, lệnh kèm flag + ví dụ, và hướng dẫn từng bước cho các thao tác thực hành (tạo LVM, cấu hình Netplan, UFW, Samba, NFS, Docker...).
 - **Song ngữ VI/EN** - chuyển đổi tức thì, nhớ lựa chọn qua trình duyệt.
 
+## Tài liệu bài giảng (bản gốc)
+
+Thư mục [`lecture-slides/`](lecture-slides/) chứa bản gốc tài liệu bài giảng/thực hành theo từng buổi (bai01 - bai17), đề kiểm tra giữa kỳ mẫu và đề thi cuối kỳ mẫu, dùng làm nguồn tham khảo gốc cho ngân hàng câu hỏi và tài liệu tham khảo ở trên. Mở trực tiếp file `.htm`/`.html` bằng trình duyệt để xem.
+
 ## Đóng góp / báo lỗi
 
 Phát hiện câu hỏi sai, đáp án sai, hoặc muốn bổ sung câu hỏi - mở issue hoặc pull request trên repo này.

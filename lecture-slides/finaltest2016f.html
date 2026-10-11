@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<title></title>
+<meta content="LibreOffice 5.2.0.4 (Linux)" name="generator"/>
+<meta content="2016-12-12T08:48:10.860528173" name="created"/>
+<meta content="2016-12-12T09:48:33.972972259" name="changed"/>
+<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 120% }
+	</style>
+</head>
+<body dir="ltr" lang="en-US">
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><b>ĐỀ
+THI KẾT THÚC HỌC PHẦN</b></p>
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><b>THỰC
+HÀNH HỆ ĐIỀU HÀNH MẠNG</b></p>
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><i>Thời
+gian làm bài:  90 phút</i></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">Giả sử máy
+Linux ảo mà bạn đang dùng để làm bài thi là server bạn
+cần quản lý (server của bạn).</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>Câu </b><b>1</b><b>.
+</b><b>(5</b><i><b> điểm</b></i><b>)</b> Trên server của bạn,
+cho tệp /data/<i>u</i><i>s</i><i>r.txt</i> chứa danh sách người
+dùng có yêu cầu được cấp tài khoản trên hệ thống,
+mỗi người dùng trên một dòng với thông tin duy nhất là
+tên tài khoản cần cấp. Ví dụ tệp ur.txt có nội dung
+như sau:</p>
+<p style="margin-bottom: 0in; line-height: 100%">	hoangtt</p>
+<p style="margin-bottom: 0in; line-height: 100%">	mainn</p>
+<p style="margin-bottom: 0in; line-height: 100%">	binhqq</p>
+<p style="margin-bottom: 0in; line-height: 100%">Lưu ý, nếu chưa
+có tệp /data/usr.txt hoặc tệp rỗng thì hãy tạo tệp và
+đưa nội dung mẫu ở trên vào tệp để bạn có thể
+hoàn thành câu này.</p>
+<p style="margin-bottom: 0in; line-height: 100%">Viết kịch bản
+shell <i>/</i><i>scripts/</i><i>crtusr</i><i>.sh</i> đọc danh sách
+người dùng từ tệp <i>/</i><i>data/</i><i>u</i><i>s</i><i>r.txt</i>,
+và với mỗi người dùng,</p>
+<p style="margin-bottom: 0in; line-height: 100%">- (<i>2 điểm</i>)
+kiểm tra người dùng đã tồn tại trong hệ thống hay
+chưa, nếu chưa thì tạo người dùng với tên tài khoản
+tương ứng và mật khẩu là “<i>Kiemtracuoiky2016</i>”.</p>
+<p style="margin-bottom: 0in; line-height: 100%">-  (1<i> điểm</i>)
+kiểm tra đã tồn tại thư mục /data/[user] hay chưa (thay
+[user] bằng tên tài khoản tương ứng), nếu chưa thì tạo
+thư mục này</p>
+<p style="margin-bottom: 0in; line-height: 100%">- (<i>1 điểm</i>)
+chuyển quyền sở hữu thư mục /data/[user] cho người dùng
+[user]</p>
+<p style="margin-bottom: 0in; line-height: 100%">- (<i>1 điểm</i>)
+cấp quyền trên thư mục /data/[user] sao cho người dùng
+[user] có đủ quyền (wrx), mọi người dùng khác [user] đều
+không có quyền gì trên /data/[user].</p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>Câu </b><b>2</b><b>.
+(2 điểm)</b> Cài đặt hoặc kiểm tra SSHD đã được cài
+đặt trên server của bạn hay chưa, cho SSHD chạy.</p>
+<p style="margin-bottom: 0in; line-height: 100%"><b>Câu 3. (3 điểm)</b>
+Từ máy trạm (máy tính khác server của bạn), 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%">- Soạn một tệp
+<i>usr.txt </i><span style="font-style: normal">chứa danh sách
+người dùng mới.</span></p>
+<p style="margin-bottom: 0in; line-height: 100%"><span style="font-style: normal">-
+</span><span style="font-style: normal">(</span><i>2 điểm</i><span style="font-style: normal">)
+</span><span style="font-style: normal">Kết nối đến server và
+copy tệp </span><i>usr.txt </i><span style="font-style: normal">lên
+serser, ghi đè lên tệp /data/usr.txt trên server.</span></p>
+<p style="margin-bottom: 0in; line-height: 100%"><span style="font-style: normal">-
+</span><span style="font-style: normal">(</span><i>1 điểm</i><span style="font-style: normal">)
+</span><span style="font-style: normal">Chạy </span><i>/</i><i>scripts/</i><i>crtusr</i><i>.sh
+</i><span style="font-style: normal">trên server để</span><i> </i><span style="font-style: normal">tạo
+người dùng mới và thư mục cho người dùng mới.</span></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+</p>
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><span style="font-style: normal">----------
+</span><span style="font-style: normal">Hết -----------</span></p>
+</body>
+</html>

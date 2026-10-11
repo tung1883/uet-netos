@@ -1,0 +1,2642 @@
+<html xmlns="http://www.w3.org/TR/REC-html40" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Word.Document" name="ProgId"/>
+<meta content="Microsoft Word 12" name="Generator"/>
+<meta content="Microsoft Word 12" name="Originator"/>
+<link href="https://itest.com.vn/lects/netos/bai06-Domain-Name-Service_files/filelist.xml" rel="File-List"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>thanh</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>thanh</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>434</o:TotalTime>
+  <o:LastPrinted>2012-12-17T06:13:00Z</o:LastPrinted>
+  <o:Created>2017-02-15T09:21:00Z</o:Created>
+  <o:LastSaved>2017-02-15T09:21:00Z</o:LastSaved>
+  <o:Pages>9</o:Pages>
+  <o:Words>1618</o:Words>
+  <o:Characters>9225</o:Characters>
+  <o:Company>Hudevelop</o:Company>
+  <o:Lines>76</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>10822</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link href="https://itest.com.vn/lects/netos/bai06-Domain-Name-Service_files/themedata.thmx" rel="themeData"/>
+<link href="https://itest.com.vn/lects/netos/bai06-Domain-Name-Service_files/colorschememapping.xml" rel="colorSchemeMapping"/>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DefaultTableStyle Number="0">Normal</w:DefaultTableStyle>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:UseWord2002TableStyleRules/>
+   <w:DontUseIndentAsNumberingTabStop/>
+   <w:FELineBreak11/>
+   <w:WW11IndentRules/>
+   <w:DontAutofitConstrainedTables/>
+   <w:AutofitLikeWW11/>
+   <w:HangulWidthLikeWW11/>
+   <w:UseNormalStyleForList/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1107305727 0 0 415 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:"Palatino Linotype";
+	panose-1:2 4 5 2 5 5 5 3 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870265 1073741843 0 0 415 0;}
+@font-face
+	{font-family:FreeSans;
+	mso-font-alt:Arial;
+	mso-font-charset:1;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l2 level1 lfo3;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:16.0pt;
+	font-family:"Times New Roman","serif";
+	mso-bidi-font-family:Arial;
+	color:blue;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:ZH-CN;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:28.35pt;
+	text-align:justify;
+	text-indent:-28.35pt;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l2 level2 lfo3;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:13.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-language:ZH-CN;
+	mso-bidi-font-style:italic;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:28.35pt;
+	text-align:justify;
+	text-indent:-11.35pt;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l2 level3 lfo3;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:12.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-language:ZH-CN;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:"Heading 3";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-align:justify;
+	text-indent:-.25in;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l3 level1 lfo4;
+	mso-hyphenate:none;
+	tab-stops:list 0in;
+	font-size:14.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-language:ZH-CN;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;
+	font-style:italic;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:FreeSans;
+	mso-fareast-language:ZH-CN;
+	font-style:italic;}
+p.MsoList, li.MsoList, div.MsoList
+	{mso-style-unhide:no;
+	mso-style-parent:"Body Text";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:FreeSans;
+	mso-fareast-language:ZH-CN;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:7.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:120%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	mso-style-parent:"";
+	color:navy;
+	mso-ansi-language:#00FF;
+	mso-fareast-language:#00FF;
+	mso-bidi-language:#00FF;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Document Map Char";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+pre
+	{mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.WW8Num1z0
+	{mso-style-name:WW8Num1z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z1
+	{mso-style-name:WW8Num1z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z2
+	{mso-style-name:WW8Num1z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z3
+	{mso-style-name:WW8Num1z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z4
+	{mso-style-name:WW8Num1z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z5
+	{mso-style-name:WW8Num1z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z6
+	{mso-style-name:WW8Num1z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z7
+	{mso-style-name:WW8Num1z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num1z8
+	{mso-style-name:WW8Num1z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num2z0
+	{mso-style-name:WW8Num2z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+span.WW8Num2z1
+	{mso-style-name:WW8Num2z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num2z2
+	{mso-style-name:WW8Num2z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-language:AR-SA;}
+span.WW8Num2z3
+	{mso-style-name:WW8Num2z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num3z0
+	{mso-style-name:WW8Num3z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z1
+	{mso-style-name:WW8Num3z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z2
+	{mso-style-name:WW8Num3z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z3
+	{mso-style-name:WW8Num3z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z4
+	{mso-style-name:WW8Num3z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z5
+	{mso-style-name:WW8Num3z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z6
+	{mso-style-name:WW8Num3z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z7
+	{mso-style-name:WW8Num3z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num3z8
+	{mso-style-name:WW8Num3z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num4z0
+	{mso-style-name:WW8Num4z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num5z0
+	{mso-style-name:WW8Num5z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num6z0
+	{mso-style-name:WW8Num6z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num7z0
+	{mso-style-name:WW8Num7z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num8z0
+	{mso-style-name:WW8Num8z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num9z0
+	{mso-style-name:WW8Num9z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num10z0
+	{mso-style-name:WW8Num10z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num11z0
+	{mso-style-name:WW8Num11z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num11z1
+	{mso-style-name:WW8Num11z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num11z2
+	{mso-style-name:WW8Num11z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num11z3
+	{mso-style-name:WW8Num11z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num12z0
+	{mso-style-name:WW8Num12z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num12z1
+	{mso-style-name:WW8Num12z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num12z2
+	{mso-style-name:WW8Num12z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num12z3
+	{mso-style-name:WW8Num12z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num13z0
+	{mso-style-name:WW8Num13z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:13.0pt;
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num13z1
+	{mso-style-name:WW8Num13z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num13z2
+	{mso-style-name:WW8Num13z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num13z3
+	{mso-style-name:WW8Num13z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num14z0
+	{mso-style-name:WW8Num14z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num14z1
+	{mso-style-name:WW8Num14z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num14z2
+	{mso-style-name:WW8Num14z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num14z3
+	{mso-style-name:WW8Num14z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num15z0
+	{mso-style-name:WW8Num15z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:13.0pt;}
+span.WW8Num15z1
+	{mso-style-name:WW8Num15z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num15z2
+	{mso-style-name:WW8Num15z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num15z3
+	{mso-style-name:WW8Num15z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num16z0
+	{mso-style-name:WW8Num16z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num16z1
+	{mso-style-name:WW8Num16z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num16z2
+	{mso-style-name:WW8Num16z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num16z3
+	{mso-style-name:WW8Num16z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num17z0
+	{mso-style-name:WW8Num17z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num17z1
+	{mso-style-name:WW8Num17z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num17z2
+	{mso-style-name:WW8Num17z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num17z3
+	{mso-style-name:WW8Num17z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num18z0
+	{mso-style-name:WW8Num18z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:13.0pt;}
+span.WW8Num18z1
+	{mso-style-name:WW8Num18z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z2
+	{mso-style-name:WW8Num18z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z3
+	{mso-style-name:WW8Num18z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z4
+	{mso-style-name:WW8Num18z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z5
+	{mso-style-name:WW8Num18z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z6
+	{mso-style-name:WW8Num18z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z7
+	{mso-style-name:WW8Num18z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num18z8
+	{mso-style-name:WW8Num18z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num19z0
+	{mso-style-name:WW8Num19z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num19z1
+	{mso-style-name:WW8Num19z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num19z2
+	{mso-style-name:WW8Num19z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num19z3
+	{mso-style-name:WW8Num19z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num20z0
+	{mso-style-name:WW8Num20z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z1
+	{mso-style-name:WW8Num20z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z2
+	{mso-style-name:WW8Num20z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z3
+	{mso-style-name:WW8Num20z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z4
+	{mso-style-name:WW8Num20z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z5
+	{mso-style-name:WW8Num20z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z6
+	{mso-style-name:WW8Num20z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z7
+	{mso-style-name:WW8Num20z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num20z8
+	{mso-style-name:WW8Num20z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num21z0
+	{mso-style-name:WW8Num21z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.WW8Num21z1
+	{mso-style-name:WW8Num21z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num21z2
+	{mso-style-name:WW8Num21z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num21z3
+	{mso-style-name:WW8Num21z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num22z0
+	{mso-style-name:WW8Num22z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num22z1
+	{mso-style-name:WW8Num22z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num22z2
+	{mso-style-name:WW8Num22z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num23z0
+	{mso-style-name:WW8Num23z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z1
+	{mso-style-name:WW8Num23z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z2
+	{mso-style-name:WW8Num23z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z3
+	{mso-style-name:WW8Num23z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z4
+	{mso-style-name:WW8Num23z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z5
+	{mso-style-name:WW8Num23z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z6
+	{mso-style-name:WW8Num23z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z7
+	{mso-style-name:WW8Num23z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num23z8
+	{mso-style-name:WW8Num23z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z0
+	{mso-style-name:WW8Num24z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z1
+	{mso-style-name:WW8Num24z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z2
+	{mso-style-name:WW8Num24z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z3
+	{mso-style-name:WW8Num24z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z4
+	{mso-style-name:WW8Num24z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z5
+	{mso-style-name:WW8Num24z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z6
+	{mso-style-name:WW8Num24z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z7
+	{mso-style-name:WW8Num24z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num24z8
+	{mso-style-name:WW8Num24z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num25z0
+	{mso-style-name:WW8Num25z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Wingdings;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;}
+span.WW8Num25z1
+	{mso-style-name:WW8Num25z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.WW8Num25z3
+	{mso-style-name:WW8Num25z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	font-family:Symbol;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+span.WW8Num26z0
+	{mso-style-name:WW8Num26z0;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z1
+	{mso-style-name:WW8Num26z1;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z2
+	{mso-style-name:WW8Num26z2;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z3
+	{mso-style-name:WW8Num26z3;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z4
+	{mso-style-name:WW8Num26z4;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z5
+	{mso-style-name:WW8Num26z5;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z6
+	{mso-style-name:WW8Num26z6;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z7
+	{mso-style-name:WW8Num26z7;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.WW8Num26z8
+	{mso-style-name:WW8Num26z8;
+	mso-style-unhide:no;
+	mso-style-parent:"";}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Arial","sans-serif";
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:EN-US;
+	font-weight:bold;
+	font-style:italic;}
+span.StyleCommand9ptBoldChar
+	{mso-style-name:"Style Command + 9 pt Bold Char";
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	color:purple;
+	font-weight:bold;}
+p.Heading, li.Heading, div.Heading
+	{mso-style-name:Heading;
+	mso-style-unhide:no;
+	mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:.25in;
+	margin-left:0in;
+	text-align:center;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:16.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:.5pt;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;}
+p.Index, li.Index, div.Index
+	{mso-style-name:Index;
+	mso-style-unhide:no;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:FreeSans;
+	mso-fareast-language:ZH-CN;}
+p.Command, li.Command, div.Command
+	{mso-style-name:Command;
+	mso-style-unhide:no;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:34.0pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#C00000;
+	mso-fareast-language:ZH-CN;}
+p.StyleCommandFirstline004cm, li.StyleCommandFirstline004cm, div.StyleCommandFirstline004cm
+	{mso-style-name:"Style Command + First line\:  004 cm";
+	mso-style-unhide:no;
+	mso-style-parent:Command;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:34.0pt;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:#C00000;
+	mso-fareast-language:ZH-CN;}
+p.OperationalDisplays, li.OperationalDisplays, div.OperationalDisplays
+	{mso-style-name:"Operational Displays";
+	mso-style-unhide:no;
+	mso-style-next:Normal;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:17.0pt;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+p.CommandSyntax, li.CommandSyntax, div.CommandSyntax
+	{mso-style-name:"Command Syntax";
+	mso-style-unhide:no;
+	mso-style-parent:"Operational Displays";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.PredefinedSyntax, li.PredefinedSyntax, div.PredefinedSyntax
+	{mso-style-name:"Predefined Syntax";
+	mso-style-unhide:no;
+	mso-style-parent:"Operational Displays";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:17.0pt;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.Syntax, li.Syntax, div.Syntax
+	{mso-style-name:Syntax;
+	mso-style-unhide:no;
+	mso-style-parent:"Operational Displays";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:17.0pt;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;
+	font-style:italic;
+	mso-bidi-font-style:normal;
+	text-decoration:underline;
+	text-underline:single;}
+p.Vanbantho, li.Vanbantho, div.Vanbantho
+	{mso-style-name:"Van ban tho";
+	mso-style-unhide:no;
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:blue;
+	mso-fareast-language:ZH-CN;}
+p.Thongthuong, li.Thongthuong, div.Thongthuong
+	{mso-style-name:"Thong thuong";
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	font-size:10.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+p.StyleCommand9ptBold, li.StyleCommand9ptBold, div.StyleCommand9ptBold
+	{mso-style-name:"Style Command + 9 pt Bold";
+	mso-style-unhide:no;
+	mso-style-parent:Command;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:34.0pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	border:none;
+	mso-border-alt:solid purple .5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:9.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:purple;
+	mso-ansi-language:VI;
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;}
+p.TableContents, li.TableContents, div.TableContents
+	{mso-style-name:"Table Contents";
+	mso-style-unhide:no;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	text-align:justify;
+	line-height:130%;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;}
+p.TableHeading, li.TableHeading, div.TableHeading
+	{mso-style-name:"Table Heading";
+	mso-style-unhide:no;
+	mso-style-parent:"Table Contents";
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:130%;
+	mso-pagination:widow-orphan no-line-numbers;
+	mso-hyphenate:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:ZH-CN;
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Document Map";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	mso-fareast-language:ZH-CN;}
+p.para, li.para, div.para
+	{mso-style-name:para;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.file
+	{mso-style-name:file;
+	mso-style-unhide:no;}
+span.app
+	{mso-style-name:app;
+	mso-style-unhide:no;}
+span.em
+	{mso-style-name:em;
+	mso-style-unhide:no;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.cmd
+	{mso-style-name:cmd;
+	mso-style-unhide:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:56.7pt 56.7pt 56.7pt 70.9pt;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1;
+	mso-list-template-ids:1;}
+@list l0:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;}
+@list l0:level2
+	{mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;}
+@list l0:level3
+	{mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-11.35pt;}
+@list l0:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:48.2pt;
+	text-indent:-19.85pt;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:2;
+	mso-list-template-ids:2;
+	mso-list-name:WW8Num2;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-language:AR-SA;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-language:AR-SA;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:Symbol;
+	mso-hansi-font-family:Symbol;
+	mso-bidi-font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	mso-ascii-font-family:Wingdings;
+	mso-hansi-font-family:Wingdings;
+	mso-bidi-font-family:Wingdings;
+	color:black;
+	mso-ansi-language:EN-US;
+	mso-bidi-language:AR-SA;}
+@list l2
+	{mso-list-id:3;
+	mso-list-template-ids:-1140406046;
+	mso-list-name:WW8Num3;}
+@list l2:level1
+	{mso-level-style-link:"Heading 1";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;}
+@list l2:level2
+	{mso-level-style-link:"Heading 2";
+	mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;}
+@list l2:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-11.35pt;}
+@list l2:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:48.2pt;
+	text-indent:-19.85pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:4;
+	mso-list-type:simple;
+	mso-list-template-ids:4;
+	mso-list-name:WW8Num4;}
+@list l3:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:13574344;
+	mso-list-template-ids:-1140406046;}
+@list l4:level1
+	{mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;}
+@list l4:level2
+	{mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-28.35pt;}
+@list l4:level3
+	{mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:28.35pt;
+	text-indent:-11.35pt;}
+@list l4:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-suffix:space;
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:48.2pt;
+	text-indent:-19.85pt;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:509292491;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1887003852 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1544830745;
+	mso-list-type:hybrid;
+	mso-list-template-ids:585900558 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:39.5pt;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+<body lang="EN-US" link="navy" style="tab-interval:.5in" vlink="purple">
+<div class="Section1">
+<p class="Heading"><span style='font-family:"Palatino Linotype","serif"'>Bài 6. DỊCH
+VỤ TÊN MIỀN<span style="color:black"><o:p></o:p></span></span></p>
+<h1><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">1.<span style='font:7.0pt "Times New Roman"'>          
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif";
+color:black'>Giới thiệu</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></h1>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Máy
+tính và các thiết bị kết nối mạng, cụ thể là các giao diện mạng (network
+interfaces) của chúng, sử dụng địa chỉ IP làm định danh. Con người sử dụng tên
+miền thay cho IP để dễ nhớ. Vì vậy, cần phân giải/ánh xạ từ tên miền sang địa
+chỉ IP và ngược lại.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>DNS
+(Domain Name System) là một hệ cơ sở dữ liệu phân tán dùng để ánh xạ giữa các
+tên miền về các địa chỉ IP.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>DNS
+Client: Chạy trên thiết bị của người dùng, nhận tên miền do người dùng cung
+cấp, ví dụ người dùng nhập địa chỉ trang web trên trình duyệt, hỏi DNS để biết
+địa chỉ IP của máy đích.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>DNS
+Server: Hệ thống phân cấp các DNS servers.<span style="color:black"><o:p></o:p></span></span></p>
+<h1><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">2.<span style='font:7.0pt "Times New Roman"'>          
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif";
+color:black'>DNS Client</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></h1>
+<h2><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">2.1. </span></span><?endif?><span style='font-family:
+"Palatino Linotype","serif"'>Cấu hình DNS Client<o:p></o:p></span></h2>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Xem
+Mục “1.3 Phân giải tên” trong “Bài 5. Kết nối mạng.”<o:p></o:p></span></p>
+<h2><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">2.2. </span></span><?endif?><span style='font-family:
+"Palatino Linotype","serif"'>Các phương pháp cơ bản kiểm tra DNS<o:p></o:p></span></h2>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif"'>DNS phân giải tên miền đầy đủ (FQDN - Fully
+Qualified Domain Name), ví dụ như vnu.edu.vn, tới một địa chỉ IP. Việc này được
+gọi là phân giải xuôi. Phân giải từ địa chỉ IP ra tên miền đầy đủ được gọi là
+phân giải ngược. <o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif"'>Nhiều tên miền có thể ánh xạ tới một địa chỉ IP duy
+nhất, nhưng ngược lại thì không đúng, một địa chỉ IP chỉ có thể ánh xạ tới duy
+nhất một tên miền. Điều này có nghĩa việc phân giải xuôi và ngược có thể không
+cho kết quả giống nhau. Các trường trong DNS dùng cho phân giải ngược thường
+thuộc trách nhiệm của nhà cung cấp dịch vụ (ISP), như vậy là khá phổ biến cho
+việc phân giải ngược tới tên miền của ISP. Đây không phải là yếu tố quan trọng
+đối với các trang web nhỏ, nhưng với một số ứng dụng thương mại điện tử thường
+yêu cầu việc phân giải xuôi và ngược phải phù hợp với nhau. Ta có thể yêu cầu
+ISP thay đổi DNS cho phù hợp với yêu cầu này. <o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Dưới
+đây là một số lệnh ta có thể dùng để tra cứu tên miền. <o:p></o:p></span></p>
+<h3><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">2.2.1. </span></span><?endif?><span style='font-family:
+"Palatino Linotype","serif"'>Lệnh host<o:p></o:p></span></h3>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Lệnh <b style="mso-bidi-font-weight:normal">host</b> chấp nhận các tham số là tên miền
+đầy đủ hoặc địa chỉ IP. Để tìm phân giải xuôi (tìm địa chỉ IP của tên miền đầy
+đủ), ta sử dụng cú pháp như sau: <span style="color:#2300DC"><o:p></o:p></span></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>[</span><span style='font-family:"Palatino Linotype","serif"'><a href="mailto:root@localhost"><span style="color:#2300DC">root@localhost</span></a></span><span style='font-family:"Palatino Linotype","serif";color:#2300DC'> ~]# <b style="mso-bidi-font-weight:normal">host</b> www.linuxhomenetworking.com<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>www.linuxhomenetworking.com has address 65.115.71.34</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Còn để
+tìm phân giải ngược (tìm tên miền đầy đủ từ địa chỉ IP) <span style="color:
+#2300DC"><o:p></o:p></span></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>[</span><span style='font-family:"Palatino Linotype","serif"'><a href="mailto:root@localhost"><span style="color:#2300DC">root@localhost</span></a></span><span style='font-family:"Palatino Linotype","serif";color:#2300DC'> ~]# <b style="mso-bidi-font-weight:normal">host</b> 65.115.71.34<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>34.71.115.65.in-addr.arpa domain name pointer
+65-115-71-34.myisp.net.</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<h3><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">2.2.2. </span></span><?endif?><span style='font-family:
+"Palatino Linotype","serif"'>Lệnh nslookup<o:p></o:p></span></h3>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Lệnh
+nslookup dùng để tìm kiếm địa chỉ IP từ tên miền<span style="color:#2300DC"><o:p></o:p></span></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>[</span><span style='font-family:"Palatino Linotype","serif"'><a href="mailto:root@localhost"><span style="color:#2300DC">root@localhost</span></a></span><span style='font-family:"Palatino Linotype","serif";color:#2300DC'> ~]# <b style="mso-bidi-font-weight:normal">nslookup</b> www.linuxhomenetworking.com<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Server:<span style="mso-spacerun:yes"> 
+</span>192-168-1-200.my-site.com<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Address:<span style="mso-spacerun:yes">  </span>192.168.1.200<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'><o:p> </o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Non-authoritative answer:<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Name:<span style="mso-spacerun:yes">   
+</span>www.linuxhomenetworking.com<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Address:<span style="mso-spacerun:yes">  </span>65.115.71.34<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'><o:p> </o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Để
+thực hiện tìm kiếm tên miền từ địa chỉ IP: <span style="color:#2300DC"><o:p></o:p></span></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>[</span><span style='font-family:"Palatino Linotype","serif"'><a href="mailto:root@localhost"><span style="color:#2300DC">root@localhost</span></a></span><span style='font-family:"Palatino Linotype","serif";color:#2300DC'> ~]# <b style="mso-bidi-font-weight:normal">nslookup</b> 65.115.71.34<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Server:<span style="mso-spacerun:yes"> 
+</span>192-168-1-200.my-site.com<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Address: 192.168.1.200<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'><o:p> </o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Name:<span style="mso-spacerun:yes">   
+</span>65-115-71-34.my-isp.com<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'>Address: 65.115.71.34<o:p></o:p></span></p>
+<p class="Command"><span style='font-family:"Palatino Linotype","serif";
+color:#2300DC'><o:p> </o:p></span></p>
+<h1><?if !supportLists?><span style='font-size:13.0pt;font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype";
+color:black'><span style="mso-list:Ignore">3.<span style='font:7.0pt "Times New Roman"'>            
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif";
+color:black'>DNS Server</span><span style='font-size:13.0pt;font-family:"Palatino Linotype","serif";
+mso-bidi-font-family:"Times New Roman";color:black'><o:p></o:p></span></h1>
+<p align="left" class="MsoBodyText" style="margin-top:4.0pt;margin-right:0in;
+margin-bottom:4.0pt;margin-left:0in;text-align:left;line-height:130%"><span style='font-family:"Palatino Linotype","serif";color:black'>DNS Server có thể
+cung cấp các thông tin do DNS client yêu cầu, hoặc chuyển đến một DNS Server
+khác để nhờ phân giải hộ trong trường hợp nó không thể trả lời được các truy
+vấn về những tên miền không thuộc quyền quản lý, đồng thời cũng luôn sẵn sàng
+trả lời các DNS server khác về các tên miền mà nó quản lý. DNS server cấp cao
+nhất là Root Server do tổ chức ICANN quản lý.</span><span style='font-family:
+"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:1.0in;text-indent:-.25in;mso-list:l1 level2 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style='font-family:"Courier New";
+mso-fareast-font-family:"Courier New"'><span style="mso-list:Ignore">o<span style='font:7.0pt "Times New Roman"'>   </span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Phân loại:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:1.5in;text-indent:-.25in;mso-list:l1 level3 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;color:black"><span style="mso-list:Ignore">§<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Primary DNS server<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:1.5in;text-indent:-.25in;mso-list:l1 level3 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;color:black"><span style="mso-list:Ignore">§<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Secondary DNS server<span style="color:black"><o:p></o:p></span></span></p>
+<p class="MsoNormal" style="margin-left:1.5in;text-indent:-.25in;mso-list:l1 level3 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="font-family:Wingdings;
+mso-fareast-font-family:Wingdings;mso-bidi-font-family:Wingdings;color:black"><span style="mso-list:Ignore">§<span style='font:7.0pt "Times New Roman"'>  </span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif";color:black'>Caching DNS<span style="mso-spacerun:yes">  </span>server<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif";color:black'>Khuyến nghị nên sử dụng ít nhất là hai
+DNS Server để lưu cho mỗi một zone. Primary DNS Server quản lý các zone và Secondary
+Server lưu trữ dự phòng cho Primary Server. Secondary DNS Server được khuyến
+nghị dùng nhưng không nhất thiết phải có. <o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif";color:black'>Caching <span style="mso-spacerun:yes"> </span>DNS<span style="mso-spacerun:yes"> 
+</span>server chỉ sử dụng cho việc truy vấn, lưu giữ câu trả lời dựa trên thông
+tin có trên cache của máy và cho kết quả truy vấn. Chúng không hề quản lý một
+domain nào và thông tin mà nó chỉ giới hạn những gì được lưu trên cache của
+Server.<o:p></o:p></span></p>
+<h2><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype";
+color:#2300DC'><span style="mso-list:Ignore">3.1. </span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Cài đặt DNS Server BIND<span style="color:#2300DC"><o:p></o:p></span></span></h2>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif";color:black'>BIND (Berkeley Internet Name
+Distributed) là phần mềm DNS Server được sử dụng nhiều nhất hiện nay trên thế
+giới. Một chương trình phục vụ DNS trên nền các hệ thống
+AIX/BSD/HP-UX/Unix/Linux..., Bind chạy nhanh, hiệu suất cao, đáp ứng được số
+lượng user lớn, cấu hình linh hoạt, ...</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif";color:black'>Chạy<span style="mso-spacerun:yes"> 
+</span>lệnh<span style="mso-spacerun:yes">  </span>sau để cài đặt<span style="mso-spacerun:yes">  </span>BIND <o:p></o:p></span></p>
+<p class="Command"><b style="mso-bidi-font-weight:normal"><span style='font-family:
+"Palatino Linotype","serif";color:#2300DC'>sudo</span></b><span style='font-family:"Palatino Linotype","serif";color:#2300DC'> apt install bind9
+dsnutils</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<h2><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">3.2. </span></span><?endif?><span style='font-family:
+"Palatino Linotype","serif"'>Cấu hình BIND<o:p></o:p></span></h2>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Thư mục
+chứa các tệp cấu hình là /etc/bind/. Tệp cấu hình chính là /etc/bind/named.conf.<b style="mso-bidi-font-weight:normal"> </b>Các dòng include bao hàm các tệp chứa
+các tùy chọn. <o:p></o:p></span></p>
+<h3 style="margin-left:0in;text-indent:0in"><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";mso-fareast-font-family:"Palatino Linotype";
+mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">3.2.1. </span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Cấu hình Caching nameserver<o:p></o:p></span></h3>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Nếu
+chỉ sử dụng bind như caching nameserver, đơn giản chỉ cần thêm các địa chỉ IP
+của các nameservers khác (ví dụ của các ISP). Chỉnh sửa tệp
+/etc/bind/named.conf.options, bỏ chú thích (#) và chỉnh sửa nội dung forwarders
+tương tự sau:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>forwarders {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-tab-count:1">            </span>8.8.8.8;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-tab-count:1">            </span>8.8.4.4;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Để cấu
+hình mới có tác dụng, hãy khởi động lại bind bằng cách chạy lệnh sau:<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><span style="mso-spacerun:yes"> </span><span style="mso-tab-count:1">           </span><span style="color:#0070C0">sudo systemctl restart bind9.service<o:p></o:p></span></span></p>
+<h3 style="margin-left:0in;text-indent:0in"><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";mso-fareast-font-family:"Palatino Linotype";
+mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">3.2.2. </span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Cấu hình nameserver chính<o:p></o:p></span></h3>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Phần
+này trình bày ví dụ cấu hình phân giải tên cho tên miền example.com. Cấu hình
+cho các tên miền khác tương tự.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="text-align:left"><span style='font-family:
+"Palatino Linotype","serif"'>DNS cho phép chia hệ thống tên miền thành các zones
+phân cấp, và phân quyền cho các DNS Server quản lý các zones.<o:p></o:p></span></p>
+<p class="MsoBodyText"><span style='font-family:"Palatino Linotype","serif"'>Resource
+Records (RR) là các bản ghi trong cơ sở dữ liệu DNS, được sử dụng để trả lời
+cho các truy vấn từ DNS Client. Có những loại RR sau:<strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></strong></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif"'>Loại
+RR<span style="mso-tab-count:1">                     </span>Mô tả</span></strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>A<span style="mso-tab-count:1">                                 </span>Host
+– Phân giải tên thành địa chỉ IPv4</span></strong><span style='font-family:
+"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>AAAA<span style="mso-tab-count:1">                       </span>Host
+– Phân giải tên thành địa chỉ IPv6</span></strong><span style='font-family:
+"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>MX<span style="mso-tab-count:1">                             </span>Mail
+exchange – Chỉ đến Email Server trong domain.</span></strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>CNAME (Alias)<span style="mso-tab-count:1">      </span>Canonical
+name – Cho phép một host có thể có nhiều tên.</span></strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>NS<span style="mso-tab-count:1">                              </span>Name
+Server – Chứa địa chỉ IP của DNS Server cùng với các thông tin về domain đó.</span></strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>SOA<span style="mso-tab-count:1">                           </span>Start
+of Authority – Bao gồm các thông tin về domain trên DNS Server.</span></strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>SRV<span style="mso-tab-count:1">                            </span>Service
+– Được sử dụng bởi Active Directory để lưu thông tin về vị trí của Domain
+Controllers</span></strong><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="TableContents" style="margin-left:2.0in;text-align:left;
+text-indent:-1.5in;tab-stops:2.0in"><strong><span style='font-family:"Palatino Linotype","serif";
+font-weight:normal'>PTR<span style="mso-tab-count:1">                            </span>Pointer
+– Phân giải địa chỉ IP thành tên máy.</span></strong><span style='font-family:
+"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><o:p> </o:p></span></p>
+<p class="MsoNormal"><b><span style='font-family:"Palatino Linotype","serif"'>Cấu
+trúc bản ghi SOA:<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0;mso-bidi-font-weight:bold'>Name Class Type Nameserver.<span style="mso-spacerun:yes">  </span>Email-address. (<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0;mso-bidi-font-weight:bold'><span style="mso-tab-count:1">            </span>Serial
+Refresh Retry Expire Negative-Cache-TTL<span style="mso-tab-count:1">     </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0;mso-bidi-font-weight:bold'>)<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif";
+mso-bidi-font-weight:bold'>trong đó,</span><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Name<span style="mso-tab-count:1">                 </span>Tên của zone. Có thể sử dụng
+“@” là tham chiếu đến zone gốc hiện tại trong tệp /etc/bind/named.conf.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Class<span style="mso-tab-count:1">                   </span>Lớp DNS. Trong bản ghi này là
+IN (Internet).<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Type<span style="mso-tab-count:1">                   </span>DNS RR Type. Trong bản ghi
+này là SOA.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Nameserver<span style="mso-tab-count:1">     </span>Tên đầy đủ của nameserver. Theo sau là dấu
+chấm (.)<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Email-address<span style="mso-tab-count:1">  </span>Địa chỉ email của quản trị viên quản trị
+nameserver. Ký tự @ trong email phải được thay bằng dấu chấm. Theo sau email
+cũng là dấu chấm.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Serial-no<span style="mso-tab-count:1">            </span>Số tuần tự của cấu hình hiện tại. <o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Refresh<span style="mso-tab-count:1">              </span>Chu kỳ các secondary DNS server
+phải đồng bộ với primary DNS server.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Retry<span style="mso-tab-count:1">                  </span>Chu kỳ các secondary DNS
+server phải thử kết nội lại để thực hiện đồng bộ nếu có lỗi kết nối.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Expire<span style="mso-tab-count:1">                </span>Thời gian hết hạn của các bản
+ghi trên secondary DNS server nếu chúng chưa được đồng bộ từ primary DNS
+server.<o:p></o:p></span></p>
+<p align="left" class="MsoNormal" style="margin-top:0in;margin-right:0in;
+margin-bottom:0in;margin-left:130.5pt;margin-bottom:.0001pt;text-align:left;
+text-indent:-85.5pt;tab-stops:130.5pt"><span style='font-family:"Palatino Linotype","serif"'>Negative-Cache-TTL<span style="mso-tab-count:1">      </span>Thời gian DNS client/DSN server thứ cấp
+được lưu đệm các trả lời tên miền không tồn tại (negative answer). Lưu đệm các
+trả lời này giúp không phải hỏi lại một cách lãng phí.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><o:p> </o:p></span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Cấu trúc các bản ghi NS, MX, A,
+AAA, CNAME, SRV và PTR:<o:p></o:p></span></b></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0;mso-bidi-font-weight:bold'>Name Class Type Data<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif";
+mso-bidi-font-weight:bold'>trong đó, giá trị của các trường phụ thuộc Type,
+được mô tả như sau.<o:p></o:p></span></p>
+<table border="0" cellpadding="0" cellspacing="0" class="MsoNormalTable" style="margin-left:3.5pt;border-collapse:collapse;mso-padding-alt:0in 5.4pt 0in 5.4pt">
+<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+<td style="width:64.9pt;border:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Type<o:p></o:p></span></b></p>
+</td>
+<td style="width:170.4pt;border:solid black 1.0pt;border-right:
+  none;mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" width="227">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Name<o:p></o:p></span></b></p>
+</td>
+<td style="width:72.6pt;border:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Class <o:p></o:p></span></b></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;mso-border-alt:
+  solid black .5pt;padding:0in 5.4pt 0in 5.4pt" width="186">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Data </span></b><span style='font-family:"Palatino Linotype","serif"'><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:1">
+<td style="width:64.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>NS<o:p></o:p></span></p>
+</td>
+<td style="width:170.4pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;
+  mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="227">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Thường để trống. Có thể sử
+  dụng @ để chỉ tên zone hiện tại.<o:p></o:p></span></p>
+</td>
+<td style="width:72.6pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>IN<o:p></o:p></span></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="186">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Địa chỉ IP hoặc tên của nameserver.
+  Tên có<span style="mso-spacerun:yes">  </span>dấu chấm ở cuối.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:2">
+<td style="width:64.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>MX<o:p></o:p></span></p>
+</td>
+<td style="width:170.4pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;
+  mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="227">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Domain được dùng cho email,
+  thường trùng với domain của zone.<o:p></o:p></span></p>
+</td>
+<td style="width:72.6pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>IN<o:p></o:p></span></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="186">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Tên của mail server với dấu
+  chấm ở cuối.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:3">
+<td style="width:64.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>A<o:p></o:p></span></p>
+</td>
+<td style="width:170.4pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;
+  mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="227">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Tên của một máy trong domain<o:p></o:p></span></p>
+</td>
+<td style="width:72.6pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>IN<o:p></o:p></span></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="186">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Địa chỉ IPv4<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:4">
+<td style="width:64.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>AAAA<o:p></o:p></span></p>
+</td>
+<td style="width:170.4pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;
+  mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="227">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Tên của một máy trong domain<o:p></o:p></span></p>
+</td>
+<td style="width:72.6pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>IN<o:p></o:p></span></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="186">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Địa chỉ IPv6<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:5">
+<td style="width:64.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>CNAME<o:p></o:p></span></p>
+</td>
+<td style="width:170.4pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;
+  mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="227">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Bí danh<o:p></o:p></span></p>
+</td>
+<td style="width:72.6pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>IN<o:p></o:p></span></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="186">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Tên của bản ghi "A"<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow:6;mso-yfti-lastrow:yes">
+<td style="width:64.9pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="87">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>PTR<o:p></o:p></span></p>
+</td>
+<td style="width:170.4pt;border-top:none;border-left:
+  solid black 1.0pt;border-bottom:solid black 1.0pt;border-right:none;
+  mso-border-top-alt:solid black .5pt;mso-border-top-alt:solid black .5pt;
+  mso-border-left-alt:solid black .5pt;mso-border-bottom-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="227">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Octet cuối của địa chỉ IP của
+  máy<o:p></o:p></span></p>
+</td>
+<td style="width:72.6pt;border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-alt:solid black .5pt;mso-border-left-alt:solid black .5pt;
+  mso-border-bottom-alt:solid black .5pt;padding:0in 5.4pt 0in 5.4pt" valign="top" width="97">
+<p align="center" class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;
+  text-align:center"><span style='font-family:"Palatino Linotype","serif"'>IN<o:p></o:p></span></p>
+</td>
+<td style="width:139.5pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .5pt;mso-border-alt:solid black .5pt;
+  padding:0in 5.4pt 0in 5.4pt" valign="top" width="186">
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt"><span style='font-family:"Palatino Linotype","serif"'>Tên đầy đủ của máy với dấu
+  chấm ở cuối.<o:p></o:p></span></p>
+</td>
+</tr>
+</table>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><o:p> </o:p></span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Phân giải xuôi<o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Để bắt
+đầu cấu hình phân giải xuôi cho miền example.com, thêm zone xuôi mới như sau
+vào tệp /etc/bind/named.conf.local:<o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>zone "example.com" {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:.5in"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes"> </span>type master; <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:.5in"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>file
+"/etc/bind/db.example.com"; <o:p></o:p></span></p>
+<p class="MsoNormal" style="text-indent:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Bây
+giờ, tạo tệp /etc/bind/db.example.com và đưa các bản ghi DNS vào tệp này như ví
+dụ sau:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>$TTL<span style="mso-spacerun:yes">    </span>604800<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>@<span style="mso-spacerun:yes">       </span>IN<span style="mso-spacerun:yes">     
+</span>SOA<span style="mso-spacerun:yes">     </span>ns.example.com.
+root.example.com. (<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                       </span><span style="mso-spacerun:yes">       </span>2<span style="mso-spacerun:yes">        
+</span>; Serial<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                         </span>604800<span style="mso-spacerun:yes">         </span>; Refresh<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                          </span>86400<span style="mso-spacerun:yes">         </span>; Retry<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                        </span>2419200<span style="mso-spacerun:yes">         </span>; Expire<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                         </span>604800 )<span style="mso-spacerun:yes">       </span>; Negative Cache TTL<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">        </span>IN<span style="mso-spacerun:yes">     
+</span>A<span style="mso-spacerun:yes">     </span><span style="mso-spacerun:yes">  </span>192.168.1.10<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>@<span style="mso-spacerun:yes">       </span>IN<span style="mso-spacerun:yes">     
+</span>NS<span style="mso-spacerun:yes">      </span>ns.example.com.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>@<span style="mso-spacerun:yes">       </span>IN<span style="mso-spacerun:yes">     
+</span>A<span style="mso-spacerun:yes">       </span>192.168.1.10<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>@<span style="mso-spacerun:yes">       </span>IN<span style="mso-spacerun:yes">     
+</span>AAAA<span style="mso-spacerun:yes">    </span>::1<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>ns<span style="mso-spacerun:yes">      </span><span style="mso-spacerun:yes"> </span>IN<span style="mso-spacerun:yes">      </span>A<span style="mso-spacerun:yes">      
+</span>192.168.1.10<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>printer IN A
+192.168.1.11<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>hoapc IN A
+192.168.1.12<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>ftp IN CNAME
+hoapc.example.com<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Để cấu
+hình mới có tác dụng, hãy khởi động lại bind bằng cách chạy lệnh sau:<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><span style="mso-spacerun:yes"> </span><span style="mso-tab-count:1">           </span><span style="color:#0070C0">sudo systemctl restart bind9.service<o:p></o:p></span></span></p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style='font-family:"Palatino Linotype","serif"'>Phân giải ngược<o:p></o:p></span></b></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Để bắt
+đầu cấu hình phân giải ngược cho miền example.com, thêm zone ngược mới như sau
+vào tệp /etc/bind/named.conf.local:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>zone "1.168.192.in-addr.arpa" {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>type master;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>file
+"/etc/bind/db.192";<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Thay
+1.168.192 bằng ba octet đầu của mạng (viết ngược). Đồng thời đặt tên tệp của
+zone là /etc/bind/db.192 với số là octet đầu của mạng. <o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Bây
+giờ tạo tệp<span style="mso-spacerun:yes">  </span>/etc/bind/db.192 và đưa các
+bản ghi DNS vào tệp này như ví dụ sau:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>$TTL<span style="mso-spacerun:yes">    </span>604800<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>@<span style="mso-spacerun:yes">       </span>IN<span style="mso-spacerun:yes">     
+</span>SOA<span style="mso-spacerun:yes">     </span>ns.example.com.
+root.example.com. (<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                              </span>2<span style="mso-spacerun:yes">         </span>; Serial<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                         </span>604800<span style="mso-spacerun:yes">         </span>; Refresh<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                          </span>86400<span style="mso-spacerun:yes">         </span>; Retry<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                        </span>2419200<span style="mso-spacerun:yes">         </span>; Expire<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><span style="mso-spacerun:yes">                         </span>604800 )<span style="mso-spacerun:yes">       </span>; Negative Cache TTL<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>@<span style="mso-spacerun:yes">       </span>IN<span style="mso-spacerun:yes">     
+</span>NS<span style="mso-spacerun:yes">      </span>ns.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>10<span style="mso-spacerun:yes">      </span>IN<span style="mso-spacerun:yes">     
+</span>PTR<span style="mso-spacerun:yes">     </span>ns.example.com.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>11<span style="mso-spacerun:yes">      </span>IN<span style="mso-spacerun:yes">     
+</span>PTR <span style="mso-spacerun:yes"> </span><span style="mso-spacerun:yes">   </span>printer.example.com.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'>12<span style="mso-spacerun:yes">      </span>IN<span style="mso-spacerun:yes">     
+</span>PTR<span style="mso-spacerun:yes">  </span><span style="mso-spacerun:yes">   </span>hoapc.example.com.<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin:0in;margin-bottom:.0001pt;line-height:normal"><span style='font-family:"Palatino Linotype","serif";color:#0070C0'><o:p> </o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Mỗi
+bản ghi ‘A’ trong /etc/bind/db.example.com cần có một bản ghi ‘PTR’ trong /etc/bind/db.192.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Để cấu
+hình mới có tác dụng, hãy khởi động lại bind bằng cách chạy lệnh sau:<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><span style="mso-spacerun:yes"> </span><span style="mso-tab-count:1">           </span><span style="color:#0070C0">sudo systemctl restart bind9.service<o:p></o:p></span></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><o:p> </o:p></span></p>
+<h3 style="margin-left:0in;text-indent:0in"><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";mso-fareast-font-family:"Palatino Linotype";
+mso-bidi-font-family:"Palatino Linotype"'><span style="mso-list:Ignore">3.2.3. </span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Cấu hình nameserver thứ cấp<o:p></o:p></span></h3>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Secondary
+DNS Server nên được thiết lập để đảm bảo tính sẵn sàng của dịch vụ DNS. Để thiết
+lập DNS server thứ cấp, trước hết cần cấu hình DNS server chính để nó được phép
+chuyển zone. Thêm tùy chọn allow-transfer vào cả zone xuôi và zone ngược như
+sau:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>zone "example.com" {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>type master;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-tab-count:1">            </span>file
+"/etc/bind/db.example.com";<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">     </span><span style="mso-spacerun:yes">   </span>allow-transfer { 192.168.1.13; };<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>zone "1.168.192.in-addr.arpa" {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>type master;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>file
+"/etc/bind/db.192";<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-tab-count:1">            </span>allow-transfer
+{ 192.168.1.13; };<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Trong
+ví dụ này, DNS server thứ cấp sẽ có địa chỉ IP là 192.168.1.13.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Khởi động
+lại DNS server chính để cấu hình mới có tác dụng.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Tiếp
+theo, trên DNS server thứ cấp, cài đặt BIND như bình thường, sau đó chỉnh sửa tệp
+/etc/bind/named.conf.local và thêm cả zone xuôi và zone ngược như sau:<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>zone "example.com" {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-tab-count:1">            </span>type slave;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>file
+"db.example.com";<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>masters {
+192.168.1.10; };<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<span style="mso-spacerun:yes">        </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">      </span><o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>zone "1.168.192.in-addr.arpa" {<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-tab-count:1">            </span>type slave;<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>file
+"db.192";<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'><span style="mso-spacerun:yes">        </span>masters {
+192.168.1.10; };<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in"><span style='font-family:"Palatino Linotype","serif";
+color:#0070C0'>};<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Lưu ý
+192.168.1.10 <span style="mso-spacerun:yes"> </span>là địa chỉ IP của
+nameserver chính. <o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Khởi động
+lại bind để cấu hình mới có tác dụng.<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><o:p> </o:p></span></p>
+<h1><?if !supportLists?><span style='font-family:"Palatino Linotype","serif";
+mso-fareast-font-family:"Palatino Linotype";mso-bidi-font-family:"Palatino Linotype";
+color:black'><span style="mso-list:Ignore">4.<span style='font:7.0pt "Times New Roman"'>          
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif";
+color:black'>Thực hành<o:p></o:p></span></h1>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'>Cấu
+hình DNS phân giải tên miền “mydomain.com.vn”, có các server<span style="mso-spacerun:yes">  </span>sau: <o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>DNS
+Server: mydns.mydomain.com.vn; IP: 192.168.20.10/24<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Web
+Server: myweb.mydomain.com.vn; IP: 192.168.20.20/24<o:p></o:p></span></p>
+<p class="MsoNormal" style="margin-left:.5in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+tab-stops:list 0in"><?if !supportLists?><span style="color:black"><span style="mso-list:Ignore">-<span style='font:7.0pt "Times New Roman"'>        
+</span></span></span><?endif?><span style='font-family:"Palatino Linotype","serif"'>Samba
+Server: samba.mydomain.com.vn; IP: 192.168.30.30/24<o:p></o:p></span></p>
+<p class="MsoNormal"><span style='font-family:"Palatino Linotype","serif"'><o:p> </o:p></span></p>
+</div>
+</body>
+</html>
