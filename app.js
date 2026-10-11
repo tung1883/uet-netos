@@ -29,6 +29,9 @@
       referenceSetupHeading: 'Chọn tuần / chủ đề',
       referenceItemsSuffix: 'mục',
       backToReferenceList: '< Quay lại danh sách chủ đề',
+      slidesTitle: 'Tài liệu bài giảng',
+      slidesDesc: 'Bản gốc slide bài giảng/thực hành theo từng buổi + đề mẫu',
+      slidesItemsSuffix: 'tài liệu',
     },
     en: {
       pageTitle: 'UET Network OS',
@@ -56,8 +59,33 @@
       referenceSetupHeading: 'Choose a week / topic',
       referenceItemsSuffix: 'items',
       backToReferenceList: '< Back to topic list',
+      slidesTitle: 'Lecture Slides',
+      slidesDesc: 'Original lecture/lab slides per session + sample exams',
+      slidesItemsSuffix: 'documents',
     },
   };
+
+  const SLIDES = [
+    { file: 'bai01-vm.htm', vi: 'Bài 1: Máy ảo & cài đặt Linux', en: 'Lesson 1: Virtual Machines & Linux Setup' },
+    { file: 'bai02-command.htm', vi: 'Bài 2: Dòng lệnh cơ bản', en: 'Lesson 2: Basic Commands' },
+    { file: 'bai03-Package-Management.htm', vi: 'Bài 3: Quản lý gói phần mềm', en: 'Lesson 3: Package Management' },
+    { file: 'bai04-io-editor.htm', vi: 'Bài 4: I/O & trình soạn thảo', en: 'Lesson 4: I/O & Text Editors' },
+    { file: 'bai05-Networking.htm', vi: 'Bài 5: Mạng (Networking)', en: 'Lesson 5: Networking' },
+    { file: 'bai06-Domain-Name-Service.htm', vi: 'Bài 6: Dịch vụ tên miền (DNS)', en: 'Lesson 6: Domain Name Service (DNS)' },
+    { file: 'bai07-Remote-Administration.htm', vi: 'Bài 7: Quản trị từ xa', en: 'Lesson 7: Remote Administration' },
+    { file: 'bai08-User-Managament.htm', vi: 'Bài 8: Quản lý người dùng', en: 'Lesson 8: User Management' },
+    { file: 'bai09-File-Permision.htm', vi: 'Bài 9: Quyền tệp', en: 'Lesson 9: File Permissions' },
+    { file: 'bai10-Process.htm', vi: 'Bài 10: Tiến trình', en: 'Lesson 10: Processes' },
+    { file: 'bai11-Partition-Quota.htm', vi: 'Bài 11: Phân vùng & Quota', en: 'Lesson 11: Partitions & Quota' },
+    { file: 'bai13-Shell-Script.htm', vi: 'Bài 13: Shell Script', en: 'Lesson 13: Shell Scripting' },
+    { file: 'bai14-SMB.htm', vi: 'Bài 14: SMB', en: 'Lesson 14: SMB' },
+    { file: 'bai15-FileServers.htm', vi: 'Bài 15: File Servers', en: 'Lesson 15: File Servers' },
+    { file: 'bai16-Security.htm', vi: 'Bài 16: An ninh hệ thống', en: 'Lesson 16: Security' },
+    { file: 'bai17-NetworkAuthentication.htm', vi: 'Bài 17: Xác thực mạng', en: 'Lesson 17: Network Authentication' },
+    { file: '2018s-int3301-1.htm', vi: 'Tài liệu môn học (2018)', en: 'Course Material (2018)' },
+    { file: 'Kiem tra giua ky.html', vi: 'Đề kiểm tra giữa kỳ mẫu', en: 'Sample Midterm Test' },
+    { file: 'finaltest2016f.html', vi: 'Đề thi cuối kỳ mẫu (2016)', en: 'Sample Final Exam (2016)' },
+  ];
 
   function loadLang() {
     try {
@@ -105,6 +133,13 @@
           return typeof window[v] !== 'undefined' ? window[v] : [];
         },
         setupHeading: s.referenceSetupHeading,
+      },
+      {
+        id: 'slides',
+        title: s.slidesTitle,
+        desc: s.slidesDesc,
+        isSlides: true,
+        getData: () => SLIDES,
       },
     ];
   }
@@ -270,6 +305,14 @@
       return;
     }
 
+    if (course.isSlides) {
+      els.setup.classList.add('hidden');
+      els.referenceView.classList.remove('hidden');
+      els.backToReferenceList.classList.add('hidden');
+      renderSlidesList(raw);
+      return;
+    }
+
     els.allSetsBtn.classList.remove('hidden');
     currentPool = raw.map((q) => (q.type ? q : Object.assign({ type: 'mcq' }, q)));
     els.setup.classList.remove('hidden');
@@ -336,6 +379,7 @@
         renderReferenceModule(mod);
         els.setup.classList.add('hidden');
         els.referenceView.classList.remove('hidden');
+        els.backToReferenceList.classList.remove('hidden');
       });
     });
   }
@@ -383,6 +427,20 @@
     els.referenceContent.innerHTML = `<div class="ref-module">
       <h2>${escapeHtml(mod.module)}</h2>
       ${sections}
+    </div>`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function renderSlidesList(slides) {
+    const items = slides
+      .map(
+        (s) => `<li class="slide-item">
+          <a href="lecture-slides/${encodeURIComponent(s.file)}" target="_blank" rel="noopener">${escapeHtml(lang === 'en' ? s.en : s.vi)}</a>
+        </li>`
+      )
+      .join('');
+    els.referenceContent.innerHTML = `<div class="ref-module">
+      <ul class="slide-list">${items}</ul>
     </div>`;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
