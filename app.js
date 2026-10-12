@@ -32,6 +32,10 @@
       slidesTitle: 'Tài liệu bài giảng',
       slidesDesc: 'Bản gốc slide bài giảng/thực hành theo từng buổi + đề mẫu',
       slidesItemsSuffix: 'tài liệu',
+      mylabsTitle: 'Bài làm Lab',
+      mylabsDesc: 'Bài làm thực tế Lab3-8: đề bài, bài giải, lệnh đã dùng, script đã nộp',
+      mylabsSetupHeading: 'Chọn lab',
+      mylabsItemsSuffix: 'tài liệu',
     },
     en: {
       pageTitle: 'UET Network OS',
@@ -62,6 +66,10 @@
       slidesTitle: 'Lecture Slides',
       slidesDesc: 'Original lecture/lab slides per session + sample exams',
       slidesItemsSuffix: 'documents',
+      mylabsTitle: 'My Lab Work',
+      mylabsDesc: 'Real completed Lab3-8: assignment, write-up, commands used, submitted scripts',
+      mylabsSetupHeading: 'Choose a lab',
+      mylabsItemsSuffix: 'documents',
     },
   };
 
@@ -85,6 +93,74 @@
     { file: '2018s-int3301-1.htm', vi: 'Tài liệu môn học (2018)', en: 'Course Material (2018)' },
     { file: 'Kiem tra giua ky.html', vi: 'Đề kiểm tra giữa kỳ mẫu', en: 'Sample Midterm Test' },
     { file: 'finaltest2016f.html', vi: 'Đề thi cuối kỳ mẫu (2016)', en: 'Sample Final Exam (2016)' },
+  ];
+
+  const MY_LABS = [
+    {
+      dir: 'lab3',
+      vi: 'Lab 3: Quản lý đĩa và hệ thống tệp',
+      en: 'Lab 3: Disk & Filesystem Management',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab3.pdf' },
+      ],
+    },
+    {
+      dir: 'lab4',
+      vi: 'Lab 4: Quản lý người dùng, tiến trình và dịch vụ',
+      en: 'Lab 4: Users, Processes & Services',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab4.pdf' },
+        { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
+      ],
+    },
+    {
+      dir: 'lab5',
+      vi: 'Lab 5: Lập trình quản trị và nền tảng dịch vụ mạng',
+      en: 'Lab 5: Admin Scripting & Network Services',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab5.pdf' },
+        { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
+        { vi: 'Script: network_check.sh', en: 'Script: network_check.sh', path: 'network_check.sh' },
+      ],
+    },
+    {
+      dir: 'lab6',
+      vi: 'Lab 6: Lập trình Bash cơ bản',
+      en: 'Lab 6: Basic Bash Scripting',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab6.pdf' },
+        { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
+        { vi: 'Script: file_manager.sh', en: 'Script: file_manager.sh', path: 'file_manager.sh' },
+      ],
+    },
+    {
+      dir: 'lab7',
+      vi: 'Lab 7: Tự động hoá và lập lịch tác vụ',
+      en: 'Lab 7: Automation & Task Scheduling',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab7.pdf' },
+        { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
+        { vi: 'Script: user_batch.sh', en: 'Script: user_batch.sh', path: 'user_batch.sh' },
+        { vi: 'Dữ liệu: users.csv', en: 'Data: users.csv', path: 'users.csv' },
+        { vi: 'systemd: lab-user-report.service', en: 'systemd: lab-user-report.service', path: 'lab-user-report.service' },
+        { vi: 'systemd: lab-user-report.timer', en: 'systemd: lab-user-report.timer', path: 'lab-user-report.timer' },
+      ],
+    },
+    {
+      dir: 'lab8',
+      vi: 'Lab 8: Cấu hình mạng và SSH',
+      en: 'Lab 8: Network Configuration & SSH',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab8.pdf' },
+        { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
+      ],
+    },
   ];
 
   function loadLang() {
@@ -111,7 +187,9 @@
       {
         id: 'netos',
         title: s.netosTitle,
+        tabLabel: 'NetOS',
         desc: s.netosDesc,
+        row: 1,
         getData: () => {
           const v = lang === 'en' ? 'QUIZ_DATA_NETOS_EN' : 'QUIZ_DATA_NETOS';
           return typeof window[v] !== 'undefined' ? window[v] : [];
@@ -124,9 +202,20 @@
         setupHeading: s.netosSetupHeading,
       },
       {
+        id: 'mylabs',
+        title: s.mylabsTitle,
+        tabLabel: lang === 'en' ? 'Lab' : 'Lab',
+        desc: s.mylabsDesc,
+        row: 1,
+        isLabs: true,
+        getData: () => MY_LABS,
+        setupHeading: s.mylabsSetupHeading,
+      },
+      {
         id: 'reference',
         title: s.referenceTitle,
         desc: s.referenceDesc,
+        row: 2,
         isReference: true,
         getData: () => {
           const v = lang === 'en' ? 'REFERENCE_DATA_EN' : 'REFERENCE_DATA';
@@ -138,6 +227,7 @@
         id: 'slides',
         title: s.slidesTitle,
         desc: s.slidesDesc,
+        row: 2,
         isSlides: true,
         getData: () => SLIDES,
       },
@@ -181,6 +271,7 @@
   let currentCourse = null;
   let currentPool = []; // normalized full dataset for the chosen course
   let currentReferenceModules = []; // raw REFERENCE_DATA(_EN) when course.isReference
+  let currentLabsModules = []; // raw MY_LABS when course.isLabs
   let currentNavState = null; // mirrors history.state, drives applyNavState()
   let questions = [];
   let userAnswers = {};
@@ -265,11 +356,24 @@
   // --- Section tabs (NetOS quiz / Reference) ---
 
   function renderSectionTabs() {
-    let html = '';
+    const rows = {};
     COURSES.forEach((course) => {
-      const active = currentCourse && currentCourse.id === course.id ? ' active' : '';
-      html += `<button type="button" class="tab-btn${active}" data-course="${course.id}">${escapeHtml(course.title)}</button>`;
+      const r = course.row || 1;
+      (rows[r] = rows[r] || []).push(course);
     });
+    const html = Object.keys(rows)
+      .sort((a, b) => a - b)
+      .map((r) => {
+        const btns = rows[r]
+          .map((course) => {
+            const active = currentCourse && currentCourse.id === course.id ? ' active' : '';
+            const label = course.tabLabel || course.title;
+            return `<button type="button" class="tab-btn${active}" data-course="${course.id}">${escapeHtml(label)}</button>`;
+          })
+          .join('');
+        return `<div class="section-tabs-row">${btns}</div>`;
+      })
+      .join('');
     els.sectionTabs.innerHTML = html;
     els.sectionTabs.querySelectorAll('.tab-btn').forEach((btn) => {
       btn.addEventListener('click', () => navPush({ course: btn.dataset.course, view: 'list' }));
@@ -310,6 +414,7 @@
     els.referenceView.classList.add('hidden');
     els.setup.classList.add('hidden');
     els.subtitle.textContent = `${course.title} - ${course.desc}`;
+    document.querySelector('.wrap').classList.remove('wide');
 
     if (!raw.length) {
       els.setup.classList.remove('hidden');
@@ -341,6 +446,24 @@
       els.allSetsBtn.classList.add('hidden');
       els.setup.classList.remove('hidden');
       renderReferenceModulePicker();
+      return;
+    }
+
+    if (course.isLabs) {
+      currentLabsModules = raw;
+      els.setupHeading.textContent = course.setupHeading;
+      if (state.view === 'module' && state.group !== undefined) {
+        const mod = currentLabsModules[parseInt(state.group, 10)];
+        if (mod) {
+          els.referenceView.classList.remove('hidden');
+          els.backToReferenceList.classList.remove('hidden');
+          renderLabsModule(mod);
+          return;
+        }
+      }
+      els.allSetsBtn.classList.add('hidden');
+      els.setup.classList.remove('hidden');
+      renderLabsModulePicker();
       return;
     }
 
@@ -489,6 +612,193 @@
     els.referenceContent.innerHTML = `<div class="ref-module">
       <ul class="slide-list">${items}</ul>
     </div>`;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // --- My Labs section (real completed lab submissions) ---
+
+  function renderLabsModulePicker() {
+    let html = '';
+    currentLabsModules.forEach((mod, mi) => {
+      const count = mod.files.length;
+      html += `<div class="set-btn" data-mod="${mi}"><span>${escapeHtml(lang === 'en' ? mod.en : mod.vi)}</span><span class="c">${count} ${t('mylabsItemsSuffix')}</span></div>`;
+    });
+    els.setGrid.innerHTML = html;
+    els.setGrid.querySelectorAll('.set-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        navPush({ course: currentCourse.id, view: 'module', group: btn.dataset.mod });
+      });
+    });
+  }
+
+  const EYE_OPEN_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"></path><circle cx="12" cy="12" r="3"></circle></svg>';
+  const EYE_CLOSED_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-7-11-7a21.3 21.3 0 0 1 5.17-6.17M9.9 4.24A10.4 10.4 0 0 1 12 4c7 0 11 7 11 7a21.3 21.3 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>';
+
+  function mdInline(s, labDir) {
+    let out = escapeHtml(s);
+    out = out.replace(/`([^`]+)`/g, (m, c) => `<code>${c}</code>`);
+    out = out.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+    return out;
+  }
+
+  function renderMarkdownLite(md) {
+    const lines = md.replace(/\r\n/g, '\n').split('\n');
+    let html = '';
+    let i = 0;
+    while (i < lines.length) {
+      const line = lines[i];
+      if (/^```/.test(line)) {
+        const code = [];
+        i++;
+        while (i < lines.length && !/^```/.test(lines[i])) {
+          code.push(lines[i]);
+          i++;
+        }
+        i++;
+        html += `<pre><code>${escapeHtml(code.join('\n'))}</code></pre>`;
+        continue;
+      }
+      if (/^#{1,3}\s+/.test(line)) {
+        const level = line.match(/^#+/)[0].length;
+        const text = line.replace(/^#+\s+/, '');
+        html += `<h${level}>${mdInline(text)}</h${level}>`;
+        i++;
+        continue;
+      }
+      if (/^\s*-\s+/.test(line)) {
+        const items = [];
+        while (i < lines.length && /^\s*-\s+/.test(lines[i])) {
+          items.push(lines[i].replace(/^\s*-\s+/, ''));
+          i++;
+        }
+        html += `<ul>${items.map((it) => `<li>${mdInline(it)}</li>`).join('')}</ul>`;
+        continue;
+      }
+      if (/^\s*\d+\.\s+/.test(line)) {
+        const items = [];
+        while (i < lines.length && /^\s*\d+\.\s+/.test(lines[i])) {
+          items.push(lines[i].replace(/^\s*\d+\.\s+/, ''));
+          i++;
+        }
+        html += `<ol>${items.map((it) => `<li>${mdInline(it)}</li>`).join('')}</ol>`;
+        continue;
+      }
+      if (/^\s*\|.*\|\s*$/.test(line) && i + 1 < lines.length && /^\s*\|?[\s:|-]+\|?\s*$/.test(lines[i + 1])) {
+        const splitRow = (l) =>
+          l
+            .split('|')
+            .map((c) => c.trim())
+            .filter((c, idx, arr) => !(idx === 0 && c === '') && !(idx === arr.length - 1 && c === ''));
+        const headerCells = splitRow(line);
+        i += 2;
+        const rows = [];
+        while (i < lines.length && /^\s*\|.*\|\s*$/.test(lines[i])) {
+          rows.push(splitRow(lines[i]));
+          i++;
+        }
+        html += `<table><thead><tr>${headerCells
+          .map((c) => `<th>${mdInline(c)}</th>`)
+          .join('')}</tr></thead><tbody>${rows
+          .map((r) => `<tr>${r.map((c) => `<td>${mdInline(c)}</td>`).join('')}</tr>`)
+          .join('')}</tbody></table>`;
+        continue;
+      }
+      if (line.trim() === '') {
+        i++;
+        continue;
+      }
+      const para = [line];
+      i++;
+      while (
+        i < lines.length &&
+        lines[i].trim() !== '' &&
+        !/^#{1,3}\s+/.test(lines[i]) &&
+        !/^\s*-\s+/.test(lines[i]) &&
+        !/^\s*\d+\.\s+/.test(lines[i]) &&
+        !/^```/.test(lines[i]) &&
+        !/^\s*\|.*\|\s*$/.test(lines[i])
+      ) {
+        para.push(lines[i]);
+        i++;
+      }
+      html += `<p>${mdInline(para.join(' '))}</p>`;
+    }
+    return html;
+  }
+
+  function renderLabsModule(mod) {
+    const findFile = (pred) => mod.files.find(pred);
+    const assignmentFile = findFile((f) => f.path === 'assignment.md');
+    const submissionFile = findFile((f) => /\.pdf$/i.test(f.path));
+    const otherFiles = mod.files.filter((f) => f !== assignmentFile && f !== submissionFile);
+
+    const otherList = otherFiles
+      .map((f) => {
+        const href = `my-labs/${encodeURIComponent(mod.dir)}/${encodeURIComponent(f.path)}`;
+        return `<li class="slide-item"><a href="${href}" target="_blank" rel="noopener">${escapeHtml(lang === 'en' ? f.en : f.vi)}</a></li>`;
+      })
+      .join('');
+
+    els.referenceContent.innerHTML = `<div class="ref-module">
+      <h2>${escapeHtml(lang === 'en' ? mod.en : mod.vi)}</h2>
+      <div class="lab-grid">
+        <div class="lab-pane">
+          <div class="lab-pane-head"><h3>${escapeHtml(lang === 'en' ? 'Assignment' : 'Đề bài')}</h3></div>
+          <div class="lab-md" id="labAssignmentBody">${escapeHtml(lang === 'en' ? 'Loading...' : 'Đang tải...')}</div>
+        </div>
+        <div class="lab-pane">
+          <div class="lab-pane-head">
+            <h3>${escapeHtml(lang === 'en' ? 'Submission' : 'Bài làm')}</h3>
+            <button type="button" class="lab-toggle-btn" id="labToggleBtn">${EYE_CLOSED_SVG}<span id="labToggleLabel">${escapeHtml(
+      lang === 'en' ? 'Show' : 'Hiện'
+    )}</span></button>
+          </div>
+          <div class="lab-pane-body hidden-content" id="labSubmissionBody">
+            ${submissionFile ? '' : `<div class="lab-pane-placeholder">${escapeHtml(lang === 'en' ? 'No submission file' : 'Không có file bài làm')}</div>`}
+          </div>
+        </div>
+      </div>
+      ${otherList ? `<div class="lab-other-files"><ul class="slide-list">${otherList}</ul></div>` : ''}
+    </div>`;
+
+    document.querySelector('.wrap').classList.add('wide');
+
+    if (assignmentFile) {
+      const url = `my-labs/${encodeURIComponent(mod.dir)}/${encodeURIComponent(assignmentFile.path)}`;
+      fetch(url)
+        .then((r) => (r.ok ? r.text() : Promise.reject(new Error('fetch failed'))))
+        .then((text) => {
+          const el = document.getElementById('labAssignmentBody');
+          if (el) el.innerHTML = renderMarkdownLite(text);
+        })
+        .catch(() => {
+          const el = document.getElementById('labAssignmentBody');
+          if (el) el.innerHTML = `<a href="${url}" target="_blank" rel="noopener">${escapeHtml(url)}</a>`;
+        });
+    }
+
+    if (submissionFile) {
+      const toggleBtn = document.getElementById('labToggleBtn');
+      const body = document.getElementById('labSubmissionBody');
+      const label = document.getElementById('labToggleLabel');
+      let loaded = false;
+      let revealed = false;
+      toggleBtn.addEventListener('click', () => {
+        revealed = !revealed;
+        body.classList.toggle('hidden-content', !revealed);
+        toggleBtn.innerHTML = (revealed ? EYE_OPEN_SVG : EYE_CLOSED_SVG) + `<span>${escapeHtml(
+          revealed ? (lang === 'en' ? 'Hide' : 'Ẩn') : (lang === 'en' ? 'Show' : 'Hiện')
+        )}</span>`;
+        if (revealed && !loaded) {
+          loaded = true;
+          const url = `my-labs/${encodeURIComponent(mod.dir)}/${encodeURIComponent(submissionFile.path)}`;
+          body.innerHTML = `<iframe class="lab-pdf-frame" src="${url}"></iframe>`;
+        }
+      });
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

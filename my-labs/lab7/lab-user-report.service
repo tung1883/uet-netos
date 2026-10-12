@@ -1,0 +1,9 @@
+[Unit]
+Description=Lab7 user account report
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/lab7/user_batch.sh report /opt/lab7/users.csv
+StandardOutput=append:/var/log/user_report.log
+StandardError=append:/var/log/user_report.log

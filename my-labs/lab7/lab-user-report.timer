@@ -1,0 +1,11 @@
+[Unit]
+Description=Run lab7 user report every 5 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Persistent=true
+Unit=lab-user-report.service
+
+[Install]
+WantedBy=timers.target
