@@ -413,7 +413,7 @@
     els.questions.innerHTML = '';
     els.referenceView.classList.add('hidden');
     els.setup.classList.add('hidden');
-    els.subtitle.textContent = `${course.title} - ${course.desc}`;
+    els.subtitle.textContent = '';
     document.querySelector('.wrap').classList.remove('wide');
 
     if (!raw.length) {
