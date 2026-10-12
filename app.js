@@ -161,6 +161,16 @@
         { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
       ],
     },
+    {
+      dir: 'lab9',
+      vi: 'Lab 9: Triển khai DNS và DHCP',
+      en: 'Lab 9: DNS & DHCP Deployment',
+      files: [
+        { vi: 'Đề bài', en: 'Assignment', path: 'assignment.md' },
+        { vi: 'Bài làm (PDF)', en: 'Submission (PDF)', path: 'lab9.pdf' },
+        { vi: 'Lệnh đã dùng', en: 'Commands used', path: 'commands.md' },
+      ],
+    },
   ];
 
   function loadLang() {
